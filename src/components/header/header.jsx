@@ -1,8 +1,11 @@
 import { useState } from "react";
 import { useMediaQuery } from "react-responsive";
+
 import menuData from "./header.json";
-import podosee_logo from "../../assets/podosee.png";
 import styles from "./header.module.scss";
+
+import podoseeLogo from "../../assets/podosee.png";
+
 import { RxHamburgerMenu } from "react-icons/rx";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { MdOutlineKeyboardArrowUp } from "react-icons/md";
@@ -14,8 +17,8 @@ export default function Header() {
   const [selectedLang, setSelectedLang] = useState("KR"); // 기본 언어 KR
 
   const isMobile = useMediaQuery({ maxWidth: 767 });
-  const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1023 });
-  const isDesktop = useMediaQuery({ minWidth: 1024 });
+  // const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1023 });
+  // const isDesktop = useMediaQuery({ minWidth: 1024 });
 
   const availableLanguages = ["KR", "EN", "CN"]; // 지원하는 언어 목록
 
@@ -33,7 +36,7 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <a href='/' className={isMobile ? styles.logoMobile : styles.logo}>
-        <img src={podosee_logo} alt='Podosee Logo' />
+        <img src={podoseeLogo} alt='Podosee Logo' />
       </a>
 
       {isMobile ? (

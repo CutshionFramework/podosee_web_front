@@ -64,7 +64,9 @@
   /* 언어 선택 스타일 */
   .languageSelector {
     position: relative;
-    padding: 10px 20px;
+    padding-top: 10px;
+    padding-right: 2vw;
+    padding-left: 2vw;
     cursor: pointer;
 
     button {
@@ -114,7 +116,7 @@
 .navOpen {
   display: block;
   position: absolute;
-  top: 38px;
+  top: 88px;
   left: 0;
   width: 100%;
   background: white;
@@ -131,6 +133,7 @@
     border-bottom: 1px solid #ddd;
 
     .dropdown {
+      padding-left: 180px;
       position: static;
       display: block;
       background: none;
