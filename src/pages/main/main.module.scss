@@ -85,13 +85,13 @@ $border-radius: 8px;
   h2 {
     font-size: 2rem;
     margin-bottom: $spacing-sm;
-    color: #333;
+    color: #1d1d1f;
   }
 
   p {
     font-size: 1rem;
     line-height: 1.6;
-    color: #666;
+    color: #1d1d1f;
     margin-bottom: $spacing-md;
   }
 }
@@ -103,7 +103,7 @@ $border-radius: 8px;
   color: white;
   text-decoration: none;
   border-radius: 4px;
-  font-weight: 500;
+  font-weight: 600;
   transition: background 0.3s ease;
 
   &:hover {

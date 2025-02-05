@@ -114,4 +114,13 @@
         }
       }
     }
+
+    a {
+      text-decoration-line: none;
+      color: #1d1d1f;
+
+      &:hover {
+        color: #6d45ff;
+      }
+    }
   }

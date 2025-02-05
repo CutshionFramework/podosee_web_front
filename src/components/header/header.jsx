@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useMediaQuery } from "react-responsive";
+import { Link } from "react-router-dom";
 
 import menuData from "./header.json";
 import styles from "./header.module.scss";
@@ -35,9 +36,9 @@ export default function Header() {
 
   return (
     <header className={styles.header}>
-      <a href='/' className={isMobile ? styles.logo_mobile : styles.logo}>
+      <Link to='/' className={isMobile ? styles.logo_mobile : styles.logo}>
         <img src={podoseeLogo} alt='Podosee Logo' />
-      </a>
+      </Link>
 
       {isMobile ? (
         <button
@@ -68,7 +69,7 @@ export default function Header() {
               }
               onClick={isMobile ? () => handleDropdownToggle(index) : undefined}
             >
-              <a href={menu.link || "#"}>{menu.title}</a>
+              <Link to={menu.link || "#"}>{menu.title}</Link>
 
               {menu.sub.length > 0 && (
                 <ul
@@ -78,7 +79,7 @@ export default function Header() {
                 >
                   {menu.sub.map((sub, subIndex) => (
                     <li key={subIndex} className={styles.dropdown_item}>
-                      <a href={sub.link || "#"}>{sub.title}</a>
+                      <Link to={sub.link || "#"}>{sub.title}</Link>
                     </li>
                   ))}
                 </ul>
