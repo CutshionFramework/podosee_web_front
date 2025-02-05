@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import menuData from "./header.json";
 import styles from "./header.module.scss";
 
-import podoseeLogo from "../../assets/podosee.png";
+// import podoseeLogo from "../../assets/podosee.png";
 
 import { RxHamburgerMenu } from "react-icons/rx";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
@@ -37,7 +37,7 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <Link to='/' className={isMobile ? styles.logo_mobile : styles.logo}>
-        <img src={podoseeLogo} alt='Podosee Logo' />
+        <img src='/assets/podosee.png' alt='Podosee Logo' />
       </Link>
 
       {isMobile ? (

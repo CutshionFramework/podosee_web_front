@@ -2,10 +2,6 @@ import { useMediaQuery } from "react-responsive";
 import { Link } from "react-router-dom";
 
 import menuData from "../header/header.json";
-
-import naverIcon from "../../assets/naver_icon.png";
-import facebookIcon from "../../assets/facebook_icon.png";
-import podoseeLogo from "../../assets/podosee.png";
 import styles from "./footer.module.scss";
 
 export default function Footer() {
@@ -16,7 +12,7 @@ export default function Footer() {
       <div className={styles.footer_content}>
         <div className={styles.left_section}>
           <Link to='/' className={isMobile ? styles.logo_mobile : styles.logo}>
-            <img src={podoseeLogo} alt='Podosee Logo' />
+            <img src='/assets/podosee.png' alt='Podosee Logo' />
           </Link>
 
           <div className={styles.company_info}>
@@ -35,14 +31,14 @@ export default function Footer() {
               target='_blank'
               rel='noopener noreferrer'
             >
-              <img src={facebookIcon} alt='Facebook' />
+              <img src='/assets/facebook_icon.png' alt='Facebook' />
             </Link>
             <Link
               to='https://blog.naver.com/podosee7'
               target='_blank'
               rel='noopener noreferrer'
             >
-              <img src={naverIcon} alt='Naver' />
+              <img src='/assets/naver_icon.png' alt='Naver' />
             </Link>
           </div>
 

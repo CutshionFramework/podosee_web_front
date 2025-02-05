@@ -36,7 +36,7 @@ const PRODUCTS = [
 const ProductCard = ({ title, description, image, link }) => (
   <div className={styles.product_card}>
     <div className={styles.image_container}>
-      <img src={`/src/assets/main_img/${image}`} alt={title} />
+      <img src={`/assets/${image}`} alt={title} />
     </div>
     <div className={styles.content}>
       <h2>{title}</h2>
@@ -83,7 +83,7 @@ export default function Main() {
           muted
           playsInline
         >
-          <source src='/src/assets/main_img/home_main.mp4' type='video/mp4' />
+          <source src='/assets/home_main.mp4' type='video/mp4' />
           Your browser does not support the video tag.
         </video>
       </section>
