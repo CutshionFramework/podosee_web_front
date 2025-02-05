@@ -17,8 +17,7 @@ import Error from "./pages/error/error";
 function App() {
   return (
     <>
-      {/* <Routes> */}
-      <Routes basename='/podosee_web_front'>
+      <Routes>
         <Route path='/' element={<Main />} />
 
         {/* JAKA series */}
