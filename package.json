@@ -41,5 +41,8 @@
   "main": "index.js",
   "repository": "https://github.com/CutshionFramework/podosee_web_front.git",
   "author": "devRyan9025 <alex7006@naver.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "optionalDependencies": {
+    "@rollup/rollup-linux-x64-gnu": "^4.34.2"
+  }
 }
