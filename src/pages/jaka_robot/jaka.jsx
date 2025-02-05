@@ -37,7 +37,7 @@ export default function Jaka() {
         </section>
 
         <section className='video_component'>
-          <VideoComponent id='fBJENsNZZmY&t' />
+          <VideoComponent />
         </section>
 
         <section className=''></section>
