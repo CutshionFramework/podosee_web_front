@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
+import { getPartner, getHistory } from "../../apis/apis";
 import Header from "../../components/header/header";
 import Footer from "../../components/footer/footer";
 import styles from "./main.module.scss";
@@ -50,6 +51,11 @@ export default function Main() {
   const videoRef = useRef(null);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+
+    // getPartnerData();
+    // getHistoryData();
+
     // 비디오 자동 재생 설정
     if (videoRef.current) {
       videoRef.current.play().catch((error) => {
@@ -57,6 +63,16 @@ export default function Main() {
       });
     }
   }, []);
+
+  const getPartnerData = async () => {
+    const response = await getPartner();
+    console.log(response);
+  };
+
+  const getHistoryData = async () => {
+    const response = await getHistory();
+    console.log(response);
+  };
 
   return (
     <div className={styles.main_container}>

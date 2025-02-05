@@ -54,7 +54,9 @@ export default function Footer() {
         <nav className={styles.right_section}>
           {menuData.map((menu, index) => (
             <div key={index} className={styles.menu_column}>
-              <h3>{menu.title}</h3>
+              <h3>
+                <Link to={menu.link}>{menu.title}</Link>
+              </h3>
               <ul>
                 {menu.sub.map((subItem, subIndex) => (
                   <li key={subIndex}>
