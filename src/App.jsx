@@ -6,7 +6,7 @@ import Jaka from "./pages/jaka_robot/jaka";
 import Zuseries from "./pages/jaka_robot/zuseries";
 import AllInOne from "./pages/jaka_robot/allinone";
 import ProSeries from "./pages/jaka_robot/proSeries";
-import MiniCobo from "./pages/jaka_robot/minicobo";
+import MiniCobo from "./pages/jaka_robot/miniCobo";
 
 import IntegratedSolution from "./pages/integrated_solution/integratedSolution";
 import CompanyInfo from "./pages/company_info/companyInfo";
