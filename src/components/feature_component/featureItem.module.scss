@@ -1,0 +1,34 @@
+.feature_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.icon_wrapper {
+  border: 1px solid rgb(184, 184, 184);
+  border-radius: 50%;
+  background-color: rgb(250, 250, 250);
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.feature_name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.feature_description {
+  font-size: 14px;
+  color: black;
+  margin-top: 5px;
+}
