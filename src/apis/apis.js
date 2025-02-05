@@ -1,4 +1,4 @@
-import { partnerApi, historyApi } from "./axiosInstance";
+import { partnerApi, historyApi, newsApi } from "./axiosInstance";
 
 export const getPartner = async () => {
   try {
@@ -17,5 +17,14 @@ export const getHistory = async () => {
     return res.data;
   } catch (error) {
     console.error("Error fetching history data:", error);
+  }
+};
+
+export const getNews = async () => {
+  try {
+    const res = await newsApi.get(`/allNews`);
+    return res.data;
+  } catch (error) {
+    console.error("Error fetching partner data:", error);
   }
 };

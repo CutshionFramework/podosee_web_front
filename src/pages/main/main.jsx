@@ -1,6 +1,7 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import { getPartner, getHistory } from "../../apis/apis";
+import { getNews } from "../../apis/apis";
+import NewsSlider from "../../components/news_slider/newsSlider";
 import Header from "../../components/header/header";
 import Footer from "../../components/footer/footer";
 import styles from "./main.module.scss";
@@ -49,12 +50,12 @@ const ProductCard = ({ title, description, image, link }) => (
 
 export default function Main() {
   const videoRef = useRef(null);
+  const [newsData, setNewsData] = useState([]);
 
   useEffect(() => {
     window.scrollTo(0, 0);
 
-    // getPartnerData();
-    // getHistoryData();
+    getNewsData();
 
     // 비디오 자동 재생 설정
     if (videoRef.current) {
@@ -64,13 +65,9 @@ export default function Main() {
     }
   }, []);
 
-  const getPartnerData = async () => {
-    const response = await getPartner();
-    console.log(response);
-  };
-
-  const getHistoryData = async () => {
-    const response = await getHistory();
+  const getNewsData = async () => {
+    const response = await getNews();
+    setNewsData(response);
     console.log(response);
   };
 
@@ -96,6 +93,8 @@ export default function Main() {
           <ProductCard key={product.id} {...product} />
         ))}
       </section>
+
+      <NewsSlider newsData={newsData}></NewsSlider>
 
       <Footer />
     </div>
