@@ -3,8 +3,8 @@ import './App.css';
 import Main from './pages/main/main';
 
 import Jaka from "./pages/jaka_robot/jaka";
-import Zuseries from "./pages/jaka_robot/zuseries";
-import AllInOne from "./pages/jaka_robot/allinone";
+import ZuSeries from "./pages/jaka_robot/zuSeries";
+import AllInOne from "./pages/jaka_robot/allInOne";
 import ProSeries from "./pages/jaka_robot/proSeries";
 import MiniCobo from "./pages/jaka_robot/miniCobo";
 
@@ -22,7 +22,7 @@ function App() {
 
         {/* JAKA series */}
         <Route path='/jaka' element={<Jaka />} />
-        <Route path='/jaka/zuseries' element={<Zuseries />} />
+        <Route path='/jaka/zuseries' element={<ZuSeries />} />
         <Route path='/jaka/allinone' element={<AllInOne />} />
         <Route path='/jaka/proseries' element={<ProSeries />} />
         <Route path='/jaka/minicobo' element={<MiniCobo />} />
