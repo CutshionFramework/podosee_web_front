@@ -1,11 +1,11 @@
-import Header from '../components/header/header';
-import Footer from '../components/footer/footer';
-import PageTitle from '../components/page_title/pageTitle';
-import VideoComponent from '../components/video_component/videoComponent';
-import RobotCard from '../components/card/robotCard';
-import data from '../mock/series.json';
+import Header from "../../components/header/header";
+import Footer from "../../components/footer/footer";
+import PageTitle from "../../components/page_title/pageTitle";
+import VideoComponent from "../../components/video_component/videoComponent";
+import RobotCard from "../../components/card/robotCard";
+import data from "../../mock/series.json";
 
-import styles from './jaka.module.scss';
+import styles from "./jaka.module.scss";
 
 export default function Jaka() {
   return (

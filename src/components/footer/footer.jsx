@@ -9,13 +9,13 @@ export default function Footer() {
 
   return (
     <footer className={styles.footer}>
-      <div className={styles.footerContent}>
-        <div className={styles.leftSection}>
-          <a href='/' className={isMobile ? styles.logoMobile : styles.logo}>
+      <div className={styles.footer_content}>
+        <div className={styles.left_section}>
+          <a href='/' className={isMobile ? styles.logo_mobile : styles.logo}>
             <img src={podoseeLogo} alt='Podosee Logo' />
           </a>
 
-          <div className={styles.companyInfo}>
+          <div className={styles.company_info}>
             <p>대 표 : 모신희</p>
             <p>주 소 : 서울시 영등포구 선유로 9길 10, 709호</p>
             <p>(문래동 6가, 문래 SK V1 Center)</p>
@@ -25,7 +25,7 @@ export default function Footer() {
             </p>
           </div>
 
-          <div className={styles.socialLinks}>
+          <div className={styles.social_links}>
             <a
               href='https://www.facebook.com/podosee2014/?modal=composer&notif_id=1560488657953530&notif_t=aymt_upsell_tip&ref=notif'
               target='_blank'
@@ -47,8 +47,8 @@ export default function Footer() {
           </p>
         </div>
 
-        <nav className={styles.rightSection}>
-          <div className={styles.menuColumn}>
+        <nav className={styles.right_section}>
+          <div className={styles.menu_column}>
             <h3>JAKA</h3>
             <ul>
               <li>Zu series</li>
@@ -58,7 +58,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className={styles.menuColumn}>
+          <div className={styles.menu_column}>
             <h3>통합솔루션</h3>
             <ul>
               <li>AI 키오스크</li>
@@ -68,7 +68,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className={styles.menuColumn}>
+          <div className={styles.menu_column}>
             <h3>회사소개</h3>
             <ul>
               <li>대표이사 인사말</li>
@@ -76,14 +76,14 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className={styles.menuColumn}>
+          <div className={styles.menu_column}>
             <h3>뉴스</h3>
             <ul>
               <li>언론 보도</li>
             </ul>
           </div>
 
-          <div className={styles.menuColumn}>
+          <div className={styles.menu_column}>
             <h3>문의</h3>
             <ul>
               <li>문의하기</li>

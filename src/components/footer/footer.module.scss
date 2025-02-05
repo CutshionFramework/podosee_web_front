@@ -8,7 +8,7 @@
     }
   }
   
-  .footerContent {
+  .footer_content {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -20,7 +20,7 @@
     }
   }
   
-  .leftSection {
+  .left_section {
     flex: 0 0 auto;
     
     .logo {
@@ -33,7 +33,7 @@
       }
     }
     
-    .logoMobile {
+    .logo_mobile {
       @extend .logo;
       img {
         height: 24px;
@@ -41,7 +41,7 @@
     }
   }
   
-  .companyInfo {
+  .company_info {
     margin-bottom: 20px;
     
     p {
@@ -60,7 +60,7 @@
     }
   }
   
-  .socialLinks {
+  .social_links {
     margin-bottom: 20px;
     display: flex;
     gap: 10px;
@@ -78,7 +78,7 @@
     font-size: 12px;
   }
   
-  .rightSection {
+  .right_section {
     flex: 1;
     display: flex;
     justify-content: space-between;
@@ -90,7 +90,7 @@
     }
   }
   
-  .menuColumn {
+  .menu_column {
     h3 {
       color: #1d1d1f;
       font-size: 16px;

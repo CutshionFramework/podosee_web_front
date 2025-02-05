@@ -35,7 +35,7 @@ export default function Header() {
 
   return (
     <header className={styles.header}>
-      <a href='/' className={isMobile ? styles.logoMobile : styles.logo}>
+      <a href='/' className={isMobile ? styles.logo_mobile : styles.logo}>
         <img src={podoseeLogo} alt='Podosee Logo' />
       </a>
 
@@ -50,14 +50,14 @@ export default function Header() {
 
       <nav
         className={`${styles.nav} ${
-          isMobile ? (menuOpen ? styles.navOpen : styles.navClosed) : ""
+          isMobile ? (menuOpen ? styles.nav_open : styles.nav_closed) : ""
         }`}
       >
         <ul>
           {menuData.map((menu, index) => (
             <li
               key={index}
-              className={`${styles.navItem} ${
+              className={`${styles.nav_item} ${
                 activeDropdown === index ? styles.active : ""
               }`}
               onMouseEnter={
@@ -77,7 +77,7 @@ export default function Header() {
                   }`}
                 >
                   {menu.sub.map((sub, subIndex) => (
-                    <li key={subIndex} className={styles.dropdownItem}>
+                    <li key={subIndex} className={styles.dropdown_item}>
                       <a href={sub.link || "#"}>{sub.title}</a>
                     </li>
                   ))}
@@ -87,7 +87,7 @@ export default function Header() {
           ))}
 
           {/* 언어 선택 드롭다운 */}
-          <li className={styles.languageSelector}>
+          <li className={styles.language_selector}>
             <button onClick={() => setLanguageOpen((prev) => !prev)}>
               {selectedLang}{" "}
               {languageOpen ? (
@@ -108,7 +108,7 @@ export default function Header() {
             </button>
 
             {languageOpen && (
-              <ul className={styles.languageDropdown}>
+              <ul className={styles.language_dropdown}>
                 {availableLanguages
                   .filter((lang) => lang !== selectedLang) // 현재 선택된 언어 제외
                   .map((lang) => (

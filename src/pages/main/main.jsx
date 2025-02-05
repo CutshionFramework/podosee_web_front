@@ -31,14 +31,14 @@ const PRODUCTS = [
 ];
 
 const ProductCard = ({ title, description, image, link }) => (
-  <div className={styles.productCard}>
-    <div className={styles.imageContainer}>
+  <div className={styles.product_card}>
+    <div className={styles.image_container}>
       <img src={`/src/assets/main_img/${image}`} alt={title} />
     </div>
     <div className={styles.content}>
       <h2>{title}</h2>
       <p>{description}</p>
-      <a href={link} className={styles.learnMore}>
+      <a href={link} className={styles.learn_more}>
         Learn more
       </a>
     </div>
@@ -58,13 +58,13 @@ export default function Main() {
   }, []);
 
   return (
-    <div className={styles.mainContainer}>
+    <div className={styles.main_container}>
       <Header />
 
-      <section className={styles.mainSection}>
+      <section className={styles.main_section}>
         <video
           ref={videoRef}
-          className={styles.mainVideo}
+          className={styles.main_video}
           loop
           muted
           playsInline
@@ -74,7 +74,7 @@ export default function Main() {
         </video>
       </section>
 
-      <section className={styles.productsSection}>
+      <section className={styles.products_section}>
         {PRODUCTS.map((product) => (
           <ProductCard key={product.id} {...product} />
         ))}
