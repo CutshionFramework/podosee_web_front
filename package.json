@@ -3,13 +3,14 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://cutshionframework.github.io/podosee_web_front/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emotion/css": "^11.13.5",
@@ -43,6 +44,5 @@
   "main": "index.js",
   "repository": "https://github.com/CutshionFramework/podosee_web_front.git",
   "author": "devRyan9025 <alex7006@naver.com>",
-  "license": "MIT",
-  "homepage": "https://cutshionframework.github.io/podosee_web_front/"
+  "license": "MIT"
 }
