@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import Main from './pages/main/main';
-import Jaka from './pages/jaka';
+import Jaka from './pages/jaka/jaka';
 
 function App() {
   return (
