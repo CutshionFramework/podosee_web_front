@@ -1,13 +1,16 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
-import Main from "./pages/main/main";
+import { Routes, Route } from 'react-router-dom';
+
+import './App.scss';
+import Main from './pages/main/main';
+import Jaka from './pages/jaka';
 
 function App() {
   return (
     <>
-      <Main />
+      <Routes>
+        <Route path='/' element={<Main />} />
+        <Route path='/jaka' element={<Jaka />} />
+      </Routes>
     </>
   );
 }
