@@ -42,7 +42,7 @@ const ProductCard = ({ title, description, image, link }) => (
       <h2>{title}</h2>
       <p>{description}</p>
       <Link to={link} className={styles.learn_more}>
-        Learn more
+        Learn more &gt;
       </Link>
     </div>
   </div>
