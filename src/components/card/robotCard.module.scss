@@ -1,0 +1,42 @@
+.card {
+  border: 1px solid rgb(196, 196, 196);
+  border-radius: 5px;
+  width: 250px;
+  height: 400px;
+  padding: 10px;
+}
+
+.series_name p {
+  font-weight: bold;
+  color: #c6001d;
+  text-align: center;
+}
+
+.series_img {
+  margin-top: 55px;
+
+  img {
+    width: 250px;
+    height: 100px;
+    object-fit: contain;
+  }
+}
+
+.series_description {
+  margin-top: 70px;
+
+  p {
+    font-size: 12px;
+  }
+}
+
+.series_more {
+  margin-top: 50px;
+  margin-left: 160px;
+
+  p {
+    font-size: 12px;
+    color: #c6001d;
+    font-weight: 500;
+  }
+}

@@ -1,10 +1,15 @@
-import "./App.css";
-import Main from "./pages/main/main";
+import { Routes, Route } from 'react-router-dom';
+import './App.css';
+import Main from './pages/main/main';
+import Jaka from './pages/jaka';
 
 function App() {
   return (
     <>
-      <Main />
+      <Routes>
+        <Route path='/' element={<Main />} />
+        <Route path='/jaka' element={<Jaka />} />
+      </Routes>
     </>
   );
 }
