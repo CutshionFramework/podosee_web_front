@@ -28,7 +28,8 @@ const phoneNumber = (value) => {
   );
 };
 
-const host = "https://api.podosee.com"; // 서버 URL
+const host = import.meta.env.VITE_BASE_URL; // 서버 URL
+const path = "contact/insert";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -42,6 +43,19 @@ const ContactForm = () => {
     message: "",
     agree: false,
   });
+
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const inquiryOptions = [
+    "제품 문의",
+    "대리점 문의",
+    "유지 보수 문의",
+    "기타 문의",
+  ];
+
+  const handleSelect = (option) => {
+    setFormData((prevState) => ({ ...prevState, inquiryType: option }));
+    setIsDropdownOpen(false);
+  };
 
   const handleChange = (e) => {
     const { name, value, type } = e.target;
@@ -80,8 +94,6 @@ const ContactForm = () => {
     };
 
     try {
-      const path = "contact/insert";
-
       console.log(contactData);
 
       const response = await axios({
@@ -110,18 +122,21 @@ const ContactForm = () => {
           <label>
             문의 유형<p>*</p>
           </label>
-          <div className={styles.dropdown}>
-            <select
-              name='inquiryType'
-              value={formData.inquiryType}
-              onChange={handleChange}
-              className={styles.inquiry_select}
-            >
-              <option value='제품 문의'>제품 문의</option>
-              <option value='대리점 문의'>대리점 문의</option>
-              <option value='유지 보수 문의'>유지 보수 문의</option>
-              <option value='기타 문의'>기타 문의</option>
-            </select>
+          <div
+            className={styles.dropdown}
+            onMouseEnter={() => setIsDropdownOpen(true)}
+            onMouseLeave={() => setIsDropdownOpen(false)}
+          >
+            <div className={styles.selected}>{formData.inquiryType}</div>
+            {isDropdownOpen && (
+              <ul className={styles.dropdown_menu}>
+                {inquiryOptions.map((option, index) => (
+                  <li key={index} onClick={() => handleSelect(option)}>
+                    {option}
+                  </li>
+                ))}
+              </ul>
+            )}
           </div>
         </div>
 
