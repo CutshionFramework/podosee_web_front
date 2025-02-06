@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { startTransition, useState } from "react";
 import styles from "./ContactForm.module.scss";
 
 const ContactForm = () => {
@@ -454,7 +454,9 @@ const ContactForm = () => {
           </span>
         </div>
       </form>
-      <button type='submit'>문의하기</button>
+      <button className={styles.summit_button} type='submit'>
+        문의하기
+      </button>
     </div>
   );
 };

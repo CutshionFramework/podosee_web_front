@@ -52,11 +52,11 @@ textarea::placeholder {
   }
 
   .inquiry_select {
-    width: 92%;
+    width: 100%;
     padding: 18px 18px 17px 18px;
     font-size: 14px;
     border: 1px solid #C2C1C1;
-    box-sizing: content-box;
+    // box-sizing: content-box;
     cursor: pointer;
   }
 
@@ -126,10 +126,11 @@ textarea::placeholder {
 }
 
 
-button {
+.summit_button {
+  margin-top: 120px;
+  margin-bottom: 80px;
   width: 380px;
   height: 50px;
-  // grid-column: span 2;
   padding: 12px;
   background-color: #030303;
   color: white;
@@ -141,5 +142,28 @@ button {
 
   &:hover {
     background-color: #333;
+  }
+}
+
+/* 모바일 뷰: 화면 크기가 768px 이하일 때 */
+@media (max-width: 768px) {
+  .contact_container {
+    margin: 0 20px;
+  }
+
+  .contact_form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .row {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .summit_button {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 }
