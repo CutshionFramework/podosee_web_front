@@ -19,7 +19,7 @@ export default function Header() {
   // const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1023 });
   // const isDesktop = useMediaQuery({ minWidth: 1024 });
 
-  const availableLanguages = ["KR", "EN", "CN"]; // 지원하는 언어 목록
+  const availableLanguages = ["KR", "EN"]; // 지원하는 언어 목록
 
   // 모바일에서 메뉴 클릭 시 드롭다운 토글
   const handleDropdownToggle = (index) => {

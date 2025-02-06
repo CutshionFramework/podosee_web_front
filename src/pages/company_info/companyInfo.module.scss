@@ -1,0 +1,142 @@
+.company_info_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.menu_tab {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  padding: 10px;
+
+  .tab_item {
+    display: flex;
+    justify-content: center;;
+    align-items: center;
+    width: 100%;
+    padding: 18px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #1D1D1F;
+    cursor: pointer;
+    border: 1px solid #DDDDDD;
+
+    &.active {
+      background-color: #8a41f0;
+      color: #FFFFFF;
+    }
+
+    &:hover {
+      background-color: #bd96f3;
+      color: #FFFFFF;
+    }
+  }
+}
+
+.ceo_greeting {
+  margin-top: 70px;
+  width: 100%;
+  text-align: center;
+
+  h3 {
+    font-size: 24px;
+    margin-bottom: 60px;
+    color: #1D1D1F;
+  }
+
+  p {
+    margin-bottom: 10px;
+    color: #1D1D1F;
+  }
+
+  .highlight {
+    margin: 35px 0;
+    font-weight: 600;
+    font-size: 24px;
+    color: #8a41f0;
+  }
+
+  .p_margin {
+    margin: 50px 0;
+  }
+
+  .p_margin_botton {
+    margin-bottom: 50px;
+  }
+}
+
+.history_container {
+  width: 100%;
+  margin-top: 100px;
+  color: #1D1D1F;
+
+  .year {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    font-weight: bold;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .month {
+    display: flex;
+    text-align: start;
+    font-weight: 400;
+    font-size: 17px;
+    margin-bottom: 10px;
+    margin-top: 7px;
+  }
+
+  .month_name {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .activity_list {
+    margin-left: 20px; 
+    font-size: 17px;
+    max-width: 55%; 
+    word-wrap: break-word;
+    overflow-wrap: break-word; 
+    white-space: normal; 
+  }
+
+  .activity_item {
+    margin-bottom: 5px;
+  }
+}
+
+.locationContainer {
+  width: 100%;
+  iframe {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+.partnersContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+
+  .partnerCard {
+    width: calc(33.33% - 16px);
+    border-radius: 10px;
+    height: 400px;
+    border: 1px solid rgb(245, 245, 245);
+    background-color: rgb(245, 245, 245);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .menu_tab {
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+  }
+}

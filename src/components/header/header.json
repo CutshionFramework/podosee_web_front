@@ -69,7 +69,7 @@
       {
         "title": "대표이사 인사말",
         "titleEn": "CEO's greeting",
-        "link": "/company/ceo",
+        "link": "/company/greeting",
         "sub": []
       },
       {
@@ -81,7 +81,7 @@
       {
         "title": "오시는 길",
         "titleEn": "Location",
-        "link": "/company/map",
+        "link": "/company/location",
         "sub": []
       },
       {
