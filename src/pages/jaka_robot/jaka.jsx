@@ -8,13 +8,15 @@ import FeatureComponent from '../../components/feature_component/featureComponen
 import data from '../../mock/series.json';
 import styles from './jaka.module.scss';
 
+const title = 'JAKA Collaborative Robots';
+
 export default function Jaka() {
   return (
     <>
       <Header />
       <div className='jaka'>
         <section className='page_title'>
-          <PageTitle />
+          <PageTitle title={title} />
         </section>
 
         <section className='jaka_series'>
@@ -29,11 +31,12 @@ export default function Jaka() {
           <div className={styles.series_title}>
             <p>JAKA Collaborative Robots Series</p>
           </div>
-
-          <div className={styles.series_card}>
-            {data.map((item) => (
-              <RobotCard key={item.id} {...item} />
-            ))}
+          <div className={styles.card_container}>
+            <div className={styles.series_card}>
+              {data.map((item) => (
+                <RobotCard key={item.id} {...item} />
+              ))}
+            </div>
           </div>
         </section>
 
@@ -42,6 +45,9 @@ export default function Jaka() {
         </section>
 
         <section className='feature_component'>
+          <div className={styles.feature_title}>
+            <p>JAKA 협동로봇이 공장 자동화에 적합한 이유</p>
+          </div>
           <FeatureComponent />
         </section>
       </div>
