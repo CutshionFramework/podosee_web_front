@@ -1,0 +1,21 @@
+.feature_items {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  @media (max-width: 1024px) {
+    justify-content: space-around; // 너비가 줄어들면 요소가 균등하게 정렬됨
+  }
+
+  @media (max-width: 768px) {
+    justify-content: space-between; // 태블릿에서는 좌우 균등 정렬
+    margin-top: 40px;
+  }
+
+  @media (max-width: 480px) {
+    flex-direction: column; // 모바일에서는 세로 정렬
+    align-items: center; // 아이템을 가운데 정렬
+    margin-top: 30px;
+  }
+}

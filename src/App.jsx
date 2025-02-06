@@ -1,6 +1,6 @@
-import { Routes, Route } from 'react-router-dom';
-import './App.css';
-import Main from './pages/main/main';
+import { Routes, Route } from "react-router-dom";
+import "./App.css";
+import Main from "./pages/main/main";
 
 import Jaka from "./pages/jaka_robot/jaka";
 import ZuSeries from "./pages/jaka_robot/zuSeries";
