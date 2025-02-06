@@ -1,4 +1,7 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
+import { getNews } from "../../apis/apis";
+import NewsSlider from "../../components/news_slider/newsSlider";
 import Header from "../../components/header/header";
 import Footer from "../../components/footer/footer";
 import styles from "./main.module.scss";
@@ -10,7 +13,7 @@ const PRODUCTS = [
     description:
       "로보틱스 JAKA 코발트는 다목적협동로봇으로, 사람이 필요로 하는 작업을 정확하게 수행하는 지능형 코봇을 만듭니다.",
     image: "main_1.png",
-    link: "/products/jaka",
+    link: "/jaka",
   },
   {
     id: 2,
@@ -18,7 +21,7 @@ const PRODUCTS = [
     description:
       "디지털 월드와 어우러지는 무인 서비스 솔루션 코로나 시대에서부터 시작된 비대면 서비스에 대한 높은 수요로 인구해결을 담당합니다.",
     image: "main_2.png",
-    link: "/products/kiosk",
+    link: "/integrated",
   },
   {
     id: 3,
@@ -26,29 +29,34 @@ const PRODUCTS = [
     description:
       "로봇이나 센서와 자율제어 자동 주행을 시행! AMR이 만들 자율화된 세상을 꿈꿉니다.",
     image: "main_3.png",
-    link: "/products/amr",
+    link: "/integrated/amr",
   },
 ];
 
 const ProductCard = ({ title, description, image, link }) => (
-  <div className={styles.productCard}>
-    <div className={styles.imageContainer}>
-      <img src={`/src/assets/main_img/${image}`} alt={title} />
+  <div className={styles.product_card}>
+    <div className={styles.image_container}>
+      <img src={`/assets/${image}`} alt={title} />
     </div>
     <div className={styles.content}>
       <h2>{title}</h2>
       <p>{description}</p>
-      <a href={link} className={styles.learnMore}>
-        Learn more
-      </a>
+      <Link to={link} className={styles.learn_more}>
+        Learn more &gt;
+      </Link>
     </div>
   </div>
 );
 
 export default function Main() {
   const videoRef = useRef(null);
+  const [newsData, setNewsData] = useState([]);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+
+    getNewsData();
+
     // 비디오 자동 재생 설정
     if (videoRef.current) {
       videoRef.current.play().catch((error) => {
@@ -57,28 +65,36 @@ export default function Main() {
     }
   }, []);
 
+  const getNewsData = async () => {
+    const response = await getNews();
+    setNewsData(response);
+    console.log(response);
+  };
+
   return (
-    <div className={styles.mainContainer}>
+    <div className={styles.main_container}>
       <Header />
 
-      <section className={styles.mainSection}>
+      <section className={styles.main_section}>
         <video
           ref={videoRef}
-          className={styles.mainVideo}
+          className={styles.main_video}
           loop
           muted
           playsInline
         >
-          <source src='/src/assets/main_img/home_main.mp4' type='video/mp4' />
+          <source src='/assets/home_main.mp4' type='video/mp4' />
           Your browser does not support the video tag.
         </video>
       </section>
 
-      <section className={styles.productsSection}>
+      <section className={styles.products_section}>
         {PRODUCTS.map((product) => (
           <ProductCard key={product.id} {...product} />
         ))}
       </section>
+
+      <NewsSlider newsData={newsData}></NewsSlider>
 
       <Footer />
     </div>
