@@ -33,7 +33,7 @@ function App() {
 
         {/* Company info */}
         <Route path='/company' element={<CompanyInfo />} />
-        <Route path='/company/:id' element={<CompanyInfo />} />
+        {/* <Route path='/company/:id' element={<CompanyInfo />} /> */}
 
         {/* News */}
         <Route path='/news' element={<News />} />

@@ -1,0 +1,80 @@
+.page_subtitle p {
+  margin-top: 30px;
+  font-size: 10px;
+  text-align: center;
+}
+
+.container {
+  width: 80%;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-top: 30px;
+}
+
+.tabbox {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.mobile_tabbox {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.submenu_focused, .submenu {
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;  
+  text-align: center;
+  cursor: pointer;
+}
+
+.submenu_focused {
+  flex: 1;
+  background-color: #69318F;
+  color: white;
+}
+
+.submenu {
+  flex: 1;
+  background-color: white;
+  color: black;
+}
+
+.ceo_greeting {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ceo_greeting p {
+  text-align: center;
+  line-height: 30px;
+}
+
+.ceo_greeting strong {
+  font-size: 25px;
+}
+
+.box {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.partner_imgbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  border: 1px solid rgb(245, 245, 245)
+}
+
+.partenrImg {
+  object-fit: contain;
+}

@@ -69,25 +69,25 @@
       {
         "title": "대표이사 인사말",
         "titleEn": "CEO's greeting",
-        "link": "/company/ceo",
+        "link": "/company",
         "sub": []
       },
       {
         "title": "연혁",
         "titleEn": "History",
-        "link": "/company/history",
+        "link": "/company",
         "sub": []
       },
       {
         "title": "오시는 길",
         "titleEn": "Location",
-        "link": "/company/map",
+        "link": "/company",
         "sub": []
       },
       {
         "title": "제휴사",
         "titleEn": "Partners",
-        "link": "/company/partners",
+        "link": "/company",
         "sub": []
       }
     ]
