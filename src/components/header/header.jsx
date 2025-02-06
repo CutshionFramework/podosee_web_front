@@ -5,8 +5,6 @@ import { Link } from "react-router-dom";
 import menuData from "./header.json";
 import styles from "./header.module.scss";
 
-// import podoseeLogo from "../../assets/podosee.png";
-
 import { RxHamburgerMenu } from "react-icons/rx";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { MdOutlineKeyboardArrowUp } from "react-icons/md";

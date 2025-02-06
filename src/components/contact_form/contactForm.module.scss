@@ -1,0 +1,145 @@
+.contact_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center ;
+  justify-content: center;
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px;
+  background: #f8f8fa;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  font-weight: 500;
+  font-size: 16px;
+  p {
+    display: inline;
+    color: #FF3120;
+  }
+}
+
+input, textarea {
+  padding: 15px;
+  border: 1px solid #C2C1C1;
+  font-size: 14px;
+  height: 23px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  font-size: 14px; 
+  color: #1D1D1F;
+}
+
+.contact_form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+  row-gap: 13px;
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 15px; 
+  }
+
+  .dropdown {
+    height: 100%;
+  }
+
+  .inquiry_select {
+    width: 92%;
+    padding: 18px 18px 17px 18px;
+    font-size: 14px;
+    border: 1px solid #C2C1C1;
+    box-sizing: content-box;
+    cursor: pointer;
+  }
+
+  .inquiry_select:hover {
+    background-color: #f0f0f0; /* Hover 시 배경색 변경 */
+  }
+
+  .inquiry_select:focus {
+    outline: none;
+    border-color: #333; /* 선택 시 테두리 색 변경 */
+  }
+
+  .title {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 15px;
+  }
+
+  .content {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 15px;
+    
+    textarea {
+      resize: none;
+      height: 273px;
+    }
+    
+  }
+
+  .privacy_policy {
+    grid-column: span 2;
+    font-size: 12px;
+    padding: 10px;
+    border: 1px solid #C2C1C1;
+    background: #ffffff;
+    margin-bottom: 10px;
+    max-height: 250px;
+    overflow-y: auto;
+    li {
+      list-style-type: none;
+    }
+    
+  }
+
+  .checkbox_row {
+    grid-column: span 2;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 15px;
+    justify-content: end;
+  
+    input {
+      width: 16px;
+      height: 16px;
+    }
+  
+    span {
+      font-size: 11px;
+    }
+  }
+}
+
+
+button {
+  width: 380px;
+  height: 50px;
+  // grid-column: span 2;
+  padding: 12px;
+  background-color: #030303;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+
+
+  &:hover {
+    background-color: #333;
+  }
+}
