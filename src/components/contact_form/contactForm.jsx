@@ -1,4 +1,4 @@
-import React, { startTransition, useState } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
@@ -64,7 +64,8 @@ const ContactForm = () => {
     }
 
     let contactData = {
-      reciverEmail: "podosee@podosee.com",
+      // reciverEmail: "podosee@podosee.com",
+      reciverEmail: "hillo@podosee.com",
       email: formData.email,
       userInfo: formData.name + "/" + formData.jobTitle,
       company: formData.companyName,
@@ -79,23 +80,23 @@ const ContactForm = () => {
     };
 
     try {
-      const path = "contact/insert3";
+      const path = "contact/insert";
 
       console.log(contactData);
 
-      // const response = await axios({
-      //   method: "POST",
-      //   url: `${host}/${path}`, // 서버의 이메일 전송 처리 엔드포인트
-      //   timeout: 2000,
-      //   responseType: "json",
-      //   data: contactData,
-      // });
+      const response = await axios({
+        method: "POST",
+        url: `${host}/${path}`,
+        timeout: 2000,
+        responseType: "json",
+        data: contactData,
+      });
 
-      // if (response.data.result === 0) {
-      //   alert("전송 실패");
-      // } else {
-      //   alertContent();
-      // }
+      if (response.data.result === 0) {
+        alertContent();
+      } else {
+        alert("전송 실패! 다시 시도해주세요.");
+      }
     } catch (error) {
       console.log(error);
       alert("전송 실패! 다시 시도해주세요.");
