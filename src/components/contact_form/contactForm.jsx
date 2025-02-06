@@ -1,5 +1,34 @@
 import React, { startTransition, useState } from "react";
+import axios from "axios";
+import Swal from "sweetalert2";
+import withReactContent from "sweetalert2-react-content";
 import styles from "./ContactForm.module.scss";
+
+// SweetAlert 설정
+const MySwal = withReactContent(Swal);
+
+const alertContent = () => {
+  MySwal.fire({
+    title: "감사합니다!",
+    text: "메시지가 성공적으로 발송되었습니다.",
+    icon: "success",
+    timer: 2000,
+    timerProgressBar: true,
+    showConfirmButton: false,
+  });
+};
+
+const phoneNumber = (value) => {
+  //휴대폰 번호 "-" 대시 자동 입력
+
+  value = value.replace(/[^0-9]/g, "");
+  return value.replace(
+    /(^02.{0}|^01.{1}|[0-9]{3})([0-9]+)([0-9]{4})/,
+    "$1-$2-$3"
+  );
+};
+
+const host = "https://api.podosee.com"; // 서버 URL
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -9,7 +38,7 @@ const ContactForm = () => {
     name: "",
     phone: "",
     email: "",
-    subject: "",
+    title: "",
     message: "",
     agree: false,
   });
@@ -22,30 +51,60 @@ const ContactForm = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleChangePhoneNum = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevState) => ({ ...prevState, [name]: phoneNumber(value) }));
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (!formData.agree) {
       alert("개인정보 수집 및 이용 동의가 필요합니다.");
       return;
     }
-    console.log("Form submitted:", formData);
-    alert("문의가 성공적으로 제출되었습니다!");
+
+    let contactData = {
+      reciverEmail: "podosee@podosee.com",
+      email: formData.email,
+      userInfo: formData.name + "/" + formData.jobTitle,
+      company: formData.companyName,
+      companySize: "포도씨에선 미수집",
+      type: "포도씨에선 미수집",
+      message:
+        formData.inquiryType + "/" + formData.title + "\r\n" + formData.message,
+      industry: "포도씨에선 미수집",
+      tel: formData.phone,
+      result: true,
+      chackbox: formData.agree,
+    };
+
+    try {
+      const path = "contact/insert3";
+
+      console.log(contactData);
+
+      // const response = await axios({
+      //   method: "POST",
+      //   url: `${host}/${path}`, // 서버의 이메일 전송 처리 엔드포인트
+      //   timeout: 2000,
+      //   responseType: "json",
+      //   data: contactData,
+      // });
+
+      // if (response.data.result === 0) {
+      //   alert("전송 실패");
+      // } else {
+      //   alertContent();
+      // }
+    } catch (error) {
+      console.log(error);
+      alert("전송 실패! 다시 시도해주세요.");
+    }
   };
 
   return (
     <div className={styles.contact_container}>
-      <form onSubmit={handleSubmit} className={styles.contact_form}>
-        {/* <div className={styles.row}>
-          <label>
-            문의 유형<p>*</p>
-          </label>
-          <input
-            type='text'
-            name='inquiryType'
-            value={formData.inquiryType}
-            readOnly
-          />
-        </div> */}
+      <form className={styles.contact_form}>
         <div className={styles.row}>
           <label>
             문의 유형<p>*</p>
@@ -112,7 +171,7 @@ const ContactForm = () => {
             type='text'
             name='phone'
             value={formData.phone}
-            onChange={handleChange}
+            onChange={handleChangePhoneNum}
             placeholder='연락처를 입력하세요.'
           />
         </div>
@@ -136,8 +195,8 @@ const ContactForm = () => {
           </label>
           <input
             type='text'
-            name='subject'
-            value={formData.subject}
+            name='title'
+            value={formData.title}
             onChange={handleChange}
             placeholder='제목을 입력하세요.'
           />
@@ -454,7 +513,11 @@ const ContactForm = () => {
           </span>
         </div>
       </form>
-      <button className={styles.summit_button} type='submit'>
+      <button
+        className={styles.summit_button}
+        type='submit'
+        onClick={handleSubmit}
+      >
         문의하기
       </button>
     </div>
