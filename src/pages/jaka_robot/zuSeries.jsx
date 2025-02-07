@@ -26,7 +26,7 @@ export default function ZuSeries() {
         <PageTitle title={pageTitle} />
       </section>
 
-      <section className='jaka_series'>
+      <section className='zu_series'>
         <div className={styles.page_subtitle}>
           <p>
             JAKA Zu 협동 로봇은 JAKA 의 최첨단 로봇 기술을 집약한 제품으로 토크
