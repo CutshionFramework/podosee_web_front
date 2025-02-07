@@ -6,7 +6,7 @@ import styles from "./contact.module.scss";
 
 export default function Contact() {
   const title = "문의하기";
-  const image = "/assets/page_title.png";
+  const image = "/assets/page_title/page_title.png";
 
   return (
     <div>

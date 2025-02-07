@@ -33,7 +33,7 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <Link to='/' className={isMobile ? styles.logo_mobile : styles.logo}>
-        <img src='/assets/podosee.png' alt='Podosee Logo' />
+        <img src='/assets/icon/podosee.png' alt='Podosee Logo' />
       </Link>
 
       {isMobile ? (

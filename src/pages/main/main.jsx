@@ -21,7 +21,7 @@ const PRODUCTS = [
     description:
       "디지털 월드와 어우러지는 무인 서비스 솔루션 코로나 시대에서부터 시작된 비대면 서비스에 대한 높은 수요로 인구해결을 담당합니다.",
     image: "main_2.png",
-    link: "/integrated",
+    link: "/integrated/aikiosk",
   },
   {
     id: 3,
@@ -36,7 +36,7 @@ const PRODUCTS = [
 const ProductCard = ({ title, description, image, link }) => (
   <div className={styles.product_card}>
     <div className={styles.image_container}>
-      <img src={`/assets/${image}`} alt={title} />
+      <img src={`/assets/main_page/${image}`} alt={title} />
     </div>
     <div className={styles.content}>
       <h2>{title}</h2>
@@ -83,7 +83,7 @@ export default function Main() {
           muted
           playsInline
         >
-          <source src='/assets/home_main.mp4' type='video/mp4' />
+          <source src='/assets/main_page/home_main.mp4' type='video/mp4' />
           Your browser does not support the video tag.
         </video>
       </section>
