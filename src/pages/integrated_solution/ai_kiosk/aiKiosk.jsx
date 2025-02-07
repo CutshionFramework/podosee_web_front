@@ -118,7 +118,9 @@ const CommmonComponent = ({ currentTab }) => {
 
       <h2>제품 스펙</h2>
 
-      <img className={styles.spec_img} src={specImage} alt={specImage} />
+      <div className={styles.spec_img_container}>
+        <img className={styles.spec_img} src={specImage} alt={specImage} />
+      </div>
 
       <img
         className={

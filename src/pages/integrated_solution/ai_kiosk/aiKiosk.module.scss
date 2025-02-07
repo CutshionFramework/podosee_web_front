@@ -6,6 +6,10 @@
 
   .tab_container {
     width: 70%;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
   }
 }
 
@@ -29,14 +33,25 @@
 
   h2 {
     text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+
+  .spec_img_container {
+    width: 100%;
   }
 
   .spec_img {
     width: 100%;
+
+    @media (max-width: 768px) {
+      object-fit: contain;
+    }
   }
 
   .freephoto_img {
     width: 100%;
+    margin-top: 100px;
   }
 
   .none_img {
@@ -44,33 +59,48 @@
   }
 
   .freephoto_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     width: 100%;
-    height: 500px;
     border: 1px solid #DDDDDD;
-    padding: 10px;
+    place-items: center;  /* 모든 아이템을 수직 & 수평 중앙 정렬 */
+
     img {
-      max-width: 100%;
-      max-height: 100%;
-      object-fit: contain; // 이미지 비율 유지하며 카드 크기에 맞춤
+      width: 80%;
+      height: 80%;
+      object-fit: contain;
+      display: block; /* img 요소의 기본 여백 제거 */
+      margin: auto; /* 자동 마진으로 중앙 정렬 */
+    }
+
+    @media (max-width: 768px) {
+      grid: unset;
     }
   }
 
   .feveralarm_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     width: 100%;
-    height: 500px;
-    border: 1px solid #DDDDDD;
-    padding: 10px;
+    place-items: center;  /* 모든 아이템을 수직 & 수평 중앙 정렬 */
+
+    gap: 20px;
     img {
-      max-width: 100%;
-      max-height: 100%;
-      object-fit: contain; // 이미지 비율 유지하며 카드 크기에 맞춤
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block; /* img 요소의 기본 여백 제거 */
+      margin: auto; /* 자동 마진으로 중앙 정렬 */
+    }
+
+    @media (max-width: 768px) {
+      grid: unset;
     }
   }
 
   .vandingmachine_container {
     width: 100%;
     border: 1px solid #DDDDDD;
-    padding: 10px;
     img {
       max-width: 100%;
       max-height: 100%;

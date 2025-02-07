@@ -30,6 +30,7 @@ function App() {
         <Route path='/jaka/minicobo' element={<MiniCobo />} />
 
         {/* Integrated solution */}
+        <Route path='/integrated/' element={<AIKiosk />} />
         <Route path='/integrated/aikiosk' element={<AIKiosk />} />
         <Route path='/integrated/amr' element={<AMR />} />
         <Route path='/integrated/aikiosk/:id' element={<AIKiosk />} />
