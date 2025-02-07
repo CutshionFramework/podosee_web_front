@@ -1,0 +1,82 @@
+.page_subtitle p {
+  margin-top: 50px;
+  font-size: 15px;
+  text-align: center;
+
+  @media (max-width: 768px) {
+    font-size: 9px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 8px;
+  }
+}
+
+.feature_title {
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+
+  @media (max-width: 1024px) {
+    font-size: 26px;
+    margin-top: 100px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 24px;
+    margin-top: 80px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 20px;
+    margin-top: 60px;
+  }
+}
+
+.product_title {
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+
+  @media (max-width: 1024px) {
+    font-size: 26px;
+    margin-top: 100px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 24px;
+    margin-top: 80px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 20px;
+    margin-top: 60px;
+  }
+}
+
+.chart_img {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+
+  img {
+    width: 1300px;
+    max-width: 100%; // 화면 크기에 맞게 조정
+
+    @media (max-width: 1024px) {
+      width: 1000px;
+    }
+
+    @media (max-width: 768px) {
+      width: 700px;
+    }
+
+    @media (max-width: 480px) {
+      width: 100%; // 모바일에서는 가득 차게 표시
+    }
+  }
+}
