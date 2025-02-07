@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
-import styles from "./ContactForm.module.scss";
+import styles from "./contactForm.module.scss";
 
 // SweetAlert 설정
 const MySwal = withReactContent(Swal);

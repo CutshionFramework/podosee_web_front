@@ -1,0 +1,16 @@
+.description {
+  margin-top: 100px;
+  margin-bottom: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+
+  p {
+    text-align: center;
+    margin: 3px 0;
+    font-size: 16px;
+    color: #1d1d1f;
+  }
+}

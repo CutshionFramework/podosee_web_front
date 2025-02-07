@@ -8,7 +8,16 @@ import FeatureComponent from '../../components/feature_component/featureComponen
 import data from '../../mock/series.json';
 import styles from './jaka.module.scss';
 
-const title = 'JAKA Collaborative Robots';
+const pageTitle = 'JAKA Collaborative Robots';
+
+const videoAbout = [
+  {
+    title: 'JAKA 협동로봇의 실제 활용 사례',
+    description:
+      '3-20kg의 가반 하중, 넓은 작업 반경, 6관절 구성을 갖춘 JAKA 코봇은 수백 개의 제조업체와 공장에서 자카코봇을 통해 시설을 자동화하는 데 도움이 되었습니다. 자동차부터 물류, 전자에서 의료 제조에 이르기까지 다양한 산업 분야에서 첨단 로봇 기술과 인간과 로봇의 자연스러운 상호작용을 통해 이점을 누릴 수 있습니다.',
+    videoID: 'zebaRutQwyU&t',
+  },
+];
 
 export default function Jaka() {
   return (
@@ -16,7 +25,7 @@ export default function Jaka() {
       <Header />
       <div className='jaka'>
         <section className='page_title'>
-          <PageTitle title={title} />
+          <PageTitle title={pageTitle} />
         </section>
 
         <section className='jaka_series'>
@@ -41,7 +50,14 @@ export default function Jaka() {
         </section>
 
         <section className='video_component'>
-          <VideoComponent />
+          {videoAbout.map((video, index) => (
+            <VideoComponent
+              key={index}
+              title={video.title}
+              description={video.description}
+              videoID={video.videoID}
+            />
+          ))}
         </section>
 
         <section className='feature_component'>

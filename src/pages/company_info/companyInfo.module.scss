@@ -1,0 +1,175 @@
+.company_info_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.ceo_greeting {
+  margin-top: 70px;
+  width: 100%;
+  text-align: center;
+
+  h3 {
+    font-size: 24px;
+    margin-bottom: 60px;
+    color: #1D1D1F;
+  }
+
+  p {
+    margin-bottom: 10px;
+    color: #1D1D1F;
+  }
+
+  .highlight {
+    margin: 35px 0;
+    font-weight: 600;
+    font-size: 24px;
+    color: #8a41f0;
+  }
+
+  .p_margin {
+    margin: 50px 0;
+  }
+
+  .p_margin_botton {
+    margin-bottom: 50px;
+  }
+}
+
+.history_container {
+  width: 100%;
+  margin-top: 100px;
+  color: #1D1D1F;
+
+  .year {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    font-weight: bold;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .month {
+    display: flex;
+    text-align: start;
+    font-weight: 400;
+    font-size: 17px;
+    margin-bottom: 10px;
+    margin-top: 7px;
+  }
+
+  .month_name {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .activity_list {
+    margin-left: 20px; 
+    font-size: 17px;
+    max-width: 55%; 
+    word-wrap: break-word;
+    overflow-wrap: break-word; 
+    white-space: normal; 
+  }
+
+  .activity_item {
+    margin-bottom: 5px;
+  }
+}
+
+.location_div {
+  width: 70%;
+  .location_container {
+    width: 100%;
+    iframe {
+      width: 100%;
+      height: 350px;
+    }
+
+    .location_info {
+      display: flex;
+      margin-top: 5px;
+      padding: 30px;
+      background-color: #f8f8f8;
+      .address{
+        margin-right: 5vw;
+      }
+    }
+  }
+
+  
+}
+
+.partner_div {
+  width: 70%;
+
+  .partners_container {
+    .partner_group {
+      margin-bottom: 50px;
+      h2 {
+        padding-left: 5px;
+        color: #1d1d1f;
+        border-left-style: solid;
+        border-left-width: 4px;
+        border-left-color: #8a41f0;
+        margin-bottom: 25px;
+      }
+
+      .partner_list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px; // 카드 간격 조정
+
+        .partner_card {
+          width: 200px;
+          height: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 10px;
+          border: 1px solid #DDDDDD;
+          padding: 5px 20px;
+
+          a {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+          }
+
+          img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain; // 이미지 비율 유지하며 카드 크기에 맞춤
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+@media (max-width: 768px) {
+  .location_div {
+    width: 90%;
+    .location_container {
+      width: 100%;
+      iframe {
+        width: 100%;
+        height: 350px;
+      }
+
+      .location_info {
+        flex-direction: column;
+        .address{
+          padding-bottom: 20px;
+        }
+      }
+    }
+  }
+}

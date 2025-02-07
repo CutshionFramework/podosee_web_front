@@ -35,7 +35,7 @@ const features = [
     icon: '/src/assets/feature_icons/graphic_programming.png',
     name: '그래팩 프로그래밍',
     description:
-      '직관적인 그래픽 프로그래밍 소프트웨어는 프로그래밍 경험이 전혀 필요하지 않습니다. 누구나 쉽게 위치와 작업을 \n설정하고 조정할 수 있습니다.',
+      '직관적인 그래픽 프로그래밍 소프트웨어는 \n프로그래밍 경험이 전혀 필요하지 않습니다. \n누구나 쉽게 위치와 작업을 설정하고 \n조정할 수 있습니다.',
   },
 ];
 

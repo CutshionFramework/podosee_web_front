@@ -8,7 +8,9 @@ import AllInOne from "./pages/jaka_robot/allInOne";
 import ProSeries from "./pages/jaka_robot/proSeries";
 import MiniCobo from "./pages/jaka_robot/miniCobo";
 
-import IntegratedSolution from "./pages/integrated_solution/integratedSolution";
+import AIKiosk from "./pages/integrated_solution/ai_kiosk/aiKiosk";
+import AMR from "./pages/integrated_solution/amr/amr";
+
 import CompanyInfo from "./pages/company_info/companyInfo";
 import News from "./pages/news/news";
 import Contact from "./pages/contact/contact";
@@ -28,8 +30,10 @@ function App() {
         <Route path='/jaka/minicobo' element={<MiniCobo />} />
 
         {/* Integrated solution */}
-        <Route path='/integrated' element={<IntegratedSolution />} />
-        <Route path='/integrated/:id' element={<IntegratedSolution />} />
+        <Route path='/integrated/aikiosk' element={<AIKiosk />} />
+        <Route path='/integrated/amr' element={<AMR />} />
+        <Route path='/integrated/aikiosk/:id' element={<AIKiosk />} />
+        <Route path='/integrated/amr/:id' element={<AMR />} />
 
         {/* Company info */}
         <Route path='/company' element={<CompanyInfo />} />

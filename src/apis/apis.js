@@ -11,7 +11,7 @@ export const getPartner = async () => {
 
 export const getHistory = async () => {
   try {
-    const res = await historyApi.get(`/getHistory`, {
+    const res = await historyApi.get(`/getHistory?type=2`, {
       params: { type: 2 },
     });
     return res.data;

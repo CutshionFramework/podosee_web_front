@@ -16,10 +16,8 @@ export default function Header() {
   const [selectedLang, setSelectedLang] = useState("KR"); // 기본 언어 KR
 
   const isMobile = useMediaQuery({ maxWidth: 767 });
-  // const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1023 });
-  // const isDesktop = useMediaQuery({ minWidth: 1024 });
 
-  const availableLanguages = ["KR", "EN", "CN"]; // 지원하는 언어 목록
+  const availableLanguages = ["KR", "EN"]; // 지원하는 언어 목록
 
   // 모바일에서 메뉴 클릭 시 드롭다운 토글
   const handleDropdownToggle = (index) => {
@@ -35,7 +33,7 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <Link to='/' className={isMobile ? styles.logo_mobile : styles.logo}>
-        <img src='/assets/podosee.png' alt='Podosee Logo' />
+        <img src='/assets/icon/podosee.png' alt='Podosee Logo' />
       </Link>
 
       {isMobile ? (

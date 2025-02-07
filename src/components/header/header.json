@@ -42,18 +42,6 @@
         "sub": []
       },
       {
-        "title": "피버알람",
-        "titleEn": "FeverAlarm",
-        "link": "/integrated/feveralarm",
-        "sub": []
-      },
-      {
-        "title": "자판기",
-        "titleEn": "VendingMachine",
-        "link": "/integrated/vandingmachine",
-        "sub": []
-      },
-      {
         "title": "AMR",
         "titleEn": "AMR",
         "link": "/integrated/amr",
@@ -69,7 +57,7 @@
       {
         "title": "대표이사 인사말",
         "titleEn": "CEO's greeting",
-        "link": "/company/ceo",
+        "link": "/company/greeting",
         "sub": []
       },
       {
@@ -81,7 +69,7 @@
       {
         "title": "오시는 길",
         "titleEn": "Location",
-        "link": "/company/map",
+        "link": "/company/location",
         "sub": []
       },
       {
