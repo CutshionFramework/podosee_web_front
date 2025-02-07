@@ -1,0 +1,26 @@
+.product_container {
+  margin-top: 100px;
+}
+
+.product_info {
+  display: flex;
+  margin: 0 20px;
+  border: 1px solid rgb(230, 230, 230);
+  border-radius: 7px;
+}
+
+.product_img {
+  width: 40vw;
+  height: 400px;
+
+  img {
+    width: 600px;
+    height: 400px;
+  }
+}
+
+.product_about {
+  width: 60vw;
+  margin-top: 100px;
+  margin-left: 40px;
+}
