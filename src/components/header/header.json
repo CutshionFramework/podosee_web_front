@@ -42,18 +42,6 @@
         "sub": []
       },
       {
-        "title": "피버알람",
-        "titleEn": "FeverAlarm",
-        "link": "/integrated/feveralarm",
-        "sub": []
-      },
-      {
-        "title": "자판기",
-        "titleEn": "VendingMachine",
-        "link": "/integrated/vandingmachine",
-        "sub": []
-      },
-      {
         "title": "AMR",
         "titleEn": "AMR",
         "link": "/integrated/amr",

@@ -1,6 +1,7 @@
 import Header from "../../components/header/header";
 import Footer from "../../components/footer/footer";
 import PageTitle from "../../components/page_title/pageTitle";
+import MenuTab from "../../components/menu_tab/menuTab"; // 추가
 import styles from "./companyInfo.module.scss";
 import { useParams, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
@@ -23,22 +24,13 @@ export default function CompanyInfo() {
   useEffect(() => {
     getHistoryData();
     getPartnerData();
-
-    console.log("partnerData : ", partnerData);
   }, []);
 
   useEffect(() => {
-    console.log("id: ", id);
-
-    if (id === "greeting") {
-      setCurrentTab(0);
-    } else if (id === "history") {
-      setCurrentTab(1);
-    } else if (id === "location") {
-      setCurrentTab(2);
-    } else if (id === "partners") {
-      setCurrentTab(3);
-    }
+    if (id === "greeting") setCurrentTab(0);
+    else if (id === "history") setCurrentTab(1);
+    else if (id === "location") setCurrentTab(2);
+    else if (id === "partners") setCurrentTab(3);
   }, [id]);
 
   const getPartnerData = async () => {
@@ -65,19 +57,12 @@ export default function CompanyInfo() {
       <Header />
       <PageTitle title='회사 소개' />
       <div className={styles.company_info_container}>
-        <div className={styles.menu_tab}>
-          {menuArr.map((menu, index) => (
-            <div
-              key={index}
-              className={`${styles.tab_item} ${
-                currentTab === index ? styles.active : ""
-              }`}
-              onClick={() => selectMenuHandler(index)}
-            >
-              {menu.krName}
-            </div>
-          ))}
-        </div>
+        <MenuTab
+          menuArr={menuArr}
+          currentTab={currentTab}
+          onSelect={selectMenuHandler}
+        />
+
         <div>{currentTab === 0 ? <CeoGreeting /> : null}</div>
         <div>
           {currentTab === 1 ? <History historyData={historyData} /> : null}

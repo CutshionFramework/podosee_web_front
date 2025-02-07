@@ -5,37 +5,6 @@
   padding: 20px;
 }
 
-.menu_tab {
-  display: flex;
-  justify-content: space-around;
-  width: 70%;
-  padding: 10px;
-  margin-bottom: 100px;
-
-  .tab_item {
-    display: flex;
-    justify-content: center;;
-    align-items: center;
-    width: 100%;
-    padding: 18px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #1D1D1F;
-    cursor: pointer;
-    border: 1px solid #DDDDDD;
-
-    &.active {
-      background-color: #8a41f0;
-      color: #FFFFFF;
-    }
-
-    &:hover {
-      background-color: #bd96f3;
-      color: #FFFFFF;
-    }
-  }
-}
-
 .ceo_greeting {
   margin-top: 70px;
   width: 100%;
@@ -186,12 +155,6 @@
 
 
 @media (max-width: 768px) {
-  .menu_tab {
-    flex-direction: column;
-    align-items: center;
-    width: 80%;
-  }
-
   .location_div {
     width: 90%;
     .location_container {

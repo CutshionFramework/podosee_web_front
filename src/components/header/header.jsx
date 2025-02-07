@@ -16,8 +16,6 @@ export default function Header() {
   const [selectedLang, setSelectedLang] = useState("KR"); // 기본 언어 KR
 
   const isMobile = useMediaQuery({ maxWidth: 767 });
-  // const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1023 });
-  // const isDesktop = useMediaQuery({ minWidth: 1024 });
 
   const availableLanguages = ["KR", "EN"]; // 지원하는 언어 목록
 
