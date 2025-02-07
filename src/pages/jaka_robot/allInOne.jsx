@@ -89,7 +89,7 @@ export default function AllInOne() {
 
         <div className={styles.chart_img}>
           <img
-            src='/src/assets/product_comparison/jaka_zu_product_comparison.png'
+            src='/src/assets/product_comparison/jaka_all_in_one_product_comparison.png'
             alt=''
           />
         </div>

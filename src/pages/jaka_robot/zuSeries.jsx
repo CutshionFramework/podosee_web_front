@@ -4,7 +4,7 @@ import PageTitle from '../../components/page_title/pageTitle';
 import RobotCard from '../../components/card/robotCard';
 import VideoComponent from '../../components/video_component/videoComponent';
 
-import data from '../../mock/zu_collaborative.json';
+import data from '../../mock/zu.json';
 import styles from './zuSeries.module.scss';
 
 const pageTitle = 'JAKA Zu Collaborative Robots';
