@@ -27,7 +27,7 @@
 }
 
 .video_about {
-  width: 50%;
+  width: 50vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -79,9 +79,10 @@
 }
 
 .video_thumbnail {
-  width: 100%;
+  width: 50vw;
   display: flex;
   justify-content: center;
+  align-items: center;
 
   @media (max-width: 768px) {
     width: 90%;
@@ -93,7 +94,6 @@
 }
 
 .video_thumbnail img {
-  max-width: 500px;
   width: 100%; // 반응형 크기 조정
   cursor: pointer;
 
