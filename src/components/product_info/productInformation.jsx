@@ -6,7 +6,7 @@ export default function ProductInformation() {
       <div className={styles.product_info}>
         <section className='product_img'>
           <div className={styles.product_img}>
-            <img src='/src/assets/jaka_minicobo/minicobo_use_case.png' alt='' />
+            <img src='/assets/jaka_minicobo/minicobo_use_case.png' alt='' />
           </div>
         </section>
         <section className='product_about'>

@@ -63,7 +63,7 @@ export default function ZuSeries() {
 
         <div className={styles.chart_img}>
           <img
-            src='/src/assets/product_comparison/jaka_zu_product_comparison.png'
+            src='/assets/product_comparison/ko/jaka_zu_product_comparison_ko.png'
             alt=''
           />
         </div>

@@ -44,7 +44,7 @@ export default function Jaka() {
 
         <div className={styles.chart_img}>
           <img
-            src='/src/assets/product_comparison/jaka_minicobo_product_comparison.png'
+            src='/assets/product_comparison/ko/jaka_minicobo_product_comparison_ko.png'
             alt=''
           />
         </div>
