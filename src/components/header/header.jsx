@@ -54,9 +54,13 @@ export default function Header() {
       ) : null}
 
       <nav
-        className={`${styles.nav} ${
-          isMobile ? (menuOpen ? styles.nav_open : styles.nav_closed) : ""
-        }`}
+        className={
+          isMobile
+            ? menuOpen
+              ? styles.nav_open
+              : styles.nav_closed
+            : styles.nav
+        }
       >
         <ul>
           {menu.map((menu, index) => (

@@ -26,8 +26,8 @@
 /* 네비게이션 공통 스타일 */
 .nav {
   display: flex;
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
   padding-right: 12vw;
 
   @media (max-width: 1023px) {
@@ -163,18 +163,30 @@
   background: white;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   z-index: 100;
+  padding: 0;
 
   ul {
-    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1b1b1b;
   }
 
   .nav_item {
+    width: 100%;
     text-align: left;
-    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
     border-bottom: 1px solid #ddd;
 
     .dropdown {
-      padding-left: 180px;
       position: static;
       display: block;
       background: none;
@@ -183,6 +195,54 @@
       .dropdown_item {
         text-align: left;
         padding-left: 50px;
+        padding-top: 10px;
+      }
+    }
+  }
+
+  .language_selector {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    cursor: pointer;
+
+    button {
+      display:flex;
+      text-align: center;
+      align-items:center;
+      width: 100%;
+      background: none;
+      border: none;
+      font-size: 18px;
+      font-weight: 600;
+      padding: 0;
+      text-align: left;
+      cursor: pointer;
+
+    }
+  }
+
+  .language_dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    z-index: 100;
+    flex-direction: column;
+    
+
+    li {
+      flex-direction: row;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding-left: 24px;
+      font-weight: 600;
+      width: 100%;
+      cursor: pointer;
+      &:hover {
+        background-color: #f0f0f0;
       }
     }
   }
