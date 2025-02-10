@@ -17,7 +17,7 @@ export default function ZuSeriesPage() {
   const { id } = useParams();
   const idNumber = Number(id);
 
-  const zuData = zuSeriesData[idNumber];
+  const seriesData = zuSeriesData[idNumber];
 
   const zu3Data = zu3FeaturesData;
   const zu5Data = zu5FeaturesData;
@@ -28,24 +28,27 @@ export default function ZuSeriesPage() {
     <div className='zuseries_page'>
       <Header />
       <section className='detail_page_title'>
-        <PageTitle title={zuData.pageTitle} />
+        <PageTitle title={seriesData.pageTitle} />
       </section>
 
       <section className='detail_product_info'>
-        <ProductInformation imgSrc={zuData.imgSrc} about={zuData.about} />
+        <ProductInformation
+          imgSrc={seriesData.imgSrc}
+          about={seriesData.about}
+        />
       </section>
 
       <section className='detail_product_spec'>
         <ProductSpecification
-          name={zuData.name}
-          basicImg={zuData.basicImg}
-          commonImg={zuData.commonImg}
+          name={seriesData.name}
+          basicImg={seriesData.basicImg}
+          commonImg={seriesData.commonImg}
         />
       </section>
 
       <section className='detail_feature'>
         <div className={styles.detail_feature_title}>
-          <p>{zuData.feature_title}</p>
+          <p>{seriesData.feature_title}</p>
         </div>
 
         <FeatureComponent features={features} />
@@ -53,7 +56,7 @@ export default function ZuSeriesPage() {
 
       <section className='detail_optimal_application_field'>
         <div className={styles.optimal_application_field_title}>
-          <p>{zuData.field_title}</p>
+          <p>{seriesData.field_title}</p>
         </div>
         <div className='field_list'>
           <ul className={styles.field_list}>
