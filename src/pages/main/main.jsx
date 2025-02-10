@@ -78,7 +78,6 @@ export default function Main() {
   const getNewsData = async () => {
     const response = await getNews();
     setNewsData(response);
-    console.log(response);
   };
 
   return (

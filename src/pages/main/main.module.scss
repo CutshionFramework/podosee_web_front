@@ -46,7 +46,7 @@ $border-radius: 8px;
   margin-bottom: $spacing-lg;
 
   @media (max-width: 768px) {
-    width: 90%;
+    width: 80%;
   }
 }
 
@@ -119,6 +119,6 @@ $border-radius: 8px;
 
   &:hover {
     // background: #dd0000;
-    color: #c6001d;
+    color: #fd5770;
   }
 }

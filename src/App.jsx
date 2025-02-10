@@ -15,6 +15,7 @@ import CompanyInfo from "./pages/company_info/companyInfo";
 import News from "./pages/news/news";
 import Contact from "./pages/contact/contact";
 import Error from "./pages/error/error";
+import ScrollTop from "./components/scroll_top/scrollTop";
 
 function App() {
   return (
@@ -49,6 +50,7 @@ function App() {
         {/* 404 */}
         <Route path='*' element={<Error />} />
       </Routes>
+      <ScrollTop />
     </>
   );
 }
