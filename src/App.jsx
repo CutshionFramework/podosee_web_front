@@ -1,20 +1,21 @@
-import { Routes, Route } from "react-router-dom";
-import "./App.css";
-import Main from "./pages/main/main";
+import { Routes, Route } from 'react-router-dom';
+import './App.css';
+import Main from './pages/main/main';
 
-import Jaka from "./pages/jaka_robot/jaka";
-import ZuSeries from "./pages/jaka_robot/zuSeries";
-import AllInOne from "./pages/jaka_robot/allInOne";
-import ProSeries from "./pages/jaka_robot/proSeries";
-import MiniCobo from "./pages/jaka_robot/miniCobo";
+import Jaka from './pages/jaka_robot/jaka';
+import ZuSeries from './pages/jaka_robot/zuSeries';
+import AllInOne from './pages/jaka_robot/allInOne';
+import ProSeries from './pages/jaka_robot/proSeries';
+import MiniCobo from './pages/jaka_robot/miniCobo';
+import ZuSeriesPage from './pages/product_detail/zu/zuSeriesPage';
 
-import AIKiosk from "./pages/integrated_solution/ai_kiosk/aiKiosk";
-import AMR from "./pages/integrated_solution/amr/amr";
+import AIKiosk from './pages/integrated_solution/ai_kiosk/aiKiosk';
+import AMR from './pages/integrated_solution/amr/amr';
 
-import CompanyInfo from "./pages/company_info/companyInfo";
-import News from "./pages/news/news";
-import Contact from "./pages/contact/contact";
-import Error from "./pages/error/error";
+import CompanyInfo from './pages/company_info/companyInfo';
+import News from './pages/news/news';
+import Contact from './pages/contact/contact';
+import Error from './pages/error/error';
 
 function App() {
   return (
@@ -28,6 +29,9 @@ function App() {
         <Route path='/jaka/allinone' element={<AllInOne />} />
         <Route path='/jaka/proseries' element={<ProSeries />} />
         <Route path='/jaka/minicobo' element={<MiniCobo />} />
+
+        {/* Zu series */}
+        <Route path='/jaka/zuseries/:id' element={<ZuSeriesPage />} />
 
         {/* Integrated solution */}
         <Route path='/integrated/aikiosk' element={<AIKiosk />} />
