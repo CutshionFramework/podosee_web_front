@@ -6,6 +6,7 @@ import RobotCard from '../../components/card/robotCard';
 import FeatureComponent from '../../components/feature_component/featureComponent';
 
 import data from '../../mock/series.json';
+import jakaProducts from '../../data/features/jaka_products';
 import styles from './jaka.module.scss';
 
 const pageTitle = 'JAKA Collaborative Robots';
@@ -64,7 +65,7 @@ export default function Jaka() {
           <div className={styles.feature_title}>
             <p>JAKA 협동로봇이 공장 자동화에 적합한 이유</p>
           </div>
-          <FeatureComponent />
+          <FeatureComponent features={jakaProducts} />
         </section>
       </div>
       <Footer />

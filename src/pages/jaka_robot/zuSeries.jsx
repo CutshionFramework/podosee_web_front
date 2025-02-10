@@ -18,7 +18,7 @@ const videoAbout = [
   },
 ];
 
-export default function ZuSeries() {
+export default function ZuSeriesPage() {
   return (
     <>
       <Header />

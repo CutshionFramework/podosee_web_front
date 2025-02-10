@@ -58,6 +58,76 @@
   }
 }
 
+.minicobo_container {
+  margin-top: 100px;
+
+  @media (max-width: 768px) {
+    margin-top: 80px;
+  }
+
+  @media (max-width: 480px) {
+    margin-top: 60px;
+  }
+}
+
+.minicobo_info {
+  display: flex;
+  margin: 0 20px;
+  border: 1px solid #dddddd;
+  border-radius: 9px;
+  overflow: hidden; // 요소가 넘치지 않도록 처리
+}
+
+.minicobo_img {
+  width: 40vw;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    @media (max-width: 1024px) {
+      max-width: 500px;
+    }
+
+    @media (max-width: 768px) {
+      max-width: 400px;
+    }
+
+    @media (max-width: 480px) {
+      max-width: 100%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 100%; // 작은 화면에서는 가득 차게 표시
+  }
+}
+
+.minicobo_about {
+  width: 60vw;
+  margin-top: 40px;
+  margin-left: 40px;
+  display: flex;
+  justify-content: center;
+
+  @media (max-width: 1024px) {
+    margin-top: 80px;
+    margin-left: 20px;
+  }
+
+  @media (max-width: 768px) {
+    width: 90%; // 화면이 줄어들면 너비 확대
+    margin: 40px auto 0 auto;
+    text-align: center;
+  }
+
+  @media (max-width: 480px) {
+    width: 100%;
+    margin: 30px auto 0 auto;
+  }
+}
+
 .chart_img {
   display: flex;
   justify-content: center;
