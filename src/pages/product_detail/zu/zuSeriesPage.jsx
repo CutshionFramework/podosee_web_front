@@ -11,13 +11,18 @@ import FeatureComponent from '../../../components/feature_component/featureCompo
 import styles from './zuSeriesPage.module.scss';
 import zuSeriesData from '../../../data/zuSeriesData';
 import zu3FeaturesData from '../../../data/features/zu3';
+import zu5FeaturesData from '../../../data/features/zu5';
 
 export default function ZuSeriesPage() {
   const { id } = useParams();
   const idNumber = Number(id);
 
   const zuData = zuSeriesData[idNumber];
+
   const zu3Data = zu3FeaturesData;
+  const zu5Data = zu5FeaturesData;
+
+  const features = id === '5' ? zu5Data : zu3Data; // id가 "5"이면 zu5Data, 아니면 zu3Data
 
   return (
     <div className='zuseries_page'>
@@ -40,15 +45,15 @@ export default function ZuSeriesPage() {
 
       <section className='detail_feature'>
         <div className={styles.detail_feature_title}>
-          <p>{feature_title}</p>
+          <p>{zuData.feature_title}</p>
         </div>
 
-        <FeatureComponent features={zu3Data} />
+        <FeatureComponent features={features} />
       </section>
 
       <section className='detail_optimal_application_field'>
         <div className={styles.optimal_application_field_title}>
-          <p>JAKA Zu 3의 최적 응용 분야</p>
+          <p>{zuData.field_title}</p>
         </div>
         <div className='field_list'>
           <ul className={styles.field_list}>
