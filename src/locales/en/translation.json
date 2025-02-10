@@ -84,5 +84,56 @@
 
   "news_slider": {
     "title": "Latest News"
+  },
+
+  "aikiosk": {
+    "title": "AI Kiosk",
+    "solution": "Integrated Solution",
+    "menu": {
+      "freephoto": "Free Photo Kiosk",
+      "feveralarm": "Fever Alarm",
+      "vandingmachine": "Vending Machine"
+    },
+    "description": {
+      "freephoto": [
+        "It is a free photo printing service device developed in response to the explosive growth of smartphone photography.",
+        "It is a proven, innovative advertising medium that attracts attention as a 'marketing platform where customers line up to receive ads.'"
+      ],
+      "feveralarm": [
+        "Fever Alarm is a QR code-based thermal imaging access control system.",
+        "It is a “completely contactless thermal access control system” that allows you to safely check the fever level and record a visit record without contacting",
+        "and leave a visit record at the same time without contact."
+      ],
+      "vandingmachine": [
+        "The world's first pressure-cooker instant ramen vending machine.",
+        "It is a smart vending machine that manages sales information and market conditions in real time,",
+        "outdoor parks, universities, and academies."
+      ]
+    },
+    "spec": "Product Specifications"
+  },
+
+  "amr": {
+    "title": "AMR",
+    "solution": "Integrated Solution",
+    "menu": {
+      "tseries": "T Series",
+      "lseries": "L Series"
+    },
+    "description": {
+      "tseries": [
+        "THIRA AMRs are all equipped with next-generation drive technology",
+        "and can carry payloads ranging from 200 kg (441 lbs)-1,000 kg (2,205 lbs) to perfectly fit into your end-to-end robotics solution."
+      ],
+      "lseries": [
+        "THIRA AMRs are all equipped with next-generation drive technology",
+        "and can carry payloads ranging from 200 kg (441 lbs)-1,000 kg (2,205 lbs) to perfectly fit into your end-to-end robotics solution."
+      ]
+    },
+    "lseries_description": [
+      "The L200 can carry a maximum of 200kg of cargo.",
+      "This model has a ground clearance of 170mm, making it compatible with existing low-height trolleys without the need for replacement. Additionally, it can smoothly pass through congested and narrow passages with heavy traffic."
+    ],
+    "spec": "Product Specifications"
   }
 }

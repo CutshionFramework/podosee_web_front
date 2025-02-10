@@ -70,8 +70,11 @@ export default function Main() {
         </section>
 
         <section className={styles.products_section}>
-          {products.map((product) => (
-            <ProductCard key={product.id} {...product} />
+          {products.map((product, index) => (
+            <ProductCard
+              key={`${product.id}-${product.name}-${index}`}
+              {...product}
+            />
           ))}
         </section>
       </div>
