@@ -3,10 +3,15 @@ import Footer from "../../components/footer/footer";
 import ContactForm from "../../components/contact_form/contactForm";
 import PageTitle from "../../components/page_title/pageTitle";
 import styles from "./contact.module.scss";
+import { useEffect } from "react";
 
 export default function Contact() {
   const title = "문의하기";
   const image = "/assets/page_title/page_title.png";
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div>

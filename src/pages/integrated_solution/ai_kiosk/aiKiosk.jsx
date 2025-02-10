@@ -19,6 +19,10 @@ export default function AIKiosk() {
   ];
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
     if (id === "freephoto") setCurrentTab(0);
     else if (id === "feveralarm") setCurrentTab(1);
     else if (id === "vandingmachine") setCurrentTab(2);

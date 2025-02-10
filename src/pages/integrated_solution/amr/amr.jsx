@@ -18,6 +18,10 @@ export default function AMR() {
   ];
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
     if (id === "tseries") setCurrentTab(0);
     else if (id === "lseries") setCurrentTab(1);
   }, [id]);

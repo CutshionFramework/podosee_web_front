@@ -22,6 +22,8 @@ export default function CompanyInfo() {
   ];
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+
     getHistoryData();
     getPartnerData();
   }, []);
