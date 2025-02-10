@@ -48,8 +48,10 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    padding: 10px 0;
     padding-right: 2vw;
     padding-left: 2vw;
+    
     z-index: 100;
     text-align: center;
 
@@ -61,7 +63,6 @@
     }
 
     .dropdown {
-      margin-top: 10px;
       display: none;
       position: absolute;
       top: 100%;
