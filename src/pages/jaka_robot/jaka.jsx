@@ -6,7 +6,7 @@ import RobotCard from '../../components/card/robotCard';
 import FeatureComponent from '../../components/feature_component/featureComponent';
 
 import data from '../../mock/series.json';
-import jakaProducts from '../../data/features/jaka_products';
+import jakaProducts from '../../data/features/jakaProducts';
 import styles from './jaka.module.scss';
 
 const pageTitle = 'JAKA Collaborative Robots';

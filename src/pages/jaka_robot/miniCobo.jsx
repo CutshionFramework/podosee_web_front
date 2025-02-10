@@ -4,7 +4,7 @@ import PageTitle from '../../components/page_title/pageTitle';
 
 import FeatureComponent from '../../components/feature_component/featureComponent';
 
-import jakaProducts from '../../data/features/jaka_products';
+import jakaProducts from '../../data/features/jakaProducts';
 import styles from './minicobo.module.scss';
 
 const pageTitle = 'JAKA MiniCobo';
