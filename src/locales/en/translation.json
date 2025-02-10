@@ -32,7 +32,7 @@
       {
         "title": "News",
         "link": "/news",
-        "sub": [{ "title": "Press", "link": "/news" }]
+        "sub": [{ "title": "Latest News", "link": "/news" }]
       },
       {
         "title": "Contact",
@@ -135,5 +135,9 @@
       "This model has a ground clearance of 170mm, making it compatible with existing low-height trolleys without the need for replacement. Additionally, it can smoothly pass through congested and narrow passages with heavy traffic."
     ],
     "spec": "Product Specifications"
+  },
+
+  "news": {
+    "title": "Latest News"
   }
 }
