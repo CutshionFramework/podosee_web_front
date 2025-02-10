@@ -97,17 +97,11 @@ export default function Header() {
               {selectedLang}{" "}
               {languageOpen ? (
                 <span style={{ display: "inline-flex", alignItems: "center" }}>
-                  <MdOutlineKeyboardArrowUp
-                    size={20}
-                    style={{ transform: "translateY(3px)" }}
-                  />
+                  <MdOutlineKeyboardArrowUp size={21} />
                 </span>
               ) : (
                 <span style={{ display: "inline-flex", alignItems: "center" }}>
-                  <MdOutlineKeyboardArrowDown
-                    size={20}
-                    style={{ transform: "translateY(3px)" }}
-                  />
+                  <MdOutlineKeyboardArrowDown size={21} />
                 </span>
               )}
             </button>

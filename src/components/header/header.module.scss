@@ -1,5 +1,6 @@
 .header {
-  padding: 40px 0;
+  height: 125px;
+  padding: 0;
   background-color: #fff;
   display: flex;
   justify-content: space-between;
@@ -12,21 +13,25 @@
 }
 
 .logo img {
+  padding-top: 5px;
   width: 157px;
   height: 31px;
   padding-left: 15vw;
 
   @media (max-width: 1023px) {
-    padding-left: 7vw;
+    padding-left: 2vw;
   }
 }
 
 /* 네비게이션 공통 스타일 */
 .nav {
+  display: flex;
+    align-items: center;
+    justify-content: center;
   padding-right: 12vw;
 
   @media (max-width: 1023px) {
-    padding-right: 5vw;
+    padding-right: 2vw;
   }
 
   ul {
@@ -34,14 +39,19 @@
     padding: 0;
     margin: 0;
     display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .nav_item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
-    padding-top: 10px;
     padding-right: 2vw;
     padding-left: 2vw;
     z-index: 100;
+    text-align: center;
 
     a {
       text-decoration: none;
@@ -51,6 +61,7 @@
     }
 
     .dropdown {
+      margin-top: 10px;
       display: none;
       position: absolute;
       top: 100%;
@@ -82,14 +93,19 @@
 
   /* 언어 선택 스타일 */
   .language_selector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 1px;
     padding-right: 2vw;
     padding-left: 2vw;
     cursor: pointer;
 
     button {
+      display:flex;
+      text-align: center;
+      align-items:center;
       width: 100%;
       background: none;
       border: none;
@@ -98,10 +114,12 @@
       padding: 0;
       text-align: left;
       cursor: pointer;
+
     }
   }
 
   .language_dropdown {
+    margin-top: 10px;
     position: absolute;
     top: 100%;
     left: 0;
@@ -114,8 +132,9 @@
 
     li {
       flex-direction: row;
-      padding: 10px;
+      padding: 10px 0;
       font-weight: 600;
+      width: 100%;
       cursor: pointer;
       &:hover {
         background-color: #f0f0f0;
@@ -170,6 +189,7 @@
 }
 
 .logo_mobile {
+    padding-top: 2px;
     width: 157px;
     height: 31px;
     padding-left: 10px;
