@@ -51,7 +51,15 @@ const NewsSlider = ({ newsData }) => {
                 </div>
                 <div className={styles.text_content}>
                   <span className={styles.category}>{news.press}</span>
-                  <h2 className={styles.title}>{news.title}</h2>
+                  <h2 className={styles.title}>
+                    <a
+                      href={news.link}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                    >
+                      {news.title}
+                    </a>
+                  </h2>
                 </div>
               </div>
             </div>
