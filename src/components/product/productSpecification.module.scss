@@ -1,0 +1,36 @@
+.product_specification {
+  margin-top: 100px;
+  padding: 0 50px;
+}
+
+.product_name {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 48px;
+}
+
+.specifications {
+  display: flex;
+  justify-content: center;
+}
+
+.basic_spec {
+  padding: 25px;
+  img {
+    width: 100%;
+    height: 595px;
+
+    object-fit: contain;
+  }
+}
+
+.common_spec {
+  padding: 25px;
+  img {
+    width: 100%;
+    height: 595px;
+
+    object-fit: contain;
+  }
+}

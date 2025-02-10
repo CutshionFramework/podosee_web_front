@@ -1,10 +1,13 @@
 import { useMediaQuery } from "react-responsive";
 import { Link } from "react-router-dom";
 
-import menuData from "../header/header.json";
+import { useTranslation } from "react-i18next";
 import styles from "./footer.module.scss";
 
 export default function Footer() {
+  const { t } = useTranslation();
+  const menu = t("header.menu", { returnObjects: true });
+
   const isMobile = useMediaQuery({ maxWidth: 767 });
 
   return (
@@ -16,12 +19,12 @@ export default function Footer() {
           </Link>
 
           <div className={styles.company_info}>
-            <p>대 표 : 모신희</p>
-            <p>주 소 : 서울시 영등포구 선유로 9길 10, 709호</p>
-            <p>(문래동 6가, 문래 SK V1 Center)</p>
+            <p>{t("footer.ceo")}</p>
+            <p>{t("footer.address")}</p>
+            <p>{t("footer.address_detail")}</p>
             <p className={styles.contact}>
-              <span>연락처 : 070-8959-2960</span>
-              <span>이메일 : podosee@podosee.com</span>
+              <span>{t("footer.contact")}</span>
+              <span>{t("footer.email")}</span>
             </p>
           </div>
 
@@ -48,7 +51,7 @@ export default function Footer() {
         </div>
 
         <nav className={styles.right_section}>
-          {menuData.map((menu, index) => (
+          {menu.map((menu, index) => (
             <div key={index} className={styles.menu_column}>
               <h3>
                 <Link to={menu.link}>{menu.title}</Link>

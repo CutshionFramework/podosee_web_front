@@ -1,8 +1,8 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useMediaQuery } from "react-responsive";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
-import menuData from "./header.json";
 import styles from "./header.module.scss";
 
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -10,6 +10,8 @@ import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { MdOutlineKeyboardArrowUp } from "react-icons/md";
 
 export default function Header() {
+  const { t, i18n } = useTranslation();
+  const menu = t("header.menu", { returnObjects: true });
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [menuOpen, setMenuOpen] = useState(false); // 모바일 메뉴 열기 상태
   const [languageOpen, setLanguageOpen] = useState(false); // 언어 메뉴 열기 상태
@@ -26,9 +28,29 @@ export default function Header() {
 
   // 언어 변경 핸들러
   const handleLanguageChange = (lang) => {
+    if (lang === "KR") {
+      i18n.changeLanguage("kr");
+    } else if (lang === "EN") {
+      i18n.changeLanguage("en");
+    }
+
     setSelectedLang(lang);
     setLanguageOpen(false); // 선택 후 닫기
   };
+
+  // 메뉴 열기 상태가 변경될 때마다 스크롤 잠금/해제 처리
+  useEffect(() => {
+    if (menuOpen) {
+      document.body.style.overflow = "hidden"; // 메뉴 열리면 스크롤 잠금
+    } else {
+      document.body.style.overflow = ""; // 메뉴 닫히면 스크롤 활성화
+    }
+
+    // cleanup: 컴포넌트가 언마운트될 때 스타일을 원래대로 되돌려놓음
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [menuOpen]);
 
   return (
     <header className={styles.header}>
@@ -46,12 +68,16 @@ export default function Header() {
       ) : null}
 
       <nav
-        className={`${styles.nav} ${
-          isMobile ? (menuOpen ? styles.nav_open : styles.nav_closed) : ""
-        }`}
+        className={
+          isMobile
+            ? menuOpen
+              ? styles.nav_open
+              : styles.nav_closed
+            : styles.nav
+        }
       >
         <ul>
-          {menuData.map((menu, index) => (
+          {menu.map((menu, index) => (
             <li
               key={index}
               className={`${styles.nav_item} ${
@@ -89,17 +115,11 @@ export default function Header() {
               {selectedLang}{" "}
               {languageOpen ? (
                 <span style={{ display: "inline-flex", alignItems: "center" }}>
-                  <MdOutlineKeyboardArrowUp
-                    size={20}
-                    style={{ transform: "translateY(3px)" }}
-                  />
+                  <MdOutlineKeyboardArrowUp size={21} />
                 </span>
               ) : (
                 <span style={{ display: "inline-flex", alignItems: "center" }}>
-                  <MdOutlineKeyboardArrowDown
-                    size={20}
-                    style={{ transform: "translateY(3px)" }}
-                  />
+                  <MdOutlineKeyboardArrowDown size={21} />
                 </span>
               )}
             </button>

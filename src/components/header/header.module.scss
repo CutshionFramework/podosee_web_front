@@ -1,34 +1,59 @@
 .header {
-  padding: 50px 0;
+  height: 125px;
+  padding: 0;
   background-color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
+  // position: relative;
+  position: fixed;
+  z-index: 9999999;
+  top: 0;
+  width: 100%;
 }
 
 .logo img {
+  padding-top: 5px;
   width: 157px;
   height: 31px;
   padding-left: 15vw;
+
+  @media (max-width: 1023px) {
+    padding-left: 2vw;
+  }
 }
 
 /* 네비게이션 공통 스타일 */
 .nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding-right: 12vw;
+
+  @media (max-width: 1023px) {
+    padding-right: 2vw;
+  }
+
   ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .nav_item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
-    padding-top: 10px;
+    padding: 10px 0;
     padding-right: 2vw;
     padding-left: 2vw;
+    
     z-index: 100;
+    text-align: center;
 
     a {
       text-decoration: none;
@@ -69,14 +94,19 @@
 
   /* 언어 선택 스타일 */
   .language_selector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 1px;
     padding-right: 2vw;
     padding-left: 2vw;
     cursor: pointer;
 
     button {
+      display:flex;
+      text-align: center;
+      align-items:center;
       width: 100%;
       background: none;
       border: none;
@@ -85,10 +115,12 @@
       padding: 0;
       text-align: left;
       cursor: pointer;
+
     }
   }
 
   .language_dropdown {
+    margin-top: 10px;
     position: absolute;
     top: 100%;
     left: 0;
@@ -101,8 +133,9 @@
 
     li {
       flex-direction: row;
-      padding: 10px;
+      padding: 10px 0;
       font-weight: 600;
+      width: 100%;
       cursor: pointer;
       &:hover {
         background-color: #f0f0f0;
@@ -124,25 +157,42 @@
 
 .nav_open {
   display: block;
-  position: absolute;
+  // position: absolute;
+  position: fixed;
   top: 88px;
   left: 0;
   width: 100%;
+  // height: 100vh;
+  height: calc(100vh - 88px);
   background: white;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   z-index: 100;
+  padding: 0;
+  overflow-y: auto; /* 스크롤 가능하게 설정 */
+  overflow-x: hidden;
 
   ul {
-    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1b1b1b;
   }
 
   .nav_item {
+    width: 100%;
     text-align: left;
-    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
     border-bottom: 1px solid #ddd;
 
     .dropdown {
-      padding-left: 180px;
       position: static;
       display: block;
       background: none;
@@ -151,12 +201,62 @@
       .dropdown_item {
         text-align: left;
         padding-left: 50px;
+        padding-top: 10px;
+      }
+    }
+  }
+
+  .language_selector {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    cursor: pointer;
+    position: relative;
+
+    button {
+      display:flex;
+      text-align: center;
+      align-items:center;
+      width: 100%;
+      background: none;
+      border: none;
+      font-size: 18px;
+      font-weight: 600;
+      padding: 0;
+      text-align: left;
+      cursor: pointer;
+
+    }
+  }
+
+  .language_dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    z-index: 100;
+    flex-direction: column;
+    
+
+    li {
+      flex-direction: row;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding-left: 24px;
+      font-weight: 600;
+      width: 100%;
+      cursor: pointer;
+      &:hover {
+        background-color: #f0f0f0;
       }
     }
   }
 }
 
 .logo_mobile {
+    padding-top: 2px;
     width: 157px;
     height: 31px;
     padding-left: 10px;

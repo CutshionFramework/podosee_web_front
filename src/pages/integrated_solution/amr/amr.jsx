@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import Header from "../../../components/header/header";
 import Footer from "../../../components/footer/footer";
 import MenuTab from "../../../components/menu_tab/menuTab";
@@ -10,12 +11,17 @@ import styles from "./amr.module.scss";
 export default function AMR() {
   const { id } = useParams();
   const navigate = useNavigate();
+  const { t } = useTranslation();
   const [currentTab, setCurrentTab] = useState(0);
 
   const menuArr = [
-    { krName: "T 시리즈", path: "tseries" },
-    { krName: "L 시리즈", path: "lseries" },
+    { name: t("amr.menu.tseries"), path: "tseries" },
+    { name: t("amr.menu.lseries"), path: "lseries" },
   ];
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   useEffect(() => {
     if (id === "tseries") setCurrentTab(0);
@@ -30,7 +36,7 @@ export default function AMR() {
   return (
     <div>
       <Header />
-      <PageTitle title='통합 솔루션' />
+      <PageTitle title={t("amr.solution")} />
       <div className={styles.amr_container}>
         <h1>AMR</h1>
         <MenuTab
@@ -52,6 +58,7 @@ export default function AMR() {
 }
 
 const CommmonComponent = ({ currentTab }) => {
+  const { t } = useTranslation();
   const imageMap = {
     tseries: [
       "/assets/amr/t200.png",
@@ -59,35 +66,28 @@ const CommmonComponent = ({ currentTab }) => {
       "/assets/amr/t600.png",
       "/assets/amr/t1000.png",
     ],
-    lseries: [
-      "/assets/amr/s2.png",
-      "/assets/amr/l1.png",
-      "/assets/amr/k2.png",
-    ],
+    lseries: ["/assets/amr/l200.png"],
   };
 
-  const descriptionMap = {
-    tseries: [
-      "티라로보틱스의 AMR은 모두 차세대 드라이브 기술을 탑재하고 있으며",
-      "200kg ~ 1,000kg 범위의 페이로드를 운반할 수 있어 고객의 엔드투엔드 로봇 솔루션에 완벽하게 맞습니다.",
-    ],
-    lseries: [
-      "티라로보틱스의 AMR은 모두 차세대 드라이브 기술을 탑재하고 있으며",
-      "200kg ~ 1,000kg 범위의 페이로드를 운반할 수 있어 고객의 엔드투엔드 로봇 솔루션에 완벽하게 맞습니다.",
-    ],
-  };
+  const selectedTab = currentTab || "tseries";
 
-  const imageList = imageMap[currentTab] || imageMap["tseries"];
-  const descriptionList =
-    descriptionMap[currentTab] || descriptionMap["tseries"];
+  const imageList = imageMap[selectedTab];
+
+  const descriptionList = t(`amr.description.${selectedTab}`, {
+    returnObjects: true,
+  });
+
+  const lseriesDescriptionList = t(`amr.lseries_description`, {
+    returnObjects: true,
+  });
 
   let imageContainerClass = styles.tseries_container;
   let specImage = "/assets/amr/spec_tseries.png";
 
-  if (currentTab === "tseries") {
+  if (selectedTab === "tseries") {
     imageContainerClass = styles.tseries_container;
     specImage = "/assets/amr/spec_tseries.png";
-  } else if (currentTab === "lseries") {
+  } else if (selectedTab === "lseries") {
     imageContainerClass = styles.lseries_container;
     specImage = "/assets/amr/spec_lseries.png";
   }
@@ -102,13 +102,27 @@ const CommmonComponent = ({ currentTab }) => {
 
       <div className={imageContainerClass}>
         {imageList.map((src, index) => (
-          <img key={index} src={src} alt={`tab-${currentTab}-${index}`} />
+          <img key={index} src={src} alt={`tab-${selectedTab}-${index}`} />
         ))}
+
+        <div
+          className={
+            selectedTab === "lseries"
+              ? styles.lseries_description
+              : styles.none_lseries_description
+          }
+        >
+          {lseriesDescriptionList.map((text, index) => (
+            <p key={index}>{text}</p>
+          ))}
+        </div>
       </div>
 
-      <h2>제품 스펙</h2>
+      <h2>{t("amr.spec")}</h2>
 
-      <img className={styles.spec_img} src={specImage} alt={specImage} />
+      <div className={styles.spec_img_container}>
+        <img className={styles.spec_img} src={specImage} alt={specImage} />
+      </div>
     </div>
   );
 };

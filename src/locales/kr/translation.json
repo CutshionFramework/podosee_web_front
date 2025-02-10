@@ -1,0 +1,143 @@
+{
+  "header": {
+    "menu": [
+      {
+        "title": "자카",
+        "link": "/jaka",
+        "sub": [
+          { "title": "Zu Series", "link": "/jaka/zuseries" },
+          { "title": "All-in-one", "link": "/jaka/allinone" },
+          { "title": "Pro Series", "link": "/jaka/proseries" },
+          { "title": "Mini cobo", "link": "/jaka/minicobo" }
+        ]
+      },
+      {
+        "title": "통합 솔루션",
+        "link": "/integrated",
+        "sub": [
+          { "title": "AI 키오스크", "link": "/integrated/aikiosk" },
+          { "title": "AMR", "link": "/integrated/amr" }
+        ]
+      },
+      {
+        "title": "회사소개",
+        "link": "/company",
+        "sub": [
+          { "title": "대표이사 인사말", "link": "/company/greeting" },
+          { "title": "연혁", "link": "/company/history" },
+          { "title": "오시는 길", "link": "/company/location" },
+          { "title": "제휴사", "link": "/company/partners" }
+        ]
+      },
+      {
+        "title": "뉴스",
+        "link": "/news",
+        "sub": [{ "title": "최신 뉴스", "link": "/news" }]
+      },
+      {
+        "title": "문의",
+        "link": "/contact",
+        "sub": [{ "title": "문의하기", "link": "/contact" }]
+      }
+    ]
+  },
+
+  "footer": {
+    "ceo": "대 표 : 모신희",
+    "address": "주 소 : 서울시 영등포구 선유로 9길 10, 709호",
+    "address_detail": "(문래동 6가, 문래 SK V1 Center)",
+    "contact": "연락처 : 070-8959-2960",
+    "email": "이메일 : podosee@podosee.com"
+  },
+
+  "main": {
+    "products": [
+      {
+        "title": "자카",
+        "description": [
+          "포도씨는 JAKA 로보틱스의 한국총판으로서, 사람의 팔로 하기 힘든 일들을 협동로봇으로",
+          "해결하기 위해 노력하고 있습니다."
+        ],
+        "image": "main_1.png",
+        "link": "/jaka"
+      },
+      {
+        "title": "AI 키오스크",
+        "description": [
+          "더 나은 일상과 비즈니스를 위한 스마트 솔루션.",
+          "포토 키오스크부터 라면 자판기, 피버알람까지 다양한 솔루션을 한곳에서 만나보세요."
+        ],
+        "image": "main_2.png",
+        "link": "/integrated/aikiosk"
+      },
+      {
+        "title": "AMR",
+        "description": [
+          "효율적인 물류와 스마트한 작업 환경의 시작!",
+          "AMR과 함께 자동화의 속도를 높이세요."
+        ],
+        "image": "main_3.png",
+        "link": "/integrated/amr"
+      }
+    ]
+  },
+
+  "news_slider": {
+    "title": "최신 소식"
+  },
+
+  "aikiosk": {
+    "title": "AI 키오스크",
+    "solution": "통합솔루션",
+    "menu": {
+      "freephoto": "프리포토 키오스크",
+      "feveralarm": "피버 알람",
+      "vandingmachine": "자판기"
+    },
+    "description": {
+      "freephoto": [
+        "스마트폰 사진의 폭발적인 증가에 발맞춰 개발된 무료 사진 인화 서비스 기기입니다.",
+        "'고객이 줄서서 받아보는 광고매체'로 주목받고 있는 검증된 신개념 광고 미디어입니다."
+      ],
+      "feveralarm": [
+        "Fever Alarm은 QR코드 기반의 열화상 출입 관리 시스템입니다.",
+        "타인과 접촉에 의해 바이러스 전염이 우려되는 곳에서 안전하게 발열 여부를 체크하고 접촉없이",
+        "방문 기록을 동시에 남길 수 있는 '완전 비접촉식 열화상 출입 관리 시스템'입니다."
+      ],
+      "vandingmachine": [
+        "세계 최초의 압력솥 방식의 즉석 라면 조리 자판기입니다.",
+        "매출 정보 및 장비 상태 정보등을 실시간으로 관리하는 스마트 자판기로 편의점,",
+        "야외 공원, 대학교, 학원 등 설치하여 운영할 수 있습니다."
+      ]
+    },
+    "spec": "제품 스펙"
+  },
+
+  "amr": {
+    "title": "AMR",
+    "solution": "통합솔루션",
+    "menu": {
+      "tseries": "T 시리즈",
+      "lseries": "L 시리즈"
+    },
+    "description": {
+      "tseries": [
+        "티라로보틱스의 AMR은 모두 차세대 드라이브 기술을 탑재하고 있으며",
+        "200kg ~ 1,000kg 범위의 페이로드를 운반할 수 있어 고객의 엔드투엔드 로봇 솔루션에 완벽하게 맞습니다."
+      ],
+      "lseries": [
+        "티라로보틱스의 AMR은 모두 차세대 드라이브 기술을 탑재하고 있으며",
+        "200kg ~ 1,000kg 범위의 페이로드를 운반할 수 있어 고객의 엔드투엔드 로봇 솔루션에 완벽하게 맞습니다."
+      ]
+    },
+    "lseries_description": [
+      "L200은 최대 200kg의 화물을 운반할 수 있습니다.",
+      "이 모델은 지상고가 170mm으로 낮게 제작되어 기존에 사용하던 낮은 높이의 대차를 교체없이 사용할 수 있습니다. 또한 교통량이 많아 복잡하고 좁은 통로를 원활하게 통과할 수 있습니다."
+    ],
+    "spec": "제품 스펙"
+  },
+
+  "news": {
+    "title": "최신 소식"
+  }
+}

@@ -10,13 +10,21 @@
   }
   
   .slider_container {
-    display: flex;
     transition: transform 0.5s ease-in-out;
-    width: 100%;
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(3, 1fr);
+
+    @media (max-width: 1023px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 767px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 
   .slide {
-    flex: 0 0 calc(100% / 3); // ✅ 한 줄에 3개씩 표시
     padding: 10px;
     box-sizing: border-box;
     
@@ -71,6 +79,15 @@
 
         height: calc(1.4em * 2); /* 두 줄의 높이 */
         line-height: 1.4em;
+
+        a{
+          text-decoration: none;
+          color: #1D1D1F;
+
+          &:hover {
+            color: rgb(117, 117, 117);
+          }
+        }
       }
 
       .content {
@@ -113,21 +130,4 @@
       }
     }
   }  
-}
-
-// ✅ 반응형: 화면 크기에 따라 표시 개수 변경
-@media (max-width: 768px) {
-  .news_slider {
-    .slide {
-      flex: 0 0 50%; // 2개씩 표시
-    }
-  }
-}
-
-@media (max-width: 480px) {
-  .news_slider {
-    .slide {
-      flex: 0 0 100%; // 1개씩 표시
-    }
-  }
 }

@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import { useMediaQuery } from "react-responsive";
 import styles from "./newsSlider.module.scss";
 
 const NewsSlider = ({ newsData }) => {
+  const { t } = useTranslation();
   const [currentIndex, setCurrentIndex] = useState(0);
   const sortedNews = [...newsData].sort((a, b) => b.seq - a.seq);
 
@@ -39,7 +41,7 @@ const NewsSlider = ({ newsData }) => {
 
   return (
     <div className={styles.news_slider}>
-      <h1>최신 소식</h1>
+      <h1>{t("news_slider.title")}</h1>
       <div className={styles.slider_container}>
         {sortedNews
           .slice(currentIndex, currentIndex + itemsPerPage)
@@ -51,7 +53,15 @@ const NewsSlider = ({ newsData }) => {
                 </div>
                 <div className={styles.text_content}>
                   <span className={styles.category}>{news.press}</span>
-                  <h2 className={styles.title}>{news.title}</h2>
+                  <h2 className={styles.title}>
+                    <a
+                      href={news.link}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                    >
+                      {news.title}
+                    </a>
+                  </h2>
                 </div>
               </div>
             </div>

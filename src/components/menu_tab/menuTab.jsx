@@ -11,7 +11,7 @@ const MenuTab = ({ menuArr, currentTab, onSelect }) => {
           }`}
           onClick={() => onSelect(index)}
         >
-          {menu.krName}
+          {menu.name}
         </div>
       ))}
     </div>
