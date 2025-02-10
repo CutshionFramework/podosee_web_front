@@ -1,0 +1,51 @@
+{
+  "header": {
+    "menu": [
+      {
+        "title": "JAKA",
+        "link": "/jaka",
+        "sub": [
+          { "title": "Zu Series", "link": "/jaka/zuseries" },
+          { "title": "All-in-one", "link": "/jaka/allinone" },
+          { "title": "Pro Series", "link": "/jaka/proseries" },
+          { "title": "Mini Cobo", "link": "/jaka/minicobo" }
+        ]
+      },
+      {
+        "title": "Integrated Solution",
+        "link": "/integrated",
+        "sub": [
+          { "title": "AI KIOSK", "link": "/integrated/aikiosk" },
+          { "title": "AMR", "link": "/integrated/amr" }
+        ]
+      },
+      {
+        "title": "Company",
+        "link": "/company",
+        "sub": [
+          { "title": "CEO's greeting", "link": "/company/greeting" },
+          { "title": "History", "link": "/company/history" },
+          { "title": "Location", "link": "/company/location" },
+          { "title": "Partners", "link": "/company/partners" }
+        ]
+      },
+      {
+        "title": "News",
+        "link": "/news",
+        "sub": [{ "title": "Press", "link": "/news" }]
+      },
+      {
+        "title": "Contact",
+        "link": "/contact",
+        "sub": [{ "title": "Contact Us", "link": "/contact" }]
+      }
+    ]
+  },
+  "footer": {
+    "ceo": "CEO: Shinhee Mo",
+    "address": "Address: 709, 10, Seonyu-ro 9-gil, Yeongdeungpo-gu, Seoul",
+    "address_detail": "(Mullae-dong 6-ga, Mullae SK V1 Center)",
+    "contact": "Contact: 070-8959-2960",
+    "email": "Email: podosee@podosee.com"
+  }
+}

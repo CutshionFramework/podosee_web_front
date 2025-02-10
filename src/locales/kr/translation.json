@@ -1,0 +1,51 @@
+{
+  "header": {
+    "menu": [
+      {
+        "title": "자카",
+        "link": "/jaka",
+        "sub": [
+          { "title": "Zu Series", "link": "/jaka/zuseries" },
+          { "title": "All-in-one", "link": "/jaka/allinone" },
+          { "title": "Pro Series", "link": "/jaka/proseries" },
+          { "title": "Mini cobo", "link": "/jaka/minicobo" }
+        ]
+      },
+      {
+        "title": "통합 솔루션",
+        "link": "/integrated",
+        "sub": [
+          { "title": "AI 키오스크", "link": "/integrated/aikiosk" },
+          { "title": "AMR", "link": "/integrated/amr" }
+        ]
+      },
+      {
+        "title": "회사소개",
+        "link": "/company",
+        "sub": [
+          { "title": "대표이사 인사말", "link": "/company/greeting" },
+          { "title": "연혁", "link": "/company/history" },
+          { "title": "오시는 길", "link": "/company/location" },
+          { "title": "제휴사", "link": "/company/partners" }
+        ]
+      },
+      {
+        "title": "뉴스",
+        "link": "/news",
+        "sub": [{ "title": "언론보도", "link": "/news" }]
+      },
+      {
+        "title": "문의",
+        "link": "/contact",
+        "sub": [{ "title": "문의하기", "link": "/contact" }]
+      }
+    ]
+  },
+  "footer": {
+    "ceo": "대 표 : 모신희",
+    "address": "주 소 : 서울시 영등포구 선유로 9길 10, 709호",
+    "address_detail": "(문래동 6가, 문래 SK V1 Center)",
+    "contact": "연락처 : 070-8959-2960",
+    "email": "이메일 : podosee@podosee.com"
+  }
+}

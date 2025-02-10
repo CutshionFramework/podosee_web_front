@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
-import menuData from "./header.json";
 import styles from "./header.module.scss";
 
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -10,6 +10,8 @@ import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { MdOutlineKeyboardArrowUp } from "react-icons/md";
 
 export default function Header() {
+  const { t, i18n } = useTranslation();
+  const menu = t("header.menu", { returnObjects: true });
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [menuOpen, setMenuOpen] = useState(false); // 모바일 메뉴 열기 상태
   const [languageOpen, setLanguageOpen] = useState(false); // 언어 메뉴 열기 상태
@@ -26,6 +28,12 @@ export default function Header() {
 
   // 언어 변경 핸들러
   const handleLanguageChange = (lang) => {
+    if (lang === "KR") {
+      i18n.changeLanguage("kr");
+    } else if (lang === "EN") {
+      i18n.changeLanguage("en");
+    }
+
     setSelectedLang(lang);
     setLanguageOpen(false); // 선택 후 닫기
   };
@@ -51,7 +59,7 @@ export default function Header() {
         }`}
       >
         <ul>
-          {menuData.map((menu, index) => (
+          {menu.map((menu, index) => (
             <li
               key={index}
               className={`${styles.nav_item} ${
