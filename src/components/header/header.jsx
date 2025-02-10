@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useMediaQuery } from "react-responsive";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -37,6 +37,20 @@ export default function Header() {
     setSelectedLang(lang);
     setLanguageOpen(false); // 선택 후 닫기
   };
+
+  // 메뉴 열기 상태가 변경될 때마다 스크롤 잠금/해제 처리
+  useEffect(() => {
+    if (menuOpen) {
+      document.body.style.overflow = "hidden"; // 메뉴 열리면 스크롤 잠금
+    } else {
+      document.body.style.overflow = ""; // 메뉴 닫히면 스크롤 활성화
+    }
+
+    // cleanup: 컴포넌트가 언마운트될 때 스타일을 원래대로 되돌려놓음
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [menuOpen]);
 
   return (
     <header className={styles.header}>

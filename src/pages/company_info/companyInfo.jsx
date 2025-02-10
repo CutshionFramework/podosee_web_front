@@ -15,10 +15,10 @@ export default function CompanyInfo() {
   const [currentTab, setCurrentTab] = useState(0);
 
   const menuArr = [
-    { krName: "대표이사 인사말", path: "greeting" },
-    { krName: "회사 연혁", path: "history" },
-    { krName: "오시는 길", path: "location" },
-    { krName: "제휴사", path: "partners" },
+    { name: "대표이사 인사말", path: "greeting" },
+    { name: "회사 연혁", path: "history" },
+    { name: "오시는 길", path: "location" },
+    { name: "제휴사", path: "partners" },
   ];
 
   useEffect(() => {
