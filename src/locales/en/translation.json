@@ -41,11 +41,48 @@
       }
     ]
   },
+
   "footer": {
     "ceo": "CEO: Shinhee Mo",
     "address": "Address: 709, 10, Seonyu-ro 9-gil, Yeongdeungpo-gu, Seoul",
     "address_detail": "(Mullae-dong 6-ga, Mullae SK V1 Center)",
     "contact": "Contact: 070-8959-2960",
     "email": "Email: podosee@podosee.com"
+  },
+
+  "main": {
+    "products": [
+      {
+        "title": "JAKA",
+        "description": [
+          "Podosee is the official distributor of JAKA Robotics in Korea,",
+          "striving to solve difficult tasks with collaborative robots."
+        ],
+        "image": "main_1.png",
+        "link": "/jaka"
+      },
+      {
+        "title": "AI Kiosk",
+        "description": [
+          "Smart solutions for a better everyday life and business.",
+          "Discover various solutions from photo kiosks to ramen vending machines and fever alarms all in one place."
+        ],
+        "image": "main_2.png",
+        "link": "/integrated/aikiosk"
+      },
+      {
+        "title": "AMR",
+        "description": [
+          "The start of efficient logistics and a smart work environment!",
+          "Increase the speed of automation with AMR."
+        ],
+        "image": "main_3.png",
+        "link": "/integrated/amr"
+      }
+    ]
+  },
+
+  "news_slider": {
+    "title": "Latest News"
   }
 }
