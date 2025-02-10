@@ -54,7 +54,7 @@ export default function ProSeries() {
           </div>
 
           <div className={styles.feature_img}>
-            <img src='/src/assets/jaka_pro/jaka_pro_cobot.png' alt='' />
+            <img src='/assets/jaka_pro/jaka_pro_cobot.png' alt='' />
           </div>
         </div>
       </section>
@@ -66,7 +66,7 @@ export default function ProSeries() {
 
         <div className={styles.chart_img}>
           <img
-            src='/src/assets/product_comparison/jaka_pro_product_comparison.png'
+            src='/assets/product_comparison/ko/jaka_pro_product_comparison_ko.png'
             alt=''
           />
         </div>

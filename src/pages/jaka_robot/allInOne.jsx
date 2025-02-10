@@ -58,13 +58,13 @@ export default function AllInOne() {
           </div>
 
           <div className={styles.first_feature_img}>
-            <img src='/src/assets/jaka_all_in_one/major_feature_1.png' alt='' />
+            <img src='/assets/jaka_all_in_one/major_feature_1.png' alt='' />
           </div>
         </div>
 
         <div className={styles.second_feature}>
           <div className={styles.second_feature_img}>
-            <img src='/src/assets/jaka_all_in_one/major_feature_2.png' alt='' />
+            <img src='/assets/jaka_all_in_one/major_feature_2.png' alt='' />
           </div>
 
           <div className={styles.second_feature_info}>
@@ -89,7 +89,7 @@ export default function AllInOne() {
 
         <div className={styles.chart_img}>
           <img
-            src='/src/assets/product_comparison/jaka_all_in_one_product_comparison.png'
+            src='/assets/product_comparison/ko/jaka_all_in_one_product_comparison_ko.png'
             alt=''
           />
         </div>

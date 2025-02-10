@@ -35,6 +35,7 @@ export default [
       ],
       'no-unused-vars': 'off', // 사용하지 않은 요소들 경고 끄기
       'react/prop-types': 'off',
+      'no-undef': 'off',
     },
   },
 ];

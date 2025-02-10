@@ -11,6 +11,7 @@ import ZuSeries from "./pages/jaka_robot/zuSeries";
 import AllInOne from "./pages/jaka_robot/allInOne";
 import ProSeries from "./pages/jaka_robot/proSeries";
 import MiniCobo from "./pages/jaka_robot/miniCobo";
+import ZuSeriesPage from "./pages/product_detail/zu/zuSeriesPage";
 
 import AIKiosk from "./pages/integrated_solution/ai_kiosk/aiKiosk";
 import AMR from "./pages/integrated_solution/amr/amr";
@@ -35,8 +36,11 @@ function App() {
           <Route path='/jaka/proseries' element={<ProSeries />} />
           <Route path='/jaka/minicobo' element={<MiniCobo />} />
 
+          {/* Zu series */}
+          <Route path='/jaka/zuseries/:id' element={<ZuSeriesPage />} />
+
           {/* Integrated solution */}
-          <Route path='/integrated/' element={<AIKiosk />} />
+          <Route path='/integrated' element={<AIKiosk />} />
           <Route path='/integrated/aikiosk' element={<AIKiosk />} />
           <Route path='/integrated/amr' element={<AMR />} />
           <Route path='/integrated/aikiosk/:id' element={<AIKiosk />} />
