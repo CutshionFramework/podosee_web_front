@@ -59,11 +59,7 @@ const CommmonComponent = ({ currentTab }) => {
       "/assets/amr/t600.png",
       "/assets/amr/t1000.png",
     ],
-    lseries: [
-      "/assets/amr/s2.png",
-      "/assets/amr/l1.png",
-      "/assets/amr/k2.png",
-    ],
+    lseries: ["/assets/amr/l200.png"],
   };
 
   const descriptionMap = {
@@ -104,11 +100,28 @@ const CommmonComponent = ({ currentTab }) => {
         {imageList.map((src, index) => (
           <img key={index} src={src} alt={`tab-${currentTab}-${index}`} />
         ))}
+
+        <div
+          className={
+            currentTab === "lseries"
+              ? styles.lseries_description
+              : styles.none_lseries_description
+          }
+        >
+          <p>L200은 최대 200kg의 화물을 운반할 수 있습니다.</p>
+          <p>
+            이 모델은 지상고가 170mm으로 낮게 제작되어 기존에 사용하던 낮은
+            높이의 대차를 교체없이 사용할 수 있습니다. 또한 교통량이 많아
+            복잡하고 좁은 통로를 원활하게 통과할 수 있습니다.
+          </p>
+        </div>
       </div>
 
       <h2>제품 스펙</h2>
 
-      <img className={styles.spec_img} src={specImage} alt={specImage} />
+      <div className={styles.spec_img_container}>
+        <img className={styles.spec_img} src={specImage} alt={specImage} />
+      </div>
     </div>
   );
 };

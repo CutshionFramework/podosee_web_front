@@ -64,7 +64,7 @@ const CommmonComponent = ({ currentTab }) => {
       "/assets/aikiosk/l1.png",
       "/assets/aikiosk/k2.png",
     ],
-    vandingmachine: ["/assets/aikiosk/tr1.png"],
+    vandingmachine: ["/assets/aikiosk/vandingmachine.png"],
   };
 
   const descriptionMap = {
