@@ -18,7 +18,7 @@ const zu5 = [
     icon: '/assets/feature_icons/plug_and_play.png',
     name: '플러그 앤 플레이',
     description:
-      '협동로봇 설치는 빠르고 간편하며 유연합니다.\n 어떤 각도로든 장착할 수 있으며 배치되면 \n즉시 작동을 시작합니다. ',
+      '협동로봇 설치는 빠르고 \n간편하며 유연합니다. 어떤 각도로든 장착할 수 있으며 배치되면 \n즉시 작동을 시작합니다. ',
   },
   {
     id: 4,
@@ -33,7 +33,7 @@ const zu5 = [
     icon: '/assets/feature_icons/remote_monitoring.png',
     name: '원격 모니터링',
     description:
-      '독특한 보안 인증 시스템으로\n코봇의 작업을 모니터링하고 \n알림을 설정합니다.',
+      '독특한 보안 인증 시스템으로\n협동로봇의 작업을 모니터링하고 \n알림을 설정합니다.',
   },
 ];
 

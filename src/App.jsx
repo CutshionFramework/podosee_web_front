@@ -1,26 +1,28 @@
-import { Routes, Route } from "react-router-dom";
-import "./App.css";
+import { Routes, Route } from 'react-router-dom';
+import './App.css';
 
-import { I18nextProvider } from "react-i18next";
-import i18n from "./i18n";
+import { I18nextProvider } from 'react-i18next';
+import i18n from './i18n';
 
-import Main from "./pages/main/main";
+import Main from './pages/main/main';
 
-import Jaka from "./pages/jaka_robot/jaka";
-import ZuSeries from "./pages/jaka_robot/zuSeries";
-import AllInOne from "./pages/jaka_robot/allInOne";
-import ProSeries from "./pages/jaka_robot/proSeries";
-import MiniCobo from "./pages/jaka_robot/miniCobo";
-import ZuSeriesPage from "./pages/product_detail/zu/zuSeriesPage";
+import Jaka from './pages/jaka_robot/jaka';
+import ZuSeries from './pages/jaka_robot/zuSeries';
+import AllInOne from './pages/jaka_robot/allInOne';
+import ProSeries from './pages/jaka_robot/proSeries';
+import MiniCobo from './pages/jaka_robot/miniCobo';
+import ZuSeriesPage from './pages/product_detail/zu/zuSeriesPage';
+import AllInOneSeriesPage from './pages/product_detail/all_in_one/allInOneSeriesPage';
+import ProSeriesPage from './pages/product_detail/pro/proSeriesPage';
 
-import AIKiosk from "./pages/integrated_solution/ai_kiosk/aiKiosk";
-import AMR from "./pages/integrated_solution/amr/amr";
+import AIKiosk from './pages/integrated_solution/ai_kiosk/aiKiosk';
+import AMR from './pages/integrated_solution/amr/amr';
 
-import CompanyInfo from "./pages/company_info/companyInfo";
-import News from "./pages/news/news";
-import Contact from "./pages/contact/contact";
-import Error from "./pages/error/error";
-import ScrollTop from "./components/scroll_top/scrollTop";
+import CompanyInfo from './pages/company_info/companyInfo';
+import News from './pages/news/news';
+import Contact from './pages/contact/contact';
+import Error from './pages/error/error';
+import ScrollTop from './components/scroll_top/scrollTop';
 
 function App() {
   return (
@@ -36,8 +38,10 @@ function App() {
           <Route path='/jaka/proseries' element={<ProSeries />} />
           <Route path='/jaka/minicobo' element={<MiniCobo />} />
 
-          {/* Zu series */}
+          {/* Product series */}
           <Route path='/jaka/zuseries/:id' element={<ZuSeriesPage />} />
+          <Route path='/jaka/allinone/:id' element={<AllInOneSeriesPage />} />
+          <Route path='/jaka/proseries/:id' element={<ProSeriesPage />} />
 
           {/* Integrated solution */}
           <Route path='/integrated' element={<AIKiosk />} />

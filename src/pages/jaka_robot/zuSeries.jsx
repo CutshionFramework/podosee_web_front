@@ -1,10 +1,12 @@
+import { useNavigate } from 'react-router-dom';
+
 import Header from '../../components/header/header';
 import Footer from '../../components/footer/footer';
 import PageTitle from '../../components/page_title/pageTitle';
 import RobotCard from '../../components/card/robotCard';
 import VideoComponent from '../../components/video_component/videoComponent';
 
-import data from '../../mock/zu.json';
+import data from '../../data/series_data/zuSeriesData';
 import styles from './zuSeries.module.scss';
 
 const pageTitle = 'JAKA Zu Collaborative Robots';
@@ -19,6 +21,7 @@ const videoAbout = [
 ];
 
 export default function ZuSeriesPage() {
+  const nav = useNavigate();
   return (
     <>
       <Header />
@@ -39,7 +42,11 @@ export default function ZuSeriesPage() {
         <div className={styles.card_container}>
           <div className={styles.series_card}>
             {data.map((item) => (
-              <RobotCard key={item.id} {...item} />
+              <RobotCard
+                key={item.id}
+                {...item}
+                onClick={() => nav(`/jaka/zuseries/${item.url}`)}
+              />
             ))}
           </div>
         </div>
