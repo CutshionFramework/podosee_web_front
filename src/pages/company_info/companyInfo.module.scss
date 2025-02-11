@@ -35,6 +35,10 @@
   .p_margin_botton {
     margin-bottom: 50px;
   }
+
+  @media (max-width: 768px) {
+    margin-top: 0;
+  }
 }
 
 .history_container {
@@ -77,6 +81,10 @@
   .activity_item {
     margin-bottom: 5px;
   }
+
+  @media (max-width: 768px) {
+    margin-top: 0;
+  }
 }
 
 .location_div {
@@ -99,8 +107,9 @@
       }
     }
   }
-
-  
+  @media (max-width: 768px) {
+    margin-top: 0;
+  }
 }
 
 .partner_div {
@@ -149,6 +158,10 @@
         }
       }
     }
+  }
+
+  @media (max-width: 768px) {
+    margin-top: 0;
   }
 }
 
