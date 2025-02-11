@@ -55,7 +55,6 @@
 
 .first_feature {
   display: flex;
-  flex-wrap: wrap; /* 반응형 적용 */
   border-top: 1px solid rgb(230, 230, 230);
   border-bottom: 1px solid rgb(230, 230, 230);
   margin-top: 40px;
@@ -99,7 +98,6 @@
 /* 두 번째 섹션 */
 .second_feature {
   display: flex;
-  flex-wrap: wrap; /* 반응형 적용 */
   border-bottom: 1px solid rgb(230, 230, 230);
 }
 
@@ -214,7 +212,7 @@
 .chart_img {
   display: flex;
   justify-content: center;
-  margin-top: 70px;
+  margin-top: 20px;
 
   img {
     width: 1300px;

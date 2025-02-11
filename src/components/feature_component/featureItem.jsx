@@ -15,7 +15,7 @@ export default function FeatureItem({ icon, name, description }) {
       {/* 설명 */}
       <section className='feature_info'>
         <div className={styles.feature_name}>
-          <p>{name}</p>
+          <span>{name}</span>
         </div>
         <div className={styles.feature_description}>
           {description.split('\n').map((line, index) => (
