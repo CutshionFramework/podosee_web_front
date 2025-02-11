@@ -1,7 +1,7 @@
 .card {
   border: 1px solid #dddddd;
   border-radius: 5px;
-  width: 200px;
+  width: 210px;
   height: 400px;
   padding: 10px;
   display: flex;
@@ -74,10 +74,9 @@
 }
 
 .series_more {
-  margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
-
+  cursor: pointer;
   p {
     font-size: 20px;
     color: #c6001d;

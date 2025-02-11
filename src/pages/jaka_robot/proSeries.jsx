@@ -1,14 +1,17 @@
+import { useNavigate } from 'react-router-dom';
+
 import Header from '../../components/header/header';
 import Footer from '../../components/footer/footer';
 import PageTitle from '../../components/page_title/pageTitle';
 import RobotCard from '../../components/card/robotCard';
 
-import data from '../../mock/pro.json';
+import data from '../../data/series_data/proSeriesData';
 import styles from './proSeries.module.scss';
 
 const pageTitle = 'JAKA Pro Collaborative Robots';
 
 export default function ProSeries() {
+  const nav = useNavigate();
   return (
     <>
       <Header />
@@ -27,7 +30,11 @@ export default function ProSeries() {
         <div className={styles.card_container}>
           <div className={styles.series_card}>
             {data.map((item) => (
-              <RobotCard key={item.id} {...item} />
+              <RobotCard
+                key={item.id}
+                {...item}
+                onClick={() => nav(`/jaka/proseries/${item.url}`)}
+              />
             ))}
           </div>
         </div>

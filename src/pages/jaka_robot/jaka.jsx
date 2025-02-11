@@ -1,3 +1,5 @@
+import { useNavigate } from 'react-router-dom';
+
 import Header from '../../components/header/header';
 import Footer from '../../components/footer/footer';
 import PageTitle from '../../components/page_title/pageTitle';
@@ -5,8 +7,8 @@ import VideoComponent from '../../components/video_component/videoComponent';
 import RobotCard from '../../components/card/robotCard';
 import FeatureComponent from '../../components/feature_component/featureComponent';
 
-import data from '../../mock/series.json';
 import jakaProducts from '../../data/features/jakaProducts';
+import data from '../../data/series_data/jakaMainSeriesData';
 import styles from './jaka.module.scss';
 
 const pageTitle = 'JAKA Collaborative Robots';
@@ -21,6 +23,7 @@ const videoAbout = [
 ];
 
 export default function Jaka() {
+  const nav = useNavigate();
   return (
     <>
       <Header />
@@ -44,7 +47,11 @@ export default function Jaka() {
           <div className={styles.card_container}>
             <div className={styles.series_card}>
               {data.map((item) => (
-                <RobotCard key={item.id} {...item} />
+                <RobotCard
+                  key={item.id}
+                  {...item}
+                  onClick={() => nav(`/jaka/${item.url}`)}
+                />
               ))}
             </div>
           </div>
