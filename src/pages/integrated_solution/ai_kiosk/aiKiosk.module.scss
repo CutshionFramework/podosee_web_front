@@ -6,7 +6,7 @@
   color: #1D1D1F;
 
   h1{
-    margin-top: 70px;
+    margin-top: 130px;
     font-size: 40px;
   }
 
@@ -21,8 +21,7 @@
 
 .common_container {
   .description {
-    margin-top: 10px;
-    margin-bottom: 110px;
+    margin-bottom: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,8 +38,8 @@
 
   h2 {
     text-align: center;
-    margin-top: 120px;
-    margin-bottom: 50px;
+    margin-top: 150px;
+    margin-bottom: 80px;
     font-size: 33px;
   }
 
@@ -51,14 +50,13 @@
 
   .spec_img {
     width: 100%;
-
     @media (max-width: 768px) {
       object-fit: contain;
     }
   }
 
+
   .vandingmachine_spec {
-    // width: 100%;
     max-width: 80%; /* 전체 너비의 90%로 제한 */
     width: auto; /* 원래 비율 유지 */
     display: block;
@@ -74,7 +72,7 @@
 
   .freephoto_img {
     width: 100%;
-    margin-top: 100px;
+    margin-top: 150px;
   }
 
   .none_img {
