@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
 import Header from '../../../components/header/header';
@@ -24,6 +25,10 @@ export default function AllInOneSeriesPage() {
 
   const fieldListItem =
     id === '3' ? fieldListItemAllInOne3 : fieldListItemAllInOne; // id가 '3'이면 fieldListItemAllInOne3, fieldListItemAllInOne
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className='zuseries_page'>
