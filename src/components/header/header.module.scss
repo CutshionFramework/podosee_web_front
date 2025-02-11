@@ -10,6 +10,7 @@
   z-index: 9999999;
   top: 0;
   width: 100%;
+  color: #1b1b1b;
 }
 
 .logo img {
@@ -58,7 +59,7 @@
     a {
       text-decoration: none;
       font-size: 18px;
-      font-weight: 600;
+      font-weight: 500;
       color: #1b1b1b;
     }
 
@@ -83,6 +84,7 @@
         a {
           display: inline-block;
           width: 100%;
+          font-weight: 300;
         }
       }
     }
@@ -111,11 +113,11 @@
       background: none;
       border: none;
       font-size: 18px;
-      font-weight: 600;
+      font-weight: 500;
       padding: 0;
       text-align: left;
       cursor: pointer;
-
+      color: #1b1b1b;
     }
   }
 
@@ -134,7 +136,8 @@
     li {
       flex-direction: row;
       padding: 10px 0;
-      font-weight: 600;
+      font-size: 18px;
+      font-weight: 300;
       width: 100%;
       cursor: pointer;
       &:hover {
