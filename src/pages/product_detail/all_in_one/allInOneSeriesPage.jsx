@@ -54,7 +54,7 @@ export default function AllInOneSeriesPage() {
 
       <section className='detail_feature'>
         <div className={styles.detail_feature_title}>
-          <p>{seriesData.feature_title}</p>
+          <span>{seriesData.feature_title}</span>
         </div>
 
         <FeatureComponent features={features} />
@@ -62,7 +62,7 @@ export default function AllInOneSeriesPage() {
 
       <section className='detail_optimal_application_field'>
         <div className={styles.optimal_application_field_title}>
-          <p>{seriesData.field_title}</p>
+          <span>{seriesData.field_title}</span>
         </div>
         <div className='field_list'>
           <ul className={styles.field_list}>
