@@ -11,6 +11,8 @@ import FeatureComponent from '../../../components/feature_component/featureCompo
 import styles from './allInOneSeriesPage.module.scss';
 import allInOneSeriesData from '../../../data/product_data/allInOneSeriesProductData';
 import allInOneFeature from '../../../data/features/allInOne';
+import fieldListItemAllInOne from '../../../data/optimal_application_field/fieldListItemAllInOne';
+import fieldListItemAllInOne3 from '../../../data/optimal_application_field/fieldListItemAllInOne3';
 
 export default function AllInOneSeriesPage() {
   const { id } = useParams();
@@ -19,6 +21,9 @@ export default function AllInOneSeriesPage() {
   const seriesData = allInOneSeriesData[idNumber];
 
   const features = allInOneFeature;
+
+  const fieldListItem =
+    id === '3' ? fieldListItemAllInOne3 : fieldListItemAllInOne; // id가 '3'이면 fieldListItemAllInOne3, fieldListItemAllInOne
 
   return (
     <div className='zuseries_page'>
@@ -56,11 +61,11 @@ export default function AllInOneSeriesPage() {
         </div>
         <div className='field_list'>
           <ul className={styles.field_list}>
-            <li>접착 및 결함</li>
-            <li>전자 조립</li>
-            <li>점검</li>
-            <li>픽앤플레이스</li>
-            <li>나사 드라이빙</li>
+            {fieldListItem.map((item) => (
+              <li className={styles.list_item} key={item.id}>
+                {item.name}
+              </li>
+            ))}
           </ul>
         </div>
       </section>

@@ -12,6 +12,7 @@ import styles from './proSeriesPage.module.scss';
 import proSeriesData from '../../../data/product_data/proSeriesProductData';
 import proFeaturesData from '../../../data/features/pro';
 import pro16FeaturesData from '../../../data/features/pro16';
+import fieldListItemPro from '../../../data/optimal_application_field/fieldListItemPro';
 
 export default function ProSeriesPage() {
   const { id } = useParams();
@@ -23,6 +24,8 @@ export default function ProSeriesPage() {
   const pro16Data = pro16FeaturesData;
 
   const features = id === '16' ? pro16Data : proData; // id가 "16"이면 pro16Data, 아니면 proData
+
+  const fieldListItem = fieldListItemPro;
 
   return (
     <div className='zuseries_page'>
@@ -60,11 +63,11 @@ export default function ProSeriesPage() {
         </div>
         <div className='field_list'>
           <ul className={styles.field_list}>
-            <li>접착 및 결함</li>
-            <li>전자 조립</li>
-            <li>점검</li>
-            <li>픽앤플레이스</li>
-            <li>나사 드라이빙</li>
+            {fieldListItem.map((item) => (
+              <li className={styles.list_item} key={item.id}>
+                {item.name}
+              </li>
+            ))}
           </ul>
         </div>
       </section>
