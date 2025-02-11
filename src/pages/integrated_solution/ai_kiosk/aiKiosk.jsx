@@ -101,6 +101,16 @@ const CommmonComponent = ({ currentTab }) => {
   const imageContainerClass =
     styles[`${selectedTab}_container`] || styles.freephoto_container;
 
+  const specImgClass = `${styles.spec_img} ${
+    selectedTab === "freephoto"
+      ? styles.freephoto_spec
+      : selectedTab === "feveralarm"
+      ? styles.feveralarm_spec
+      : selectedTab === "vandingmachine"
+      ? styles.vandingmachine_spec
+      : ""
+  }`;
+
   const specImage =
     specImageMap[selectedTab]?.[currentLanguage] ||
     specImageMap[selectedTab]?.kr;
@@ -122,7 +132,7 @@ const CommmonComponent = ({ currentTab }) => {
       <h2>{t("aikiosk.spec")}</h2>
 
       <div className={styles.spec_img_container}>
-        <img className={styles.spec_img} src={specImage} alt={specImage} />
+        <img className={specImgClass} src={specImage} alt={specImage} />
       </div>
 
       <img

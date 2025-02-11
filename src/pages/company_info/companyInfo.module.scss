@@ -6,7 +6,7 @@
 }
 
 .ceo_greeting {
-  margin-top: 70px;
+  margin-top: 50px;
   width: 100%;
   text-align: center;
 
@@ -35,6 +35,10 @@
   .p_margin_botton {
     margin-bottom: 50px;
   }
+
+  @media (max-width: 768px) {
+    margin-top: 0;
+  }
 }
 
 .history_container {
@@ -61,7 +65,7 @@
   }
 
   .month_name {
-    font-weight: bold;
+    font-weight: 500;
     margin-bottom: 5px;
   }
 
@@ -77,9 +81,14 @@
   .activity_item {
     margin-bottom: 5px;
   }
+
+  @media (max-width: 768px) {
+    margin-top: 0;
+  }
 }
 
 .location_div {
+  margin-top: 50px;
   width: 70%;
   .location_container {
     width: 100%;
@@ -98,8 +107,9 @@
       }
     }
   }
-
-  
+  @media (max-width: 768px) {
+    margin-top: 0;
+  }
 }
 
 .partner_div {
@@ -148,6 +158,10 @@
         }
       }
     }
+  }
+
+  @media (max-width: 768px) {
+    margin-top: 0;
   }
 }
 

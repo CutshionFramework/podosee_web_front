@@ -96,10 +96,17 @@ const CommmonComponent = ({ currentTab }) => {
   const imageContainerClass =
     styles[`${selectedTab}_container`] || styles.tseries_container;
 
+  const specImgClass = `${styles.spec_img} ${
+    selectedTab === "tseries"
+      ? styles.tseries_spec
+      : selectedTab === "lseries"
+      ? styles.lseries_spec
+      : ""
+  }`;
+
   const specImage =
     specImageMap[selectedTab]?.[currentLanguage] ||
     specImageMap[selectedTab]?.kr;
-
 
   return (
     <div className={styles.common_container}>
@@ -130,7 +137,7 @@ const CommmonComponent = ({ currentTab }) => {
       <h2>{t("amr.spec")}</h2>
 
       <div className={styles.spec_img_container}>
-        <img className={styles.spec_img} src={specImage} alt={specImage} />
+        <img className={specImgClass} src={specImage} alt={specImage} />
       </div>
     </div>
   );

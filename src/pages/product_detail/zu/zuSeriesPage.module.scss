@@ -7,8 +7,8 @@
   text-align: center;
 }
 
-.detail_feature_title p,
-.optimal_application_field_title p {
+.detail_feature_title span,
+.optimal_application_field_title span {
   font-weight: bold;
   font-size: 40px;
   text-align: center;
@@ -28,7 +28,7 @@
   justify-content: space-evenly; /* 균일한 간격 */
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin-top: 40px;
   max-width: 100%;
   row-gap: 40px; /* 🔥 첫 번째 줄과 두 번째 줄 사이 간격 조절 */
 }

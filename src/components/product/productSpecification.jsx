@@ -5,7 +5,7 @@ export default function ProductSpecification({ name, basicImg, commonImg }) {
     <div className={styles.product_specification}>
       <section className='product_detail_info'>
         <div className={styles.product_name}>
-          <p>{name}</p>
+          <span>{name}</span>
         </div>
       </section>
 

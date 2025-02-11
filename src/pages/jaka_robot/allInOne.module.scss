@@ -2,6 +2,7 @@
   margin-top: 50px;
   font-size: 16px;
   text-align: center;
+  color: #1d1d1f;
 }
 
 .series_card {
@@ -39,6 +40,7 @@
   display: flex;
   justify-content: center;
   margin-top: 120px;
+  color: #1d1d1f;
 
   @media (max-width: 1024px) {
     margin-top: 100px;
@@ -55,7 +57,6 @@
 
 .first_feature {
   display: flex;
-  flex-wrap: wrap; /* 반응형 적용 */
   border-top: 1px solid rgb(230, 230, 230);
   border-bottom: 1px solid rgb(230, 230, 230);
   margin-top: 40px;
@@ -66,6 +67,7 @@
   width: 50%;
   margin-top: 30px;
   margin-left: 50px;
+  color: #1d1d1f;
 }
 
 .first_feature_name {
@@ -75,11 +77,11 @@
 .first_feature_description {
   word-wrap: break-word; /* 긴 단어 자동 줄바꿈 */
   overflow-wrap: break-word;
-  text-align: center;
   margin-top: 30px;
   font-size: 16px;
   width: 100%;
   max-width: 95%;
+  color: #1d1d1f;
 }
 
 /* 첫 번째 섹션 이미지 */
@@ -99,7 +101,6 @@
 /* 두 번째 섹션 */
 .second_feature {
   display: flex;
-  flex-wrap: wrap; /* 반응형 적용 */
   border-bottom: 1px solid rgb(230, 230, 230);
 }
 
@@ -107,6 +108,7 @@
 .second_feature_info {
   width: 100%;
   padding: 30px;
+  color: #1d1d1f;
 }
 
 .second_feature_name {
@@ -116,11 +118,11 @@
 .second_feature_description {
   word-wrap: break-word; /* 긴 단어 자동 줄바꿈 */
   overflow-wrap: break-word;
-  text-align: center;
   margin-top: 30px;
   font-size: 16px;
   width: 100%;
   max-width: 95%;
+  line-height: 20px;
 }
 
 /* 두 번째 섹션 이미지 */
@@ -197,6 +199,7 @@
   display: flex;
   justify-content: center;
   margin-top: 120px;
+  color: #1d1d1f;
 
   @media (max-width: 1024px) {
     margin-top: 100px;
@@ -214,7 +217,7 @@
 .chart_img {
   display: flex;
   justify-content: center;
-  margin-top: 70px;
+  margin-top: 20px;
 
   img {
     width: 1300px;

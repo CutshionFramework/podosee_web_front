@@ -14,9 +14,9 @@ const pageTitle = 'JAKA Zu Collaborative Robots';
 
 const videoAbout = [
   {
-    title: 'JAKA Zu 협동 로봇의 실제 작동 모습보기',
+    title: 'JAKA Zu 협동로봇의 실제 작동 모습보기',
     description:
-      'JAKA Zu 와 함께라면 공장 자동화가 간단합니다. 다양한 협동 로봇 애플리케이션을 플러그 앤 플레이 방식으로 즉시 구현할 수 있습니다.',
+      'JAKA Zu 와 함께라면 공장 자동화가 간단합니다. \n다양한 협동 로봇 애플리케이션을 플러그 앤 플레이 방식으로 즉시 구현할 수 있습니다.',
     videoID: 'fBJENsNZZmY&t',
   },
 ];
@@ -62,8 +62,13 @@ export default function ZuSeriesPage() {
           <VideoComponent
             key={index}
             title={video.title}
-            description={video.description}
             videoID={video.videoID}
+            description={video.description.split('\n').map((line, i) => (
+              <span key={i}>
+                {line}
+                <br />
+              </span>
+            ))}
           />
         ))}
       </section>

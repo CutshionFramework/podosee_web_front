@@ -9,7 +9,7 @@ export default function VideoComponent({ title, description, videoID }) {
     <div className={styles.video_component}>
       <section className={styles.video_about}>
         <div className={styles.about_title}>
-          <p>{title}</p>
+          <span>{title}</span>
         </div>
 
         <div className={styles.about_description}>{description}</div>

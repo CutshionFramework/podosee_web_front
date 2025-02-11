@@ -17,6 +17,7 @@
   border: 1px solid #dddddd;
   border-radius: 9px;
   overflow: hidden; // 요소가 넘치지 않도록 처리
+  color: #1d1d1f;
 
   @media (max-width: 768px) {
     flex-direction: column; // 작은 화면에서는 세로 배치
@@ -31,11 +32,12 @@
   justify-content: center;
   align-items: center;
   flex-shrink: 0; // 이미지가 너무 작아지지 않도록 방지
+  object-fit: contain;
+  margin-left: 100px;
 
   img {
     width: auto;
     height: 400px;
-    margin-left: 200px;
 
     @media (max-width: 1024px) {
       height: 350px;
@@ -68,6 +70,8 @@
   flex-direction: column;
   justify-content: center;
   font-size: 16px;
+  line-height: 20px;
+  font-family: Pretendard-Light;
 
   @media (max-width: 1024px) {
     margin-left: 20px;
