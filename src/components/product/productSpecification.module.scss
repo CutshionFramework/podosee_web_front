@@ -3,34 +3,84 @@
   padding: 0 50px;
 }
 
+/* 제품명 */
 .product_name {
   display: flex;
   justify-content: center;
   font-weight: bold;
-  font-size: 48px;
+  font-size: 40px;
+  text-align: center;
 }
 
+/* 스펙 섹션 */
 .specifications {
   display: flex;
   justify-content: center;
+
+  gap: 20px; /* 요소 간 간격 추가 */
 }
 
-.basic_spec {
+/* 기본 & 공통 스펙 */
+.basic_spec,
+.common_spec {
   padding: 25px;
-  img {
-    width: 100%;
-    height: 595px;
+  width: 50%; /* 데스크톱에서 절반씩 차지 */
+}
 
-    object-fit: contain;
+.basic_spec img,
+.common_spec img {
+  width: 100%;
+  height: 595px;
+  object-fit: contain;
+}
+
+/* 🛠 반응형 적용 */
+/* 1024px 이하 */
+@media (max-width: 1024px) {
+  .product_specification {
+    padding: 0 30px;
+  }
+
+  .basic_spec,
+  .common_spec {
+    width: 50%; /* 여전히 반반 */
+  }
+
+  .basic_spec img,
+  .common_spec img {
+    height: 500px;
   }
 }
 
-.common_spec {
-  padding: 25px;
-  img {
-    width: 100%;
-    height: 595px;
+/* 768px 이하 */
+@media (max-width: 768px) {
+  .specifications {
+    flex-direction: column; /* 세로 정렬 */
+    align-items: center;
+  }
 
-    object-fit: contain;
+  .basic_spec,
+  .common_spec {
+    width: 80%; /* 더 넓게 사용 */
+    padding: 15px;
+  }
+
+  .basic_spec img,
+  .common_spec img {
+    height: 400px;
+  }
+}
+
+/* 480px 이하 */
+@media (max-width: 480px) {
+  .basic_spec,
+  .common_spec {
+    width: 100%; /* 모바일에서는 전체 너비 사용 */
+    padding: 10px;
+  }
+
+  .basic_spec img,
+  .common_spec img {
+    height: auto; /* 이미지 크기를 자동으로 조정 */
   }
 }

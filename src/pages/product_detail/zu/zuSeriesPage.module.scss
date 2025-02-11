@@ -5,7 +5,7 @@
 
   p {
     font-weight: bold;
-    font-size: 48px;
+    font-size: 40px;
     text-align: center;
   }
 }
@@ -17,18 +17,33 @@
 
   p {
     font-weight: bold;
-    font-size: 48px;
+    font-size: 40px;
     text-align: center;
   }
 }
 
+.field_container {
+  display: flex;
+  justify-content: center; /* 중앙 정렬 */
+  margin-top: 50px;
+}
+
 .field_list {
   display: flex;
-  justify-content: space-around;
-  margin-top: 50px;
+  flex-wrap: wrap;
+  justify-content: space-evenly; /* 균일한 간격 */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 80%; /* 리스트 전체 너비 조절 */
+  max-width: 100%; /* 적절한 최대 너비 */
+  row-gap: 40px; /* 🔥 첫 번째 줄과 두 번째 줄 사이 간격 조절 */
+}
 
-  li {
-    list-style: none;
-    color: #c6001d;
-  }
+.list_item {
+  flex: 1 1 calc(100% / 6 - 10px); /* 6개씩 정렬 */
+  text-align: center;
+  color: #c6001d;
+  font-size: 16px;
+  padding: 5px;
 }

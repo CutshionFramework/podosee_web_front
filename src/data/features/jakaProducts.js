@@ -4,7 +4,7 @@ const jakaProducts = [
     icon: '/assets/feature_icons/remote_monitoring.png',
     name: '원격 모니터링',
     description:
-      '독특한 보안 인증 시스템으로\n코봇의 작업을 모니터링하고 \n알림을 설정합니다.',
+      '독특한 보안 인증 시스템으로\n협동로봇의 작업을 모니터링하고 \n알림을 설정합니다.',
   },
   {
     id: 2,
