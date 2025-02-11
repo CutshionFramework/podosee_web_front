@@ -45,10 +45,12 @@
 
   .spec_img_container {
     width: 100%;
+    
   }
 
   .spec_img {
     width: 100%;
+    border: 1px solid #DDDDDD;
 
     @media (max-width: 768px) {
       object-fit: contain;

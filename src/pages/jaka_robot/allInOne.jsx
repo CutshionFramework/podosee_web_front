@@ -1,14 +1,17 @@
+import { useNavigate } from 'react-router-dom';
+
 import Header from '../../components/header/header';
 import Footer from '../../components/footer/footer';
 import PageTitle from '../../components/page_title/pageTitle';
 import RobotCard from '../../components/card/robotCard';
 
-import data from '../../mock/all_in_one.json';
+import data from '../../data/series_data/allInOneSeriesData';
 import styles from './allInOne.module.scss';
 
 const pageTitle = 'JAKA All-in-one Collaborative Robots';
 
 export default function AllInOne() {
+  const nav = useNavigate();
   return (
     <>
       <Header />
@@ -30,7 +33,11 @@ export default function AllInOne() {
         <div className={styles.card_container}>
           <div className={styles.series_card}>
             {data.map((item) => (
-              <RobotCard key={item.id} {...item} />
+              <RobotCard
+                key={item.id}
+                {...item}
+                onClick={() => nav(`/jaka/allinone/${item.url}`)}
+              />
             ))}
           </div>
         </div>

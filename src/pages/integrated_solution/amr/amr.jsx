@@ -58,7 +58,8 @@ export default function AMR() {
 }
 
 const CommmonComponent = ({ currentTab }) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const currentLanguage = i18n.language;
   const imageMap = {
     tseries: [
       "/assets/amr/t200.png",
@@ -67,6 +68,17 @@ const CommmonComponent = ({ currentTab }) => {
       "/assets/amr/t1000.png",
     ],
     lseries: ["/assets/amr/l200.png"],
+  };
+
+  const specImageMap = {
+    tseries: {
+      kr: "/assets/amr/spec_tseries.png",
+      en: "/assets/amr/spec_tseries_en.png",
+    },
+    lseries: {
+      kr: "/assets/amr/spec_lseries.png",
+      en: "/assets/amr/spec_lseries_en.png",
+    },
   };
 
   const selectedTab = currentTab || "tseries";
@@ -81,16 +93,13 @@ const CommmonComponent = ({ currentTab }) => {
     returnObjects: true,
   });
 
-  let imageContainerClass = styles.tseries_container;
-  let specImage = "/assets/amr/spec_tseries.png";
+  const imageContainerClass =
+    styles[`${selectedTab}_container`] || styles.tseries_container;
 
-  if (selectedTab === "tseries") {
-    imageContainerClass = styles.tseries_container;
-    specImage = "/assets/amr/spec_tseries.png";
-  } else if (selectedTab === "lseries") {
-    imageContainerClass = styles.lseries_container;
-    specImage = "/assets/amr/spec_lseries.png";
-  }
+  const specImage =
+    specImageMap[selectedTab]?.[currentLanguage] ||
+    specImageMap[selectedTab]?.kr;
+
 
   return (
     <div className={styles.common_container}>

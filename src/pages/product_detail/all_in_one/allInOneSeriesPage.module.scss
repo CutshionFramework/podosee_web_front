@@ -1,0 +1,73 @@
+/* 주요 타이틀 */
+.detail_feature_title,
+.optimal_application_field_title {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+  text-align: center;
+}
+
+.detail_feature_title p,
+.optimal_application_field_title p {
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+}
+
+/* 필드 컨테이너 */
+.field_container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+/* 필드 리스트 */
+.field_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; /* 균일한 간격 */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  row-gap: 40px; /* 🔥 첫 번째 줄과 두 번째 줄 사이 간격 조절 */
+}
+
+/* 리스트 아이템 */
+.list_item {
+  flex: 1 1 calc(100% / 6 - 10px); /* 기본적으로 6개씩 정렬 */
+  text-align: center;
+  color: #c6001d;
+  font-size: 16px;
+  padding: 5px;
+}
+
+/* 🛠 반응형 적용 */
+/* 1024px 이하 (태블릿) */
+@media (max-width: 1024px) {
+  .list_item {
+    flex: 1 1 calc(100% / 3 - 10px); /* 3개씩 정렬 */
+  }
+}
+
+/* 768px 이하 (작은 태블릿) */
+@media (max-width: 768px) {
+  .field_list {
+    width: 90%; /* 리스트 크기 조절 */
+  }
+
+  .list_item {
+    flex: 1 1 calc(100% / 2 - 10px); /* 2개씩 정렬 */
+  }
+}
+
+/* 480px 이하 (모바일) */
+@media (max-width: 480px) {
+  .field_list {
+    width: 100%; /* 모바일에서는 전체 너비 사용 */
+  }
+
+  .list_item {
+    flex: 1 1 calc(100% / 1 - 10px); /* 1개씩 정렬 */
+  }
+}

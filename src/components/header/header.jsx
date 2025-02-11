@@ -15,11 +15,37 @@ export default function Header() {
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [menuOpen, setMenuOpen] = useState(false); // 모바일 메뉴 열기 상태
   const [languageOpen, setLanguageOpen] = useState(false); // 언어 메뉴 열기 상태
-  const [selectedLang, setSelectedLang] = useState("KR"); // 기본 언어 KR
+  const [selectedLang, setSelectedLang] = useState(() => {
+    return localStorage.getItem("selectedLang") || "KR";
+  });
 
   const isMobile = useMediaQuery({ maxWidth: 767 });
 
   const availableLanguages = ["KR", "EN"]; // 지원하는 언어 목록
+
+  // 페이지 로드 시 언어 설정
+  useEffect(() => {
+    // 로컬스토리지에서 언어 설정 값을 가져와 i18n에 적용
+    if (selectedLang === "KR") {
+      i18n.changeLanguage("kr");
+    } else if (selectedLang === "EN") {
+      i18n.changeLanguage("en");
+    }
+  }, [selectedLang, i18n]);
+
+  // 메뉴 열기 상태가 변경될 때마다 스크롤 잠금/해제 처리
+  useEffect(() => {
+    if (menuOpen) {
+      document.body.style.overflow = "hidden"; // 메뉴 열리면 스크롤 잠금
+    } else {
+      document.body.style.overflow = ""; // 메뉴 닫히면 스크롤 활성화
+    }
+
+    // cleanup: 컴포넌트가 언마운트될 때 스타일을 원래대로 되돌려놓음
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [menuOpen]);
 
   // 모바일에서 메뉴 클릭 시 드롭다운 토글
   const handleDropdownToggle = (index) => {
@@ -35,22 +61,9 @@ export default function Header() {
     }
 
     setSelectedLang(lang);
+    localStorage.setItem("selectedLang", lang);
     setLanguageOpen(false); // 선택 후 닫기
   };
-
-  // 메뉴 열기 상태가 변경될 때마다 스크롤 잠금/해제 처리
-  useEffect(() => {
-    if (menuOpen) {
-      document.body.style.overflow = "hidden"; // 메뉴 열리면 스크롤 잠금
-    } else {
-      document.body.style.overflow = ""; // 메뉴 닫히면 스크롤 활성화
-    }
-
-    // cleanup: 컴포넌트가 언마운트될 때 스타일을 원래대로 되돌려놓음
-    return () => {
-      document.body.style.overflow = "";
-    };
-  }, [menuOpen]);
 
   return (
     <header className={styles.header}>

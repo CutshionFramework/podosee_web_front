@@ -139,5 +139,142 @@
 
   "news": {
     "title": "Latest News"
+  },
+
+  "company": {
+    "title": "Company",
+    "menu": {
+      "greeting": "CEO's greeting",
+      "history": "History",
+      "location": "Location",
+      "partners": "Partners"
+    },
+    "greeting": {
+      "item1": "Welcome to Podosee!",
+      "item2": "Podosee is a place where people with different backgrounds and experiences come together.",
+      "item3": "However, we all look in the same direction.",
+      "item4": "In that environment, we are working together to achieve our dreams.",
+      "item5": "Think free, thank all!",
+      "item6": "The philosophy of Podosee is to freely express individual thoughts and contribute to others.",
+      "item7": "By providing products and services, we aim to create opportunities to be grateful for the world.",
+      "item8": "In this changing era, we aim to enhance the value of life and pursue happiness.",
+      "item9": "We will grow with our best effort.",
+      "item10": "We wish health and good fortune to all visitors to our website.",
+      "item11": "Thank you.",
+      "item12": "CEO Moshin Lee"
+    },
+    "location": "ADDRESS 709, 10, Seonyu-ro 9-gil, Yeongdeungpo-gu, Seoul (Mullae SK V1 Center)",
+    "partners": {
+      "agency": "Agency",
+      "government": "Government",
+      "domestic": "Domestic Company",
+      "overseas": "Overseas Company"
+    }
+  },
+
+  "contact": {
+    "title": "Contact Us",
+    "description": [
+      "If you have any questions,",
+      "please fill out the form below and a representative will check it out and get back to you."
+    ],
+    "inquiry_options": [
+      "Product Inquiry",
+      "Distributor Inquiry",
+      "Maintenance Inquiry",
+      "Other Inquiry"
+    ],
+    "form": {
+      "inquiry_type": "Inquiry Type",
+      "company_name": "Company Name",
+      "name": "Name",
+      "job_title": "Job Title",
+      "phone": "Phone Number",
+      "email": "E-mail",
+      "title": "Subject",
+      "message": "Contact",
+      "agree": "I agree to the privacy policy"
+    },
+    "placeholders": {
+      "company_name": "Please enter your company name.",
+      "name": "Please enter your name.",
+      "job_title": "Please enter your job title.",
+      "phone": "Please enter your phone number.",
+      "email": "Please enter your e-mail.",
+      "title": "Please enter the inquiry title.",
+      "message": "Please enter your inquiry."
+    },
+    "submit": "Submit",
+    "alerts": {
+      "success": {
+        "title": "Thank you!",
+        "message": "Your message has been sent successfully."
+      },
+      "failure": "Sending failed! Please try again.",
+      "agree_required": "You must agree to the collection and use of personal information."
+    },
+
+    "privacy_policy": {
+      "privacy_policy": "Privacy Policy",
+      "company_info": "Podosee.inc (hereinafter referred to as 'the company') adheres to the Personal Information Protection Act to protect the privacy and rights of users and to facilitate the resolution of any issues related to personal information.",
+      "company_policy_update": "Podosee.inc (hereinafter referred to as 'the company') will notify users of any updates to the privacy policy through website notices (or individual notices).",
+      "policy_effective_date": "This policy is effective from July 4, 2022.",
+      "company_privacy_content": "The company's privacy policy includes the following contents:",
+      "item1": "1. Personal information items collected",
+      "item2": "2. Purpose of collection and use of personal information",
+      "item3": "3. Retention and use period of personal information",
+      "item4": "4. Procedures and methods of personal information destruction",
+      "item5": "5. Provision of personal information",
+      "item6": "6. Outsourcing of collected personal information",
+      "item7": "7. Rights of users and legal representatives and how to exercise them",
+      "item8": "8. Installation, operation, and refusal of automatic personal information collection devices",
+      "item9": "9. Personal information complaint service",
+      "item10": "10. Other",
+      "item11": "11. Obligation to notify",
+      "item1_explanation1": "This site allows free access to content without a separate membership registration process. However, personal information is collected only when users leave inquiries with the company. The personal information collected by the company is as follows:",
+      "item1_explanation2": "(Podosee, hereinafter referred to as 'the company') collects personal information as follows for product inquiries and other purposes.",
+      "item1_explanation3": "1) Items collected",
+      "item1_explanation4": "① Product inquiry - Items collected: Name, Contact, Company name, Email",
+      "item1_explanation5": "② During the process of using internet services, the following personal information may be automatically generated and collected: - IP address, Cookies, MAC address, Service usage records, Visit records, Improper usage records, etc.",
+      "item2_explanation1": "The company processes collected personal information for the following purposes. The personal information being processed will not be used for purposes other than the following, and if the purpose of use is changed, the company will take necessary steps such as obtaining separate consent in accordance with Article 18 of the Personal Information Protection Act.",
+      "item2_explanation2": "1) Product inquiry",
+      "item2_explanation3": "① Personal information is processed for the purpose of contacting and notifying users, and communicating processing results in response to inquiries.",
+      "item3_explanation1": "In principle, personal information will be destroyed without delay after the purpose of collection and use has been achieved. However, if retention is necessary under relevant laws, the company will retain the personal information for a certain period as stipulated by the laws.",
+      "item3_explanation2": "1) Records related to identity verification",
+      "item3_explanation3": "① Retention reason: Act on Promotion of Information and Communications Network Utilization and Information Protection",
+      "item3_explanation4": "② Retention period: 6 months",
+      "item3_explanation5": "2) Visit records",
+      "item3_explanation6": "① Retention reason: Communications Privacy Protection Act",
+      "item3_explanation7": "② Retention period: 3 months",
+      "item4_explanation1": "The company will destroy personal information without delay after the purpose of collection and use has been achieved. The procedures and methods of destruction are as follows:",
+      "item4_explanation2": "1) Destruction procedure",
+      "item4_explanation3": "Information entered by users during membership registration will be moved to a separate database (or separate filing cabinet for paper documents) and will be stored for a certain period according to internal policies and related legal requirements before being destroyed. The personal information moved to the separate database will not be used for any other purposes unless required by law.",
+      "item4_explanation4": "2) Destruction method",
+      "item4_explanation5": "Personal information stored in electronic file form will be deleted using technical methods that prevent recovery of records.",
+      "item5_explanation1": "The company generally does not provide users' personal information to third parties. However, the following are exceptions:",
+      "item5_explanation2": "① If the user has given prior consent",
+      "item5_explanation3": "② If required by law or requested by law enforcement authorities under the prescribed procedures for investigation purposes",
+      "item6_explanation1": "The company does not outsource users' personal information to external parties without their consent.",
+      "item6_explanation2": "If such outsourcing becomes necessary in the future, the company will notify the user of the outsourcing target and the scope of outsourcing and will obtain prior consent if necessary.",
+      "item7_explanation1": "Users can view or modify their registered personal information at any time.",
+      "item7_explanation2": "To view or modify personal information, users should contact the Personal Information Management Officer via written or email request, and the company will take prompt action.",
+      "item7_explanation3": "If a user requests correction of erroneous personal information, the company will not use or provide the information until the correction is completed.",
+      "item7_explanation4": "If erroneous personal information has already been provided to a third party, the company will promptly notify the third party of the correction and ensure the correction is made.",
+      "item7_explanation5": "Personal information that has been deleted or terminated by a user's request will be processed in accordance with the 'Retention and Use Period of Personal Information' and will not be used for any other purpose.",
+      "item8_explanation1": "The company uses cookies and other devices to store and retrieve your information periodically. A cookie is a small text file sent from the company's server to your browser, which is stored on your computer's hard disk. The company uses cookies for the following purposes:",
+      "item8_explanation2": "① Purpose of using cookies: Analyzing the frequency and duration of visits, identifying users' preferences and areas of interest, tracking user behavior, and providing targeted marketing and personalized services.",
+      "item8_explanation3": "② How to reject cookies: Users can set their web browser options to allow all cookies, confirm each time cookies are stored, or reject all cookies.",
+      "item9_explanation1": "The company has designated a Personal Information Management Officer to protect users' personal information and handle complaints related to personal information.",
+      "item9_explanation2": "① Personal Information Protection Officer: CEO Mo Shin-Hee",
+      "item9_explanation3": "② Email: cutshion@cutshion.com",
+      "item9_explanation4": "Users can report any personal information protection-related complaints to the Personal Information Management Officer. The company will provide prompt and sufficient responses to the complaints.",
+      "item9_explanation5": "For other personal information violations, users can contact the following institutions:",
+      "item9_explanation6": "1. Personal Information Protection Center (privacy.kisa.or.kr / 02-405-5118)",
+      "item9_explanation7": "2. Information Protection Mark Certification Committee (www.eprivacy.or.kr / 02-580-9531~2)",
+      "item9_explanation8": "3. Supreme Prosecutor's Office Cybercrime Reporting (spo.go.kr / 02-3480-2000)",
+      "item9_explanation9": "4. National Police Agency Cyber Safety Division (www.ctrc.go.kr / 1566-0112)",
+      "item10_explanation1": "This 'Privacy Policy' does not apply to the personal information collection practices of external websites linked to the homepage.",
+      "item11_explanation1": "In the event that this privacy policy is changed, users will be notified at least 7 days prior to the changes via the homepage."
+    }
   }
 }
