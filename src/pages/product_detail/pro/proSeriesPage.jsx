@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
 import Header from '../../../components/header/header';
@@ -26,6 +27,10 @@ export default function ProSeriesPage() {
   const features = id === '16' ? pro16Data : proData; // id가 "16"이면 pro16Data, 아니면 proData
 
   const fieldListItem = fieldListItemPro;
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className='zuseries_page'>

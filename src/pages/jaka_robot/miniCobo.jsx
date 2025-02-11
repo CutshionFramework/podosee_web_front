@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+
 import Header from '../../components/header/header';
 import Footer from '../../components/footer/footer';
 import PageTitle from '../../components/page_title/pageTitle';
@@ -9,7 +11,10 @@ import styles from './minicobo.module.scss';
 
 const pageTitle = 'JAKA MiniCobo';
 
-export default function Jaka() {
+export default function Minicobo() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Header />

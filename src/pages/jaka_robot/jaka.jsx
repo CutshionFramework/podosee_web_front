@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import Header from '../../components/header/header';
@@ -24,6 +25,11 @@ const videoAbout = [
 
 export default function Jaka() {
   const nav = useNavigate();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <Header />
