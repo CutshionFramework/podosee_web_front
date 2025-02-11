@@ -63,7 +63,8 @@ export default function AIKiosk() {
 }
 
 const CommmonComponent = ({ currentTab }) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const currentLanguage = i18n.language;
   const imageMap = {
     freephoto: ["/assets/aikiosk/eqt1.png", "/assets/aikiosk/eqt5.png"],
     feveralarm: [
@@ -74,6 +75,21 @@ const CommmonComponent = ({ currentTab }) => {
     vandingmachine: ["/assets/aikiosk/vandingmachine.png"],
   };
 
+  const specImageMap = {
+    freephoto: {
+      kr: "/assets/aikiosk/spec_freephoto.png",
+      en: "/assets/aikiosk/spec_freephoto_en.png",
+    },
+    feveralarm: {
+      kr: "/assets/aikiosk/spec_feveralarm.png",
+      en: "/assets/aikiosk/spec_feveralarm_en.png",
+    },
+    vandingmachine: {
+      kr: "/assets/aikiosk/spec_vandingmachine.png",
+      en: "/assets/aikiosk/spec_vandingmachine_en.png",
+    },
+  };
+
   const selectedTab = currentTab || "freephoto";
 
   const imageList = imageMap[selectedTab];
@@ -82,19 +98,12 @@ const CommmonComponent = ({ currentTab }) => {
     returnObjects: true,
   });
 
-  let imageContainerClass = styles.freephoto_container;
-  let specImage = "/assets/aikiosk/spec_freephoto.png";
+  const imageContainerClass =
+    styles[`${selectedTab}_container`] || styles.freephoto_container;
 
-  if (selectedTab === "freephoto") {
-    imageContainerClass = styles.freephoto_container;
-    specImage = "/assets/aikiosk/spec_freephoto.png";
-  } else if (selectedTab === "feveralarm") {
-    imageContainerClass = styles.feveralarm_container;
-    specImage = "/assets/aikiosk/spec_feveralarm.png";
-  } else if (selectedTab === "vandingmachine") {
-    imageContainerClass = styles.vandingmachine_container;
-    specImage = "/assets/aikiosk/spec_vandingmachine.png";
-  }
+  const specImage =
+    specImageMap[selectedTab]?.[currentLanguage] ||
+    specImageMap[selectedTab]?.kr;
 
   return (
     <div className={styles.common_container}>

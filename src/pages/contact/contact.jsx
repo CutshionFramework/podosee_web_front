@@ -4,10 +4,16 @@ import ContactForm from "../../components/contact_form/contactForm";
 import PageTitle from "../../components/page_title/pageTitle";
 import styles from "./contact.module.scss";
 import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 export default function Contact() {
-  const title = "문의하기";
+  const { t } = useTranslation();
+  const title = t("contact.title");
   const image = "/assets/page_title/page_title.png";
+
+  const descriptionList = t(`contact.description`, {
+    returnObjects: true,
+  });
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -19,8 +25,9 @@ export default function Contact() {
       <PageTitle title={title} image={image} />
 
       <div className={styles.description}>
-        <p>문의 사항이 있으실 경우 하기 내용을</p>
-        <p>기입해 주시면 담당자가 확인 후 빠르게 답변 드리겠습니다.</p>
+        {descriptionList.map((text, index) => (
+          <p key={index}>{text}</p>
+        ))}
       </div>
 
       <ContactForm />

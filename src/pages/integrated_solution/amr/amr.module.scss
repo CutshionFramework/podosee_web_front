@@ -45,6 +45,7 @@
 
   .spec_img {
     width: 100%;
+    border: 1px solid #DDDDDD;
 
     @media (max-width: 768px) {
       object-fit: contain;
