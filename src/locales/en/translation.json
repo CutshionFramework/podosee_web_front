@@ -141,6 +141,37 @@
     "title": "Latest News"
   },
 
+  "company": {
+    "title": "Company",
+    "menu": {
+      "greeting": "CEO's greeting",
+      "history": "History",
+      "location": "Location",
+      "partners": "Partners"
+    },
+    "greeting": {
+      "item1": "Welcome to Podosee!",
+      "item2": "Podosee is a place where people with different backgrounds and experiences come together.",
+      "item3": "However, we all look in the same direction.",
+      "item4": "In that environment, we are working together to achieve our dreams.",
+      "item5": "Think free, thank all!",
+      "item6": "The philosophy of Podosee is to freely express individual thoughts and contribute to others.",
+      "item7": "By providing products and services, we aim to create opportunities to be grateful for the world.",
+      "item8": "In this changing era, we aim to enhance the value of life and pursue happiness.",
+      "item9": "We will grow with our best effort.",
+      "item10": "We wish health and good fortune to all visitors to our website.",
+      "item11": "Thank you.",
+      "item12": "CEO Moshin Lee"
+    },
+    "location": "ADDRESS 709, 10, Seonyu-ro 9-gil, Yeongdeungpo-gu, Seoul (Mullae SK V1 Center)",
+    "partners": {
+      "agency": "Agency",
+      "government": "Government",
+      "domestic": "Domestic Company",
+      "overseas": "Overseas Company"
+    }
+  },
+
   "contact": {
     "title": "Contact Us",
     "description": [
@@ -185,8 +216,8 @@
 
     "privacy_policy": {
       "privacy_policy": "Privacy Policy",
-      "company_info": "Podocee.inc (hereinafter referred to as 'the company') adheres to the Personal Information Protection Act to protect the privacy and rights of users and to facilitate the resolution of any issues related to personal information.",
-      "company_policy_update": "Podocee.inc (hereinafter referred to as 'the company') will notify users of any updates to the privacy policy through website notices (or individual notices).",
+      "company_info": "Podosee.inc (hereinafter referred to as 'the company') adheres to the Personal Information Protection Act to protect the privacy and rights of users and to facilitate the resolution of any issues related to personal information.",
+      "company_policy_update": "Podosee.inc (hereinafter referred to as 'the company') will notify users of any updates to the privacy policy through website notices (or individual notices).",
       "policy_effective_date": "This policy is effective from July 4, 2022.",
       "company_privacy_content": "The company's privacy policy includes the following contents:",
       "item1": "1. Personal information items collected",
@@ -201,7 +232,7 @@
       "item10": "10. Other",
       "item11": "11. Obligation to notify",
       "item1_explanation1": "This site allows free access to content without a separate membership registration process. However, personal information is collected only when users leave inquiries with the company. The personal information collected by the company is as follows:",
-      "item1_explanation2": "(PodoC, hereinafter referred to as 'the company') collects personal information as follows for product inquiries and other purposes.",
+      "item1_explanation2": "(Podosee, hereinafter referred to as 'the company') collects personal information as follows for product inquiries and other purposes.",
       "item1_explanation3": "1) Items collected",
       "item1_explanation4": "① Product inquiry - Items collected: Name, Contact, Company name, Email",
       "item1_explanation5": "② During the process of using internet services, the following personal information may be automatically generated and collected: - IP address, Cookies, MAC address, Service usage records, Visit records, Improper usage records, etc.",
