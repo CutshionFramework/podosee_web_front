@@ -51,7 +51,7 @@ export default function AllInOne() {
 
       <section className='major_feature'>
         <div className={styles.major_title}>
-          <p>JAKA All-in-one 협동로봇의 주요 특징</p>
+          <span>JAKA All-in-one 협동로봇의 주요 특징</span>
         </div>
 
         <div className={styles.first_feature}>
