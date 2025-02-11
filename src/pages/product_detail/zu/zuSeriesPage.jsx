@@ -8,10 +8,11 @@ import ProductInformation from '../../../components/product/productInformation';
 import ProductSpecification from '../../../components/product/productSpecification';
 import FeatureComponent from '../../../components/feature_component/featureComponent';
 
-import styles from './zuSeriesPage.module.scss';
-import zuSeriesData from '../../../data/zuSeriesData';
+import zuSeriesData from '../../../data/product_data/zuSeriesProductData';
 import zu3FeaturesData from '../../../data/features/zu3';
 import zu5FeaturesData from '../../../data/features/zu5';
+
+import styles from './zuSeriesPage.module.scss';
 
 export default function ZuSeriesPage() {
   const { id } = useParams();
@@ -19,10 +20,7 @@ export default function ZuSeriesPage() {
 
   const seriesData = zuSeriesData[idNumber];
 
-  const zu3Data = zu3FeaturesData;
-  const zu5Data = zu5FeaturesData;
-
-  const features = id === '5' ? zu5Data : zu3Data; // id가 "5"이면 zu5Data, 아니면 zu3Data
+  const features = id === '5' ? zu5FeaturesData : zu3FeaturesData; // id가 "5"이면 zu5Data, 아니면 zu3Data
 
   return (
     <div className='zuseries_page'>

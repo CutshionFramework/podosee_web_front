@@ -9,7 +9,7 @@ import ProductSpecification from '../../../components/product/productSpecificati
 import FeatureComponent from '../../../components/feature_component/featureComponent';
 
 import styles from './allInOneSeriesPage.module.scss';
-import allInOneSeriesData from '../../../data/allInOneSeriesData';
+import allInOneSeriesData from '../../../data/product_data/allInOneSeriesProductData';
 import allInOneFeature from '../../../data/features/allInOne';
 
 export default function AllInOneSeriesPage() {

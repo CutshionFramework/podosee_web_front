@@ -9,7 +9,7 @@ import ProductSpecification from '../../../components/product/productSpecificati
 import FeatureComponent from '../../../components/feature_component/featureComponent';
 
 import styles from './proSeriesPage.module.scss';
-import proSeriesData from '../../../data/proSeriesData';
+import proSeriesData from '../../../data/product_data/proSeriesProductData';
 import proFeaturesData from '../../../data/features/pro';
 import pro16FeaturesData from '../../../data/features/pro16';
 
