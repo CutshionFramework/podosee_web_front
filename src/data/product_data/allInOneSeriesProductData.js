@@ -1,4 +1,4 @@
-const allInOneSeriesData = {
+const allInOneSeriesProductData = {
   3: {
     pageTitle: 'JAKA Ai 3 Collaborative Robots',
     imgSrc: '/assets/jaka_zu/jaka_zu_3.png',
@@ -56,4 +56,4 @@ const allInOneSeriesData = {
   },
 };
 
-export default allInOneSeriesData;
+export default allInOneSeriesProductData;

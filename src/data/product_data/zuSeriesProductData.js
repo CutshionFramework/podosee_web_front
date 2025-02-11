@@ -1,4 +1,4 @@
-const zuSeriesData = {
+const zuSeriesProductData = {
   3: {
     pageTitle: 'JAKA Zu 3 Collaborative Robots',
     imgSrc: '/assets/jaka_zu/jaka_zu_3.png',
@@ -67,4 +67,4 @@ const zuSeriesData = {
   },
 };
 
-export default zuSeriesData;
+export default zuSeriesProductData;

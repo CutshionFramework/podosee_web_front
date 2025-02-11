@@ -1,4 +1,4 @@
-const proSeriesData = {
+const proSeriesProductData = {
   5: {
     pageTitle: 'JAKA Pro 5 Collaborative Robots',
     imgSrc: '/assets/jaka_zu/jaka_zu_5.png',
@@ -35,4 +35,4 @@ const proSeriesData = {
   },
 };
 
-export default proSeriesData;
+export default proSeriesProductData;
