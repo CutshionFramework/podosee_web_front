@@ -5,6 +5,10 @@ body {
   font-family: Pretendard-Regular;
   padding-top: 62px;
 
+  @media (max-width: 1023px) {
+    padding-top: 37px;
+  }
+
   @media (max-width: 768px) {
     padding-top: 27px;
   }
