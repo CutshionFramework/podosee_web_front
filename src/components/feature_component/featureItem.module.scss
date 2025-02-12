@@ -3,9 +3,8 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 20px;
-  width: 200px;
-  color: #1d1d1f;
+  margin: 0 auto;
+  width: 220px;
 
   @media (max-width: 1024px) {
     width: 250px;
@@ -35,6 +34,7 @@
   img {
     width: 50px;
     height: 50px;
+    filter: brightness(0) contrast(50%); // contrast 속성을 이용하여 선명도 변경
 
     @media (max-width: 768px) {
       width: 40px;
@@ -57,10 +57,12 @@
 }
 
 .feature_name {
-  font-size: 18px;
-  font-family: Pretendard-Regular;
-  margin-top: 10px;
-  color: #1d1d1f;
+  margin-top: 30px;
+
+  span {
+    font-size: 20px;
+    color: #1d1d1f;
+  }
 
   @media (max-width: 768px) {
     font-size: 16px;
@@ -72,11 +74,14 @@
 }
 
 .feature_description {
-  font-size: 14px;
-  font-family: Pretendard-Light;
-  color: #1d1d1f;
-  margin-top: 5px;
-  width: 100%;
+  margin-top: 10px;
+
+  span {
+    font-size: 13px;
+    font-family: Pretendard-Light;
+    color: #1d1d1f;
+    line-height: 1.4;
+  }
 
   @media (max-width: 768px) {
     font-size: 13px;

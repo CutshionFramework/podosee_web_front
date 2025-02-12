@@ -1,31 +1,31 @@
 const pro16 = [
   {
     id: 1,
-    icon: '/assets/feature_icons/flexibility.png',
-    name: '유연성',
+    icon: '/assets/feature_icons/perfect_security.png',
+    name: '완벽한 보안',
     description:
-      '올인원 기술은 생물학, 기계, 전자, \n물리학에서 작동 가능한 소형 지능형 하드웨어를 만듭니다.',
+      'IP68 보호 등급은 물, 먼지, 기름이 기능을 \n 방해하지 않도록 보장합니다.',
   },
   {
     id: 2,
-    icon: '/assets/feature_icons/integrated_jaka_lens_2D.png',
-    name: '통합 JAKA 렌즈 2D',
+    icon: '/assets/feature_icons/safe_collaboration.png',
+    name: '안전한 인간과 로봇 협업',
     description:
-      'JAKA Lens 2D는\n 협동로봇의 끝에 고정되거나\n 장착되며, 특수 광원 모듈과 함께 \n고품질 렌즈를 탑재하고 있습니다.',
+      'JAKA Pro 16 주변에는 안전 펜스가 필요\n없습니다. 토크 피드백 충돌 감지 기능이 내\n장되어 있기 때문입니다. 사람이 협동\n로봇과 접촉하면 협동로봇이 멈추어 \n안전을 보장합니다.',
   },
   {
     id: 3,
     icon: '/assets/feature_icons/plug_and_play.png',
     name: '플러그 앤 플레이',
     description:
-      '협동로봇 설치는 빠르고 \n간편하며 유연합니다. 어떤 각도로든 장착할 수 있으며 배치되면 \n즉시 작동을 시작합니다. ',
+      '협동로봇 설치는 빠르고 간편하며\n 유연합니다. 어떤 각도로든 장착할 수 있\n으며 배치되면 즉시 작동을 시작합니다. ',
   },
   {
     id: 4,
-    icon: '/assets/feature_icons/wireless_connection.png',
-    name: '무선 연결',
+    icon: '/assets/feature_icons/remote_monitoring.png',
+    name: '원격 모니터링',
     description:
-      '복잡한 선 없이 깨끗하고 \n안전한 공간을 \nJAKA 협동로봇이 함께합니다.',
+      '독특한 보안 인증 시스템으로 협동로봇의\n 작업을 모니터링하고 알림을 설정합니다.',
   },
   {
     id: 5,

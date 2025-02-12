@@ -1,14 +1,21 @@
-.page_subtitle p {
-  margin-top: 50px;
-  font-size: 16px;
-  text-align: center;
+.page_subtitle {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+
+  span {
+    font-size: 16px;
+    color: #1d1d1f;
+    text-align: center;
+    line-height: 1.4;
+  }
 }
 
 .series_card {
-  margin-top: 120px;
+  margin-top: 150px;
   display: flex;
   flex-wrap: wrap;
-  gap: 20px; // 카드 사이의 간격 추가
+  gap: 120px; // 카드 사이의 간격 추가
   justify-content: center;
   width: 100%;
 
@@ -34,11 +41,15 @@
 }
 
 .major_title {
-  font-size: 40px;
-  font-weight: bold;
   display: flex;
   justify-content: center;
-  margin-top: 120px;
+  margin-top: 150px;
+
+  span {
+    font-size: 40px;
+    font-family: Pretendard-Bold;
+    color: #1d1d1f;
+  }
 
   @media (max-width: 1024px) {
     margin-top: 100px;
@@ -57,49 +68,52 @@
   display: flex;
   border-top: 1px solid rgb(230, 230, 230);
   border-bottom: 1px solid rgb(230, 230, 230);
-  margin-top: 40px;
-  justify-content: space-between;
+  margin-top: 80px;
 }
 
 /* 텍스트 정보 */
-.feature_info {
-  width: 100%;
-  margin-top: 30px;
-  margin-left: 50px;
-}
 
 .feature_description {
-  width: 50%;
-  margin-top: 30px;
-  font-size: 16px;
+  width: 60%;
+  margin-top: 40px;
+  margin-left: 40px;
+
+  span {
+    font-size: 16px;
+    color: #1d1d1f;
+    line-height: 1.4;
+  }
 }
 
 /* 이미지 영역 */
 .feature_img {
-  width: 50%;
+  width: 40%;
   display: flex;
   justify-content: end;
-  padding: 10px;
-  margin-right: 100px;
-}
+  margin-top: 40px;
+  margin-bottom: 30px;
+  margin-right: 110px;
 
-.feature_img img {
-  width: 450px;
-  height: 350px;
+  img {
+    width: 450px;
+    height: 350px;
+  }
 }
 
 /* 🛠 반응형 설정 */
 /* 1024px 이하일 때 */
 @media (max-width: 1024px) {
-  .feature_info {
+  .feature_description {
     margin-left: 30px;
   }
   .feature_img {
     margin-right: 50px;
   }
-  .feature_img img {
-    width: 400px;
-    height: 300px;
+  .feature_img {
+    img {
+      width: 400px;
+      height: 300px;
+    }
   }
 }
 
@@ -110,7 +124,7 @@
     text-align: center;
   }
 
-  .feature_info {
+  .feature_description {
     width: 90%; /* 너비 조정 */
     margin-left: 0;
   }
@@ -121,31 +135,39 @@
     margin-right: 0;
   }
 
-  .feature_img img {
-    width: 350px;
-    height: auto;
+  .feature_img {
+    img {
+      width: 350px;
+      height: auto;
+    }
   }
 }
 
 /* 480px 이하일 때 */
 @media (max-width: 480px) {
-  .feature_info {
+  .feature_description {
     width: 100%;
     margin-top: 20px;
   }
 
-  .feature_img img {
-    width: 100%;
-    max-width: 300px;
+  .feature_img {
+    img {
+      width: 100%;
+      max-width: 300px;
+    }
   }
 }
 
-.product_title {
-  font-size: 40px;
-  font-weight: bold;
+.comparison_title {
   display: flex;
   justify-content: center;
-  margin-top: 120px;
+  margin-top: 150px;
+
+  span {
+    font-size: 40px;
+    font-family: Pretendard-Bold;
+    color: #1d1d1f;
+  }
 
   @media (max-width: 1024px) {
     margin-top: 100px;
@@ -160,14 +182,14 @@
   }
 }
 
-.chart_img {
+.comparison_img {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 93px;
 
   img {
     width: 1300px;
-    max-width: 100%; // 화면 크기에 맞게 조정
+    max-width: 80%; // 화면 크기에 맞게 조정
 
     @media (max-width: 1024px) {
       width: 1000px;

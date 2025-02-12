@@ -5,7 +5,7 @@ const jakaMainSeriesData = [
     series_name: 'JAKA Zu',
     series_img: '/assets/jaka_series/jaka_zu.png',
     series_description:
-      '토크 피드백 기술을 탑재하여 정확성과 안정성을 제공합니다.\n',
+      '토크 피드백 기술을 탑재하여 정확성과\n 안정성을 제공합니다.\n',
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const jakaMainSeriesData = [
     series_name: 'JAKA Pro',
     series_img: '/assets/jaka_series/jaka_pro.png',
     series_description:
-      '각 Pro 코봇은 IP68 등급의 보호 기능을 갖추고 있어 먼지와 물에 대한 내성이 있습니다.\n',
+      '높은 보호 수준 요구사항이 있는 \n시나리오에서 작동하도록 설계되었습니다.\n',
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ const jakaMainSeriesData = [
     series_name: 'JAKA MiniCobo',
     series_img: '/assets/jaka_series/jaka_minicobo.png',
     series_description:
-      'B2C 비즈니스 자동화에 이상적입니다.\n 1kg 페이로드로 가볍고 컴팩트하며 우아한 \n디자인을 보유하고 있습니다.',
+      'B2C 비즈니스 자동화에 이상적이며, \n 1kg 페이로드로 가볍고 컴팩트함.\n',
   },
 ];
 

@@ -30,6 +30,13 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .menu_tab {
+    margin-top: 50px;
+    margin-bottom: 70px;
+  }
+}
+
 @media (max-width: 768px) {
   .menu_tab {
     flex-direction: column;

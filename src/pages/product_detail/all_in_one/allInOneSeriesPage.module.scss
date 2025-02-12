@@ -1,24 +1,28 @@
 /* 주요 타이틀 */
-.detail_feature_title,
+.detail_feature_title {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+  text-align: center;
+
+  span {
+    font-family: Pretendard-Bold;
+    font-size: 40px;
+    text-align: center;
+  }
+}
+
 .optimal_application_field_title {
   display: flex;
   justify-content: center;
-  margin-top: 70px;
+  margin-top: 170px;
   text-align: center;
-}
 
-.detail_feature_title span,
-.optimal_application_field_title span {
-  font-weight: bold;
-  font-size: 40px;
-  text-align: center;
-}
-
-/* 필드 컨테이너 */
-.field_container {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
+  span {
+    font-family: Pretendard-Bold;
+    font-size: 40px;
+    text-align: center;
+  }
 }
 
 /* 필드 리스트 */
@@ -26,9 +30,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly; /* 균일한 간격 */
-  list-style: none;
+  margin-top: 80px;
   padding: 0;
-  margin-top: 50px;
+  list-style: none;
   max-width: 100%;
   row-gap: 40px; /* 🔥 첫 번째 줄과 두 번째 줄 사이 간격 조절 */
 }
@@ -38,7 +42,7 @@
   flex: 1 1 calc(100% / 6 - 10px); /* 기본적으로 6개씩 정렬 */
   text-align: center;
   color: #c6001d;
-  font-size: 16px;
+  font-size: 20px;
   padding: 5px;
 }
 

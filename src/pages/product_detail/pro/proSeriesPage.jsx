@@ -28,12 +28,12 @@ export default function ProSeriesPage() {
 
   const fieldListItem = fieldListItemPro;
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
 
   return (
-    <div className='zuseries_page'>
+    <div className='proseries_page'>
       <Header />
       <section className='detail_page_title'>
         <PageTitle title={seriesData.pageTitle} />
@@ -66,6 +66,7 @@ export default function ProSeriesPage() {
         <div className={styles.optimal_application_field_title}>
           <span>{seriesData.field_title}</span>
         </div>
+
         <div className='field_list'>
           <ul className={styles.field_list}>
             {fieldListItem.map((item) => (
