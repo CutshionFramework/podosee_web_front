@@ -11,7 +11,7 @@ const zu5 = [
     icon: '/assets/feature_icons/drag_teaching.png',
     name: '드래그 티칭',
     description:
-      '손쉬운 드래그 티칭과 \n높은 기동성을 제공하는 \n6개 관절 덕분에 \n어떤 위치로든 옮기기만 하면 \n즉시 기억합니다.',
+      '손쉬운 드래그 티칭과 높은 기동성을\n 제공하는 6개 관절 덕분에 어떤 위치로든\n 옮기기만 하면 즉시 기억합니다.',
   },
   {
     id: 3,

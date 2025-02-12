@@ -11,7 +11,7 @@ const pro = [
     icon: '/assets/feature_icons/drag_teaching.png',
     name: '드래그 티칭',
     description:
-      '손쉬운 드래그 티칭과 높은 기동성을 \n제공하는 6개 관절 덕분에 어떤 위치로든 \n옮기기만 하면 즉시 기억합니다.',
+      '손쉬운 드래그 티칭과 높은 기동성을\n 제공하는 6개 관절 덕분에 어떤 위치로든\n 옮기기만 하면 즉시 기억합니다.',
   },
 ];
 
