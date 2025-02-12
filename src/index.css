@@ -4,6 +4,10 @@ body {
   margin: 0;
   font-family: Pretendard-Regular;
   padding-top: 62px;
+
+  @media (max-width: 768px) {
+    padding-top: 27px;
+  }
 }
 
 @font-face {

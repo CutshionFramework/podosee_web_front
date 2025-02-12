@@ -11,6 +11,10 @@
   top: 0;
   width: 100%;
   color: #1b1b1b;
+  
+  @media (max-width: 768px) {
+    height: 90px;
+  }
 }
 
 .logo img {
