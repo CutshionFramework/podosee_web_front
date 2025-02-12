@@ -8,6 +8,10 @@
   h1{
     margin-top: 130px;
     font-size: 40px;
+
+    @media (max-width: 1024px) {
+      margin-top: 60px;
+    }
   }
 
   .tab_container {
@@ -34,6 +38,10 @@
       font-size: 16px;
       color: #1d1d1f;
     }
+
+    @media (max-width: 1024px) {
+      margin-bottom: 90px;
+    }
   }
 
   h2 {
@@ -41,6 +49,11 @@
     margin-top: 150px;
     margin-bottom: 80px;
     font-size: 33px;
+
+    @media (max-width: 1024px) {
+      margin-top: 90px;
+      margin-bottom: 50px;
+    }
   }
 
   .spec_img {
