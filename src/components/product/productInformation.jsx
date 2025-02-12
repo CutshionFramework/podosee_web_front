@@ -11,14 +11,17 @@ export default function ProductInformation({ imgSrc, about }) {
             <img src={imgSrc} alt='제품 이미지' />
           </div>
         </section>
+
         <section className='product_about'>
           <div className={styles.product_about}>
-            {about.split('\n').map((line, index) => (
-              <Fragment key={index}>
-                {line}
-                <br />
-              </Fragment>
-            ))}
+            <span>
+              {about.split('\n').map((line, index) => (
+                <Fragment key={index}>
+                  {line}
+                  <br />
+                </Fragment>
+              ))}
+            </span>
           </div>
         </section>
       </div>

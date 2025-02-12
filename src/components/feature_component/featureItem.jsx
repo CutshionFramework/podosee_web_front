@@ -18,12 +18,14 @@ export default function FeatureItem({ icon, name, description }) {
           <span>{name}</span>
         </div>
         <div className={styles.feature_description}>
-          {description.split('\n').map((line, index) => (
-            <Fragment key={index}>
-              {line}
-              <br />
-            </Fragment>
-          ))}
+          <span>
+            {description.split('\n').map((line, index) => (
+              <Fragment key={index}>
+                {line}
+                <br />
+              </Fragment>
+            ))}
+          </span>
         </div>
       </section>
     </div>
