@@ -8,6 +8,7 @@
   padding: 30px;
   background: #f8f8fa;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #1D1D1F;
 }
 
 label {
@@ -29,7 +30,7 @@ input, textarea {
 input::placeholder,
 textarea::placeholder {
   font-family: Arial, sans-serif;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px; 
   color: #1D1D1F;
 }
@@ -113,6 +114,8 @@ textarea::placeholder {
     margin-bottom: 10px;
     max-height: 250px;
     overflow-y: auto;
+    font-weight: 300;
+
     li {
       list-style-type: none;
     }
@@ -154,7 +157,7 @@ textarea::placeholder {
 
 
   &:hover {
-    background-color: #333;
+    background-color: #818181;
   }
 }
 
