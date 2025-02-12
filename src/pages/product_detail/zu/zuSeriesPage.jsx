@@ -27,9 +27,9 @@ export default function ZuSeriesPage() {
 
   const fieldListItem = id === '3' ? fieldListItemZu3 : fieldListItemZu; // id가 '3'이면 fieldListItemZu3, fieldListItemZu
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
   return (
     <div className='zuseries_page'>
       <Header />
@@ -64,7 +64,8 @@ export default function ZuSeriesPage() {
         <div className={styles.optimal_application_field_title}>
           <span>{seriesData.field_title}</span>
         </div>
-        <div className={styles.field_container}>
+
+        <div className='field_list'>
           <ul className={styles.field_list}>
             {fieldListItem.map((item) => (
               <li className={styles.list_item} key={item.id}>

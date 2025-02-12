@@ -1,4 +1,5 @@
 import ReactPlayer from 'react-player';
+import { Fragment } from 'react';
 
 import styles from './videoComponent.module.scss';
 
@@ -12,7 +13,16 @@ export default function VideoComponent({ title, description, videoID }) {
           <span>{title}</span>
         </div>
 
-        <div className={styles.about_description}>{description}</div>
+        <div className={styles.about_description}>
+          <span>
+            {description.split('\n').map((line, index) => (
+              <Fragment key={index}>
+                {line}
+                <br />
+              </Fragment>
+            ))}
+          </span>
+        </div>
       </section>
       <section className='video_thumbnail'>
         <div className={styles.video_thumbnail}>

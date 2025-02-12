@@ -11,7 +11,7 @@ export default function RobotCard({
   return (
     <div className={styles.card}>
       <div className={styles.series_name}>
-        <p>{series_name}</p>
+        <span>{series_name}</span>
       </div>
 
       <div className={styles.series_img}>
@@ -19,18 +19,18 @@ export default function RobotCard({
       </div>
 
       <div className={styles.series_description}>
-        <p>
+        <span>
           {series_description.split('\n').map((line, index) => (
             <Fragment key={index}>
               {line}
               <br />
             </Fragment>
           ))}
-        </p>
+        </span>
       </div>
 
       <div className={styles.series_more} onClick={onClick}>
-        <p>Learn more &nbsp;{'>'}</p>
+        <span>Learn more &nbsp;{'>'}</span>
       </div>
     </div>
   );

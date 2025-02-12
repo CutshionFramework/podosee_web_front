@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, Fragment } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import Header from '../../components/header/header';
@@ -10,7 +10,14 @@ import VideoComponent from '../../components/video_component/videoComponent';
 import data from '../../data/series_data/zuSeriesData';
 import styles from './zuSeries.module.scss';
 
-const pageTitle = 'JAKA Zu Collaborative Robots';
+const titles = {
+  pageTitle: 'JAKA Zu Collaborative Robots',
+  pageSubtitle:
+    'JAKA Zu 협동 로봇은 JAKA 의 최첨단 로봇 기술을 집약한 제품으로 토크피드백 충돌 감지 기능과 6축 설계를 결합하여\n 놀랍도록 안전하고 정확하며 지능적이고 안정적인 협동 로봇 시리즈입니다.',
+  seriesTitle: 'JAKA Collaborative Robots Series',
+  featureTitle: 'JAKA 협동로봇이 공장 자동화에 적합한 이유',
+  comparisonTitle: 'JAKA Zu 제품 비교',
+};
 
 const videoAbout = [
   {
@@ -24,61 +31,58 @@ const videoAbout = [
 export default function ZuSeriesPage() {
   const nav = useNavigate();
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
   return (
     <>
       <Header />
       <section className='page_title'>
-        <PageTitle title={pageTitle} />
+        <PageTitle title={titles.pageTitle} />
       </section>
 
       <section className='zu_series'>
         <div className={styles.page_subtitle}>
-          <p>
-            JAKA Zu 협동 로봇은 JAKA 의 최첨단 로봇 기술을 집약한 제품으로 토크
-            피드백 충돌 감지 기능과 6축 설계를 결합하여 <br />
-            놀랍도록 안전하고 정확하며 지능적이고 안정적인 협동 로봇
-            시리즈입니다.
-          </p>
+          <span>
+            {titles.pageSubtitle.split('\n').map((line, index) => (
+              <Fragment key={index}>
+                {line}
+                <br />
+              </Fragment>
+            ))}
+          </span>
         </div>
 
-        <div className={styles.card_container}>
-          <div className={styles.series_card}>
-            {data.map((item) => (
-              <RobotCard
-                key={item.id}
-                {...item}
-                onClick={() => nav(`/jaka/zuseries/${item.url}`)}
-              />
-            ))}
-          </div>
+        <div className={styles.series_card}>
+          {data.map((item) => (
+            <RobotCard
+              key={item.id}
+              {...item}
+              onClick={() => nav(`/jaka/zuseries/${item.url}`)}
+            />
+          ))}
         </div>
       </section>
 
       <section className='video_component'>
-        {videoAbout.map((video, index) => (
-          <VideoComponent
-            key={index}
-            title={video.title}
-            videoID={video.videoID}
-            description={video.description.split('\n').map((line, i) => (
-              <span key={i}>
-                {line}
-                <br />
-              </span>
-            ))}
-          />
-        ))}
+        <div className={styles.video}>
+          {videoAbout.map((video, index) => (
+            <VideoComponent
+              key={index}
+              title={video.title}
+              videoID={video.videoID}
+              description={video.description}
+            />
+          ))}
+        </div>
       </section>
 
       <section className='product_comparison'>
-        <div className={styles.product_title}>
-          <p>JAKA Zu 제품 비교</p>
+        <div className={styles.comparison_title}>
+          <span>{titles.comparisonTitle}</span>
         </div>
 
-        <div className={styles.chart_img}>
+        <div className={styles.comparison_img}>
           <img
             src='/assets/product_comparison/ko/jaka_zu_product_comparison_ko.png'
             alt=''

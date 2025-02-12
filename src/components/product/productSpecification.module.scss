@@ -6,18 +6,21 @@
 .product_name {
   display: flex;
   justify-content: center;
-  font-weight: bold;
-  font-size: 40px;
-  text-align: center;
   margin-top: 150px;
-  color: #1d1d1f;
+
+  span {
+    font-family: Pretendard-Bold;
+    font-size: 40px;
+    text-align: center;
+    color: #1d1d1f;
+  }
 }
 
 /* 스펙 섹션 */
 .specifications {
   display: flex;
   justify-content: center;
-
+  margin-top: 80px;
   gap: 20px; /* 요소 간 간격 추가 */
 }
 
@@ -31,7 +34,6 @@
 .basic_spec img,
 .common_spec img {
   width: 100%;
-  height: 595px;
   object-fit: contain;
 }
 

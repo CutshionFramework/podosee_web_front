@@ -1,50 +1,37 @@
-.page_subtitle p {
-  margin-top: 50px;
-  font-size: 16px;
-  text-align: center;
-}
-
-.minicobo_info {
-  display: flex;
-  margin: 30px 20px;
-  border: 1px solid #dddddd;
-  border-radius: 9px;
-  overflow: hidden; /* 요소가 넘치지 않도록 처리 */
-  align-items: center;
-  justify-content: space-between; /* 내용이 정렬되도록 */
-  gap: 20px; /* 요소 간 간격 추가 */
-  padding: 20px;
-}
-
-/* 이미지 컨테이너 */
-.minicobo_img {
-  flex: 1;
-  flex-basis: 50%;
-  max-width: 40%;
-  height: 400px;
+.page_subtitle {
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin-top: 60px;
 
-  img {
-    max-width: 100%;
-    height: auto;
+  span {
+    font-size: 16px;
+    color: #1d1d1f;
+    text-align: center;
+    line-height: 1.4;
   }
 }
 
 .feature_title {
-  font-size: 40px;
-  font-weight: bold;
   display: flex;
   justify-content: center;
-  margin-top: 120px;
+  margin-top: 150px;
+
+  span {
+    font-size: 40px;
+    font-family: Pretendard-Bold;
+  }
 }
 
-.product_title {
-  font-size: 40px;
-  font-weight: bold;
+.comparison_title {
   display: flex;
   justify-content: center;
+  margin-top: 150px;
+
+  span {
+    font-size: 40px;
+    font-family: Pretendard-Bold;
+    color: #1d1d1f;
+  }
 
   @media (max-width: 1024px) {
     margin-top: 100px;
@@ -59,14 +46,14 @@
   }
 }
 
-.chart_img {
+.comparison_img {
   display: flex;
   justify-content: center;
-  margin-top: 10px;
+  margin-top: 93px;
 
   img {
     width: 1300px;
-    max-width: 100%; // 화면 크기에 맞게 조정
+    max-width: 80%; // 화면 크기에 맞게 조정
 
     @media (max-width: 1024px) {
       width: 1000px;
