@@ -13,7 +13,7 @@ import styles from './zuSeries.module.scss';
 const titles = {
   pageTitle: 'JAKA Zu Collaborative Robots',
   pageSubtitle:
-    'JAKA Zu 협동 로봇은 JAKA 의 최첨단 로봇 기술을 집약한 제품으로 토크피드백 충돌 감지 기능과 6축 설계를 결합하여\n 놀랍도록 안전하고 정확하며 지능적이고 안정적인 협동 로봇 시리즈입니다.',
+    'JAKA Zu 협동로봇은 JAKA 의 최첨단 로봇 기술을 집약한 제품으로 토크피드백 충돌 감지 기능과 6축 설계를 결합하여\n 놀랍도록 안전하고 정확하며 지능적이고 안정적인 협동로봇 시리즈입니다.',
   seriesTitle: 'JAKA Collaborative Robots Series',
   featureTitle: 'JAKA 협동로봇이 공장 자동화에 적합한 이유',
   comparisonTitle: 'JAKA Zu 제품 비교',
@@ -23,7 +23,7 @@ const videoAbout = [
   {
     title: 'JAKA Zu 협동로봇의 실제 작동 모습보기',
     description:
-      'JAKA Zu 와 함께라면 공장 자동화가 간단합니다. \n다양한 협동 로봇 애플리케이션을 플러그 앤 플레이 방식으로 즉시 구현할 수 있습니다.',
+      'JAKA Zu 와 함께라면 공장 자동화가 간단합니다. \n다양한 협동로봇 애플리케이션을 플러그 앤 플레이 방식으로 즉시 구현할 수 있습니다.',
     videoID: 'fBJENsNZZmY&t',
   },
 ];
