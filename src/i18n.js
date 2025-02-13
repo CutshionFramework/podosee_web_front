@@ -11,11 +11,11 @@ i18n
   .init({
     resources: {
       en: { translation: enTranslation },
-      kr: { translation: krTranslation }
+      kr: { translation: krTranslation },
     },
-    lng: "kr",
+    lng: localStorage.getItem("i18nextLng") || "kr",
     fallbackLng: "en",
-    interpolation: { escapeValue: false } // XSS 방지
+    interpolation: { escapeValue: false }, // XSS 방지
   });
 
 export default i18n;

@@ -55,8 +55,8 @@
       {
         "title": "JAKA",
         "description": [
-          "Podosee is the official distributor of JAKA Robotics in Korea,",
-          "striving to solve difficult tasks with collaborative robots."
+          "Podosee is the official distributor of JAKA Robotics in Korea",
+          "and is dedicated to solving tasks that are difficult for human arms using collaborative robots."
         ],
         "image": "main_1.png",
         "link": "/jaka"
@@ -65,7 +65,7 @@
         "title": "AI Kiosk",
         "description": [
           "Smart solutions for a better everyday life and business.",
-          "Discover various solutions from photo kiosks to ramen vending machines and fever alarms all in one place."
+          "From photo kiosks to ramen vending machines and fever alarms—discover a variety of solutions all in one place."
         ],
         "image": "main_2.png",
         "link": "/integrated/aikiosk"
@@ -73,8 +73,8 @@
       {
         "title": "AMR",
         "description": [
-          "The start of efficient logistics and a smart work environment!",
-          "Increase the speed of automation with AMR."
+          "The start of efficient logistics and a smart workplace!",
+          "Boost automation speed with AMRs."
         ],
         "image": "main_3.png",
         "link": "/integrated/amr"
@@ -90,6 +90,20 @@
     "video_title": "JAKA Collaborative Robots in Action",
     "video_description": "With a payload capacity of 3 to 20 kg, a wide working range, and a 6-axis configuration, JAKA collaborative robots bring advanced robotics and seamless human-robot interaction to various industries—including automotive, logistics, electronics, and medical manufacturing—enhancing efficiency and innovation.",
     "video_id": "zebaRutQwyU&t",
+    "jaka_main_series": {
+      "id1": {
+        "description": "Equiped with torque-feedback technology to provide accuracy and safety.\n"
+      },
+      "id2": {
+        "description": "Integrated with JAKA Lens 2D camera and advanced self-learning algorithm.\n"
+      },
+      "id3": {
+        "description": "Designed to operate in scenarios with the high protection level requirements.\n"
+      },
+      "id4": {
+        "description": "Ideal for B2C businesses automation. 1 kg payload. Light, compact, and elegant.\n"
+      }
+    },
     "jaka_products": {
       "id1": {
         "name": "Remote Monitoring",
@@ -110,20 +124,6 @@
       "id5": {
         "name": "Graphical Programming",
         "description": "Intuitive graphical programming software requires\n no prior programming experience.\n Anyone can easily set and adjust positions and tasks."
-      }
-    },
-    "jaka_main_series": {
-      "id1": {
-        "description": "Equipped with torque feedback technology, providing accuracy and stability.\n"
-      },
-      "id2": {
-        "description": "Integrated with JAKA Lens 2D camera and an enhanced self-learning algorithm.\n"
-      },
-      "id3": {
-        "description": "Designed to operate in scenarios requiring a high level of protection.\n"
-      },
-      "id4": {
-        "description": "Ideal for B2C business automation, featuring a lightweight and compact 1kg payload.\n"
       }
     }
   },
