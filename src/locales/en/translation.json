@@ -86,16 +86,28 @@
     "video_id": "zebaRutQwyU&t",
     "jaka_main_series": {
       "id1": {
-        "description": "Equiped with torque-feedback technology to provide accuracy and safety.\n"
+        "description": [
+          "Equiped with torque-feedback technology",
+          "to provide accuracy and safety."
+        ]
       },
       "id2": {
-        "description": "Integrated with JAKA Lens 2D camera and advanced self-learning algorithm.\n"
+        "description": [
+          "Integrated with JAKA Lens 2D camera and",
+          "advanced self-learning algorithm."
+        ]
       },
       "id3": {
-        "description": "Designed to operate in scenarios with the high protection level requirements.\n"
+        "description": [
+          "Designed to operate in scenarios with the",
+          "high protection level requirements."
+        ]
       },
       "id4": {
-        "description": "Ideal for B2C businesses automation. 1 kg payload. Light, compact, and elegant.\n"
+        "description": [
+          "Ideal for B2C businesses automation. 1 kg",
+          "payload. Light, compact, and elegant."
+        ]
       }
     },
     "jaka_products": {

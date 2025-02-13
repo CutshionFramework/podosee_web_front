@@ -1,4 +1,7 @@
-import styles from './robotCard.module.scss';
+import { Fragment } from "react";
+import { useTranslation } from "react-i18next";
+
+import styles from "./robotCard.module.scss";
 
 export default function RobotCard({
   series_name,
@@ -6,7 +9,8 @@ export default function RobotCard({
   i18nKey,
   onClick,
 }) {
-  const descriptionList = series_description;
+  const { t } = useTranslation();
+  const descriptionList = t(`${i18nKey}.description`, { returnObjects: true });
 
   return (
     <div className={styles.card}>
