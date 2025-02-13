@@ -6,6 +6,19 @@
   span {
     font-size: 16px;
     text-align: center;
+
+    @media (max-width: 768px) {
+      margin-right: 38px;
+      margin-left: 38px;
+      line-height: 1.4;
+    }
+
+    @media (max-width: 425px) {
+      margin-right: 10px;
+      margin-left: 10px;
+      font-size: clamp(13px, 2vw, 16px);
+      line-height: 1.4;
+    }
   }
 }
 
@@ -16,6 +29,14 @@
   span {
     font-family: Pretendard-Bold;
     font-size: 40px;
+
+    @media (max-width: 768px) {
+      font-size: clamp(35px, 2vw, 35px);
+    }
+
+    @media (max-width: 425px) {
+      font-size: clamp(30px, 2vw, 35px);
+    }
   }
 }
 
@@ -26,6 +47,10 @@
   gap: 20px; // 카드 사이의 간격 추가
   justify-content: center;
   width: 100%;
+
+  @media (max-width: 425px) {
+    margin-top: 120px;
+  }
 
   .card {
     width: calc(25% - 20px); // 기본적으로 한 줄에 4개
@@ -41,7 +66,7 @@
       max-width: 240px;
     }
 
-    @media (max-width: 480px) {
+    @media (max-width: 425px) {
       width: 100%; // 480px 이하에서는 1개씩 정렬
       max-width: 200px;
     }
@@ -64,5 +89,11 @@
   span {
     font-family: Pretendard-Bold;
     font-size: 40px;
+
+    @media (max-width: 425px) {
+      margin: auto;
+      font-size: clamp(32px, 2vw, 40px);
+      line-height: 1.4;
+    }
   }
 }

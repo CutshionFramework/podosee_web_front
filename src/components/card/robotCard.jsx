@@ -1,7 +1,4 @@
-import { Fragment } from 'react';
-import { useTranslation } from "react-i18next";
-
-import styles from "./robotCard.module.scss";
+import styles from './robotCard.module.scss';
 
 export default function RobotCard({
   series_name,
@@ -9,7 +6,7 @@ export default function RobotCard({
   i18nKey,
   onClick,
 }) {
-  const { t } = useTranslation();
+  const descriptionList = series_description;
 
   return (
     <div className={styles.card}>
@@ -22,16 +19,9 @@ export default function RobotCard({
       </div>
 
       <div className={styles.series_description}>
-        <span>
-          {t(`${i18nKey}.description`)
-            .split("\n")
-            .map((line, index) => (
-              <Fragment key={index}>
-                {line}
-                <br />
-              </Fragment>
-            ))}
-        </span>
+        {descriptionList.map((desc, index) => (
+          <p key={index}>{desc}</p>
+        ))}
       </div>
 
       <div className={styles.series_more} onClick={onClick}>

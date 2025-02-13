@@ -17,9 +17,9 @@ export default function Jaka() {
   const { t } = useTranslation();
   const nav = useNavigate();
 
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>

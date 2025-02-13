@@ -26,9 +26,9 @@ export default function AllInOneSeriesPage() {
   const fieldListItem =
     id === '3' ? fieldListItemAllInOne3 : fieldListItemAllInOne; // id가 '3'이면 fieldListItemAllInOne3, fieldListItemAllInOne
 
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className='zuseries_page'>

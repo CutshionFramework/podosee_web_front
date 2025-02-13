@@ -14,14 +14,9 @@ export default function ProductInformation({ imgSrc, about }) {
 
         <section className='product_about'>
           <div className={styles.product_about}>
-            <span>
-              {about.split('\n').map((line, index) => (
-                <Fragment key={index}>
-                  {line}
-                  <br />
-                </Fragment>
-              ))}
-            </span>
+            {about.map((about, index) => (
+              <p key={index}>{about}</p>
+            ))}
           </div>
         </section>
       </div>

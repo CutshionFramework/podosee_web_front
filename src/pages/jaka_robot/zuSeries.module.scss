@@ -7,6 +7,19 @@
     font-size: 16px;
     text-align: center;
     line-height: 1.4;
+
+    @media (max-width: 768px) {
+      margin-right: 13px;
+      margin-left: 13px;
+      line-height: 1.4;
+    }
+
+    @media (max-width: 425px) {
+      margin-right: 10px;
+      margin-left: 10px;
+      font-size: clamp(14px, 2vw, 16px);
+      line-height: 1.4;
+    }
   }
 }
 
@@ -48,11 +61,6 @@
   justify-content: center;
   margin-top: 150px;
 
-  span {
-    font-family: Pretendard-Bold;
-    font-size: 40px;
-  }
-
   @media (max-width: 1024px) {
     margin-top: 100px;
   }
@@ -61,8 +69,17 @@
     margin-top: 80px;
   }
 
-  @media (max-width: 480px) {
-    margin-top: 60px;
+  @media (max-width: 425px) {
+    margin-top: 80px;
+  }
+
+  span {
+    font-family: Pretendard-Bold;
+    font-size: 40px;
+
+    @media (max-width: 425px) {
+      font-size: clamp(30px, 2vw, 35px);
+    }
   }
 }
 
@@ -83,7 +100,7 @@
       width: 700px;
     }
 
-    @media (max-width: 480px) {
+    @media (max-width: 425px) {
       width: 100%; // 모바일에서는 가득 차게 표시
     }
   }
