@@ -17,7 +17,7 @@ export default function AIKiosk() {
   const menuArr = [
     { name: t("aikiosk.menu.freephoto"), path: "freephoto" },
     { name: t("aikiosk.menu.feveralarm"), path: "feveralarm" },
-    { name: t("aikiosk.menu.vandingmachine"), path: "vandingmachine" },
+    { name: t("aikiosk.menu.vendingmachine"), path: "vendingmachine" },
   ];
 
   useEffect(() => {
@@ -27,7 +27,7 @@ export default function AIKiosk() {
   useEffect(() => {
     if (id === "freephoto") setCurrentTab(0);
     else if (id === "feveralarm") setCurrentTab(1);
-    else if (id === "vandingmachine") setCurrentTab(2);
+    else if (id === "vendingmachine") setCurrentTab(2);
   }, [id]);
 
   const selectMenuHandler = (index) => {
@@ -72,7 +72,7 @@ const CommmonComponent = ({ currentTab }) => {
       "/assets/aikiosk/l1.png",
       "/assets/aikiosk/k2.png",
     ],
-    vandingmachine: ["/assets/aikiosk/vandingmachine.png"],
+    vendingmachine: ["/assets/aikiosk/vendingmachine.png"],
   };
 
   const specImageMap = {
@@ -84,9 +84,9 @@ const CommmonComponent = ({ currentTab }) => {
       kr: "/assets/aikiosk/spec_feveralarm.png",
       en: "/assets/aikiosk/spec_feveralarm_en.png",
     },
-    vandingmachine: {
-      kr: "/assets/aikiosk/spec_vandingmachine.png",
-      en: "/assets/aikiosk/spec_vandingmachine_en.png",
+    vendingmachine: {
+      kr: "/assets/aikiosk/spec_vendingmachine.png",
+      en: "/assets/aikiosk/spec_vendingmachine_en.png",
     },
   };
 
@@ -106,8 +106,8 @@ const CommmonComponent = ({ currentTab }) => {
       ? styles.freephoto_spec
       : selectedTab === "feveralarm"
       ? styles.feveralarm_spec
-      : selectedTab === "vandingmachine"
-      ? styles.vandingmachine_spec
+      : selectedTab === "vendingmachine"
+      ? styles.vendingmachine_spec
       : ""
   }`;
 

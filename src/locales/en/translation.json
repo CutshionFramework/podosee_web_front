@@ -90,9 +90,9 @@
     "title": "AI Kiosk",
     "solution": "Integrated Solution",
     "menu": {
-      "freephoto": "Free Photo Kiosk",
+      "freephoto": "Freephoto Kiosk",
       "feveralarm": "Fever Alarm",
-      "vandingmachine": "Vending Machine"
+      "vendingmachine": "Vending Machine"
     },
     "description": {
       "freephoto": [
@@ -104,13 +104,13 @@
         "It is a “completely contactless thermal access control system” that allows you to safely check the fever level and record a visit record without contacting",
         "and leave a visit record at the same time without contact."
       ],
-      "vandingmachine": [
+      "vendingmachine": [
         "The world's first pressure-cooker instant ramen vending machine.",
         "It is a smart vending machine that manages sales information and market conditions in real time,",
         "outdoor parks, universities, and academies."
       ]
     },
-    "spec": "Product Specifications"
+    "spec": "Specifications"
   },
 
   "amr": {
@@ -134,7 +134,7 @@
       "The L200 can carry a maximum of 200kg of cargo.",
       "This model has a ground clearance of 170mm, making it compatible with existing low-height trolleys without the need for replacement. Additionally, it can smoothly pass through congested and narrow passages with heavy traffic."
     ],
-    "spec": "Product Specifications"
+    "spec": "Specifications"
   },
 
   "news": {
