@@ -122,7 +122,7 @@
 
     @media (max-width: 600px) {
       grid: unset;
-      max-height: unset;
+      grid-template-rows: 1fr 1fr;
     }
   }
 
