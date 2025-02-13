@@ -17,6 +17,10 @@
   .tab_container {
     width: 70%;
 
+    @media (max-width: 1024px) {
+      width: 80%;
+    }
+
     @media (max-width: 768px) {
       width: 100%;
     }
@@ -70,10 +74,14 @@
 
 
   .vandingmachine_spec {
-    max-width: 80%; /* 전체 너비의 90%로 제한 */
+    max-width: 50%; /* 전체 너비의 90%로 제한 */
     width: auto; /* 원래 비율 유지 */
     display: block;
     margin: 0 auto; /* 중앙 정렬 유지 */
+
+    @media (max-width: 1024px) {
+      max-width: 80%;
+    }
 
     @media (max-width: 768px) {
       max-width: 100%;
@@ -102,10 +110,11 @@
     width: 100%;
     border: 1px solid #DDDDDD;
     place-items: center;  /* 모든 아이템을 수직 & 수평 중앙 정렬 */
+    align-items: center;
 
     img {
-      width: 80%;
-      height: 80%;
+      width: 70%;
+      height: 70%;
       object-fit: contain;
       display: block; /* img 요소의 기본 여백 제거 */
       margin: auto; /* 자동 마진으로 중앙 정렬 */
