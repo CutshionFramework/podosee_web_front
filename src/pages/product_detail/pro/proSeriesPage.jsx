@@ -28,9 +28,9 @@ export default function ProSeriesPage() {
 
   const fieldListItem = fieldListItemPro;
 
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className='proseries_page'>

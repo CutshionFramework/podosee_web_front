@@ -32,9 +32,9 @@ const data = {
 };
 
 export default function Minicobo() {
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const aboutList = data.about;
   return (

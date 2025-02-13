@@ -31,9 +31,9 @@ const videoAbout = [
 export default function ZuSeriesPage() {
   const nav = useNavigate();
 
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>
