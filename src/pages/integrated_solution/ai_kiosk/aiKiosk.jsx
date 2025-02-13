@@ -5,7 +5,7 @@ import Header from "../../../components/header/header";
 import Footer from "../../../components/footer/footer";
 import MenuTab from "../../../components/menu_tab/menuTab";
 import PageTitle from "../../../components/page_title/pageTitle";
-import images from "../../../imageConfig";
+import images from "../../../constants/imagePath";
 
 import styles from "./aiKiosk.module.scss";
 

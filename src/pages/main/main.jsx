@@ -6,9 +6,10 @@ import NewsSlider from "../../components/news_slider/newsSlider";
 import Header from "../../components/header/header";
 import Footer from "../../components/footer/footer";
 import styles from "./main.module.scss";
-import images from "../../imageConfig";
+import images from "../../constants/imagePath";
+import routes from "../../constants/routes";
 
-const ProductCard = ({ title, description, link, idx }) => (
+const ProductCard = ({ title, description, idx }) => (
   <div className={styles.product_card}>
     <div className={styles.image_container}>
       <img src={images.main.main_image[idx]} alt={title} />
@@ -20,7 +21,7 @@ const ProductCard = ({ title, description, link, idx }) => (
           {line}
         </p>
       ))}
-      <Link to={link} className={styles.learn_more}>
+      <Link to={routes.main_page_link[idx]} className={styles.learn_more}>
         Learn more &gt;
       </Link>
     </div>

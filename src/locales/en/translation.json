@@ -57,27 +57,21 @@
         "description": [
           "Podosee is the official distributor of JAKA Robotics in Korea",
           "and is dedicated to solving tasks that are difficult for human arms using collaborative robots."
-        ],
-        "image": "main_1.png",
-        "link": "/jaka"
+        ]
       },
       {
         "title": "AI Kiosk",
         "description": [
           "Smart solutions for a better everyday life and business.",
           "From photo kiosks to ramen vending machines and fever alarms—discover a variety of solutions all in one place."
-        ],
-        "image": "main_2.png",
-        "link": "/integrated/aikiosk"
+        ]
       },
       {
         "title": "AMR",
         "description": [
           "The start of efficient logistics and a smart workplace!",
           "Boost automation speed with AMRs."
-        ],
-        "image": "main_3.png",
-        "link": "/integrated/amr"
+        ]
       }
     ]
   },

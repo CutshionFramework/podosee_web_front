@@ -7,7 +7,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { getPartner, getHistory } from "../../apis/apis";
 import { useTranslation } from "react-i18next";
-import images from "../../imageConfig";
+import images from "../../constants/imagePath";
 
 export default function CompanyInfo() {
   const { id } = useParams();

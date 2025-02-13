@@ -57,27 +57,21 @@
         "description": [
           "포도씨는 JAKA 로보틱스의 한국총판으로서, 사람의 팔로 하기 힘든 일들을 협동로봇으로",
           "해결하기 위해 노력하고 있습니다."
-        ],
-        "image": "main_1.png",
-        "link": "/jaka"
+        ]
       },
       {
         "title": "AI 키오스크",
         "description": [
           "더 나은 일상과 비즈니스를 위한 스마트 솔루션.",
           "포토 키오스크부터 라면 자판기, 피버알람까지 다양한 솔루션을 한곳에서 만나보세요."
-        ],
-        "image": "main_2.png",
-        "link": "/integrated/aikiosk"
+        ]
       },
       {
         "title": "AMR",
         "description": [
           "효율적인 물류와 스마트한 작업 환경의 시작!",
           "AMR과 함께 자동화의 속도를 높이세요."
-        ],
-        "image": "main_3.png",
-        "link": "/integrated/amr"
+        ]
       }
     ]
   },

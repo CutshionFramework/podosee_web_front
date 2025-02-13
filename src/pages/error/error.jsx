@@ -1,7 +1,8 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import styles from "./error.module.scss";
-import images from "../../imageConfig";
+import images from "../../constants/imagePath";
+import routes from "../../constants/routes";
 
 export default function Error() {
   useEffect(() => {
@@ -25,10 +26,10 @@ export default function Error() {
               <p>확인 후 다시 요청 바랍니다.</p>
 
               <div className={styles.btn_box}>
-                <Link to='/' className={styles.default_btn}>
+                <Link to={routes.home} className={styles.default_btn}>
                   <i className='flaticon-history'></i> 뒤로가기 <span></span>
                 </Link>
-                <Link to='/' className={styles.default_btn}>
+                <Link to={routes.home} className={styles.default_btn}>
                   <i className='flaticon-earth-day'></i> 홈으로 이동{" "}
                   <span></span>
                 </Link>

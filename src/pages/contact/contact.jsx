@@ -5,7 +5,7 @@ import PageTitle from "../../components/page_title/pageTitle";
 import styles from "./contact.module.scss";
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import images from "../../imageConfig";
+import images from "../../constants/imagePath";
 
 export default function Contact() {
   const { t } = useTranslation();
