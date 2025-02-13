@@ -1,11 +1,8 @@
-import { Fragment } from 'react';
-import { useTranslation } from "react-i18next";
+import { Fragment } from "react";
 
 import styles from "./featureItem.module.scss";
 
-export default function FeatureItem({ icon, i18nKey }) {
-  const { t } = useTranslation();
-
+export default function FeatureItem({ icon, name, description }) {
   return (
     <div className={styles.feature_item}>
       {/* 아이콘 */}
@@ -18,18 +15,16 @@ export default function FeatureItem({ icon, i18nKey }) {
       {/* 설명 */}
       <section className='feature_info'>
         <div className={styles.feature_name}>
-          <span>{t(`${i18nKey}.name`)}</span>
+          <span>{name}</span>
         </div>
         <div className={styles.feature_description}>
           <span>
-            {t(`${i18nKey}.description`)
-              .split("\n")
-              .map((line, index) => (
-                <Fragment key={index}>
-                  {line}
-                  <br />
-                </Fragment>
-              ))}
+            {description.split("\n").map((line, index) => (
+              <Fragment key={index}>
+                {line}
+                <br />
+              </Fragment>
+            ))}
           </span>
         </div>
       </section>
