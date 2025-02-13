@@ -5,7 +5,7 @@
     margin-top: 80px;
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: 425px) {
     margin-top: 60px;
   }
 }
@@ -36,59 +36,73 @@
   margin-top: 20px;
   margin-left: 160px;
 
-  img {
-    width: auto;
-    height: 400px;
-
-    @media (max-width: 1024px) {
-      height: 350px;
-      margin-left: 50px;
-    }
-
-    @media (max-width: 768px) {
-      height: 300px;
-      margin-left: 0;
-    }
-
-    @media (max-width: 480px) {
-      height: auto;
-      width: 100%;
-      max-width: 300px;
-      margin-left: 0;
-    }
+  @media (max-width: 1024px) {
+    margin-right: 50px;
+    margin-left: 50px;
   }
 
   @media (max-width: 768px) {
+    height: 300px;
+    margin-left: 0;
+  }
+
+  @media (max-width: 425px) {
     height: auto;
+    width: 100%;
+    max-width: 300px;
+    margin-left: 0;
+  }
+
+  img {
+    width: auto;
+    height: 400px;
+  }
+
+  @media (max-width: 768px) {
     width: 100%; // 작은 화면에서는 가득 차게 표시
+    height: auto;
+  }
+
+  @media (max-width: 425px) {
+    width: 100%; // 작은 화면에서는 가득 차게 표시
+    height: auto;
   }
 }
 
 .product_about {
-  margin-top: 40px;
-  margin-right: 40px;
+  width: 600px;
+  height: auto;
+  margin-right: 100px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-
-  span {
-    font-size: 16px;
-    line-height: 1.4;
-    font-family: Pretendard-Light;
-  }
-
-  @media (max-width: 1024px) {
-    margin-left: 20px;
-  }
 
   @media (max-width: 768px) {
-    width: 90%; // 화면이 줄어들면 너비 확대
-    margin: 20px auto 20px auto;
-    text-align: center;
+    width: 100%; // 화면이 줄어들면 너비 확대
+    margin: 40px auto;
   }
 
-  @media (max-width: 480px) {
-    width: 100%;
-    margin: 15px auto 15px auto;
+  @media (max-width: 425px) {
+    width: 90%;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: Pretendard-Light;
+
+    @media (max-width: 1024px) {
+      white-space: normal; /* 기본적으로 줄바꿈 허용 */
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+    }
+
+    @media (max-width: 768px) {
+      width: 100%;
+      font-size: clamp(15px, 2vw, 15px);
+    }
+
+    @media (max-width: 425px) {
+      font-size: clamp(14px, 2vw, 14px);
+    }
   }
 }

@@ -1,5 +1,3 @@
-import { Fragment } from 'react';
-
 import styles from './robotCard.module.scss';
 
 export default function RobotCard({
@@ -8,6 +6,8 @@ export default function RobotCard({
   series_description,
   onClick,
 }) {
+  const descriptionList = series_description;
+
   return (
     <div className={styles.card}>
       <div className={styles.series_name}>
@@ -19,14 +19,9 @@ export default function RobotCard({
       </div>
 
       <div className={styles.series_description}>
-        <span>
-          {series_description.split('\n').map((line, index) => (
-            <Fragment key={index}>
-              {line}
-              <br />
-            </Fragment>
-          ))}
-        </span>
+        {descriptionList.map((desc, index) => (
+          <p key={index}>{desc}</p>
+        ))}
       </div>
 
       <div className={styles.series_more} onClick={onClick}>
