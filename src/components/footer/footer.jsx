@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 import { useTranslation } from "react-i18next";
 import styles from "./footer.module.scss";
+import images from "../../imageConfig";
 
 export default function Footer() {
   const { t } = useTranslation();
@@ -15,7 +16,7 @@ export default function Footer() {
       <div className={styles.footer_content}>
         <div className={styles.left_section}>
           <Link to='/' className={isMobile ? styles.logo_mobile : styles.logo}>
-            <img src='/assets/icon/podosee.png' alt='Podosee Logo' />
+            <img src={images.icons.podosee} alt='Podosee Logo' />
           </Link>
 
           <div className={styles.company_info}>
@@ -34,14 +35,14 @@ export default function Footer() {
               target='_blank'
               rel='noopener noreferrer'
             >
-              <img src='/assets/icon/facebook_icon.png' alt='Facebook' />
+              <img src={images.icons.facebook} alt='Facebook' />
             </Link>
             <Link
               to='https://blog.naver.com/podosee7'
               target='_blank'
               rel='noopener noreferrer'
             >
-              <img src='/assets/icon/naver_icon.png' alt='Naver' />
+              <img src={images.icons.naver} alt='Naver' />
             </Link>
           </div>
 

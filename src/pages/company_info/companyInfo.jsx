@@ -7,6 +7,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { getPartner, getHistory } from "../../apis/apis";
 import { useTranslation } from "react-i18next";
+import images from "../../imageConfig";
 
 export default function CompanyInfo() {
   const { id } = useParams();
@@ -150,10 +151,7 @@ const Location = () => {
 
   return (
     <div className={styles.location_container}>
-      <iframe
-        src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1828.103666917419!2d126.88647623196432!3d37.517796980052985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9e8af0bbfb8b%3A0x8e5a3c8588c58e41!2zKOyjvCntj6zrj4TslKg!5e0!3m2!1sko!2skr!4v1712015536755!5m2!1sko!2skr'
-        allowFullScreen
-      ></iframe>
+      <iframe src={images.google_map} allowFullScreen></iframe>
       <div className={styles.location_info}>
         <span className={styles.address}>{t("company.location")}</span>
         <span className={styles.tel}>Tel 070-8959-2960</span>
@@ -191,10 +189,7 @@ const Partners = ({ partnerData }) => {
             {partners.map((con, i) => (
               <div key={i} className={styles.partner_card}>
                 <a href={con.url[0]} target='_blank' rel='noopener noreferrer'>
-                  <img
-                    src={`https://api.podobot.com/public/img/${con.img}`}
-                    alt={con.title}
-                  />
+                  <img src={`${images.partners}${con.img}`} alt={con.title} />
                 </a>
               </div>
             ))}

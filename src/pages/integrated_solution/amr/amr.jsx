@@ -5,6 +5,7 @@ import Header from "../../../components/header/header";
 import Footer from "../../../components/footer/footer";
 import MenuTab from "../../../components/menu_tab/menuTab";
 import PageTitle from "../../../components/page_title/pageTitle";
+import images from "../../../imageConfig";
 
 import styles from "./amr.module.scss";
 
@@ -62,22 +63,22 @@ const CommmonComponent = ({ currentTab }) => {
   const currentLanguage = i18n.language;
   const imageMap = {
     tseries: [
-      "/assets/amr/t200.png",
-      "/assets/amr/t300.png",
-      "/assets/amr/t600.png",
-      "/assets/amr/t1000.png",
+      images.amr.tseries.t200,
+      images.amr.tseries.t300,
+      images.amr.tseries.t600,
+      images.amr.tseries.t1000,
     ],
-    lseries: ["/assets/amr/l200.png"],
+    lseries: [images.amr.lseries.l200],
   };
 
   const specImageMap = {
     tseries: {
-      kr: "/assets/amr/spec_tseries.png",
-      en: "/assets/amr/spec_tseries_en.png",
+      kr: images.amr.tseries.spec_kr,
+      en: images.amr.tseries.spec_en,
     },
     lseries: {
-      kr: "/assets/amr/spec_lseries.png",
-      en: "/assets/amr/spec_lseries_en.png",
+      kr: images.amr.lseries.spec_kr,
+      en: images.amr.lseries.spec_en,
     },
   };
 

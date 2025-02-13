@@ -6,11 +6,12 @@ import NewsSlider from "../../components/news_slider/newsSlider";
 import Header from "../../components/header/header";
 import Footer from "../../components/footer/footer";
 import styles from "./main.module.scss";
+import images from "../../imageConfig";
 
-const ProductCard = ({ title, description, image, link }) => (
+const ProductCard = ({ title, description, link, idx }) => (
   <div className={styles.product_card}>
     <div className={styles.image_container}>
-      <img src={`/assets/main_page/${image}`} alt={title} />
+      <img src={images.main.main_image[idx]} alt={title} />
     </div>
     <div className={styles.content}>
       <h2>{title}</h2>
@@ -64,16 +65,17 @@ export default function Main() {
             muted
             playsInline
           >
-            <source src='/assets/main_page/home_main.mp4' type='video/mp4' />
+            <source src={images.main.main_video} type='video/mp4' />
             Your browser does not support the video tag.
           </video>
         </section>
 
         <section className={styles.products_section}>
-          {products.map((product, index) => (
+          {products.map((product, idx) => (
             <ProductCard
-              key={`${product.id}-${product.name}-${index}`}
+              key={`${product.id}-${product.name}-${idx}`}
               {...product}
+              idx={idx}
             />
           ))}
         </section>

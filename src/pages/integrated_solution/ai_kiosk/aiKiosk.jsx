@@ -5,6 +5,7 @@ import Header from "../../../components/header/header";
 import Footer from "../../../components/footer/footer";
 import MenuTab from "../../../components/menu_tab/menuTab";
 import PageTitle from "../../../components/page_title/pageTitle";
+import images from "../../../imageConfig";
 
 import styles from "./aiKiosk.module.scss";
 
@@ -66,27 +67,27 @@ const CommmonComponent = ({ currentTab }) => {
   const { t, i18n } = useTranslation();
   const currentLanguage = i18n.language;
   const imageMap = {
-    freephoto: ["/assets/aikiosk/eqt1.png", "/assets/aikiosk/eqt5.png"],
+    freephoto: [images.aikiosk.freephoto.eqt1, images.aikiosk.freephoto.eqt5],
     feveralarm: [
-      "/assets/aikiosk/s2.png",
-      "/assets/aikiosk/l1.png",
-      "/assets/aikiosk/k2.png",
+      images.aikiosk.feveralarm.s2,
+      images.aikiosk.feveralarm.l1,
+      images.aikiosk.feveralarm.k2,
     ],
-    vendingmachine: ["/assets/aikiosk/vendingmachine.png"],
+    vendingmachine: [images.aikiosk.vendingmachine.vendingmachine],
   };
 
   const specImageMap = {
     freephoto: {
-      kr: "/assets/aikiosk/spec_freephoto.png",
-      en: "/assets/aikiosk/spec_freephoto_en.png",
+      kr: images.aikiosk.freephoto.spec_kr,
+      en: images.aikiosk.freephoto.spec_en,
     },
     feveralarm: {
-      kr: "/assets/aikiosk/spec_feveralarm.png",
-      en: "/assets/aikiosk/spec_feveralarm_en.png",
+      kr: images.aikiosk.feveralarm.spec_kr,
+      en: images.aikiosk.feveralarm.spec_en,
     },
     vendingmachine: {
-      kr: "/assets/aikiosk/spec_vendingmachine.png",
-      en: "/assets/aikiosk/spec_vendingmachine_en.png",
+      kr: images.aikiosk.vendingmachine.spec_kr,
+      en: images.aikiosk.vendingmachine.spec_en,
     },
   };
 
@@ -139,7 +140,7 @@ const CommmonComponent = ({ currentTab }) => {
         className={
           selectedTab === "freephoto" ? styles.freephoto_img : styles.none_img
         }
-        src={`/assets/aikiosk/ex_freephoto.png`}
+        src={images.aikiosk.freephoto.ex}
         alt='exhibition'
       />
     </div>
