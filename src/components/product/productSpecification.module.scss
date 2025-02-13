@@ -1,5 +1,9 @@
 .product_specification {
   padding: 0 50px;
+
+  @media (max-width: 1024px) {
+    padding: 0 30px;
+  }
 }
 
 /* 제품명 */
@@ -13,77 +17,91 @@
     font-size: 40px;
     text-align: center;
     color: #1d1d1f;
+
+    @media (max-width: 425px) {
+      font-size: clamp(30px, 2vw, 30px);
+    }
   }
 }
 
 /* 스펙 섹션 */
 .specifications {
   display: flex;
-  justify-content: center;
   margin-top: 80px;
-  gap: 20px; /* 요소 간 간격 추가 */
-}
+  gap: 20px;
 
-/* 기본 & 공통 스펙 */
-.basic_spec,
-.common_spec {
-  padding: 25px;
-  width: 50%; /* 데스크톱에서 절반씩 차지 */
-}
-
-.basic_spec img,
-.common_spec img {
-  width: 100%;
-  object-fit: contain;
-}
-
-/* 🛠 반응형 적용 */
-/* 1024px 이하 */
-@media (max-width: 1024px) {
-  .product_specification {
-    padding: 0 30px;
-  }
-
-  .basic_spec,
-  .common_spec {
-    width: 50%; /* 여전히 반반 */
-  }
-
-  .basic_spec img,
-  .common_spec img {
-    height: 500px;
-  }
-}
-
-/* 768px 이하 */
-@media (max-width: 768px) {
-  .specifications {
+  @media (max-width: 768px) {
     flex-direction: column; /* 세로 정렬 */
     align-items: center;
   }
+}
 
-  .basic_spec,
-  .common_spec {
+/* 기본 스펙 */
+.basic_spec {
+  display: flex;
+  justify-content: end;
+  padding: 25px;
+  width: 50%;
+
+  @media (max-width: 768px) {
     width: 80%; /* 더 넓게 사용 */
     padding: 15px;
   }
 
-  .basic_spec img,
-  .common_spec img {
-    height: 400px;
-  }
-}
-
-/* 480px 이하 */
-@media (max-width: 480px) {
-  .basic_spec,
-  .common_spec {
+  @media (max-width: 425px) {
     width: 100%; /* 모바일에서는 전체 너비 사용 */
     padding: 10px;
   }
 
-  .basic_spec img,
-  .common_spec img {
-    height: auto; /* 이미지 크기를 자동으로 조정 */
+  img {
+    width: 80%;
+
+    @media (max-width: 1024px) {
+      width: 100%;
+      height: 400px;
+    }
+
+    @media (max-width: 768px) {
+      height: 400px;
+    }
+
+    @media (max-width: 425px) {
+      height: auto; /* 이미지 크기를 자동으로 조정 */
+    }
+  }
+}
+
+/* 공통 스펙 */
+.common_spec {
+  display: flex;
+  justify-content: start;
+  padding: 25px;
+  width: 50%;
+
+  @media (max-width: 768px) {
+    width: 80%; /* 더 넓게 사용 */
+    padding: 15px;
+  }
+
+  @media (max-width: 425px) {
+    width: 100%; /* 모바일에서는 전체 너비 사용 */
+    padding: 10px;
+  }
+
+  img {
+    width: 80%;
+
+    @media (max-width: 1024px) {
+      width: 100%;
+      height: 400px;
+    }
+
+    @media (max-width: 768px) {
+      height: 400px;
+    }
+
+    @media (max-width: 425px) {
+      height: auto; /* 이미지 크기를 자동으로 조정 */
+    }
   }
 }

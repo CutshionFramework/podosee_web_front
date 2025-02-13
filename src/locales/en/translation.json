@@ -55,31 +55,83 @@
       {
         "title": "JAKA",
         "description": [
-          "Podosee is the official distributor of JAKA Robotics in Korea,",
-          "striving to solve difficult tasks with collaborative robots."
-        ],
-        "image": "main_1.png",
-        "link": "/jaka"
+          "Podosee is the official distributor of JAKA Robotics in Korea",
+          "and is dedicated to solving tasks that are difficult for human arms using collaborative robots."
+        ]
       },
       {
         "title": "AI Kiosk",
         "description": [
           "Smart solutions for a better everyday life and business.",
-          "Discover various solutions from photo kiosks to ramen vending machines and fever alarms all in one place."
-        ],
-        "image": "main_2.png",
-        "link": "/integrated/aikiosk"
+          "From photo kiosks to ramen vending machines and fever alarms—discover a variety of solutions all in one place."
+        ]
       },
       {
         "title": "AMR",
         "description": [
-          "The start of efficient logistics and a smart work environment!",
-          "Increase the speed of automation with AMR."
-        ],
-        "image": "main_3.png",
-        "link": "/integrated/amr"
+          "The start of efficient logistics and a smart workplace!",
+          "Boost automation speed with AMRs."
+        ]
       }
     ]
+  },
+
+  "jaka": {
+    "page_title": "JAKA Collaborative Robots",
+    "page_subtitle": "JAKA collaborative robots  have been successfully applied to automated production in multiple industrial sectors, providing innovation for industrial sectors with a continuous and powerful equipment foundations.",
+    "series_title": "JAKA Collaborative Robots Series",
+    "feature_title": "What make JAKA Cobots great for factory automation",
+    "video_title": "JAKA Collaborative Robots in Action",
+    "video_description": "With a payload capacity of 3 to 20 kg, a wide working range, and a 6-axis configuration, JAKA collaborative robots bring advanced robotics and seamless human-robot interaction to various industries—including automotive, logistics, electronics, and medical manufacturing—enhancing efficiency and innovation.",
+    "video_id": "zebaRutQwyU&t",
+    "jaka_main_series": {
+      "id1": {
+        "description": [
+          "Equiped with torque-feedback technology",
+          "to provide accuracy and safety."
+        ]
+      },
+      "id2": {
+        "description": [
+          "Integrated with JAKA Lens 2D camera and",
+          "advanced self-learning algorithm."
+        ]
+      },
+      "id3": {
+        "description": [
+          "Designed to operate in scenarios with the",
+          "high protection level requirements."
+        ]
+      },
+      "id4": {
+        "description": [
+          "Ideal for B2C businesses automation. 1 kg",
+          "payload. Light, compact, and elegant."
+        ]
+      }
+    },
+    "jaka_products": {
+      "id1": {
+        "name": "Remote Monitoring",
+        "description": "Monitor the collaborative robot's work and set notifications\n with a unique security authentication system."
+      },
+      "id2": {
+        "name": "Wireless Connection",
+        "description": "JAKA collaborative robots help create a clean and safe workspace \nwithout complex wiring."
+      },
+      "id3": {
+        "name": "Drag Teaching",
+        "description": "With easy drag teaching and six highly flexible joints,\n the robot instantly remembers any position it is moved to."
+      },
+      "id4": {
+        "name": "No Teaching Pendant",
+        "description": "The JAKA app is available on tablets, smartphones, and PCs.\n Easily and conveniently program your collaborative robot."
+      },
+      "id5": {
+        "name": "Graphical Programming",
+        "description": "Intuitive graphical programming software requires\n no prior programming experience.\n Anyone can easily set and adjust positions and tasks."
+      }
+    }
   },
 
   "news_slider": {
@@ -90,9 +142,9 @@
     "title": "AI Kiosk",
     "solution": "Integrated Solution",
     "menu": {
-      "freephoto": "Free Photo Kiosk",
+      "freephoto": "Freephoto Kiosk",
       "feveralarm": "Fever Alarm",
-      "vandingmachine": "Vending Machine"
+      "vendingmachine": "Vending Machine"
     },
     "description": {
       "freephoto": [
@@ -104,13 +156,13 @@
         "It is a “completely contactless thermal access control system” that allows you to safely check the fever level and record a visit record without contacting",
         "and leave a visit record at the same time without contact."
       ],
-      "vandingmachine": [
+      "vendingmachine": [
         "The world's first pressure-cooker instant ramen vending machine.",
         "It is a smart vending machine that manages sales information and market conditions in real time,",
         "outdoor parks, universities, and academies."
       ]
     },
-    "spec": "Product Specifications"
+    "spec": "Specifications"
   },
 
   "amr": {
@@ -134,7 +186,7 @@
       "The L200 can carry a maximum of 200kg of cargo.",
       "This model has a ground clearance of 170mm, making it compatible with existing low-height trolleys without the need for replacement. Additionally, it can smoothly pass through congested and narrow passages with heavy traffic."
     ],
-    "spec": "Product Specifications"
+    "spec": "Specifications"
   },
 
   "news": {

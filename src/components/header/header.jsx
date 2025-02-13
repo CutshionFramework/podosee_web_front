@@ -9,6 +9,8 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { MdOutlineKeyboardArrowUp } from "react-icons/md";
 
+import images from "../../constants/imagePath";
+
 export default function Header() {
   const { t, i18n } = useTranslation();
   const menu = t("header.menu", { returnObjects: true });
@@ -68,7 +70,7 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <Link to='/' className={isMobile ? styles.logo_mobile : styles.logo}>
-        <img src='/assets/icon/podosee.png' alt='Podosee Logo' />
+        <img src={images.icons.podosee} alt='Podosee Logo' />
       </Link>
 
       {isMobile ? (

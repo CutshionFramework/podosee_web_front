@@ -62,20 +62,14 @@
 .series_description {
   margin-top: 65px;
 
-  span {
+  p {
     font-size: 12px;
-
-    @media (max-width: 768px) {
-      margin-top: 50px;
-    }
-
-    @media (max-width: 480px) {
-      margin-top: 40px;
-    }
   }
 }
 
 .series_more {
+  display: flex;
+  align-items: center;
   margin: 24px auto;
   cursor: pointer;
 

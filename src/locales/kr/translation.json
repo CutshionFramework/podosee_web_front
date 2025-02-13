@@ -57,29 +57,81 @@
         "description": [
           "포도씨는 JAKA 로보틱스의 한국총판으로서, 사람의 팔로 하기 힘든 일들을 협동로봇으로",
           "해결하기 위해 노력하고 있습니다."
-        ],
-        "image": "main_1.png",
-        "link": "/jaka"
+        ]
       },
       {
         "title": "AI 키오스크",
         "description": [
           "더 나은 일상과 비즈니스를 위한 스마트 솔루션.",
           "포토 키오스크부터 라면 자판기, 피버알람까지 다양한 솔루션을 한곳에서 만나보세요."
-        ],
-        "image": "main_2.png",
-        "link": "/integrated/aikiosk"
+        ]
       },
       {
         "title": "AMR",
         "description": [
           "효율적인 물류와 스마트한 작업 환경의 시작!",
           "AMR과 함께 자동화의 속도를 높이세요."
-        ],
-        "image": "main_3.png",
-        "link": "/integrated/amr"
+        ]
       }
     ]
+  },
+
+  "jaka": {
+    "page_title": "JAKA Collaborative Robots",
+    "page_subtitle": "JAKA 협동 로봇은 여러 산업 분야의 자동화 생산에 성공적으로 적용되어 지속적이고 강력한 장비 기반을 갖춘 산업 분야에 혁신을 제공하고 있습니다.",
+    "series_title": "JAKA Collaborative Robots Series",
+    "feature_title": "JAKA 협동로봇이 공장 자동화에 적합한 이유",
+    "video_title": "JAKA 협동로봇의 실제 활용 사례",
+    "video_description": "3-20kg의 가반 하중, 넓은 작업 반경, 6관절 구성을 갖춘 JAKA 협동로봇은 자동차부터 물류,\n 전자에서 의료 제조에 이르기까지 다양한 산업 분야에서 첨단 로봇 기술과 인간과 로봇의 자연스러운 상호작용을\n 통해 이점을 누릴 수 있습니다.",
+    "video_id": "zebaRutQwyU&t",
+    "jaka_main_series": {
+      "id1": {
+        "description": [
+          "토크 피드백 기술을 탑재하여 정확성과",
+          "안정성을 제공합니다."
+        ]
+      },
+      "id2": {
+        "description": [
+          "JAKA 렌즈 2D 카메라와 향상된 자가 학습",
+          "알고리즘이 통합되었습니다."
+        ]
+      },
+      "id3": {
+        "description": [
+          "높은 보호 수준 요구사항이 있는",
+          "시나리오에서 작동하도록 설계되었습니다."
+        ]
+      },
+      "id4": {
+        "description": [
+          "B2C 비즈니스 자동화에 이상적이며",
+          "1kg 페이로드로 가볍고 컴팩트함."
+        ]
+      }
+    },
+    "jaka_products": {
+      "id1": {
+        "name": "원격 모니터링",
+        "description": "독특한 보안 인증 시스템으로 협동로봇의\n 작업을 모니터링하고 알림을 설정합니다."
+      },
+      "id2": {
+        "name": "무선 연결",
+        "description": "복잡한 선 없이 깨끗하고 안전한 공간을 \nJAKA 협동로봇이 함께합니다."
+      },
+      "id3": {
+        "name": "드래그 티칭",
+        "description": "손쉬운 드래그 티칭과 높은 기동성을\n 제공하는 6개 관절 덕분에 어떤 위치로든\n 옮기기만 하면 즉시 기억합니다."
+      },
+      "id4": {
+        "name": "티칭 펜던트 없음",
+        "description": "JAKA 앱은 태블릿, 스마트폰, PC에서 \n사용 가능합니다. 쉽고 간편하게 \n협동로봇을 가르쳐보세요."
+      },
+      "id5": {
+        "name": "그래픽 프로그래밍",
+        "description": "직관적인 그래픽 프로그래밍 소프트웨어는 \n프로그래밍 경험이 전혀 필요하지 \n않습니다. 누구나 쉽게 위치와 작업을 \n설정하고 조정할 수 있습니다."
+      }
+    }
   },
 
   "news_slider": {
@@ -92,7 +144,7 @@
     "menu": {
       "freephoto": "프리포토 키오스크",
       "feveralarm": "피버 알람",
-      "vandingmachine": "자판기"
+      "vendingmachine": "자판기"
     },
     "description": {
       "freephoto": [
@@ -104,7 +156,7 @@
         "타인과 접촉에 의해 바이러스 전염이 우려되는 곳에서 안전하게 발열 여부를 체크하고 접촉없이",
         "방문 기록을 동시에 남길 수 있는 '완전 비접촉식 열화상 출입 관리 시스템'입니다."
       ],
-      "vandingmachine": [
+      "vendingmachine": [
         "세계 최초의 압력솥 방식의 즉석 라면 조리 자판기입니다.",
         "매출 정보 및 장비 상태 정보등을 실시간으로 관리하는 스마트 자판기로 편의점,",
         "야외 공원, 대학교, 학원 등 설치하여 운영할 수 있습니다."

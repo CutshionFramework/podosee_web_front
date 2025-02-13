@@ -20,7 +20,7 @@
     margin-top: 80px;
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: 425px) {
     margin-top: 60px;
     padding: 10px;
   }
@@ -37,18 +37,28 @@
     width: 100%;
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: 425px) {
     width: 100%;
+    margin: 0;
   }
 }
 
 .about_title {
   margin-bottom: 30px;
   text-align: start;
+
+  @media (max-width: 768px) {
+    text-align: center;
+  }
+
   span {
     font-family: Pretendard-Bold;
     font-size: 40px;
     color: #1d1d1f;
+
+    @media (max-width: 425px) {
+      font-size: clamp(30px, 2vw, 35px);
+    }
   }
 }
 
@@ -60,15 +70,20 @@
   span {
     font-size: 16px;
     color: #1d1d1f;
+
+    @media (max-width: 425px) {
+      font-size: clamp(14px, 2vw, 16px);
+    }
   }
 
   @media (max-width: 768px) {
-    width: 100%;
+    max-width: 100%;
+    text-align: center;
     margin: 0 auto;
   }
 
-  @media (max-width: 480px) {
-    width: 90%;
+  @media (max-width: 425px) {
+    max-width: 90%;
   }
 }
 
@@ -80,6 +95,7 @@
 
   @media (max-width: 768px) {
     width: 100%;
+    justify-content: center;
   }
 
   @media (max-width: 480px) {

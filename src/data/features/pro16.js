@@ -11,7 +11,7 @@ const pro16 = [
     icon: '/assets/feature_icons/safe_collaboration.png',
     name: '안전한 인간과 로봇 협업',
     description:
-      'JAKA Pro 16 주변에는 안전 펜스가 필요\n없습니다. 토크 피드백 충돌 감지 기능이 내\n장되어 있기 때문입니다. 사람이 협동\n로봇과 접촉하면 협동로봇이 멈추어 \n안전을 보장합니다.',
+      'JAKA Pro 16 토크 피드백\n 충돌 감지 기능이 내장되어 있어\n 안전 펜스가 필요없습니다.',
   },
   {
     id: 3,
@@ -32,7 +32,7 @@ const pro16 = [
     icon: '/assets/feature_icons/graphic_programming.png',
     name: '그래픽 프로그래밍',
     description:
-      '직관적인 그래픽 프로그래밍 \n소프트웨어는 프로그래밍 경험이 전혀 필요하지 않습니다. \n누구나 쉽게 위치와 작업을 \n설정하고 조정할 수 있습니다.',
+      '직관적인 그래픽 프로그래밍 소프트웨어는 \n프로그래밍 경험이 없는 누구나 쉽게 \n위치와 작업을 설정하고 조정\n할 수 있습니다.',
   },
   {
     id: 6,

@@ -25,10 +25,9 @@ const titles = {
 
 export default function AllInOne() {
   const nav = useNavigate();
-
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>
