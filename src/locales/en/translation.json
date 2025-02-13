@@ -82,6 +82,52 @@
     ]
   },
 
+  "jaka": {
+    "page_title": "JAKA Collaborative Robots",
+    "page_subtitle": "JAKA collaborative robots  have been successfully applied to automated production in multiple industrial sectors, providing innovation for industrial sectors with a continuous and powerful equipment foundations.",
+    "series_title": "JAKA Collaborative Robots Series",
+    "feature_title": "What make JAKA Cobots great for factory automation",
+    "video_title": "JAKA Collaborative Robots in Action",
+    "video_description": "With a payload capacity of 3 to 20 kg, a wide working range, and a 6-axis configuration, JAKA collaborative robots bring advanced robotics and seamless human-robot interaction to various industries—including automotive, logistics, electronics, and medical manufacturing—enhancing efficiency and innovation.",
+    "video_id": "zebaRutQwyU&t",
+    "jaka_products": {
+      "id1": {
+        "name": "Remote Monitoring",
+        "description": "Monitor the collaborative robot's work and set notifications\n with a unique security authentication system."
+      },
+      "id2": {
+        "name": "Wireless Connection",
+        "description": "JAKA collaborative robots help create a clean and safe workspace \nwithout complex wiring."
+      },
+      "id3": {
+        "name": "Drag Teaching",
+        "description": "With easy drag teaching and six highly flexible joints,\n the robot instantly remembers any position it is moved to."
+      },
+      "id4": {
+        "name": "No Teaching Pendant",
+        "description": "The JAKA app is available on tablets, smartphones, and PCs.\n Easily and conveniently program your collaborative robot."
+      },
+      "id5": {
+        "name": "Graphical Programming",
+        "description": "Intuitive graphical programming software requires\n no prior programming experience.\n Anyone can easily set and adjust positions and tasks."
+      }
+    },
+    "jaka_main_series": {
+      "id1": {
+        "description": "Equipped with torque feedback technology, providing accuracy and stability.\n"
+      },
+      "id2": {
+        "description": "Integrated with JAKA Lens 2D camera and an enhanced self-learning algorithm.\n"
+      },
+      "id3": {
+        "description": "Designed to operate in scenarios requiring a high level of protection.\n"
+      },
+      "id4": {
+        "description": "Ideal for B2C business automation, featuring a lightweight and compact 1kg payload.\n"
+      }
+    }
+  },
+
   "news_slider": {
     "title": "Latest News"
   },
