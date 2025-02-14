@@ -57,6 +57,7 @@
   flex-shrink: 0; // 이미지가 너무 작아지지 않도록 방지
   object-fit: contain;
   margin-top: 20px;
+  margin-right: 550px;
 
   @media (max-width: 1024px) {
     margin: 0;
