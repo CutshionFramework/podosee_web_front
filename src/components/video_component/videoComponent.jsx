@@ -1,11 +1,9 @@
 import ReactPlayer from 'react-player';
-import { Fragment } from 'react';
+import { useTranslation } from 'react-i18next';
 
 import styles from './videoComponent.module.scss';
 
 export default function VideoComponent({ title, description, videoID }) {
-  // 해당 유튜브 영상 ID
-
   return (
     <div className={styles.video_component}>
       <section className={styles.video_about}>
@@ -14,14 +12,9 @@ export default function VideoComponent({ title, description, videoID }) {
         </div>
 
         <div className={styles.about_description}>
-          <span>
-            {description.split('\n').map((line, index) => (
-              <Fragment key={index}>
-                {line}
-                <br />
-              </Fragment>
-            ))}
-          </span>
+          {description.map((desc, index) => (
+            <p key={index}>{desc}</p>
+          ))}
         </div>
       </section>
       <section className='video_thumbnail'>
