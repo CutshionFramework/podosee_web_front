@@ -12,7 +12,7 @@ export default function RobotCard({
   // const descriptionList = t(`${i18nKey}.description`, { returnObjects: true });
   // i18nKey가 있을 경우 번역된 값을 가져오고, 없으면 기본값 사용
   const translatedDescription = i18nKey
-    ? t(`${i18nKey}.description`, { returnObjects: true })
+    ? [t(`${i18nKey}.description`, { returnObjects: true })]
     : null;
 
   return (

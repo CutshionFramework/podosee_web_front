@@ -1,5 +1,3 @@
-import { Fragment } from 'react';
-
 import styles from './productInformation.module.scss';
 
 export default function ProductInformation({ imgSrc, about }) {

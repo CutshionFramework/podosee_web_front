@@ -11,20 +11,12 @@ import FeatureComponent from '../../components/feature_component/featureComponen
 
 import jakaProducts from '../../data/features/jakaProducts';
 import data from '../../data/series_data/jakaMainSeriesData';
+import jakaPageVideo from '../../data/video_about/jakaPageVideo';
 import styles from './jaka.module.scss';
-
-const videoAbout = [
-  {
-    video_title: 'JAKA 협동로봇의 실제 활용 사례',
-    video_description: [
-      '3-20kg의 가반 하중, 넓은 작업 반경, 6관절 구성을 갖춘 JAKA 협동로봇은 자동차부터 물류, 전자에서 의료 제조에 이르기까지 다양한 산업 분야에서 첨단 로봇 기술과 인간과 로봇의 자연스러운 상호작용을 통해 이점을 누릴 수 있습니다.',
-    ],
-    video_id: 'zebaRutQwyU&t',
-  },
-];
 
 export default function Jaka() {
   const { t } = useTranslation();
+
   const nav = useNavigate();
 
   useEffect(() => {
@@ -63,12 +55,12 @@ export default function Jaka() {
 
         <section className='video_component'>
           <div className={styles.video}>
-            {videoAbout.map((video, index) => (
+            {jakaPageVideo.map((video, index) => (
               <VideoComponent
                 key={index}
-                title={video.video_title}
-                videoID={video.video_id}
-                description={video.video_description}
+                i18nKeyId={video.i18nKeyId}
+                i18nKeyTitle={video.i18nKeyTitle}
+                i18nKeyDescription={video.i18KeyDescription}
               />
             ))}
           </div>

@@ -81,9 +81,7 @@
     "page_subtitle": "JAKA collaborative robots  have been successfully applied to automated production in multiple industrial sectors, providing innovation for industrial sectors with a continuous and powerful equipment foundations.",
     "series_title": "JAKA Collaborative Robots Series",
     "feature_title": "What make JAKA Cobots great for factory automation",
-    "video_title": "JAKA Collaborative Robots in Action",
-    "video_description": "With a payload capacity of 3 to 20 kg, a wide working range, and a 6-axis configuration, JAKA collaborative robots bring advanced robotics and seamless human-robot interaction to various industries—including automotive, logistics, electronics, and medical manufacturing—enhancing efficiency and innovation.",
-    "video_id": "zebaRutQwyU&t",
+
     "jaka_main_series": {
       "id1": {
         "description": [
@@ -106,6 +104,152 @@
         ]
       }
     },
+
+    "jaka_page_video": {
+      "video_about": {
+        "ID": "zebaRutQwyU&t",
+        "title": "JAKA Collaborative Robots in Action",
+        "description": "With a payload capacity of 3 to 20 kg, a wide working range, and a 6-axis configuration, JAKA collaborative robots bring advanced robotics and seamless human-robot interaction to various industries—including automotive, logistics, electronics, and medical manufacturing—enhancing efficiency and innovation."
+      }
+    },
+
+    "jaka_products": {
+      "id1": {
+        "name": "Remote Monitoring",
+        "description": "Monitor the collaborative robot's work and set notifications\n with a unique security authentication system."
+      },
+      "id2": {
+        "name": "Wireless Connection",
+        "description": "JAKA collaborative robots help create a clean and safe workspace \nwithout complex wiring."
+      },
+      "id3": {
+        "name": "Drag Teaching",
+        "description": "With easy drag teaching and six highly flexible joints,\n the robot instantly remembers any position it is moved to."
+      },
+      "id4": {
+        "name": "No Teaching Pendant",
+        "description": "The JAKA app is available on tablets, smartphones, and PCs.\n Easily and conveniently program your collaborative robot."
+      },
+      "id5": {
+        "name": "Graphical Programming",
+        "description": "Intuitive graphical programming software requires\n no prior programming experience.\n Anyone can easily set and adjust positions and tasks."
+      }
+    }
+  },
+
+  "jaka_zu": {
+    "page_title": "JAKA Zu Collaborative Robots",
+    "page_subtitle": [
+      "The JAKA Zu cobots take all of JAKA’s best-advanced robotics technology and combines the torque-feedback collision detection",
+      " and a 6-axis design for an incredibly safe, accurate, intelligent and reliable series of cobots."
+    ],
+    "series_title": "JAKA Collaborative Robots Series",
+    "comparison_title": "JAKA Zu Product Comparison",
+
+    "zu_series": {
+      "id1": {
+        "description": ["Payload 3kg | Reach 626 mm"]
+      },
+      "id2": {
+        "description": ["Payload 5kg | Reach 954 mm"]
+      },
+      "id3": {
+        "description": ["Payload 7kg | Reach 819 mm"]
+      },
+      "id4": {
+        "description": ["Payload 12kg | Reach 1327 mm"]
+      },
+      "id5": {
+        "description": ["Payload 18kg | Reach 1073 mm"]
+      },
+      "id6": {
+        "description": ["Payload 20kg | Reach 1780 mm"]
+      }
+    },
+
+    "zu_page_video": {
+      "video_about": {
+        "ID": "fBJENsNZZmY&t",
+        "title": "See JAKA Zu collaborative robots in action",
+        "description": "Factory automation is simple with Jaka Zu. Myriad cobot applications are achieved immediately, on a plug-and-play basis."
+      }
+    }
+  },
+
+  "jaka_all_in_one": {
+    "page_title": "JAKA All-in-one Collaborative Robots",
+    "page_subtitle": [
+      "Introducing our JAKA All-in-One collaborative robots designed to assist manufacturers in their industrial and factory automations.",
+      "With payloads ranging from 3 to 18 kg and integrated 2D lens, JAKA All-in-One cobots are ideal for various industries, including 3C electronics, automotive, advanced manufacturing, logistics and more."
+    ],
+    "major_title": "The features of the JAKA All-in-one cobots",
+    "first_feature_name": "Integrated vision system",
+    "first_feature_description": [
+      "The JAKA All-in-one cobots represent a leap forward in human-robot collaborative work. Along with wireless teach and graphic programming comes visual feedback:",
+      "a camera-utilizing system that ensures precision and safety, while considerably broadening the range of tasks cobots may be assigned to.",
+      "Fixed or mounted at the end of the cobot, the JAKA Lens 2D  features a high-quality lens, together with a specialized light source module providing users with full functionality and a 2D vision experience."
+    ],
+    "second_feature_name": "MiniCab",
+    "second_feature_description": [
+      "Thanks to MiniCab controller every JAKA All-in-one cobot feels at home mounted on an AGV.",
+      "Cobots and AGVs (known as automated guided vehicle) on their own are remarkably useful;",
+      "without the need for human intervention, AGV-cobot pairings can complete warehousing, and inspection tasks independently."
+    ],
+    "comparison_title": "JAKA All-in-one Product Comparison",
+    "all_in_one_series": {
+      "id1": {
+        "description": ["Payload 3kg | Reach 626 mm"]
+      },
+      "id2": {
+        "description": ["Payload 5kg | Reach 954 mm"]
+      },
+      "id3": {
+        "description": ["Payload 7kg | Reach 819 mm"]
+      },
+      "id4": {
+        "description": ["Payload 12kg | Reach 1327 mm"]
+      },
+      "id5": {
+        "description": ["Payload 18kg I Reach 1073 mm"]
+      }
+    }
+  },
+
+  "jaka_pro": {
+    "page_title": "JAKA Pro Collaborative Robots",
+    "page_subtitle": "Oil-, dust-, and waterproof cobots designed to solve your manufacturing needs.",
+    "major_title": "The features of the JAKA Pro",
+    "feature_description": [
+      "The JAKA Pro cobots have IP68, meaning that they are immune to dust, small particulates and liquids such as water and oil.",
+      "They are capable of working non-stop for years in environments that would be intolerable for humans, full of metal and wood shavings, dust, wind or rain, in temperatures ranging from -10 up to 50°C (14 to 122°F).",
+      "The series includes cobots that can handle payloads of 5 up to 16kg, with working radii of up to 1713mm."
+    ],
+    "comparison_title": "JAKA Pro Product Comparison",
+    "pro_series": {
+      "id1": {
+        "description": ["Payload 5kg | Reach 954 mm"]
+      },
+      "id2": {
+        "description": ["Payload 12kg | Reach 1327 mm"]
+      },
+      "id3": {
+        "description": ["Payload 16kg | Reach 1713 mm"]
+      }
+    }
+  },
+
+  "jaka_minicobo": {
+    "page_title": "JAKA MiniCobo",
+    "page_subtitle": "Lightweight design, easy deployment, high performance, and great price/performance",
+    "feature_title": "The features of the JAKA MiniCobo",
+    "comparison_title": "JAKA MiniCobo Product Comparison",
+    "about": [
+      "JAKA MiniCobo has the characteristics of lightness, compactness, high flexibility, and easy installation.",
+      "It uses an integrated intelligent drive module to achieve a lightweight design while having superior performance; in addition, rich secondary development interfaces provide customers with more choices in different scenarios.",
+      "JAKA MiniCobo has a small appearance, simple and intuitive operation, low noise, and high-cost performance.",
+      "It is especially suitable for consumption, service, education and other fields."
+    ],
+
     "jaka_products": {
       "id1": {
         "name": "Remote Monitoring",

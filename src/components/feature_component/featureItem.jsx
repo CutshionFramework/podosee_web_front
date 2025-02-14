@@ -1,6 +1,7 @@
-import { Fragment } from "react";
+import { Fragment } from 'react';
+import { useTranslation } from 'react-i18next';
 
-import styles from "./featureItem.module.scss";
+import styles from './featureItem.module.scss';
 
 export default function FeatureItem({ icon, name, description }) {
   return (
@@ -19,7 +20,7 @@ export default function FeatureItem({ icon, name, description }) {
         </div>
         <div className={styles.feature_description}>
           <span>
-            {description.split("\n").map((line, index) => (
+            {description.split('\n').map((line, index) => (
               <Fragment key={index}>
                 {line}
                 <br />

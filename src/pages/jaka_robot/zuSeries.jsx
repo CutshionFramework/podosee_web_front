@@ -9,18 +9,8 @@ import RobotCard from '../../components/card/robotCard';
 import VideoComponent from '../../components/video_component/videoComponent';
 
 import data from '../../data/series_data/zuSeriesData';
+import zuPageVideo from '../../data/video_about/zuPageVideo';
 import styles from './zuSeries.module.scss';
-
-const videoAbout = [
-  {
-    video_title: 'JAKA Zu 협동로봇의 실제 작동 모습보기',
-    video_description: [
-      'JAKA Zu 와 함께라면 공장 자동화가 간단합니다.',
-      '다양한 협동로봇 애플리케이션을 플러그 앤 플레이 방식으로 즉시 구현할 수 있습니다.',
-    ],
-    video_id: 'fBJENsNZZmY&t',
-  },
-];
 
 export default function ZuSeriesPage() {
   const { t } = useTranslation();
@@ -30,7 +20,7 @@ export default function ZuSeriesPage() {
     window.scrollTo(0, 0);
   }, []);
 
-  const pageSubT = t('jaka_zu.page_subtitle', { returnObjects: true });
+  const pageSubtitle = t('jaka_zu.page_subtitle', { returnObjects: true });
 
   return (
     <>
@@ -41,7 +31,7 @@ export default function ZuSeriesPage() {
 
       <section className='zu_series'>
         <div className={styles.page_subtitle}>
-          {pageSubT.map((subtitle, index) => (
+          {pageSubtitle.map((subtitle, index) => (
             <p key={index}>{subtitle}</p>
           ))}
         </div>
@@ -61,12 +51,12 @@ export default function ZuSeriesPage() {
 
       <section className='video_component'>
         <div className={styles.video}>
-          {videoAbout.map((video, index) => (
+          {zuPageVideo.map((video, index) => (
             <VideoComponent
               key={index}
-              title={video.video_title}
-              videoID={video.video_id}
-              description={video.video_description}
+              i18nKeyId={video.i18nKeyId}
+              i18nKeyTitle={video.i18nKeyTitle}
+              i18nKeyDescription={video.i18KeyDescription}
             />
           ))}
         </div>

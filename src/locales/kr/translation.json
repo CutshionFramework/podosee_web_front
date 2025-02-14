@@ -81,9 +81,15 @@
     "page_subtitle": "JAKA 협동 로봇은 여러 산업 분야의 자동화 생산에 성공적으로 적용되어 지속적이고 강력한 장비 기반을 갖춘 산업 분야에 혁신을 제공하고 있습니다.",
     "series_title": "JAKA Collaborative Robots Series",
     "feature_title": "JAKA 협동로봇이 공장 자동화에 적합한 이유",
-    "video_title": "JAKA 협동로봇의 실제 활용 사례",
-    "video_description": "3-20kg의 가반 하중, 넓은 작업 반경, 6관절 구성을 갖춘 JAKA 협동로봇은 자동차부터 물류, 전자에서 의료 제조에 이르기까지 다양한 산업 분야에서 첨단 로봇 기술과 인간과 로봇의 자연스러운 상호작용을 통해 이점을 누릴 수 있습니다.",
-    "video_id": "zebaRutQwyU&t",
+
+    "jaka_page_video": {
+      "video_about": {
+        "ID": "zebaRutQwyU&t",
+        "title": "JAKA 협동로봇의 실제 활용 사례",
+        "description": "3-20kg의 가반 하중, 넓은 작업 반경, 6관절 구성을 갖춘 JAKA 협동로봇은 자동차부터 물류,전자에서 의료 제조에 이르기까지 다양한 산업 분야에서 첨단 로봇 기술과 인간과 로봇의 자연스러운 상호작용을 통해 이점을 누릴 수 있습니다."
+      }
+    },
+
     "jaka_main_series": {
       "id1": {
         "description": [
@@ -139,12 +145,7 @@
     "series_title": "JAKA Collaborative Robots Series",
     "feature_title": "JAKA 협동로봇이 공장 자동화에 적합한 이유",
     "comparison_title": "JAKA Zu 제품 비교",
-    "video_title": "JAKA Zu 협동로봇의 실제 작동 모습보기",
-    "video_description": [
-      "JAKA Zu 와 함께라면 공장 자동화가 간단합니다.",
-      "다양한 협동로봇 애플리케이션을 플러그 앤 플레이 방식으로 즉시 구현할 수 있습니다."
-    ],
-    "video_id": "fBJENsNZZmY&t",
+
     "zu_series": {
       "id1": {
         "description": ["가반하중 3kg | 작업반경 626 mm"]
@@ -163,6 +164,111 @@
       },
       "id6": {
         "description": ["가반하중 20kg | 작업반경 1780 mm"]
+      }
+    },
+
+    "zu_page_video": {
+      "video_about": {
+        "ID": "fBJENsNZZmY&t",
+        "title": "JAKA Zu 협동로봇의 실제 작동 모습보기",
+        "description": "JAKA Zu와 함께라면 공장 자동화가 간단합니다. 다양한 협동로봇 애플리케이션을 플러그 앤 플레이 방식으로 즉시 구현할 수 있습니다."
+      }
+    }
+  },
+
+  "jaka_all_in_one": {
+    "page_title": "JAKA All-in-one Collaborative Robots",
+    "page_subtitle": [
+      "제조업체의 산업 및 공장 자동화를 지원하도록 설계된 JAKA All-in-one 협동로봇을 소개합니다.",
+      "3~18kg의 가반하중과 통합 2D 렌즈를 갖춘 JAKA All-in-one 협동로봇은 3C 전자, 자동차, 첨단 제조, 물류 등 다양한 산업에 이상적입니다."
+    ],
+    "major_title": "JAKA All-in-one 협동로봇의 주요 특징",
+    "first_feature_name": "통합 비전 시스템",
+    "first_feature_description": [
+      "JAKA All-in-one 협동로봇은 무선 티칭 및 그래픽 프로그래밍과 함께 시각적 피드백이 제공됩니다.",
+      "카메라를 활용하는 시스템으로 정밀성과 안정성을 보장하는 동시에 협동로봇이 할당할 수 있는 작업 범위를 상당히 확대 합니다.",
+      "JAKA Lens 2D는 협동로봇의 끝에 고정하거나 장착할 수 있으며, 고품질 렌즈와 특수 광원 모듈을 갖추고 있어 사용자에게 완전한 기능성과 2D 비전 경험을 제공합니다."
+    ],
+    "second_feature_name": "MiniCab",
+    "second_feature_description": [
+      "MiniCab 컨트롤러 덕분에 모든 JAKA All-in-one 협동로봇은 AGV에 장착되어도 완벽히 조화를 이룹니다.",
+      "협동로봇과 AGV는 각각 매우 유용한 장비입니다.",
+      "특히 인간의 개입 없이도 AGV와 협동로봇의 조합은 창고 관리 및 검사 작업을 독립적으로 수행할 수 있습니다."
+    ],
+    "comparison_title": "JAKA All-in-one 제품 비교",
+    "all_in_one_series": {
+      "id1": {
+        "description": ["가반하중 3kg | 작업반경 626 mm"]
+      },
+      "id2": {
+        "description": ["가반하중 5kg | 작업반경 954 mm"]
+      },
+      "id3": {
+        "description": ["가반하중 7kg | 작업반경 819 mm"]
+      },
+      "id4": {
+        "description": ["가반하중 12kg | 작업반경 1327 mm"]
+      },
+      "id5": {
+        "description": ["가반하중 18kg I 작업반경 1073 mm"]
+      }
+    }
+  },
+
+  "jaka_pro": {
+    "page_title": "JAKA Pro Collaborative Robots",
+    "page_subtitle": "오일, 먼지, 방수가 가능한 협동로봇으로 제조 공정의 다양한 요구를 해결하세요.",
+    "major_title": "JAKA Pro 협동로봇의 주요 특징",
+    "feature_description": [
+      "JAKA Pro 협동로봇은 IP68 등급을 갖추고 있어 먼지, 작은 입자, 물, 오일과 같은 액체로부터 완벽히 보호됩니다.",
+      "이들은 사람이 견딜 수 없는 환경 즉 금속과 나무 조각, 먼지, 바람 또는 비로 가득 차 있고 -10도에서 50도에 이르는 온도 범위에서 수년동안 쉬지 않고 작업할 수 있습니다.",
+      "이 시리즈는 최대 1713mm의 작업 반경과 5~16kg의 탑재량을 처리할 수 있는 협동로봇이 포함되어 있습니다."
+    ],
+    "comparison_title": "JAKA Pro 제품 비교",
+    "pro_series": {
+      "id1": {
+        "description": ["가반하중 5kg | 작업반경 954 mm"]
+      },
+      "id2": {
+        "description": ["가반하중 12kg | 작업반경 1327 mm"]
+      },
+      "id3": {
+        "description": ["가반하중 16kg | 작업반경 1713 mm"]
+      }
+    }
+  },
+
+  "jaka_minicobo": {
+    "page_title": "JAKA MiniCobo",
+    "page_subtitle": "경량화 설계를 하면서도 배치가 쉽고 성능도 뛰어나고 높은 가성비를 확보합니다.",
+    "feature_title": "JAKA MiniCobo의 주요 특징",
+    "comparison_title": "JAKA MiniCobo 제품 스펙",
+    "about": [
+      "JAKA MiniCobo는 컴팩트하고 부드러운 모양으로 심플하게 디자인 되었으며, 직관적으로 조작할 수 있고 소음이 거의 없으며 가격 대비 성능이 우수한 제품입니다.",
+      "통합 지능형 드라이브 모듈을 사용하여 뛰어난 성능을 유지하면서 경량화된 설계를 구현합니다. 또한 풍부한 2차 개발 인터페이스를 통해 고객에게 다양한 상황에서 더 많은 선택지를 제공합니다.",
+      "JAKA MiniCobo는 작은 외관, 간단하고 직관적인 조작, 저소음 및 고비용 성능을 갖추고 있습니다.",
+      "특히 소비, 서비스, 교육 등 다양한 분야에 적합합니다."
+    ],
+    "jaka_products": {
+      "id1": {
+        "name": "원격 모니터링",
+        "description": "독특한 보안 인증 시스템으로 협동로봇의\n 작업을 모니터링하고 알림을 설정합니다."
+      },
+      "id2": {
+        "name": "무선 연결",
+        "description": "복잡한 선 없이 깨끗하고 안전한 공간을 \nJAKA 협동로봇이 함께합니다."
+      },
+      "id3": {
+        "name": "드래그 티칭",
+        "description": "손쉬운 드래그 티칭과 높은 기동성을\n 제공하는 6개 관절 덕분에 어떤 위치로든\n 옮기기만 하면 즉시 기억합니다."
+      },
+      "id4": {
+        "name": "티칭 펜던트 없음",
+        "description": "JAKA 앱은 태블릿, 스마트폰, PC에서 \n사용 가능합니다. 쉽고 간편하게 \n협동로봇을 가르쳐보세요."
+      },
+      "id5": {
+        "name": "그래픽 프로그래밍",
+        "description": "직관적인 그래픽 프로그래밍 소프트웨어는 \n프로그래밍 경험이 전혀 필요하지 \n않습니다. 누구나 쉽게 위치와 작업을 \n설정하고 조정할 수 있습니다."
       }
     }
   },
