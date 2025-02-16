@@ -11,7 +11,16 @@ import jakaProducts from '../../data/features/jakaProducts';
 import styles from './minicobo.module.scss';
 
 export default function Minicobo() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
+  // 현재 언어 가져오기 (예: "ko", "en")
+  const currentLang = i18n.language;
+
+  // 언어별 이미지 경로 설정
+  const imagePath =
+    currentLang === 'ko'
+      ? '/assets/product_comparison/ko/jaka_minicobo_product_comparison_ko.png'
+      : '/assets/product_comparison/en/jaka_minicobo_product_comparison_en.png';
 
   const aboutList = t('jaka_minicobo.about', { returnObjects: true });
 
@@ -62,10 +71,7 @@ export default function Minicobo() {
         </div>
 
         <div className={styles.comparison_img}>
-          <img
-            src='/assets/product_comparison/ko/jaka_minicobo_product_comparison_ko.png'
-            alt=''
-          />
+          <img src={imagePath} alt='제품 비교 이미지' />
         </div>
       </section>
 

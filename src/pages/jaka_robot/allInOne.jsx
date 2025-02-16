@@ -11,8 +11,16 @@ import data from '../../data/series_data/allInOneSeriesData';
 import styles from './allInOne.module.scss';
 
 export default function AllInOne() {
-  const { t } = useTranslation();
-  const nav = useNavigate();
+  const { t, i18n } = useTranslation();
+
+  // 현재 언어 가져오기 (예: "ko", "en")
+  const currentLang = i18n.language;
+
+  // 언어별 이미지 경로 설정
+  const imagePath =
+    currentLang === 'ko'
+      ? '/assets/product_comparison/ko/jaka_all_in_one_product_comparison_ko.png'
+      : '/assets/product_comparison/en/jaka_all_in_one_product_comparison_en.png';
 
   const pageSubtitle = t('jaka_all_in_one.page_subtitle', {
     returnObjects: true,
@@ -31,6 +39,8 @@ export default function AllInOne() {
       returnObjects: true,
     }
   );
+
+  const nav = useNavigate();
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -81,13 +91,19 @@ export default function AllInOne() {
           </div>
 
           <div className={styles.first_feature_img}>
-            <img src='/assets/jaka_all_in_one/major_feature_1.png' alt='' />
+            <img
+              src='/assets/jaka_all_in_one/major_feature_1.png'
+              alt=''
+            />
           </div>
         </div>
 
         <div className={styles.second_feature}>
           <div className={styles.second_feature_img}>
-            <img src='/assets/jaka_all_in_one/major_feature_2.png' alt='' />
+            <img
+              src='/assets/jaka_all_in_one/major_feature_2.png'
+              alt=''
+            />
           </div>
 
           <div className={styles.second_feature_info}>
@@ -110,10 +126,7 @@ export default function AllInOne() {
         </div>
 
         <div className={styles.comparison_img}>
-          <img
-            src='/assets/product_comparison/ko/jaka_all_in_one_product_comparison_ko.png'
-            alt=''
-          />
+          <img src={imagePath} alt='제품 비교 이미지' />
         </div>
       </section>
       <Footer />
