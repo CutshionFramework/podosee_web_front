@@ -15,13 +15,13 @@ import styles from './zuSeries.module.scss';
 export default function ZuSeriesPage() {
   const { t, i18n } = useTranslation();
 
-  // 현재 언어 가져오기 (예: "ko", "en")
+  // 현재 언어 가져오기 (예: "kr", "en")
   const currentLang = i18n.language;
 
   // 언어별 이미지 경로 설정
   const imagePath =
-    currentLang === 'ko'
-      ? '/assets/product_comparison/ko/jaka_zu_product_comparison_ko.png'
+    currentLang === 'kr'
+      ? '/assets/product_comparison/kr/jaka_zu_product_comparison_kr.png'
       : '/assets/product_comparison/en/jaka_zu_product_comparison_en.png';
 
   const pageSubtitle = t('jaka_zu.page_subtitle', {
