@@ -1,10 +1,6 @@
-import { useTranslation } from 'react-i18next';
-
 import styles from './productInformation.module.scss';
 
 export default function ProductInformation({ imgSrc, about }) {
-  const { t } = useTranslation();
-
   return (
     <div className={styles.product_container}>
       <div className={styles.product_info}>

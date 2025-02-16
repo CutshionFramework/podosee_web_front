@@ -141,7 +141,7 @@
     "page_title": "JAKA Zu Collaborative Robots",
     "page_subtitle": [
       "The JAKA Zu cobots take all of JAKA’s best-advanced robotics technology and combines the torque-feedback collision detection",
-      " and a 6-axis design for an incredibly safe, accurate, intelligent and reliable series of cobots."
+      "and a 6-axis design for an incredibly safe, accurate, intelligent and reliable series of cobots."
     ],
     "series_title": "JAKA Collaborative Robots Series",
     "comparison_title": "JAKA Zu Product Comparison",
@@ -253,23 +253,358 @@
     "jaka_products": {
       "id1": {
         "name": "Remote Monitoring",
-        "description": "Monitor the collaborative robot's work and set notifications\n with a unique security authentication system."
+        "description": "Monitor the collaborative robot's work and set notifications with a unique security authentication system."
       },
       "id2": {
         "name": "Wireless Connection",
-        "description": "JAKA collaborative robots help create a clean and safe workspace \nwithout complex wiring."
+        "description": "JAKA collaborative robots help create a clean and safe workspace without complex wiring."
       },
       "id3": {
         "name": "Drag Teaching",
-        "description": "With easy drag teaching and six highly flexible joints,\n the robot instantly remembers any position it is moved to."
+        "description": "With easy drag teaching and six highly flexible joints, the robot instantly remembers any position it is moved to."
       },
       "id4": {
         "name": "No Teaching Pendant",
-        "description": "The JAKA app is available on tablets, smartphones, and PCs.\n Easily and conveniently program your collaborative robot."
+        "description": "The JAKA app is available on tablets, smartphones, and PCs. Easily and conveniently program your collaborative robot."
       },
       "id5": {
         "name": "Graphical Programming",
-        "description": "Intuitive graphical programming software requires\n no prior programming experience.\n Anyone can easily set and adjust positions and tasks."
+        "description": "Intuitive graphical programming soft\n - ware requires no prior programming experience. Anyone can easily set and adjust positions and tasks."
+      }
+    }
+  },
+
+  "zu_detail_pages": {
+    "products": {
+      "3": {
+        "pageTitle": "JAKA Zu 3 Collaborative Robots",
+        "imgSrc": "/assets/jaka_zu/jaka_zu_3.png",
+        "about": [
+          "The JAKA Zu 3 offers cutting-edge human-robot collaboration. With drag-and-drop graphic programming, teaching and operating the cobot becomes effortless.",
+          "The built-in torque feedback ensures safety, regardless of the utilization of its 3 kg payload, within its working radius of 626 mm. It is ideal for tasks such as screwdriving, electronic assembly, small surface pick-and-place operations and other line and maintenance tasks.",
+          "Its versatile mounting options enable it to be positioned anywhere – fixed at an angle, upside down, or even vertically.",
+          "Its compact size, coupled with full functionality, makes it well-suited for 3C electronics and advanced manufacturing."
+        ],
+        "name": "JAKA Zu3 Specifications",
+        "basicImg": "/assets/product_comparison/en/jaka_zu_3_basic_en.png",
+        "commonImg": "/assets/product_comparison/en/jaka_zu_3_common_en.png",
+        "feature_title": "The features of the JAKA Zu 3 Cobot",
+        "field_title": "Best applications for JAKA Zu 3"
+      },
+      "5": {
+        "pageTitle": "JAKA Zu 5 Collaborative Robots",
+        "imgSrc": "/assets/jaka_zu/jaka_zu_5.png",
+        "about": [
+          "With a 5kg payload and a working radius of 954mm, the Jaka Zu 5 cobot is perfectly suited for repetitive operations such as picking and placing, welding, assembly and more.",
+          "Its features are specifically optimized for use in 3C electronics, automotive and other industries that demand high levels of precision.",
+          "The visual and collision protection systems of the JAKA Zu 5 ensure its ability to function in harsh and unpredictable environments, eliminating the need for a safety fence.",
+          "Its compact size and flexible mounting options facilitate easy placement at any angle – vertically, horizontally, on a slope or even upside down on the ceiling."
+        ],
+        "name": "JAKA Zu 5 Specifications",
+        "basicImg": "/assets/product_comparison/en/jaka_zu_5_basic_en.png",
+        "commonImg": "/assets/product_comparison/en/jaka_zu_5_common_en.png",
+        "feature_title": "The features of the JAKA Zu 5",
+        "field_title": "Best applications for JAKA Zu 5"
+      },
+      "7": {
+        "pageTitle": "JAKA Zu 7 Collaborative Robots",
+        "imgSrc": "/assets/jaka_zu/jaka_zu_7.png",
+        "about": [
+          "Working for extended hours with weights of up to 7 kg can be exhausting for anyone. However, the JAKA Zu 7, with a payload of 7 kg, can manage this for 50,000 continuous hours within a working radius of 819 mm!",
+          "Repetitive tasks like welding, packaging, palletizing, picking and placing and more pose no problem, freeing employees to undertake less physically demanding tasks required in a smart factory. It can be mounted at any angle – horizontally, vertically, on a slope or hanging from above.",
+          "While most of our JAKA Zu 7 customers are from the automotive, 3C electronics, advanced manufacturing, renewable energy, medical devices, chemical and synthetic fibers industries, this cobot is suitable for many other industries too."
+        ],
+        "name": "JAKA Zu 7 Specifications",
+        "basicImg": "/assets/product_comparison/en/jaka_zu_7_basic_en.png",
+        "commonImg": "/assets/product_comparison/en/jaka_zu_7_common_en.png",
+        "feature_title": "The features of the JAKA Zu 7",
+        "field_title": "Best applications for JAKA Zu 7"
+      },
+      "12": {
+        "pageTitle": "JAKA Zu 12 Collaborative Robots",
+        "imgSrc": "/assets/jaka_zu/jaka_zu_12.png",
+        "about": [
+          "The JAKA Zu 12 offers a payload of 12 kg and a larger working radius of 1327 mm compared to previous models in the JAKA Zu series. Capable of completing tasks that would typically require at least two people, it can operate continuously for 50,000 hours.",
+          "Featuring a 6-axis configuration, the JAKA Zu 12 offers reliability and precision. Boasting an exceptional repeatability of ±0.03 mm.",
+          "Despite its high payload capacity, it remains relatively lightweight and can be mounted at various angles – vertical, horizontal and everything in between.",
+          "Its combined flexibility, safety features and reliability make it an ideal fit for applications in the automotive and auto parts industry, advanced manufacturing, household appliances, food packaging, and much more."
+        ],
+        "name": "JAKA Zu 12 Specifications",
+        "basicImg": "/assets/product_comparison/en/jaka_zu_12_basic_en.png",
+        "commonImg": "/assets/product_comparison/en/jaka_zu_12_common_en.png",
+        "feature_title": "The features of the JAKA Zu 12",
+        "field_title": "Best applications for JAKA Zu 12"
+      },
+      "18": {
+        "pageTitle": "JAKA Zu 18 Collaborative Robots",
+        "imgSrc": "/assets/jaka_zu/jaka_zu_18.png",
+        "about": [
+          "The JAKA Zu 18 has the largest payload of 18 kg within the JAKA Zu range. Additionally, it has a significant working radius of 1073 mm.",
+          "Despite its large payload, the Zu 18 is incredibly safe. Equipped with visual and torque-feedback collision protection systems, it operates seamlessly in any environment without the need for a safety fence.",
+          "JAKA Zu 18 is perfect for use in diverse tasks such as packaging, palletizing, welding, testing, screw tightening, mold injection, bonding and more.",
+          "Its utility spans across various industries, including the production or testing of medical devices, metal processing, chemical manufacturing, standard manufacturing and warehousing."
+        ],
+        "name": "JAKA Zu 18 Specifications",
+        "basicImg": "/assets/product_comparison/en/jaka_zu_18_basic_en.png",
+        "commonImg": "/assets/product_comparison/en/jaka_zu_18_common_en.png",
+        "feature_title": "The features of the JAKA Zu 18",
+        "field_title": "Best applications for JAKA Zu 18"
+      },
+      "20": {
+        "pageTitle": "JAKA Zu 20 Collaborative Robots",
+        "imgSrc": "/assets/jaka_zu/jaka_zu_20.png",
+        "about": [
+          "JAKA Zu 20 is our new collaborative robot, designed for tasks that require heavier payload and extended reach.",
+          "This cutting-edge robot builds upon the renowned qualities of the JAKA Zu series, offering simplicity.",
+          "safety, reliability, and precision. With an impressive reach of 1780 mm and a payload capacity of 20 kg,it excels in heavy-duty and large-capacity applications.",
+          "The IP65 protection adds an extra layer of reliability and resilience, ensuring the Zu 20 is also suitable for industrial environments where dust, dirt and water are present.",
+          "From machine tending to material handling, welding to dispensing, palletizing to packaging, the JAKA Zu 20 is your ultimate partner for diverse industrial needs."
+        ],
+        "name": "JAKA Zu 20 Specifications",
+        "basicImg": "/assets/product_comparison/en/jaka_zu_20_basic_en.png",
+        "commonImg": "/assets/product_comparison/en/jaka_zu_20_common_en.png",
+        "feature_title": "The features of the JAKA Zu 20",
+        "field_title": "Best applications for JAKA Zu 20"
+      }
+    },
+
+    "zu3_features": {
+      "id1": {
+        "name": "Graphical Programming",
+        "description": "Intuitive graphical programming soft\n - ware requires no prior programming experience. Anyone can easily set and adjust positions and tasks."
+      },
+      "id2": {
+        "name": "Drag Teaching",
+        "description": "With easy drag teaching and six highly flexible joints, the robot instantly remembers any position it is moved to."
+      },
+      "id3": {
+        "name": " Plug and Play",
+        "description": "The installation of our cobots is fast, easy and flexible. They can be mounted at any angle and will begin working immediately once placed"
+      },
+      "id4": {
+        "name": "Wireless Connection",
+        "description": "JAKA collaborative robots help create a clean and safe workspace without complex wiring."
+      },
+      "id5": {
+        "name": "No Teaching Pendant",
+        "description": "The JAKA app is available on tablets, smartphones, and PCs. Easily and conveniently program your collaborative robot."
+      },
+      "id6": {
+        "name": "Remote Monitoring",
+        "description": "Monitor the collaborative robot's work and set notifications with a unique security authentication system."
+      }
+    },
+
+    "zu5_features": {
+      "id1": {
+        "name": "Graphical Programming",
+        "description": "Intuitive graphical programming soft\n - ware requires no prior programming experience. Anyone can easily set and adjust positions and tasks."
+      },
+      "id2": {
+        "name": "Drag Teaching",
+        "description": "With easy drag teaching and six highly flexible joints, the robot instantly remembers any position it is moved to."
+      },
+      "id3": {
+        "name": " Plug and Play",
+        "description": "The installation of our cobots is fast, easy and flexible. They can be mounted at any angle and will begin working immediately once placed"
+      },
+      "id4": {
+        "name": "Wireless Connection",
+        "description": "JAKA collaborative robots help create a clean and safe workspace without complex wiring."
+      },
+      "id5": {
+        "name": "Remote Monitoring",
+        "description": "Monitor the collaborative robot's work and set notifications with a unique security authentication system."
+      }
+    }
+  },
+
+  "all_in_one_detail_pages": {
+    "products": {
+      "3": {
+        "pageTitle": "JAKA Ai 3 Collaborative Robots",
+        "imgSrc": "/assets/jaka_zu/jaka_zu_3.png",
+        "about": [
+          "With 3 kg payload and working radius of 626 mm, JAKA Ai 3 is small-environ cobot for complex tasks such as flexible assembly, inspection, or testing.",
+          "Despite its smaller size, it packs all the key JAKA Ai series features – graphic programming, visual feedback and wireless teach – making it ideal for use across automotive, medical devices, 3C electronics, and a whole host of other industries.",
+          "The JAKA Ai 3 has flexible dismount options, making it possible to easily mount vertically too, at 45-degree angle positions, or even upside-down on a ceiling. Moreover, no fences are required."
+        ],
+        "name": "JAKA Ai 3 Specifications",
+        "basicImg": "/assets/product_comparison/kr/jaka_all_in_one_3_basic_kr.png",
+        "commonImg": "/assets/product_comparison/kr/jaka_all_in_one_3_common_kr.png",
+        "feature_title": "The features of the JAKA Ai 3",
+        "field_title": "Best applications for JAKA Ai 3"
+      },
+      "5": {
+        "pageTitle": "JAKA Ai 5 Collaborative Robots",
+        "imgSrc": "/assets/jaka_zu/jaka_zu_5.png",
+        "about": [
+          "The JAKA Ai 5 can handle a 5kg payload, and has a working radius of 954mm. With its excellent manoeuvrability, complicated automated tasks like flexible assembly, inspection and testing are no problem at all.",
+          "The JAKA Ai 5 shines in many industries, but is particularly useful in logistics and manufacturing; palletizing, working on automobile and auto parts production lines, helping make medical devices, 3C electronics and more.",
+          "With a decent payload-weight ratio, the JAKA Ai 5 can be mounted in a variety of positions and places – vertically, horizontally, at sloped angles or even upside down. And no more fences required!"
+        ],
+        "name": "JAKA Ai 5 Specifications",
+        "basicImg": "/assets/product_comparison/kr/jaka_all_in_one_5_basic_kr.png",
+        "commonImg": "/assets/product_comparison/kr/jaka_all_in_one_5_common_kr.png",
+        "feature_title": "The features of the JAKA Ai 5",
+        "field_title": "Best applications for JAKA Ai 5"
+      },
+      "7": {
+        "pageTitle": "JAKA Ai 7 Collaborative Robots",
+        "imgSrc": "/assets/jaka_zu/jaka_zu_7.png",
+        "about": [
+          "The JAKA Ai 7’s 7kg payload, and working radius of 819mm, suits it perfectly to tasks such as welding, picking and placing, packaging, inspection and testing.",
+          "Where other robots in the logistics industries may require in-person expert programming, the JAKA Ai 7 is equipped with wireless teach, and graphic programming. These advanced technologies, combined with the All-in-one series’ visual feedback system, make it ideal for quickly adapting to the processing, packaging and line production needs of virtually any industry.",
+          "Interactivity and flexibility are two of the JAKA Ai 7’s strong points, facilitated by integrating its vision and force control algorithms. As well as preparing it for pressure-based tasks, these also increase security, greatly increasing the safety with which cobots and humans may share a space."
+        ],
+        "name": "JAKA Ai 7 Specifications",
+        "basicImg": "/assets/product_comparison/kr/jaka_all_in_one_7_basic_kr.png",
+        "commonImg": "/assets/product_comparison/kr/jaka_all_in_one_7_common_kr.png",
+        "feature_title": "The features of the JAKA Ai 7",
+        "field_title": "Best applications for JAKA Ai 7"
+      },
+      "12": {
+        "pageTitle": "JAKA Ai 12 Collaborative Robots",
+        "imgSrc": "/assets/jaka_zu/jaka_zu_12.png",
+        "about": [
+          "On the JAKA Ai 12, the best-in-class working radius of 1327mm is matched with a 12kg payload. This makes it perfect for larger, complicated operations such as machine tending, vision picking, polishing, inspection, testing and many others.",
+          "New tasks may be programmed and performed simply, with agility. Its integrated visual feedback ensures consistency and monitoring across palletizing, packaging, warehousing and any other task that might be required of it.",
+          "Mounting and dismounting the JAKA Ai 12 presents no limits. It has full 360-degree mounting capabilities, meaning facility managers may install it on a horizontal surface, a vertical one, upside down, or anything in between. Also there is no need of protective fences anymore."
+        ],
+        "name": "JAKA Ai 12 Specifications",
+        "basicImg": "/assets/product_comparison/kr/jaka_all_in_one_12_basic_kr.png",
+        "commonImg": "/assets/product_comparison/kr/jaka_all_in_one_12_common_kr.png",
+        "feature_title": "The features of the JAKA Ai 12",
+        "field_title": "Best applications for JAKA Ai 12"
+      },
+      "18": {
+        "pageTitle": "JAKA Ai 18 Collaborative Robots",
+        "imgSrc": "/assets/jaka_zu/jaka_zu_18.png",
+        "about": [
+          "The JAKA Ai collaborative robot 18 is flexible, fast, and has excellent repeatability (±0.03mm).",
+          "It has an incredibly high weight-payload ratio, and is able to handle its 18kg payload in a working radius of 1073mm. As such, it’s a great cobot for lifting and moving heavy parts and products, machine tending, palletizing, vision picking, polishing, inspection, more.",
+          "JAKA Ai 18 can be integrated dynamically, seamlessly adapted for various tasks, all monitored for precision and efficacy by visual feedback. Palletizing, packaging, light and heavy-duty production lines, handling household appliances, and many other tasks are safely within the JAKA Ai 18’s purview."
+        ],
+        "name": "JAKA Ai 18 Specifications",
+        "basicImg": "/assets/product_comparison/kr/jaka_all_in_one_18_basic_kr.png",
+        "commonImg": "/assets/product_comparison/kr/jaka_all_in_one_18_common_kr.png",
+        "feature_title": "The features of the JAKA Ai 18",
+        "field_title": "Best applications for JAKA Ai 18"
+      }
+    },
+
+    "all_in_one_features": {
+      "id1": {
+        "name": "Flexibility",
+        "description": "The All-in-one technology makes compact, intelligent hardware operable in biology, mechanics, electronics and physics."
+      },
+      "id2": {
+        "name": "Integrated JAKA Lens 2D",
+        "description": "Fixed or mounted at the end of the cobot, the JAKA Lens 2D features a high-quality lens, together with a specialized light source module."
+      },
+      "id3": {
+        "name": " Plug and Play",
+        "description": "The installation of our cobots is fast, easy and flexible. They can be mounted at any angle and will begin working immediately once placed"
+      },
+      "id4": {
+        "name": "Wireless Connection",
+        "description": "JAKA collaborative robots help create a clean and safe workspace without complex wiring."
+      },
+      "id5": {
+        "name": "Graphical Programming",
+        "description": "Intuitive graphical programming soft\n - ware requires no prior programming experience. Anyone can easily set and adjust positions and tasks."
+      },
+      "id6": {
+        "name": "Drag Teaching",
+        "description": "With easy drag teaching and six highly flexible joints, the robot instantly remembers any position it is moved to."
+      }
+    }
+  },
+
+  "pro_detail_pages": {
+    "products": {
+      "5": {
+        "pageTitle": "JAKA Pro 5 Collaborative Robots",
+        "imgSrc": "/assets/jaka_pro/jaka_pro_5.png",
+        "about": [
+          "The JAKA Pro 5 is designed for harsh operating environments. The cobot is rated IP68, attesting to its resilience against dust, water, and oil.",
+          "The JAKA Pro 5 could operate in a desert or a rainforest.",
+          "Some production lines may necessarily be either extremely cold or hot. This makes it challenging for humans to endure such conditions for extended periods.",
+          "Meanwhile, the JAKA Pro 5 has no issues. It operates perfectly from -10° C to 50° C."
+        ],
+        "name": "JAKA Pro 5 Specifications",
+        "basicImg": "/assets/product_comparison/ko/jaka_pro_5_basic.png",
+        "commonImg": "/assets/product_comparison/ko/jaka_pro_5_common.png",
+        "feature_title": "The features of the JAKA Pro 5",
+        "field_title": "Best applications for JAKA Pro 5"
+      },
+      "12": {
+        "pageTitle": "JAKA Pro 12 Collaborative Robots",
+        "imgSrc": "/assets/jaka_pro/jaka_pro_12.png",
+        "about": [
+          "In metalwork, the production of auto-parts, 3C electronics, agriculture, and many other industries, robotic arms are expected to have high protection against the elements.",
+          "Whether outdoors in the wind and rain, or around frequent oil splashes, the JAKA Pro 12, with IP68 grade protection.",
+          "t fits right into environments with temperatures that are challenging for human workers, fully operational from -10C up to 50C.",
+          "With a working radius of 1327mm, and a payload of 12kg, it’s expert at metal cutting, grinding, machine tending and other tasks that may involve metal shavings, sawdust, oils or other liquids."
+        ],
+        "name": "JAKA Pro 12 Specifications",
+        "basicImg": "/assets/product_comparison/ko/jaka_pro_12_basic.png",
+        "commonImg": "/assets/product_comparison/ko/jaka_pro_12_common.png",
+        "feature_title": "The features of the JAKA Pro 12",
+        "field_title": "Best applications for JAKA Pro 12"
+      },
+      "16": {
+        "pageTitle": "JAKA Pro 16 Collaborative Robots",
+        "imgSrc": "/assets/jaka_pro/jaka_pro_16.png",
+        "about": [
+          "The JAKA Pro 16, the largest of the Pro series, can handle payloads of up to 16kg, with a working radius of 1713mm.",
+          "It’s ideal for cutting metal, grinding, tending machines and tasks that include metal shavings, sawdust, oils or other liquids.",
+          "Its IP68 grade protection ensures that it can operate fully in dusty or wet environments, making it ideal for machining, automotive, agriculture, the food industry and more.",
+          "The JAKA Pro series has been designed with tough working conditions in mind. It can operate in environments that range in temperature from -10C to +50C."
+        ],
+        "name": "JAKA Pro 16 Specifications",
+        "basicImg": "/assets/product_comparison/ko/jaka_pro_16_basic.png",
+        "commonImg": "/assets/product_comparison/ko/jaka_pro_16_common.png",
+        "feature_title": "The features of the JAKA Pro 16",
+        "field_title": "Best applications for JAKA Pro 16"
+      }
+    },
+
+    "pro_features": {
+      "id1": {
+        "name": "Graphical Programming",
+        "description": "Intuitive graphical programming soft\n - ware requires no prior programming experience. Anyone can easily set and adjust positions and tasks."
+      },
+      "id2": {
+        "name": "Drag Teaching",
+        "description": "With easy drag teaching and six highly flexible joints, the robot instantly remembers any position it is moved to."
+      }
+    },
+
+    "pro16_features": {
+      "id1": {
+        "name": " Complete Protection",
+        "description": "Even in harsh environments, the JAKA Pro 16 is well protected. Its IP68 protection grade ensures that water, dust and oil will not interfere with functionality."
+      },
+      "id2": {
+        "name": " Safe Human - cobot Collaboration",
+        "description": "JAKA Pro 16 has built-in torque feedback and collision detection features, eliminating the need for safety fences"
+      },
+      "id3": {
+        "name": " Plug and Play",
+        "description": "The installation of our cobots is fast, easy and flexible. They can be mounted at any angle and will begin working immediately once placed"
+      },
+      "id4": {
+        "name": "Remote Monitoring",
+        "description": "Monitor the collaborative robot's work and set notifications with a unique security authentication system."
+      },
+      "id5": {
+        "name": "Graphical Programming",
+        "description": "Intuitive graphical programming soft\n - ware requires no prior programming experience. Anyone can easily set and adjust positions and tasks."
+      },
+      "id6": {
+        "name": "Drag Teaching",
+        "description": "With easy drag teaching and six highly flexible joints, the robot instantly remembers any position it is moved to."
       }
     }
   },
