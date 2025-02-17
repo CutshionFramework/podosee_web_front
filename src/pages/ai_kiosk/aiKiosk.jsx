@@ -1,13 +1,13 @@
-import { useState, useEffect } from "react";
-import { useParams, useNavigate } from "react-router-dom";
-import { useTranslation } from "react-i18next";
-import Header from "../../../components/header/header";
-import Footer from "../../../components/footer/footer";
-import MenuTab from "../../../components/menu_tab/menuTab";
-import PageTitle from "../../../components/page_title/pageTitle";
-import images from "../../../constants/imagePath";
+import { useState, useEffect } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import Header from '../../components/header/header';
+import Footer from '../../components/footer/footer';
+import MenuTab from '../../components/menu_tab/menuTab';
+import PageTitle from '../../components/page_title/pageTitle';
+import images from '../../constants/imagePath';
 
-import styles from "./aiKiosk.module.scss";
+import styles from './aiKiosk.module.scss';
 
 export default function AIKiosk() {
   const { id } = useParams();
@@ -16,9 +16,9 @@ export default function AIKiosk() {
   const [currentTab, setCurrentTab] = useState(0);
 
   const menuArr = [
-    { name: t("aikiosk.menu.freephoto"), path: "freephoto" },
-    { name: t("aikiosk.menu.feveralarm"), path: "feveralarm" },
-    { name: t("aikiosk.menu.vendingmachine"), path: "vendingmachine" },
+    { name: t('aikiosk.menu.freephoto'), path: 'freephoto' },
+    { name: t('aikiosk.menu.feveralarm'), path: 'feveralarm' },
+    { name: t('aikiosk.menu.vendingmachine'), path: 'vendingmachine' },
   ];
 
   useEffect(() => {
@@ -26,22 +26,21 @@ export default function AIKiosk() {
   }, []);
 
   useEffect(() => {
-    if (id === "freephoto") setCurrentTab(0);
-    else if (id === "feveralarm") setCurrentTab(1);
-    else if (id === "vendingmachine") setCurrentTab(2);
+    if (id === 'freephoto') setCurrentTab(0);
+    else if (id === 'feveralarm') setCurrentTab(1);
+    else if (id === 'vendingmachine') setCurrentTab(2);
   }, [id]);
 
   const selectMenuHandler = (index) => {
     setCurrentTab(index);
-    navigate(`/integrated/aikiosk/${menuArr[index].path}`); // URL 변경
+    navigate(`/aikiosk/${menuArr[index].path}`); // URL 변경
   };
 
   return (
     <div>
       <Header />
-      <PageTitle title={t("aikiosk.solution")} />
+      <PageTitle title={t('aikiosk.title')} />
       <div className={styles.aikiosk_container}>
-        <h1>{t("aikiosk.title")}</h1>
         <MenuTab
           menuArr={menuArr}
           currentTab={currentTab}
@@ -91,7 +90,7 @@ const CommmonComponent = ({ currentTab }) => {
     },
   };
 
-  const selectedTab = currentTab || "freephoto";
+  const selectedTab = currentTab || 'freephoto';
 
   const imageList = imageMap[selectedTab];
 
@@ -103,13 +102,13 @@ const CommmonComponent = ({ currentTab }) => {
     styles[`${selectedTab}_container`] || styles.freephoto_container;
 
   const specImgClass = `${styles.spec_img} ${
-    selectedTab === "freephoto"
+    selectedTab === 'freephoto'
       ? styles.freephoto_spec
-      : selectedTab === "feveralarm"
+      : selectedTab === 'feveralarm'
       ? styles.feveralarm_spec
-      : selectedTab === "vendingmachine"
+      : selectedTab === 'vendingmachine'
       ? styles.vendingmachine_spec
-      : ""
+      : ''
   }`;
 
   const specImage =
@@ -130,7 +129,7 @@ const CommmonComponent = ({ currentTab }) => {
         ))}
       </div>
 
-      <h2>{t("aikiosk.spec")}</h2>
+      <h2>{t('aikiosk.spec')}</h2>
 
       <div className={styles.spec_img_container}>
         <img className={specImgClass} src={specImage} alt={specImage} />
@@ -138,7 +137,7 @@ const CommmonComponent = ({ currentTab }) => {
 
       <img
         className={
-          selectedTab === "freephoto" ? styles.freephoto_img : styles.none_img
+          selectedTab === 'freephoto' ? styles.freephoto_img : styles.none_img
         }
         src={images.aikiosk.freephoto.ex}
         alt='exhibition'

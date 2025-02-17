@@ -12,12 +12,18 @@
         ]
       },
       {
-        "title": "통합 솔루션",
-        "link": "/integrated",
+        "title": "AI 키오스크",
+        "link": "/aikiosk",
         "sub": [
-          { "title": "AI 키오스크", "link": "/integrated/aikiosk" },
-          { "title": "AMR", "link": "/integrated/amr" }
+          { "title": "프리포토 키오스크", "link": "/aikiosk/freephoto" },
+          { "title": "피버알람", "link": "/aikiosk/feveralarm" },
+          { "title": "자판기", "link": "/aikiosk/vendingmachine" }
         ]
+      },
+      {
+        "title": "AMR",
+        "link": "/amr",
+        "sub": [{ "title": "티라 로보틱스", "link": "/amr/tseries" }]
       },
       {
         "title": "회사소개",
@@ -649,7 +655,6 @@
 
   "aikiosk": {
     "title": "AI 키오스크",
-    "solution": "통합솔루션",
     "menu": {
       "freephoto": "프리포토 키오스크",
       "feveralarm": "피버 알람",
@@ -676,7 +681,6 @@
 
   "amr": {
     "title": "AMR",
-    "solution": "통합솔루션",
     "menu": {
       "tseries": "T 시리즈",
       "lseries": "L 시리즈"

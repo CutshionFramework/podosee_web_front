@@ -12,12 +12,18 @@
         ]
       },
       {
-        "title": "Integrated Solution",
-        "link": "/integrated",
+        "title": "AI KIOSK",
+        "link": "/aikiosk",
         "sub": [
-          { "title": "AI KIOSK", "link": "/integrated/aikiosk" },
-          { "title": "AMR", "link": "/integrated/amr" }
+          { "title": "FreePhoto Kiosk", "link": "/aikiosk/freephoto" },
+          { "title": "Fever Alarm", "link": "/aikiosk/feveralarm" },
+          { "title": "Vending Machine", "link": "/aikiosk/vendingmachine" }
         ]
+      },
+      {
+        "title": "AMR",
+        "link": "/amr",
+        "sub": [{ "title": "Tira Robotics", "link": "/amr/tseries" }]
       },
       {
         "title": "Company",
