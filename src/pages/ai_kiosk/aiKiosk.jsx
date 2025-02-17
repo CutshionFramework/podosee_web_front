@@ -23,12 +23,18 @@ export default function AIKiosk() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
+    console.log('fgghfgh');
   }, []);
 
   useEffect(() => {
-    if (id === 'freephoto') setCurrentTab(0);
-    else if (id === 'feveralarm') setCurrentTab(1);
-    else if (id === 'vendingmachine') setCurrentTab(2);
+    if (id === 'freephoto') {
+      setCurrentTab(0);
+    } else if (id === 'feveralarm') {
+      setCurrentTab(1);
+    } else if (id === 'vendingmachine') {
+      setCurrentTab(2);
+    }
+    window.scrollTo(0, 0);
   }, [id]);
 
   const selectMenuHandler = (index) => {
