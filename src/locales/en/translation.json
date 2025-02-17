@@ -15,7 +15,7 @@
         "title": "AI KIOSK",
         "link": "/aikiosk",
         "sub": [
-          { "title": "FreePhoto Kiosk", "link": "/aikiosk/freephoto" },
+          { "title": "Freephoto Kiosk", "link": "/aikiosk/freephoto" },
           { "title": "Fever Alarm", "link": "/aikiosk/feveralarm" },
           { "title": "Vending Machine", "link": "/aikiosk/vendingmachine" }
         ]
@@ -109,7 +109,7 @@
       },
       "id4": {
         "description": [
-          "Ideal for B2C businesses automation. 1 kg payload. Light, compact, and elegant."
+          "Ideal for B2C businesses automation. 1kg payload. Light, compact, and elegant."
         ]
       }
     },
@@ -118,7 +118,7 @@
       "video_about": {
         "ID": "zebaRutQwyU&t",
         "title": "JAKA Collaborative Robots in Action",
-        "description": "With a payload capacity of 3 to 20 kg, a wide working range, and a 6-axis configuration, JAKA collaborative robots bring advanced robotics and seamless human-robot interaction to various industries—including automotive, logistics, electronics, and medical manufacturing—enhancing efficiency and innovation."
+        "description": "With a payload capacity of 3 to 20kg, a wide working range, and a 6-axis configuration, JAKA collaborative robots bring advanced robotics and seamless human-robot interaction to various industries—including automotive, logistics, electronics, and medical manufacturing—enhancing efficiency and innovation."
       }
     },
 
@@ -189,7 +189,7 @@
     "page_title": "JAKA All-in-one Collaborative Robots",
     "page_subtitle": [
       "Introducing our JAKA All-in-One collaborative robots designed to assist manufacturers in their industrial and factory automations.",
-      "With payloads ranging from 3 to 18 kg and integrated 2D lens, JAKA All-in-One cobots are ideal for various industries,",
+      "With payloads ranging from 3 to 18kg and integrated 2D lens, JAKA All-in-One cobots are ideal for various industries,",
       "including 3C electronics, automotive, advanced manufacturing, logistics and more."
     ],
     "major_title": "The features of the JAKA All-in-one cobots",
@@ -291,7 +291,7 @@
         "imgSrc": "/assets/jaka_zu/jaka_zu_3.png",
         "about": [
           "The JAKA Zu 3 offers cutting-edge human-robot collaboration. With drag-and-drop graphic programming, teaching and operating the cobot becomes effortless.",
-          "The built-in torque feedback ensures safety, regardless of the utilization of its 3 kg payload, within its working radius of 626 mm. It is ideal for tasks such as screwdriving, electronic assembly, small surface pick-and-place operations and other line and maintenance tasks.",
+          "The built-in torque feedback ensures safety, regardless of the utilization of its 3kg payload, within its working radius of 626 mm. It is ideal for tasks such as screwdriving, electronic assembly, small surface pick-and-place operations and other line and maintenance tasks.",
           "Its versatile mounting options enable it to be positioned anywhere – fixed at an angle, upside down, or even vertically.",
           "Its compact size, coupled with full functionality, makes it well-suited for 3C electronics and advanced manufacturing."
         ],
@@ -320,7 +320,7 @@
         "pageTitle": "JAKA Zu 7 Collaborative Robots",
         "imgSrc": "/assets/jaka_zu/jaka_zu_7.png",
         "about": [
-          "Working for extended hours with weights of up to 7 kg can be exhausting for anyone. However, the JAKA Zu 7, with a payload of 7 kg, can manage this for 50,000 continuous hours within a working radius of 819 mm!",
+          "Working for extended hours with weights of up to 7kg can be exhausting for anyone. However, the JAKA Zu 7, with a payload of 7 kg, can manage this for 50,000 continuous hours within a working radius of 819 mm!",
           "Repetitive tasks like welding, packaging, palletizing, picking and placing and more pose no problem, freeing employees to undertake less physically demanding tasks required in a smart factory. It can be mounted at any angle – horizontally, vertically, on a slope or hanging from above.",
           "While most of our JAKA Zu 7 customers are from the automotive, 3C electronics, advanced manufacturing, renewable energy, medical devices, chemical and synthetic fibers industries, this cobot is suitable for many other industries too."
         ],
@@ -334,7 +334,7 @@
         "pageTitle": "JAKA Zu 12 Collaborative Robots",
         "imgSrc": "/assets/jaka_zu/jaka_zu_12.png",
         "about": [
-          "The JAKA Zu 12 offers a payload of 12 kg and a larger working radius of 1327 mm compared to previous models in the JAKA Zu series. Capable of completing tasks that would typically require at least two people, it can operate continuously for 50,000 hours.",
+          "The JAKA Zu 12 offers a payload of 12kg and a larger working radius of 1327 mm compared to previous models in the JAKA Zu series. Capable of completing tasks that would typically require at least two people, it can operate continuously for 50,000 hours.",
           "Featuring a 6-axis configuration, the JAKA Zu 12 offers reliability and precision. Boasting an exceptional repeatability of ±0.03 mm.",
           "Despite its high payload capacity, it remains relatively lightweight and can be mounted at various angles – vertical, horizontal and everything in between.",
           "Its combined flexibility, safety features and reliability make it an ideal fit for applications in the automotive and auto parts industry, advanced manufacturing, household appliances, food packaging, and much more."
@@ -366,7 +366,7 @@
         "about": [
           "JAKA Zu 20 is our new collaborative robot, designed for tasks that require heavier payload and extended reach.",
           "This cutting-edge robot builds upon the renowned qualities of the JAKA Zu series, offering simplicity.",
-          "safety, reliability, and precision. With an impressive reach of 1780 mm and a payload capacity of 20 kg,it excels in heavy-duty and large-capacity applications.",
+          "safety, reliability, and precision. With an impressive reach of 1780 mm and a payload capacity of 20kg,it excels in heavy-duty and large-capacity applications.",
           "The IP65 protection adds an extra layer of reliability and resilience, ensuring the Zu 20 is also suitable for industrial environments where dust, dirt and water are present.",
           "From machine tending to material handling, welding to dispensing, palletizing to packaging, the JAKA Zu 20 is your ultimate partner for diverse industrial needs."
         ],
@@ -445,7 +445,7 @@
         "pageTitle": "JAKA Ai 3 Collaborative Robots",
         "imgSrc": "/assets/jaka_zu/jaka_zu_3.png",
         "about": [
-          "With 3 kg payload and working radius of 626 mm, JAKA Ai 3 is small-environ cobot for complex tasks such as flexible assembly, inspection, or testing.",
+          "With 3kg payload and working radius of 626 mm, JAKA Ai 3 is small-environ cobot for complex tasks such as flexible assembly, inspection, or testing.",
           "Despite its smaller size, it packs all the key JAKA Ai series features – graphic programming, visual feedback and wireless teach – making it ideal for use across automotive, medical devices, 3C electronics, and a whole host of other industries.",
           "The JAKA Ai 3 has flexible dismount options, making it possible to easily mount vertically too, at 45-degree angle positions, or even upside-down on a ceiling. Moreover, no fences are required."
         ],
@@ -698,11 +698,11 @@
     "description": {
       "tseries": [
         "THIRA AMRs are all equipped with next-generation drive technology",
-        "and can carry payloads ranging from 200 kg (441 lbs)-1,000 kg (2,205 lbs) to perfectly fit into your end-to-end robotics solution."
+        "and can carry payloads ranging from 200kg (441 lbs)-1,000kg (2,205 lbs) to perfectly fit into your end-to-end robotics solution."
       ],
       "lseries": [
         "THIRA AMRs are all equipped with next-generation drive technology",
-        "and can carry payloads ranging from 200 kg (441 lbs)-1,000 kg (2,205 lbs) to perfectly fit into your end-to-end robotics solution."
+        "and can carry payloads ranging from 200kg (441 lbs)-1,000kg (2,205 lbs) to perfectly fit into your end-to-end robotics solution."
       ]
     },
     "lseries_description": [

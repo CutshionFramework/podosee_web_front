@@ -106,6 +106,19 @@ export default function Header() {
                 isMobile ? () => handleDropdownToggle(index) : undefined
               }>
               <Link to={menu.link || '#'}>{menu.title}</Link>
+
+              {menu.sub.length > 0 && (
+                <ul
+                  className={`${styles.dropdown} ${
+                    activeDropdown === index ? styles.active : ''
+                  }`}>
+                  {menu.sub.map((sub, subIndex) => (
+                    <li key={subIndex} className={styles.dropdown_item}>
+                      <Link to={sub.link || '#'}>{sub.title}</Link>
+                    </li>
+                  ))}
+                </ul>
+              )}
             </li>
           ))}
 
