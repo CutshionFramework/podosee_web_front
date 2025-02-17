@@ -1,19 +1,18 @@
-import { useEffect } from "react";
-import { useParams } from "react-router-dom";
-import { useTranslation } from "react-i18next";
+import { useEffect } from 'react';
+import { useParams } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
-import Header from "../../../components/header/header";
-import Footer from "../../../components/footer/footer";
+import Header from '../../../components/header/header';
+import Footer from '../../../components/footer/footer';
 
-import PageTitle from "../../../components/page_title/pageTitle";
-import ProductInformation from "../../../components/product/productInformation";
-import ProductSpecification from "../../../components/product/productSpecification";
-import FeatureComponent from "../../../components/feature_component/featureComponent";
+import PageTitle from '../../../components/page_title/pageTitle';
+import ProductInformation from '../../../components/product/productInformation';
+import ProductSpecification from '../../../components/product/productSpecification';
+import FeatureComponent from '../../../components/feature_component/featureComponent';
 
-import styles from "./proSeriesPage.module.scss";
-import proFeaturesData from "../../../data/features/pro";
-import pro16FeaturesData from "../../../data/features/pro16";
-import fieldListItemPro from "../../../data/optimal_application_field/fieldListItemPro";
+import styles from './proSeriesPage.module.scss';
+import proFeaturesData from '../../../data/features/pro';
+import pro16FeaturesData from '../../../data/features/pro16';
 
 export default function ProSeriesPage() {
   const { t } = useTranslation();
@@ -21,52 +20,45 @@ export default function ProSeriesPage() {
   const idNumber = Number(id);
 
   // 🌟 번역 데이터 가져오기
-  const pageTitle = t(
-    `pro_detail_pages.products.${idNumber}.pageTitle`
-  );
+  const pageTitle = t(`pro_detail_pages.products.${idNumber}.pageTitle`);
   const imgSrc = t(`pro_detail_pages.products.${idNumber}.imgSrc`, {
-    defaultValue: "/default.jpg",
+    defaultValue: '/default.jpg',
   });
   const about = t(`pro_detail_pages.products.${idNumber}.about`, {
     returnObjects: true,
   });
   const name = t(`pro_detail_pages.products.${idNumber}.name`);
-  const basicImg = t(
-    `pro_detail_pages.products.${idNumber}.basicImg`
-  );
-  const commonImg = t(
-    `pro_detail_pages.products.${idNumber}.commonImg`
-  );
-  const featureTitle = t(
-    `pro_detail_pages.products.${idNumber}.feature_title`
-  );
-  const fieldTitle = t(
-    `pro_detail_pages.products.${idNumber}.field_title`
-  );
+  const basicImg = t(`pro_detail_pages.products.${idNumber}.basicImg`);
+  const commonImg = t(`pro_detail_pages.products.${idNumber}.commonImg`);
+  const featureTitle = t(`pro_detail_pages.products.${idNumber}.feature_title`);
+  const fieldTitle = t(`pro_detail_pages.products.${idNumber}.field_title`);
 
   const proData = proFeaturesData;
   const pro16Data = pro16FeaturesData;
 
-  const features = id === "16" ? pro16Data : proData; // id가 "16"이면 pro16Data, 아니면 proData
+  const features = id === '16' ? pro16Data : proData; // id가 "16"이면 pro16Data, 아니면 proData
 
-  const fieldListItem = fieldListItemPro;
+  const applicationFields = t('application_fields.default', {
+    returnObjects: true,
+    defaultValue: {},
+  });
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
-    <div className="proseries_page">
+    <div className='proseries_page'>
       <Header />
-      <section className="detail_page_title">
+      <section className='detail_page_title'>
         <PageTitle title={pageTitle} />
       </section>
 
-      <section className="detail_product_info">
+      <section className='detail_product_info'>
         <ProductInformation imgSrc={imgSrc} about={about} />
       </section>
 
-      <section className="detail_product_spec">
+      <section className='detail_product_spec'>
         <ProductSpecification
           name={name}
           basicImg={basicImg}
@@ -74,7 +66,7 @@ export default function ProSeriesPage() {
         />
       </section>
 
-      <section className="detail_feature">
+      <section className='detail_feature'>
         <div className={styles.detail_feature_title}>
           <span>{featureTitle}</span>
         </div>
@@ -82,16 +74,16 @@ export default function ProSeriesPage() {
         <FeatureComponent features={features} />
       </section>
 
-      <section className="detail_optimal_application_field">
+      <section className='detail_optimal_application_field'>
         <div className={styles.optimal_application_field_title}>
           <span>{fieldTitle}</span>
         </div>
 
-        <div className="field_list">
+        <div className='field_list'>
           <ul className={styles.field_list}>
-            {fieldListItem.map((item) => (
-              <li className={styles.list_item} key={item.id}>
-                {item.name}
+            {applicationFields.map((field, index) => (
+              <li className={styles.list_item} key={index}>
+                {field}
               </li>
             ))}
           </ul>

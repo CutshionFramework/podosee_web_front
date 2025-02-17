@@ -78,7 +78,10 @@
 
   "jaka": {
     "page_title": "JAKA Collaborative Robots",
-    "page_subtitle": "JAKA collaborative robots  have been successfully applied to automated production in multiple industrial sectors, providing innovation for industrial sectors with a continuous and powerful equipment foundations.",
+    "page_subtitle": [
+      "JAKA collaborative robots  have been successfully applied to automated production in multiple industrial sectors,",
+      "providing innovation for industrial sectors with a continuous and powerful equipment foundations."
+    ],
     "series_title": "JAKA Collaborative Robots Series",
     "feature_title": "What make JAKA Cobots great for factory automation",
 
@@ -180,7 +183,8 @@
     "page_title": "JAKA All-in-one Collaborative Robots",
     "page_subtitle": [
       "Introducing our JAKA All-in-One collaborative robots designed to assist manufacturers in their industrial and factory automations.",
-      "With payloads ranging from 3 to 18 kg and integrated 2D lens, JAKA All-in-One cobots are ideal for various industries, including 3C electronics, automotive, advanced manufacturing, logistics and more."
+      "With payloads ranging from 3 to 18 kg and integrated 2D lens, JAKA All-in-One cobots are ideal for various industries,",
+      "including 3C electronics, automotive, advanced manufacturing, logistics and more."
     ],
     "major_title": "The features of the JAKA All-in-one cobots",
     "first_feature_name": "Integrated vision system",
@@ -217,7 +221,7 @@
 
   "jaka_pro": {
     "page_title": "JAKA Pro Collaborative Robots",
-    "page_subtitle": "Oil-, dust-, and waterproof cobots designed to solve your manufacturing needs.",
+    "page_subtitle": "Oil, dust, and waterproof cobots designed to solve your manufacturing needs.",
     "major_title": "The features of the JAKA Pro",
     "feature_description": [
       "The JAKA Pro cobots have IP68, meaning that they are immune to dust, small particulates and liquids such as water and oil.",
@@ -242,7 +246,7 @@
     "page_title": "JAKA MiniCobo",
     "page_subtitle": "Lightweight design, easy deployment, high performance, and great price/performance",
     "feature_title": "The features of the JAKA MiniCobo",
-    "comparison_title": "JAKA MiniCobo Product Comparison",
+    "comparison_title": "JAKA MiniCobo Specifications",
     "about": [
       "JAKA MiniCobo has the characteristics of lightness, compactness, high flexibility, and easy installation.",
       "It uses an integrated intelligent drive module to achieve a lightweight design while having superior performance; in addition, rich secondary development interfaces provide customers with more choices in different scenarios.",
@@ -286,8 +290,8 @@
           "Its compact size, coupled with full functionality, makes it well-suited for 3C electronics and advanced manufacturing."
         ],
         "name": "JAKA Zu3 Specifications",
-        "basicImg": "/assets/product_comparison/en/jaka_zu_3_basic_en.png",
-        "commonImg": "/assets/product_comparison/en/jaka_zu_3_common_en.png",
+        "basicImg": "/assets/product_comparison/en/jaka_product_3_basic_en.png",
+        "commonImg": "/assets/product_comparison/en/jaka_detail_common_en.png",
         "feature_title": "The features of the JAKA Zu 3 Cobot",
         "field_title": "Best applications for JAKA Zu 3"
       },
@@ -301,8 +305,8 @@
           "Its compact size and flexible mounting options facilitate easy placement at any angle – vertically, horizontally, on a slope or even upside down on the ceiling."
         ],
         "name": "JAKA Zu 5 Specifications",
-        "basicImg": "/assets/product_comparison/en/jaka_zu_5_basic_en.png",
-        "commonImg": "/assets/product_comparison/en/jaka_zu_5_common_en.png",
+        "basicImg": "/assets/product_comparison/en/jaka_product_5_basic_en.png",
+        "commonImg": "/assets/product_comparison/en/jaka_detail_common_en.png",
         "feature_title": "The features of the JAKA Zu 5",
         "field_title": "Best applications for JAKA Zu 5"
       },
@@ -315,8 +319,8 @@
           "While most of our JAKA Zu 7 customers are from the automotive, 3C electronics, advanced manufacturing, renewable energy, medical devices, chemical and synthetic fibers industries, this cobot is suitable for many other industries too."
         ],
         "name": "JAKA Zu 7 Specifications",
-        "basicImg": "/assets/product_comparison/en/jaka_zu_7_basic_en.png",
-        "commonImg": "/assets/product_comparison/en/jaka_zu_7_common_en.png",
+        "basicImg": "/assets/product_comparison/en/jaka_product_7_basic_en.png",
+        "commonImg": "/assets/product_comparison/en/jaka_detail_common_en.png",
         "feature_title": "The features of the JAKA Zu 7",
         "field_title": "Best applications for JAKA Zu 7"
       },
@@ -330,8 +334,8 @@
           "Its combined flexibility, safety features and reliability make it an ideal fit for applications in the automotive and auto parts industry, advanced manufacturing, household appliances, food packaging, and much more."
         ],
         "name": "JAKA Zu 12 Specifications",
-        "basicImg": "/assets/product_comparison/en/jaka_zu_12_basic_en.png",
-        "commonImg": "/assets/product_comparison/en/jaka_zu_12_common_en.png",
+        "basicImg": "/assets/product_comparison/en/jaka_product_12_basic_en.png",
+        "commonImg": "/assets/product_comparison/en/jaka_detail_common_en.png",
         "feature_title": "The features of the JAKA Zu 12",
         "field_title": "Best applications for JAKA Zu 12"
       },
@@ -345,8 +349,8 @@
           "Its utility spans across various industries, including the production or testing of medical devices, metal processing, chemical manufacturing, standard manufacturing and warehousing."
         ],
         "name": "JAKA Zu 18 Specifications",
-        "basicImg": "/assets/product_comparison/en/jaka_zu_18_basic_en.png",
-        "commonImg": "/assets/product_comparison/en/jaka_zu_18_common_en.png",
+        "basicImg": "/assets/product_comparison/en/jaka_product_18_basic_en.png",
+        "commonImg": "/assets/product_comparison/en/jaka_detail_common_en.png",
         "feature_title": "The features of the JAKA Zu 18",
         "field_title": "Best applications for JAKA Zu 18"
       },
@@ -361,8 +365,8 @@
           "From machine tending to material handling, welding to dispensing, palletizing to packaging, the JAKA Zu 20 is your ultimate partner for diverse industrial needs."
         ],
         "name": "JAKA Zu 20 Specifications",
-        "basicImg": "/assets/product_comparison/en/jaka_zu_20_basic_en.png",
-        "commonImg": "/assets/product_comparison/en/jaka_zu_20_common_en.png",
+        "basicImg": "/assets/product_comparison/en/jaka_product_20_basic_en.png",
+        "commonImg": "/assets/product_comparison/en/jaka_detail_common_en.png",
         "feature_title": "The features of the JAKA Zu 20",
         "field_title": "Best applications for JAKA Zu 20"
       }
@@ -416,6 +420,16 @@
         "name": "Remote Monitoring",
         "description": "Monitor the collaborative robot's work and set notifications with a unique security authentication system."
       }
+    },
+
+    "application_fields": {
+      "3": [
+        "Gluing and Bonding",
+        "Assembly",
+        "Inspection",
+        "Pick and Place",
+        "Screw Driving"
+      ]
     }
   },
 
@@ -430,8 +444,8 @@
           "The JAKA Ai 3 has flexible dismount options, making it possible to easily mount vertically too, at 45-degree angle positions, or even upside-down on a ceiling. Moreover, no fences are required."
         ],
         "name": "JAKA Ai 3 Specifications",
-        "basicImg": "/assets/product_comparison/kr/jaka_all_in_one_3_basic_kr.png",
-        "commonImg": "/assets/product_comparison/kr/jaka_all_in_one_3_common_kr.png",
+        "basicImg": "/assets/product_comparison/en/jaka_product_3_basic_en.png",
+        "commonImg": "/assets/product_comparison/en/jaka_detail_common_en.png",
         "feature_title": "The features of the JAKA Ai 3",
         "field_title": "Best applications for JAKA Ai 3"
       },
@@ -444,8 +458,8 @@
           "With a decent payload-weight ratio, the JAKA Ai 5 can be mounted in a variety of positions and places – vertically, horizontally, at sloped angles or even upside down. And no more fences required!"
         ],
         "name": "JAKA Ai 5 Specifications",
-        "basicImg": "/assets/product_comparison/kr/jaka_all_in_one_5_basic_kr.png",
-        "commonImg": "/assets/product_comparison/kr/jaka_all_in_one_5_common_kr.png",
+        "basicImg": "/assets/product_comparison/en/jaka_product_5_basic_en.png",
+        "commonImg": "/assets/product_comparison/en/jaka_detail_common_en.png",
         "feature_title": "The features of the JAKA Ai 5",
         "field_title": "Best applications for JAKA Ai 5"
       },
@@ -458,8 +472,8 @@
           "Interactivity and flexibility are two of the JAKA Ai 7’s strong points, facilitated by integrating its vision and force control algorithms. As well as preparing it for pressure-based tasks, these also increase security, greatly increasing the safety with which cobots and humans may share a space."
         ],
         "name": "JAKA Ai 7 Specifications",
-        "basicImg": "/assets/product_comparison/kr/jaka_all_in_one_7_basic_kr.png",
-        "commonImg": "/assets/product_comparison/kr/jaka_all_in_one_7_common_kr.png",
+        "basicImg": "/assets/product_comparison/en/jaka_product_7_basic_en.png",
+        "commonImg": "/assets/product_comparison/en/jaka_detail_common_en.png",
         "feature_title": "The features of the JAKA Ai 7",
         "field_title": "Best applications for JAKA Ai 7"
       },
@@ -472,8 +486,8 @@
           "Mounting and dismounting the JAKA Ai 12 presents no limits. It has full 360-degree mounting capabilities, meaning facility managers may install it on a horizontal surface, a vertical one, upside down, or anything in between. Also there is no need of protective fences anymore."
         ],
         "name": "JAKA Ai 12 Specifications",
-        "basicImg": "/assets/product_comparison/kr/jaka_all_in_one_12_basic_kr.png",
-        "commonImg": "/assets/product_comparison/kr/jaka_all_in_one_12_common_kr.png",
+        "basicImg": "/assets/product_comparison/en/jaka_product_12_basic_en.png",
+        "commonImg": "/assets/product_comparison/en/jaka_detail_common_en.png",
         "feature_title": "The features of the JAKA Ai 12",
         "field_title": "Best applications for JAKA Ai 12"
       },
@@ -486,8 +500,8 @@
           "JAKA Ai 18 can be integrated dynamically, seamlessly adapted for various tasks, all monitored for precision and efficacy by visual feedback. Palletizing, packaging, light and heavy-duty production lines, handling household appliances, and many other tasks are safely within the JAKA Ai 18’s purview."
         ],
         "name": "JAKA Ai 18 Specifications",
-        "basicImg": "/assets/product_comparison/kr/jaka_all_in_one_18_basic_kr.png",
-        "commonImg": "/assets/product_comparison/kr/jaka_all_in_one_18_common_kr.png",
+        "basicImg": "/assets/product_comparison/en/jaka_all_in_one_18_basic_en.png",
+        "commonImg": "/assets/product_comparison/en/jaka_detail_common_en.png",
         "feature_title": "The features of the JAKA Ai 18",
         "field_title": "Best applications for JAKA Ai 18"
       }
@@ -518,6 +532,17 @@
         "name": "Drag Teaching",
         "description": "With easy drag teaching and six highly flexible joints, the robot instantly remembers any position it is moved to."
       }
+    },
+
+    "application_fields": {
+      "3": [
+        "Gluing and Bonding",
+        "Assembly",
+        "Inspection",
+        "Pick and Place",
+        "Screw Driving",
+        "Polishing"
+      ]
     }
   },
 
@@ -533,8 +558,8 @@
           "Meanwhile, the JAKA Pro 5 has no issues. It operates perfectly from -10° C to 50° C."
         ],
         "name": "JAKA Pro 5 Specifications",
-        "basicImg": "/assets/product_comparison/ko/jaka_pro_5_basic.png",
-        "commonImg": "/assets/product_comparison/ko/jaka_pro_5_common.png",
+        "basicImg": "/assets/product_comparison/en/jaka_pro_5_basic_en.png",
+        "commonImg": "/assets/product_comparison/en/jaka_detail_common_en.png",
         "feature_title": "The features of the JAKA Pro 5",
         "field_title": "Best applications for JAKA Pro 5"
       },
@@ -544,12 +569,12 @@
         "about": [
           "In metalwork, the production of auto-parts, 3C electronics, agriculture, and many other industries, robotic arms are expected to have high protection against the elements.",
           "Whether outdoors in the wind and rain, or around frequent oil splashes, the JAKA Pro 12, with IP68 grade protection.",
-          "t fits right into environments with temperatures that are challenging for human workers, fully operational from -10C up to 50C.",
+          "It fits right into environments with temperatures that are challenging for human workers, fully operational from -10C up to 50C.",
           "With a working radius of 1327mm, and a payload of 12kg, it’s expert at metal cutting, grinding, machine tending and other tasks that may involve metal shavings, sawdust, oils or other liquids."
         ],
         "name": "JAKA Pro 12 Specifications",
-        "basicImg": "/assets/product_comparison/ko/jaka_pro_12_basic.png",
-        "commonImg": "/assets/product_comparison/ko/jaka_pro_12_common.png",
+        "basicImg": "/assets/product_comparison/en/jaka_pro_12_basic_en.png",
+        "commonImg": "/assets/product_comparison/en/jaka_detail_common_en.png",
         "feature_title": "The features of the JAKA Pro 12",
         "field_title": "Best applications for JAKA Pro 12"
       },
@@ -563,8 +588,8 @@
           "The JAKA Pro series has been designed with tough working conditions in mind. It can operate in environments that range in temperature from -10C to +50C."
         ],
         "name": "JAKA Pro 16 Specifications",
-        "basicImg": "/assets/product_comparison/ko/jaka_pro_16_basic.png",
-        "commonImg": "/assets/product_comparison/ko/jaka_pro_16_common.png",
+        "basicImg": "/assets/product_comparison/en/jaka_pro_16_basic_en.png",
+        "commonImg": "/assets/product_comparison/en/jaka_detail_common_en.png",
         "feature_title": "The features of the JAKA Pro 16",
         "field_title": "Best applications for JAKA Pro 16"
       }
@@ -607,6 +632,23 @@
         "description": "With easy drag teaching and six highly flexible joints, the robot instantly remembers any position it is moved to."
       }
     }
+  },
+
+  "application_fields": {
+    "default": [
+      "Assembly",
+      "Gluing and Bonding",
+      "Machine Tending",
+      "Inspection",
+      "Pick and Place",
+      "Screw Driving",
+      "Polishing",
+      "Packaging",
+      "Palletizing",
+      "Painting",
+      "Welding",
+      "Vision Picking"
+    ]
   },
 
   "news_slider": {
