@@ -1,11 +1,13 @@
 .page_subtitle {
-  display: flex;
+  display: grid;
   justify-content: center;
   margin-top: 60px;
 
-  span {
+  p {
+    margin: 0;
     font-size: 16px;
     text-align: center;
+    line-height: 1.4;
     color: #1d1d1f;
 
     @media (max-width: 768px) {

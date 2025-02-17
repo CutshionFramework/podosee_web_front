@@ -19,6 +19,10 @@ export default function Jaka() {
 
   const nav = useNavigate();
 
+  const subtitle = t('jaka.page_subtitle', {
+    returnObjects: true,
+  });
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -33,7 +37,9 @@ export default function Jaka() {
 
         <section className='jaka_series'>
           <div className={styles.page_subtitle}>
-            <span>{t('jaka.page_subtitle')}</span>
+            {subtitle.map((text, index) => (
+              <p key={index}>{text}</p>
+            ))}
           </div>
 
           <div className={styles.series_title}>
