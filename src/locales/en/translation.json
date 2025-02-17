@@ -23,7 +23,7 @@
       {
         "title": "AMR",
         "link": "/amr",
-        "sub": [{ "title": "Tira Robotics", "link": "/amr/tseries" }]
+        "sub": [{ "title": "THIRA ROBOTICS", "link": "/amr/tseries" }]
       },
       {
         "title": "Company",
@@ -157,22 +157,22 @@
 
     "zu_series": {
       "id1": {
-        "description": ["Payload 3kg | Reach 626 mm"]
+        "description": ["Payload 3kg | Reach 626mm"]
       },
       "id2": {
-        "description": ["Payload 5kg | Reach 954 mm"]
+        "description": ["Payload 5kg | Reach 954mm"]
       },
       "id3": {
-        "description": ["Payload 7kg | Reach 819 mm"]
+        "description": ["Payload 7kg | Reach 819mm"]
       },
       "id4": {
-        "description": ["Payload 12kg | Reach 1327 mm"]
+        "description": ["Payload 12kg | Reach 1327mm"]
       },
       "id5": {
-        "description": ["Payload 18kg | Reach 1073 mm"]
+        "description": ["Payload 18kg | Reach 1073mm"]
       },
       "id6": {
-        "description": ["Payload 20kg | Reach 1780 mm"]
+        "description": ["Payload 20kg | Reach 1780mm"]
       }
     },
 
@@ -202,25 +202,25 @@
     "second_feature_name": "MiniCab",
     "second_feature_description": [
       "Thanks to MiniCab controller every JAKA All-in-one cobot feels at home mounted on an AGV.",
-      "Cobots and AGVs (known as automated guided vehicle) on their own are remarkably useful;",
+      "Cobots and AGVs (known as automated guided vehicle) on their own are remarkably useful",
       "without the need for human intervention, AGV-cobot pairings can complete warehousing, and inspection tasks independently."
     ],
     "comparison_title": "JAKA All-in-one Product Comparison",
     "all_in_one_series": {
       "id1": {
-        "description": ["Payload 3kg | Reach 626 mm"]
+        "description": ["Payload 3kg | Reach 626mm"]
       },
       "id2": {
-        "description": ["Payload 5kg | Reach 954 mm"]
+        "description": ["Payload 5kg | Reach 954mm"]
       },
       "id3": {
-        "description": ["Payload 7kg | Reach 819 mm"]
+        "description": ["Payload 7kg | Reach 819mm"]
       },
       "id4": {
-        "description": ["Payload 12kg | Reach 1327 mm"]
+        "description": ["Payload 12kg | Reach 1327mm"]
       },
       "id5": {
-        "description": ["Payload 18kg I Reach 1073 mm"]
+        "description": ["Payload 18kg I Reach 1073mm"]
       }
     }
   },
@@ -237,13 +237,13 @@
     "comparison_title": "JAKA Pro Product Comparison",
     "pro_series": {
       "id1": {
-        "description": ["Payload 5kg | Reach 954 mm"]
+        "description": ["Payload 5kg | Reach 954mm"]
       },
       "id2": {
-        "description": ["Payload 12kg | Reach 1327 mm"]
+        "description": ["Payload 12kg | Reach 1327mm"]
       },
       "id3": {
-        "description": ["Payload 16kg | Reach 1713 mm"]
+        "description": ["Payload 16kg | Reach 1713mm"]
       }
     }
   },
@@ -255,7 +255,7 @@
     "comparison_title": "JAKA MiniCobo Specifications",
     "about": [
       "JAKA MiniCobo has the characteristics of lightness, compactness, high flexibility, and easy installation.",
-      "It uses an integrated intelligent drive module to achieve a lightweight design while having superior performance; in addition, rich secondary development interfaces provide customers with more choices in different scenarios.",
+      "It uses an integrated intelligent drive module to achieve a lightweight design while having superior performance in addition, rich secondary development interfaces provide customers with more choices in different scenarios.",
       "JAKA MiniCobo has a small appearance, simple and intuitive operation, low noise, and high-cost performance.",
       "It is especially suitable for consumption, service, education and other fields."
     ],
@@ -291,7 +291,7 @@
         "imgSrc": "/assets/jaka_zu/jaka_zu_3.png",
         "about": [
           "The JAKA Zu 3 offers cutting-edge human-robot collaboration. With drag-and-drop graphic programming, teaching and operating the cobot becomes effortless.",
-          "The built-in torque feedback ensures safety, regardless of the utilization of its 3kg payload, within its working radius of 626 mm. It is ideal for tasks such as screwdriving, electronic assembly, small surface pick-and-place operations and other line and maintenance tasks.",
+          "The built-in torque feedback ensures safety, regardless of the utilization of its 3kg payload, within its working radius of 626mm. It is ideal for tasks such as screwdriving, electronic assembly, small surface pick-and-place operations and other line and maintenance tasks.",
           "Its versatile mounting options enable it to be positioned anywhere – fixed at an angle, upside down, or even vertically.",
           "Its compact size, coupled with full functionality, makes it well-suited for 3C electronics and advanced manufacturing."
         ],
@@ -320,7 +320,7 @@
         "pageTitle": "JAKA Zu 7 Collaborative Robots",
         "imgSrc": "/assets/jaka_zu/jaka_zu_7.png",
         "about": [
-          "Working for extended hours with weights of up to 7kg can be exhausting for anyone. However, the JAKA Zu 7, with a payload of 7 kg, can manage this for 50,000 continuous hours within a working radius of 819 mm!",
+          "Working for extended hours with weights of up to 7kg can be exhausting for anyone. However, the JAKA Zu 7, with a payload of 7kg, can manage this for 50,000 continuous hours within a working radius of 819mm!",
           "Repetitive tasks like welding, packaging, palletizing, picking and placing and more pose no problem, freeing employees to undertake less physically demanding tasks required in a smart factory. It can be mounted at any angle – horizontally, vertically, on a slope or hanging from above.",
           "While most of our JAKA Zu 7 customers are from the automotive, 3C electronics, advanced manufacturing, renewable energy, medical devices, chemical and synthetic fibers industries, this cobot is suitable for many other industries too."
         ],
@@ -334,8 +334,8 @@
         "pageTitle": "JAKA Zu 12 Collaborative Robots",
         "imgSrc": "/assets/jaka_zu/jaka_zu_12.png",
         "about": [
-          "The JAKA Zu 12 offers a payload of 12kg and a larger working radius of 1327 mm compared to previous models in the JAKA Zu series. Capable of completing tasks that would typically require at least two people, it can operate continuously for 50,000 hours.",
-          "Featuring a 6-axis configuration, the JAKA Zu 12 offers reliability and precision. Boasting an exceptional repeatability of ±0.03 mm.",
+          "The JAKA Zu 12 offers a payload of 12kg and a larger working radius of 1327mm compared to previous models in the JAKA Zu series. Capable of completing tasks that would typically require at least two people, it can operate continuously for 50,000 hours.",
+          "Featuring a 6-axis configuration, the JAKA Zu 12 offers reliability and precision. Boasting an exceptional repeatability of ±0.03mm.",
           "Despite its high payload capacity, it remains relatively lightweight and can be mounted at various angles – vertical, horizontal and everything in between.",
           "Its combined flexibility, safety features and reliability make it an ideal fit for applications in the automotive and auto parts industry, advanced manufacturing, household appliances, food packaging, and much more."
         ],
@@ -349,7 +349,7 @@
         "pageTitle": "JAKA Zu 18 Collaborative Robots",
         "imgSrc": "/assets/jaka_zu/jaka_zu_18.png",
         "about": [
-          "The JAKA Zu 18 has the largest payload of 18 kg within the JAKA Zu range. Additionally, it has a significant working radius of 1073 mm.",
+          "The JAKA Zu 18 has the largest payload of 18 kg within the JAKA Zu range. Additionally, it has a significant working radius of 1073mm.",
           "Despite its large payload, the Zu 18 is incredibly safe. Equipped with visual and torque-feedback collision protection systems, it operates seamlessly in any environment without the need for a safety fence.",
           "JAKA Zu 18 is perfect for use in diverse tasks such as packaging, palletizing, welding, testing, screw tightening, mold injection, bonding and more.",
           "Its utility spans across various industries, including the production or testing of medical devices, metal processing, chemical manufacturing, standard manufacturing and warehousing."
@@ -366,7 +366,7 @@
         "about": [
           "JAKA Zu 20 is our new collaborative robot, designed for tasks that require heavier payload and extended reach.",
           "This cutting-edge robot builds upon the renowned qualities of the JAKA Zu series, offering simplicity.",
-          "safety, reliability, and precision. With an impressive reach of 1780 mm and a payload capacity of 20kg,it excels in heavy-duty and large-capacity applications.",
+          "safety, reliability, and precision. With an impressive reach of 1780mm and a payload capacity of 20kg,it excels in heavy-duty and large-capacity applications.",
           "The IP65 protection adds an extra layer of reliability and resilience, ensuring the Zu 20 is also suitable for industrial environments where dust, dirt and water are present.",
           "From machine tending to material handling, welding to dispensing, palletizing to packaging, the JAKA Zu 20 is your ultimate partner for diverse industrial needs."
         ],
@@ -445,7 +445,7 @@
         "pageTitle": "JAKA Ai 3 Collaborative Robots",
         "imgSrc": "/assets/jaka_zu/jaka_zu_3.png",
         "about": [
-          "With 3kg payload and working radius of 626 mm, JAKA Ai 3 is small-environ cobot for complex tasks such as flexible assembly, inspection, or testing.",
+          "With 3kg payload and working radius of 626mm, JAKA Ai 3 is small-environ cobot for complex tasks such as flexible assembly, inspection, or testing.",
           "Despite its smaller size, it packs all the key JAKA Ai series features – graphic programming, visual feedback and wireless teach – making it ideal for use across automotive, medical devices, 3C electronics, and a whole host of other industries.",
           "The JAKA Ai 3 has flexible dismount options, making it possible to easily mount vertically too, at 45-degree angle positions, or even upside-down on a ceiling. Moreover, no fences are required."
         ],
@@ -460,7 +460,7 @@
         "imgSrc": "/assets/jaka_zu/jaka_zu_5.png",
         "about": [
           "The JAKA Ai 5 can handle a 5kg payload, and has a working radius of 954mm. With its excellent manoeuvrability, complicated automated tasks like flexible assembly, inspection and testing are no problem at all.",
-          "The JAKA Ai 5 shines in many industries, but is particularly useful in logistics and manufacturing; palletizing, working on automobile and auto parts production lines, helping make medical devices, 3C electronics and more.",
+          "The JAKA Ai 5 shines in many industries, but is particularly useful in logistics and manufacturing palletizing, working on automobile and auto parts production lines, helping make medical devices, 3C electronics and more.",
           "With a decent payload-weight ratio, the JAKA Ai 5 can be mounted in a variety of positions and places – vertically, horizontally, at sloped angles or even upside down. And no more fences required!"
         ],
         "name": "JAKA Ai 5 Specifications",
@@ -519,7 +519,7 @@
         "description": "The All-in-one technology makes compact, intelligent hardware operable in biology, mechanics, electronics and physics."
       },
       "id2": {
-        "name": "Integrated JAKA Lens 2D",
+        "name": "JAKA Lens 2D",
         "description": "Fixed or mounted at the end of the cobot, the JAKA Lens 2D features a high-quality lens, together with a specialized light source module."
       },
       "id3": {
