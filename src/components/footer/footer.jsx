@@ -1,16 +1,21 @@
-import { useMediaQuery } from "react-responsive";
-import { Link } from "react-router-dom";
+import { useMediaQuery } from 'react-responsive';
+import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 
-import { useTranslation } from "react-i18next";
-import styles from "./footer.module.scss";
-import images from "../../constants/imagePath";
-import routes from "../../constants/routes";
+import { useTranslation } from 'react-i18next';
+import styles from './footer.module.scss';
+import images from '../../constants/imagePath';
+import routes from '../../constants/routes';
 
 export default function Footer() {
   const { t } = useTranslation();
-  const menu = t("header.menu", { returnObjects: true });
+  const menu = t('header.menu', { returnObjects: true });
 
   const isMobile = useMediaQuery({ maxWidth: 767 });
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <footer className={styles.footer}>
@@ -18,18 +23,17 @@ export default function Footer() {
         <div className={styles.left_section}>
           <Link
             to={routes.home}
-            className={isMobile ? styles.logo_mobile : styles.logo}
-          >
+            className={isMobile ? styles.logo_mobile : styles.logo}>
             <img src={images.icons.podosee} alt='Podosee Logo' />
           </Link>
 
           <div className={styles.company_info}>
-            <p>{t("footer.ceo")}</p>
-            <p>{t("footer.address")}</p>
-            <p>{t("footer.address_detail")}</p>
+            <p>{t('footer.ceo')}</p>
+            <p>{t('footer.address')}</p>
+            <p>{t('footer.address_detail')}</p>
             <p className={styles.contact}>
-              <span>{t("footer.contact")}</span>
-              <span>{t("footer.email")}</span>
+              <span>{t('footer.contact')}</span>
+              <span>{t('footer.email')}</span>
             </p>
           </div>
 
@@ -37,8 +41,7 @@ export default function Footer() {
             <Link
               to={routes.facebook}
               target='_blank'
-              rel='noopener noreferrer'
-            >
+              rel='noopener noreferrer'>
               <img src={images.icons.facebook} alt='Facebook' />
             </Link>
             <Link to={routes.naver} target='_blank' rel='noopener noreferrer'>

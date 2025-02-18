@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 import Header from '../../components/header/header';
 import Footer from '../../components/footer/footer';
@@ -10,12 +11,17 @@ import FeatureComponent from '../../components/feature_component/featureComponen
 
 import jakaProducts from '../../data/features/jakaProducts';
 import data from '../../data/series_data/jakaMainSeriesData';
+import jakaPageVideo from '../../data/video_about/jakaPageVideo';
 import styles from './jaka.module.scss';
-import { useTranslation } from "react-i18next";
 
 export default function Jaka() {
   const { t } = useTranslation();
+
   const nav = useNavigate();
+
+  const subtitle = t('jaka.page_subtitle', {
+    returnObjects: true,
+  });
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -26,16 +32,18 @@ export default function Jaka() {
       <Header />
       <div className='jaka'>
         <section className='page_title'>
-          <PageTitle title={t("jaka.page_title")} />
+          <PageTitle title={t('jaka.page_title')} />
         </section>
 
         <section className='jaka_series'>
           <div className={styles.page_subtitle}>
-            <span>{t("jaka.page_subtitle")}</span>
+            {subtitle.map((text, index) => (
+              <p key={index}>{text}</p>
+            ))}
           </div>
 
           <div className={styles.series_title}>
-            <span>{t("jaka.series_title")}</span>
+            <span>{t('jaka.series_title')}</span>
           </div>
 
           <div className={styles.series_card}>
@@ -53,17 +61,20 @@ export default function Jaka() {
 
         <section className='video_component'>
           <div className={styles.video}>
-            <VideoComponent
-              title={t("jaka.video_title")}
-              description={t("jaka.video_description")}
-              videoID={t("jaka.video_id")}
-            />
+            {jakaPageVideo.map((video, index) => (
+              <VideoComponent
+                key={index}
+                i18nKeyId={video.i18nKeyId}
+                i18nKeyTitle={video.i18nKeyTitle}
+                i18nKeyDescription={video.i18KeyDescription}
+              />
+            ))}
           </div>
         </section>
 
         <section className='feature_component'>
           <div className={styles.feature_title}>
-            <span>{t("jaka.feature_title")}</span>
+            <span>{t('jaka.feature_title')}</span>
           </div>
           <FeatureComponent features={jakaProducts} />
         </section>

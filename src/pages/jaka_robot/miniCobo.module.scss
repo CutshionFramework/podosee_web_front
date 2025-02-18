@@ -57,7 +57,7 @@
   flex-shrink: 0; // 이미지가 너무 작아지지 않도록 방지
   object-fit: contain;
   margin-top: 20px;
-  margin-left: 160px;
+  margin-right: 550px;
 
   @media (max-width: 1024px) {
     margin: 0;
@@ -78,6 +78,7 @@
   img {
     width: auto;
     height: 400px;
+    margin-right: 80px;
   }
 
   @media (max-width: 768px) {
@@ -147,6 +148,7 @@
     font-size: 40px;
     font-family: Pretendard-Bold;
     color: #1d1d1f;
+    text-align: center;
 
     @media (max-width: 768px) {
       font-size: clamp(35px, 2vw, 35px);
@@ -190,6 +192,7 @@
     font-size: 40px;
     font-family: Pretendard-Bold;
     color: #1d1d1f;
+    text-align: center;
 
     @media (max-width: 768px) {
       font-size: clamp(35px, 2vw, 35px);

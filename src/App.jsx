@@ -15,8 +15,8 @@ import ZuSeriesPage from './pages/product_detail/zu/zuSeriesPage';
 import AllInOneSeriesPage from './pages/product_detail/all_in_one/allInOneSeriesPage';
 import ProSeriesPage from './pages/product_detail/pro/proSeriesPage';
 
-import AIKiosk from './pages/integrated_solution/ai_kiosk/aiKiosk';
-import AMR from './pages/integrated_solution/amr/amr';
+import AIKiosk from './pages/ai_kiosk/aiKiosk';
+import AMR from './pages/amr/amr';
 
 import CompanyInfo from './pages/company_info/companyInfo';
 import News from './pages/news/news';
@@ -43,12 +43,13 @@ function App() {
           <Route path='/jaka/allinone/:id' element={<AllInOneSeriesPage />} />
           <Route path='/jaka/proseries/:id' element={<ProSeriesPage />} />
 
-          {/* Integrated solution */}
-          <Route path='/integrated' element={<AIKiosk />} />
-          <Route path='/integrated/aikiosk' element={<AIKiosk />} />
-          <Route path='/integrated/amr' element={<AMR />} />
-          <Route path='/integrated/aikiosk/:id' element={<AIKiosk />} />
-          <Route path='/integrated/amr/:id' element={<AMR />} />
+          {/* AIKiosk */}
+          <Route path='/aikiosk' element={<AIKiosk />} />
+          <Route path='/aikiosk/:id' element={<AIKiosk />} />
+
+          {/* AMR */}
+          <Route path='/amr' element={<AMR />} />
+          <Route path='/amr/:id' element={<AMR />} />
 
           {/* Company info */}
           <Route path='/company' element={<CompanyInfo />} />

@@ -1,12 +1,15 @@
 .page_subtitle {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   margin-top: 60px;
 
-  span {
+  p {
     font-size: 16px;
     text-align: center;
+    margin: 0;
     line-height: 1.4;
+    color: #1d1d1f;
 
     @media (max-width: 768px) {
       margin-right: 13px;
@@ -76,6 +79,7 @@
   span {
     font-family: Pretendard-Bold;
     font-size: 40px;
+    color: #1d1d1f;
 
     @media (max-width: 425px) {
       font-size: clamp(30px, 2vw, 35px);

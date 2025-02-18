@@ -31,7 +31,6 @@
 
   .card {
     width: calc(25% - 20px); // 기본적으로 한 줄에 4개
-    max-width: 250px;
 
     @media (max-width: 1024px) {
       width: calc(50% - 20px); // 768px 이하에서는 2개씩 정렬
@@ -59,6 +58,7 @@
     font-size: 40px;
     font-family: Pretendard-Bold;
     color: #1d1d1f;
+    text-align: center;
 
     @media (max-width: 425px) {
       font-size: clamp(30px, 2vw, 30px);
@@ -101,7 +101,7 @@
     width: 85%;
   }
 
-  span {
+  p {
     font-size: 16px;
     color: #1d1d1f;
     line-height: 1.4;

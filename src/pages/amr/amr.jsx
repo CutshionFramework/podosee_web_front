@@ -1,13 +1,13 @@
-import { useState, useEffect } from "react";
-import { useParams, useNavigate } from "react-router-dom";
-import { useTranslation } from "react-i18next";
-import Header from "../../../components/header/header";
-import Footer from "../../../components/footer/footer";
-import MenuTab from "../../../components/menu_tab/menuTab";
-import PageTitle from "../../../components/page_title/pageTitle";
-import images from "../../../constants/imagePath";
+import { useState, useEffect } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import Header from '../../components/header/header';
+import Footer from '../../components/footer/footer';
+import MenuTab from '../../components/menu_tab/menuTab';
+import PageTitle from '../../components/page_title/pageTitle';
+import images from '../../constants/imagePath';
 
-import styles from "./amr.module.scss";
+import styles from './amr.module.scss';
 
 export default function AMR() {
   const { id } = useParams();
@@ -16,8 +16,8 @@ export default function AMR() {
   const [currentTab, setCurrentTab] = useState(0);
 
   const menuArr = [
-    { name: t("amr.menu.tseries"), path: "tseries" },
-    { name: t("amr.menu.lseries"), path: "lseries" },
+    { name: t('amr.menu.tseries'), path: 'tseries' },
+    { name: t('amr.menu.lseries'), path: 'lseries' },
   ];
 
   useEffect(() => {
@@ -25,21 +25,21 @@ export default function AMR() {
   }, []);
 
   useEffect(() => {
-    if (id === "tseries") setCurrentTab(0);
-    else if (id === "lseries") setCurrentTab(1);
+    if (id === 'tseries') setCurrentTab(0);
+    else if (id === 'lseries') setCurrentTab(1);
+    window.scrollTo(0, 0);
   }, [id]);
 
   const selectMenuHandler = (index) => {
     setCurrentTab(index);
-    navigate(`/integrated/amr/${menuArr[index].path}`); // URL 변경
+    navigate(`/amr/${menuArr[index].path}`); // URL 변경
   };
 
   return (
     <div>
       <Header />
-      <PageTitle title={t("amr.solution")} />
+      <PageTitle title={t('amr.title')} />
       <div className={styles.amr_container}>
-        <h1>AMR</h1>
         <MenuTab
           menuArr={menuArr}
           currentTab={currentTab}
@@ -82,7 +82,7 @@ const CommmonComponent = ({ currentTab }) => {
     },
   };
 
-  const selectedTab = currentTab || "tseries";
+  const selectedTab = currentTab || 'tseries';
 
   const imageList = imageMap[selectedTab];
 
@@ -98,11 +98,11 @@ const CommmonComponent = ({ currentTab }) => {
     styles[`${selectedTab}_container`] || styles.tseries_container;
 
   const specImgClass = `${styles.spec_img} ${
-    selectedTab === "tseries"
+    selectedTab === 'tseries'
       ? styles.tseries_spec
-      : selectedTab === "lseries"
+      : selectedTab === 'lseries'
       ? styles.lseries_spec
-      : ""
+      : ''
   }`;
 
   const specImage =
@@ -124,18 +124,17 @@ const CommmonComponent = ({ currentTab }) => {
 
         <div
           className={
-            selectedTab === "lseries"
+            selectedTab === 'lseries'
               ? styles.lseries_description
               : styles.none_lseries_description
-          }
-        >
+          }>
           {lseriesDescriptionList.map((text, index) => (
             <p key={index}>{text}</p>
           ))}
         </div>
       </div>
 
-      <h2>{t("amr.spec")}</h2>
+      <h2>{t('amr.spec')}</h2>
 
       <div className={styles.spec_img_container}>
         <img className={specImgClass} src={specImage} alt={specImage} />

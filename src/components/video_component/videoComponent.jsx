@@ -1,10 +1,19 @@
 import ReactPlayer from 'react-player';
-import { Fragment } from 'react';
+import { useTranslation } from 'react-i18next';
 
 import styles from './videoComponent.module.scss';
 
-export default function VideoComponent({ title, description, videoID }) {
-  // 해당 유튜브 영상 ID
+export default function VideoComponent({
+  i18nKeyTitle,
+  i18nKeyDescription,
+  i18nKeyId,
+}) {
+  const { t } = useTranslation();
+
+  // i18nKey를 이용하여 번역된 값 가져오기
+  const videoId = i18nKeyId ? t(`${i18nKeyId}`) : '';
+  const title = i18nKeyTitle ? t(`${i18nKeyTitle}`) : '';
+  const description = [i18nKeyDescription ? t(`${i18nKeyDescription}`) : ''];
 
   return (
     <div className={styles.video_component}>
@@ -14,20 +23,15 @@ export default function VideoComponent({ title, description, videoID }) {
         </div>
 
         <div className={styles.about_description}>
-          <span>
-            {description.split('\n').map((line, index) => (
-              <Fragment key={index}>
-                {line}
-                <br />
-              </Fragment>
-            ))}
-          </span>
+          {description.map((desc, index) => (
+            <p key={index}>{desc}</p>
+          ))}
         </div>
       </section>
       <section className='video_thumbnail'>
         <div className={styles.video_thumbnail}>
           <ReactPlayer
-            url={`https://www.youtube.com/watch?v=${videoID}`}
+            url={`https://www.youtube.com/watch?v=${videoId}`}
             width={560}
             height={315}
             controls

@@ -16,7 +16,7 @@ const phoneNumber = (value) => {
 };
 
 const host = import.meta.env.VITE_BASE_URL; // 서버 URL
-const path = "contact/insert";
+const path = "contact/insert3";
 
 const ContactForm = () => {
   const { t, i18n } = useTranslation();
@@ -91,8 +91,8 @@ const ContactForm = () => {
     }
 
     let contactData = {
-      // reciverEmail: "podosee@podosee.com",
-      reciverEmail: "hillo@podosee.com",
+      reciverEmail: "podosee@podosee.com",
+      // reciverEmail: "hillo@podosee.com",
       email: formData.email,
       userInfo: formData.name + "/" + formData.jobTitle,
       company: formData.companyName,

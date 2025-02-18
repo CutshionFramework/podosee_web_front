@@ -1,13 +1,13 @@
-import Header from "../../components/header/header";
-import Footer from "../../components/footer/footer";
-import PageTitle from "../../components/page_title/pageTitle";
-import MenuTab from "../../components/menu_tab/menuTab"; // 추가
-import styles from "./companyInfo.module.scss";
-import { useParams, useNavigate } from "react-router-dom";
-import { useEffect, useState } from "react";
-import { getPartner, getHistory } from "../../apis/apis";
-import { useTranslation } from "react-i18next";
-import images from "../../constants/imagePath";
+import Header from '../../components/header/header';
+import Footer from '../../components/footer/footer';
+import PageTitle from '../../components/page_title/pageTitle';
+import MenuTab from '../../components/menu_tab/menuTab'; // 추가
+import styles from './companyInfo.module.scss';
+import { useParams, useNavigate } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { getPartner, getHistory } from '../../apis/apis';
+import { useTranslation } from 'react-i18next';
+import images from '../../constants/imagePath';
 
 export default function CompanyInfo() {
   const { id } = useParams();
@@ -20,10 +20,10 @@ export default function CompanyInfo() {
   const [currentTab, setCurrentTab] = useState(0);
 
   const menuArr = [
-    { name: t("company.menu.greeting"), path: "greeting" },
-    { name: t("company.menu.history"), path: "history" },
-    { name: t("company.menu.location"), path: "location" },
-    { name: t("company.menu.partners"), path: "partners" },
+    { name: t('company.menu.greeting'), path: 'greeting' },
+    { name: t('company.menu.history'), path: 'history' },
+    { name: t('company.menu.location'), path: 'location' },
+    { name: t('company.menu.partners'), path: 'partners' },
   ];
 
   useEffect(() => {
@@ -34,10 +34,16 @@ export default function CompanyInfo() {
   }, []);
 
   useEffect(() => {
-    if (id === "greeting") setCurrentTab(0);
-    else if (id === "history") setCurrentTab(1);
-    else if (id === "location") setCurrentTab(2);
-    else if (id === "partners") setCurrentTab(3);
+    if (id === 'greeting') {
+      setCurrentTab(0);
+    } else if (id === 'history') {
+      setCurrentTab(1);
+    } else if (id === 'location') {
+      setCurrentTab(2);
+    } else if (id === 'partners') {
+      setCurrentTab(3);
+    }
+    window.scrollTo(0, 0);
   }, [id]);
 
   const getPartnerData = async () => {
@@ -62,7 +68,7 @@ export default function CompanyInfo() {
   return (
     <div>
       <Header />
-      <PageTitle title={t("company.title")} />
+      <PageTitle title={t('company.title')} />
       <div className={styles.company_info_container}>
         <MenuTab
           menuArr={menuArr}
@@ -88,7 +94,7 @@ export default function CompanyInfo() {
 
 const CeoGreeting = () => {
   const { t } = useTranslation();
-  const greetings = t("company.greeting", { returnObjects: true });
+  const greetings = t('company.greeting', { returnObjects: true });
 
   return (
     <div className={styles.ceo_greeting}>
@@ -126,7 +132,7 @@ const History = ({ historyData }) => {
                 .map((month) => (
                   <div key={month} className={styles.month}>
                     <span className={styles.month_name}>
-                      {i18n.language === "kr" ? `${month}월` : `${month}`}
+                      {i18n.language === 'kr' ? `${month}월` : `${month}`}
                     </span>
                     <div className={styles.activity_list}>
                       {historyData[year][month][i18n.language]?.map(
@@ -153,7 +159,7 @@ const Location = () => {
     <div className={styles.location_container}>
       <iframe src={images.google_map} allowFullScreen></iframe>
       <div className={styles.location_info}>
-        <span className={styles.address}>{t("company.location")}</span>
+        <span className={styles.address}>{t('company.location')}</span>
         <span className={styles.tel}>Tel 070-8959-2960</span>
       </div>
     </div>
@@ -164,10 +170,10 @@ const Partners = ({ partnerData }) => {
   const { i18n } = useTranslation();
 
   const typeTranslation = {
-    대리점: { kr: "대리점", en: "Agency" },
-    관공서: { kr: "관공서", en: "Government" },
-    "국내 기업": { kr: "국내 기업", en: "Domestic Company" },
-    "해외 기업": { kr: "해외 기업", en: "Overseas Company" },
+    대리점: { kr: '대리점', en: 'Agency' },
+    관공서: { kr: '관공서', en: 'Government' },
+    '국내 기업': { kr: '국내 기업', en: 'Domestic Company' },
+    '해외 기업': { kr: '해외 기업', en: 'Overseas Company' },
   };
 
   const groupedPartners = partnerData.reduce((acc, con) => {
