@@ -23,7 +23,6 @@ export default function AIKiosk() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    console.log('fgghfgh');
   }, []);
 
   useEffect(() => {

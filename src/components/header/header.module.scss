@@ -213,6 +213,10 @@
         text-align: left;
         padding-left: 50px;
         padding-top: 10px;
+
+        a {
+          font-weight: 400;
+        }
       }
     }
   }
@@ -249,6 +253,7 @@
     width: 100%;
     z-index: 100;
     flex-direction: column;
+    padding-bottom: env(safe-area-inset-bottom); /* 하단 여백 추가 */
     
 
     li {
@@ -273,3 +278,9 @@
     padding-left: 10px;
 }
 
+.logo_mobile img {
+  padding-top: 2px;
+  width: 107px;
+  height: 22px;
+  padding-left: 6px;
+}

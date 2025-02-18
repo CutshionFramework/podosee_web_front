@@ -27,6 +27,7 @@ export default function AMR() {
   useEffect(() => {
     if (id === 'tseries') setCurrentTab(0);
     else if (id === 'lseries') setCurrentTab(1);
+    window.scrollTo(0, 0);
   }, [id]);
 
   const selectMenuHandler = (index) => {
