@@ -156,6 +156,10 @@
             object-fit: contain; // 이미지 비율 유지하며 카드 크기에 맞춤
           }
         }
+
+        @media (max-width: 480px) {
+          justify-content: center;
+        }
       }
     }
   }

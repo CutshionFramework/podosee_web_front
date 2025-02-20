@@ -23,17 +23,18 @@ export default function Footer() {
         <div className={styles.left_section}>
           <Link
             to={routes.home}
-            className={isMobile ? styles.logo_mobile : styles.logo}>
+            className={isMobile ? styles.logo_mobile : styles.logo}
+          >
             <img src={images.icons.podosee} alt='Podosee Logo' />
           </Link>
 
           <div className={styles.company_info}>
-            <p>{t('footer.ceo')}</p>
-            <p>{t('footer.address')}</p>
-            <p>{t('footer.address_detail')}</p>
+            <p>{t("footer.ceo")}</p>
+            <p>{t("footer.address")}</p>
+            <p>{t("footer.address_detail")}</p>
             <p className={styles.contact}>
-              <span>{t('footer.contact')}</span>
-              <span>{t('footer.email')}</span>
+              <span>{t("footer.contact")}</span>
+              <span>{t("footer.email")}</span>
             </p>
           </div>
 
@@ -41,7 +42,8 @@ export default function Footer() {
             <Link
               to={routes.facebook}
               target='_blank'
-              rel='noopener noreferrer'>
+              rel='noopener noreferrer'
+            >
               <img src={images.icons.facebook} alt='Facebook' />
             </Link>
             <Link to={routes.naver} target='_blank' rel='noopener noreferrer'>
@@ -50,7 +52,7 @@ export default function Footer() {
           </div>
 
           <p className={styles.copyright}>
-            Copyright © 2023 Podosee All right reserved
+            Copyright © 2025 Podosee All right reserved
           </p>
         </div>
 
