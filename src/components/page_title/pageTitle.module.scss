@@ -48,12 +48,12 @@
     width: 100%;
     font-size: clamp(40px, 2vw, 45px);
     padding: 6px 12px;
+    white-space: normal;
   }
 
   @media (max-width: 425px) {
     padding: 4px 8px;
     white-space: normal;
-    width: 100%;
     font-size: clamp(30px, 2vw, 40px);
   }
 }

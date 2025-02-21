@@ -69,6 +69,7 @@
 
     @media (max-width: 768px) {
       font-size: clamp(35px, 2vw, 40px);
+      padding: 0 2px;
     }
 
     @media (max-width: 425px) {
@@ -197,6 +198,7 @@
 
   @media (max-width: 768px) {
     flex-direction: column-reverse; /* 이미지 위, 텍스트 아래 */
+    align-items: center;
   }
 }
 
@@ -208,13 +210,10 @@
   @media (max-width: 1024px) {
     width: 100%; /* 텍스트가 화면 전체를 차지하도록 변경 */
     text-align: start;
-    margin-right: 40px;
   }
 
   @media (max-width: 768px) {
     width: 90%;
-    padding: 20px;
-    margin-left: 20px;
   }
 
   @media (max-width: 425px) {
@@ -261,6 +260,14 @@
     margin-right: 0;
   }
 
+  @media (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    align-items: center;
+    margin: 0;
+  }
+
   img {
     width: 350px;
     height: 400px;
@@ -271,13 +278,13 @@
     }
 
     @media (max-width: 768px) {
-      width: 60%;
+      width: 65%;
       height: auto;
-      margin-left: 90px;
+      margin-left: 0;
     }
 
     @media (max-width: 425px) {
-      width: 60%;
+      width: 70%;
       height: auto;
       margin-left: 0;
     }
