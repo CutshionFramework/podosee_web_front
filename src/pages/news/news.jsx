@@ -33,7 +33,7 @@ export default function News() {
                   <img src={news.img} alt={news.title} />
                 </div>
                 <div className={styles.text_content}>
-                  <span className={styles.category}>{news.press}</span>
+                  {/* <span className={styles.category}>{news.press}</span> */}
                   <h2 className={styles.title}>
                     <a
                       href={news.link}
