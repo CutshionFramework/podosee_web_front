@@ -29,11 +29,16 @@ export default function News() {
           {sortedNews.map((news) => (
             <div key={news.seq} className={styles.news}>
               <div className={styles.news_content}>
-                <div className={styles.image_container}>
+                <a
+                  className={styles.image_container}
+                  href={news.link}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
                   <img src={news.img} alt={news.title} />
-                </div>
+                </a>
                 <div className={styles.text_content}>
-                  {/* <span className={styles.category}>{news.press}</span> */}
+                  <span className={styles.category}>{news.press}</span>
                   <h2 className={styles.title}>
                     <a
                       href={news.link}
