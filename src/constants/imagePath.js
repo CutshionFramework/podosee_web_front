@@ -10,7 +10,7 @@ const images = {
   google_map:
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1828.103666917419!2d126.88647623196432!3d37.517796980052985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9e8af0bbfb8b%3A0x8e5a3c8588c58e41!2zKOyjvCntj6zrj4TslKg!5e0!3m2!1sko!2skr!4v1712015536755!5m2!1sko!2skr",
 
-  error: "https://podosee.com/img/error.png",
+  error: "/assets/error/error.png",
 
   main: {
     main_image: [
@@ -60,8 +60,8 @@ const images = {
   },
 
   contact: {
-    page_title: "/assets/page_title/page_title.png"
-  }
+    page_title: "/assets/page_title/page_title.png",
+  },
 };
 
 export default images;
