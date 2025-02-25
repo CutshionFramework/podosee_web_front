@@ -33,18 +33,18 @@ export default function Minicobo() {
       <Header />
 
       <section className='page_title'>
-        <PageTitle title={t('jaka_minicobo.page_title')} />
+        <PageTitle title={t("jaka_minicobo.page_title")} />
       </section>
 
       <section className='minicobo'>
         <div className={styles.page_subtitle}>
-          <span>{t('jaka_minicobo.page_subtitle')}</span>
+          <span>{t("jaka_minicobo.page_subtitle")}</span>
         </div>
 
         <section className='minicobo_information'>
           <div className={styles.product_container}>
             <div className={styles.product_info}>
-              <section className='product_img'>
+              <section className={styles.product_img_section}>
                 <div className={styles.product_img}>
                   <img
                     src='/assets/jaka_minicobo/minicobo.webp'
@@ -53,7 +53,7 @@ export default function Minicobo() {
                 </div>
               </section>
 
-              <section className='product_about'>
+              <section className={styles.product_about_section}>
                 <div className={styles.product_about}>
                   {aboutList.map((about, index) => (
                     <p key={index}>{about}</p>
@@ -67,7 +67,7 @@ export default function Minicobo() {
 
       <section className='product_comparison'>
         <div className={styles.comparison_title}>
-          <span>{t('jaka_minicobo.comparison_title')}</span>
+          <span>{t("jaka_minicobo.comparison_title")}</span>
         </div>
 
         <div className={styles.comparison_img}>
@@ -77,7 +77,7 @@ export default function Minicobo() {
 
       <section className='feature_component'>
         <div className={styles.feature_title}>
-          <span>{t('jaka_minicobo.feature_title')}</span>
+          <span>{t("jaka_minicobo.feature_title")}</span>
         </div>
         <FeatureComponent features={jakaProducts} />
       </section>

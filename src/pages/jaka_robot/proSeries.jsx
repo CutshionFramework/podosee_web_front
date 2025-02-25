@@ -36,12 +36,12 @@ export default function ProSeries() {
     <>
       <Header />
       <section className='page_title'>
-        <PageTitle title={t('jaka_pro.page_title')} />
+        <PageTitle title={t("jaka_pro.page_title")} />
       </section>
 
       <section className='all_in_one'>
         <div className={styles.page_subtitle}>
-          <span>{t('jaka_pro.page_subtitle')}</span>
+          <span>{t("jaka_pro.page_subtitle")}</span>
         </div>
 
         <div className={styles.card_container}>
@@ -52,6 +52,7 @@ export default function ProSeries() {
                 series_name={item.series_name}
                 series_img={item.series_img}
                 i18nKey={item.i18nKey}
+                type={`proseries`}
                 onClick={() => nav(`/jaka/proseries/${item.url}`)}
               />
             ))}
@@ -61,7 +62,7 @@ export default function ProSeries() {
 
       <section className='major_feature'>
         <div className={styles.major_title}>
-          <span>{t('jaka_pro.major_title')}</span>
+          <span>{t("jaka_pro.major_title")}</span>
         </div>
 
         <div className={styles.feature}>
@@ -79,7 +80,7 @@ export default function ProSeries() {
 
       <section className='product_comparison'>
         <div className={styles.comparison_title}>
-          <span>{t('jaka_pro.comparison_title')}</span>
+          <span>{t("jaka_pro.comparison_title")}</span>
         </div>
 
         <div className={styles.comparison_img}>

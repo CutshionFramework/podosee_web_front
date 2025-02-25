@@ -38,7 +38,7 @@ export default function ZuSeriesPage() {
     <>
       <Header />
       <section className='page_title'>
-        <PageTitle title={t('jaka_zu.page_title')} />
+        <PageTitle title={t("jaka_zu.page_title")} />
       </section>
 
       <section className='zu_series'>
@@ -55,6 +55,7 @@ export default function ZuSeriesPage() {
               series_name={item.series_name}
               series_img={item.series_img}
               i18nKey={item.i18nKey}
+              type={`zuseries`}
               onClick={() => nav(`/jaka/zuseries/${item.url}`)}
             />
           ))}
@@ -76,7 +77,7 @@ export default function ZuSeriesPage() {
 
       <section className='product_comparison'>
         <div className={styles.comparison_title}>
-          <span>{t('jaka_zu.comparison_title')}</span>
+          <span>{t("jaka_zu.comparison_title")}</span>
         </div>
 
         <div className={styles.comparison_img}>
