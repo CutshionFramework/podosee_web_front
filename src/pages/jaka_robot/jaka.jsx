@@ -32,7 +32,7 @@ export default function Jaka() {
       <Header />
       <div className='jaka'>
         <section className='page_title'>
-          <PageTitle title={t('jaka.page_title')} />
+          <PageTitle title={t("jaka.page_title")} />
         </section>
 
         <section className='jaka_series'>
@@ -43,7 +43,7 @@ export default function Jaka() {
           </div>
 
           <div className={styles.series_title}>
-            <span>{t('jaka.series_title')}</span>
+            <span>{t("jaka.series_title")}</span>
           </div>
 
           <div className={styles.series_card}>
@@ -53,6 +53,7 @@ export default function Jaka() {
                 series_name={item.series_name}
                 series_img={item.series_img}
                 i18nKey={item.i18nKey}
+                type={`jaka`}
                 onClick={() => nav(`/jaka/${item.url}`)}
               />
             ))}
@@ -74,7 +75,7 @@ export default function Jaka() {
 
         <section className='feature_component'>
           <div className={styles.feature_title}>
-            <span>{t('jaka.feature_title')}</span>
+            <span>{t("jaka.feature_title")}</span>
           </div>
           <FeatureComponent features={jakaProducts} />
         </section>

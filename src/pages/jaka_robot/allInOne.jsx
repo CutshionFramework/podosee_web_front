@@ -50,7 +50,7 @@ export default function AllInOne() {
     <>
       <Header />
       <section className='page_title'>
-        <PageTitle title={t('jaka_all_in_one.page_title')} />
+        <PageTitle title={t("jaka_all_in_one.page_title")} />
       </section>
 
       <section className='all_in_one'>
@@ -67,6 +67,7 @@ export default function AllInOne() {
               series_name={item.series_name}
               series_img={item.series_img}
               i18nKey={item.i18nKey}
+              type={`allinone`}
               onClick={() => nav(`/jaka/allinone/${item.url}`)}
             />
           ))}
@@ -75,13 +76,13 @@ export default function AllInOne() {
 
       <section className='major_feature'>
         <div className={styles.major_title}>
-          <span>{t('jaka_all_in_one.major_title')}</span>
+          <span>{t("jaka_all_in_one.major_title")}</span>
         </div>
 
         <div className={styles.first_feature}>
           <div className={styles.first_feature_info}>
             <div className={styles.first_feature_name}>
-              <span>{t('jaka_all_in_one.first_feature_name')}</span>
+              <span>{t("jaka_all_in_one.first_feature_name")}</span>
             </div>
             <div className={styles.first_feature_description}>
               {firstFeatureDescription.map((desc, index) => (
@@ -91,24 +92,18 @@ export default function AllInOne() {
           </div>
 
           <div className={styles.first_feature_img}>
-            <img
-              src='/assets/jaka_all_in_one/major_feature_1.png'
-              alt=''
-            />
+            <img src='/assets/jaka_all_in_one/major_feature_1.png' alt='' />
           </div>
         </div>
 
         <div className={styles.second_feature}>
           <div className={styles.second_feature_img}>
-            <img
-              src='/assets/jaka_all_in_one/major_feature_2.png'
-              alt=''
-            />
+            <img src='/assets/jaka_all_in_one/major_feature_2.png' alt='' />
           </div>
 
           <div className={styles.second_feature_info}>
             <div className={styles.second_feature_name}>
-              <span>{t('jaka_all_in_one.second_feature_name')}</span>
+              <span>{t("jaka_all_in_one.second_feature_name")}</span>
             </div>
 
             <div className={styles.second_feature_description}>
@@ -122,7 +117,7 @@ export default function AllInOne() {
 
       <section className='product_comparison'>
         <div className={styles.comparison_title}>
-          <span>{t('jaka_all_in_one.comparison_title')}</span>
+          <span>{t("jaka_all_in_one.comparison_title")}</span>
         </div>
 
         <div className={styles.comparison_img}>

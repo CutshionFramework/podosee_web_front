@@ -30,9 +30,12 @@
   margin-top: 150px;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px; // 카드 사이의 간격 추가
+  gap: 32px;
   justify-content: center;
   width: 100%;
+
+  align-items: flex-start;
+  // height: 400px;
 
   .card {
     width: calc(25% - 20px); // 기본적으로 한 줄에 4개
