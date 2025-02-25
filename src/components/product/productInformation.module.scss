@@ -58,14 +58,13 @@
   }
 
   img {
-    width: auto;
+    width: 350px;
     height: 390px;
     margin-right: 80px;
     object-fit: contain;
 
     @media (max-width: 1024px) {
       margin: 0;
-      width: 450px;
     }
 
     @media (max-width: 768px) {
