@@ -5,6 +5,8 @@ import { getNews } from "../../apis/apis";
 import NewsSlider from "../../components/news_slider/newsSlider";
 import Header from "../../components/header/header";
 import Footer from "../../components/footer/footer";
+import Popup from "../../components/popup/popup";
+
 import styles from "./main.module.scss";
 import images from "../../constants/imagePath";
 import routes from "../../constants/routes";
@@ -55,6 +57,8 @@ export default function Main() {
 
   return (
     <div className={styles.main_container}>
+      <Popup />
+
       <Header />
 
       <div className={styles.main_section_container}>
