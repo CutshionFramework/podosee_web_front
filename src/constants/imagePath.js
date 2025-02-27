@@ -62,6 +62,12 @@ const images = {
   contact: {
     page_title: "/assets/page_title/page_title.png",
   },
+
+  popup: {
+    event: "/assets/popup/event.png",
+    button: "/assets/popup/button.png",
+    googleform: "https://forms.gle/yhRzUL2VxskHhJ5Y9",
+  },
 };
 
 export default images;
