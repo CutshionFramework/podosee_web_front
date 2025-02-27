@@ -5,9 +5,9 @@ import { useCookies } from "react-cookie";
 import images from "../../constants/imagePath";
 
 export default function Popup() {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(null);
   const [checked, setChecked] = useState(false);
-  const [cookies, setCookies] = useCookies(["HBB_Cookie"]);
+  const [cookies, setCookies] = useCookies(["POPUP_Cookie"]);
 
   // 쿠키 만료일 설정 함수
   const getExpiredDate = (days) => {
@@ -16,17 +16,17 @@ export default function Popup() {
     return date;
   };
 
-  // 페이지 로드 시 쿠키 확인 후 팝업 상태 설정
   useEffect(() => {
-    if (cookies["HBB_Cookie"]) {
+    if (cookies["POPUP_Cookie"]) {
       setOpen(false);
+    } else {
+      setOpen(true);
     }
   }, [cookies]);
 
-  // 닫기 버튼 핸들러
   const handleClose = () => {
     if (checked) {
-      setCookies("HBB_Cookie", "true", {
+      setCookies("POPUP_Cookie", "true", {
         path: "/",
         expires: getExpiredDate(1),
       });
@@ -34,12 +34,14 @@ export default function Popup() {
     setOpen(false);
   };
 
-  // 체크박스 핸들러
   const handleChange = (e) => {
     setChecked(e.target.checked);
   };
 
-  if (!open) return null;
+  // 팝업이 열릴 때만 렌더링하도록 처리
+  if (open === null) return null; // open이 null일 때는 렌더링하지 않음
+
+  if (!open) return null; // 팝업을 닫은 상태에서는 렌더링하지 않음
 
   return (
     <div
