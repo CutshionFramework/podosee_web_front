@@ -15,7 +15,7 @@ const phoneNumber = (value) => {
   );
 };
 
-const host = import.meta.env.VITE_BASE_URL; // 서버 URL
+const host = import.meta.env.VITE_CONTACT_BASE_URL; // 서버 URL
 const path = "contact/insert3";
 
 const ContactForm = () => {
@@ -173,8 +173,6 @@ const ContactForm = () => {
         responseType: "json",
         data: contactData,
       });
-
-      console.log("서버 응답:", response.data);
 
       if (response.data.result === 0) {
         alertSuccessContent();
