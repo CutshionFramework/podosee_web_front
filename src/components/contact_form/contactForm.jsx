@@ -54,14 +54,28 @@ const ContactForm = () => {
     }));
   }, [currentLanguage]);
 
-  const alertContent = () => {
+  const alertValidateContent = (message) => {
+    MySwal.fire({
+      text: message,
+      icon: "warning",
+    });
+  };
+
+  const alertSuccessContent = () => {
     MySwal.fire({
       title: alerts.success.title,
       text: alerts.success.message,
       icon: "success",
       timer: 2000,
       timerProgressBar: true,
-      showConfirmButton: false,
+    });
+  };
+
+  const alertFailContent = () => {
+    MySwal.fire({
+      title: alerts.failure.title,
+      text: alerts.failure.message,
+      icon: "error",
     });
   };
 
@@ -83,32 +97,75 @@ const ContactForm = () => {
     setFormData((prevState) => ({ ...prevState, [name]: phoneNumber(value) }));
   };
 
+  const validateForm = () => {
+    if (!formData.companyName) {
+      alertValidateContent(alerts.validate.company_name_required);
+      return false;
+    }
+
+    if (!formData.name) {
+      alertValidateContent(alerts.validate.contact_name_required);
+      return false;
+    }
+
+    if (!formData.jobTitle) {
+      alertValidateContent(alerts.validate.contact_jobtitle_required);
+      return false;
+    }
+
+    if (!formData.phone) {
+      alertValidateContent(alerts.validate.contact_phone_required);
+      return false;
+    }
+
+    if (!formData.email) {
+      alertValidateContent(alerts.validate.contact_email_required);
+      return false;
+    }
+
+    if (!formData.title) {
+      alertValidateContent(alerts.validate.contact_title_required);
+      return false;
+    }
+
+    if (!formData.message) {
+      alertValidateContent(alerts.validate.contact_message_required);
+      return false;
+    }
+
+    if (!formData.agree) {
+      alertValidateContent(alerts.validate.agree_required);
+      return false;
+    }
+
+    return true; // 모든 유효성 검사를 통과하면 true 반환
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!formData.agree) {
-      alert(alerts.agree_required);
-      return;
-    }
+
+    // 유효성 검사
+    const isValid = validateForm();
+    if (!isValid) return; // 유효성 검사 실패 시 submit을 중지
 
     let contactData = {
       reciverEmail: "podosee@podosee.com",
       // reciverEmail: "hillo@podosee.com",
+      // reciverEmail: "jhjang@podosee.com",
       email: formData.email,
-      userInfo: formData.name + "/" + formData.jobTitle,
-      company: formData.companyName,
+      name: formData.name,
+      company: formData.companyName + "/" + formData.jobTitle,
       companySize: "포도씨에선 미수집",
       type: "포도씨에선 미수집",
-      message:
+      content:
         formData.inquiryType + "/" + formData.title + "\r\n" + formData.message,
       industry: "포도씨에선 미수집",
-      tel: formData.phone,
+      contact: formData.phone,
       result: true,
       chackbox: formData.agree,
     };
 
     try {
-      console.log(contactData);
-
       const response = await axios({
         method: "POST",
         url: `${host}/${path}`,
@@ -117,14 +174,16 @@ const ContactForm = () => {
         data: contactData,
       });
 
+      console.log("서버 응답:", response.data);
+
       if (response.data.result === 0) {
-        alertContent();
+        alertSuccessContent();
       } else {
-        alert(alerts.failure);
+        alertFailContent(alerts.failure);
       }
     } catch (error) {
       console.log(error);
-      alert(alerts.failure);
+      alertFailContent(alerts.failure);
     }
   };
 

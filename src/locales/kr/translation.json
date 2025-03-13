@@ -773,10 +773,19 @@
     "alerts": {
       "success": {
         "title": "감사합니다!",
-        "message": "메시지가 성공적으로 발송되었습니다."
+        "message": "성공적으로 접수가 되었습니다."
       },
-      "failure": "전송 실패! 다시 시도해주세요.",
-      "agree_required": "개인정보 수집 및 이용 동의가 필요합니다."
+      "failure": { "title": "전송 실패!", "message": "다시 시도해주세요." },
+      "validate": {
+        "company_name_required": "회사명을 입력해 주세요.",
+        "contact_name_required": "이름을 입력해 주세요.",
+        "contact_jobtitle_required": "직급을 입력해 주세요.",
+        "contact_phone_required": "연락처를 입력해 주세요.",
+        "contact_email_required": "이메일 주소를 입력해 주세요.",
+        "contact_title_required": "제목을 입력해 주세요",
+        "contact_message_required": "문의 내용을 입력해 주세요",
+        "agree_required": "개인정보 수집 및 이용 동의가 필요합니다."
+      }
     },
     "privacy_policy": {
       "privacy_policy": "개인정보처리방침",

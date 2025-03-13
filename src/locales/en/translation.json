@@ -783,12 +783,23 @@
     "alerts": {
       "success": {
         "title": "Thank you!",
-        "message": "Your message has been sent successfully."
+        "message": "Your request has been successfully received."
       },
-      "failure": "Sending failed! Please try again.",
-      "agree_required": "You must agree to the collection and use of personal information."
+      "failure": {
+        "title": "Submission Failed!",
+        "message": "Please try again."
+      },
+      "validate": {
+        "company_name_required": "Please enter the company name.",
+        "contact_name_required": "Please enter your name.",
+        "contact_jobtitle_required": "Please enter your job title.",
+        "contact_phone_required": "Please enter your phone number.",
+        "contact_email_required": "Please enter your email address.",
+        "contact_title_required": "Please enter a subject.",
+        "contact_message_required": "Please enter your inquiry message.",
+        "agree_required": "You must agree to the collection and use of personal information."
+      }
     },
-
     "privacy_policy": {
       "privacy_policy": "Privacy Policy",
       "company_info": "Podosee.inc (hereinafter referred to as 'the company') adheres to the Personal Information Protection Act to protect the privacy and rights of users and to facilitate the resolution of any issues related to personal information.",
