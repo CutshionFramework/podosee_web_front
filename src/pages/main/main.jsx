@@ -5,7 +5,7 @@ import { getNews } from "../../apis/apis";
 import NewsSlider from "../../components/news_slider/newsSlider";
 import Header from "../../components/header/header";
 import Footer from "../../components/footer/footer";
-import Popup from "../../components/popup/popup";
+// import Popup from "../../components/popup/popup";
 
 import styles from "./main.module.scss";
 import images from "../../constants/imagePath";
@@ -57,7 +57,7 @@ export default function Main() {
 
   return (
     <div className={styles.main_container}>
-      <Popup />
+      {/* <Popup /> */}
 
       <Header />
 
