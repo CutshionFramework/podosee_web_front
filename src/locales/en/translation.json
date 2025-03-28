@@ -56,6 +56,16 @@
     "email": "Email: podosee@podosee.com"
   },
 
+  "error": {
+    "title": "Page Not Found",
+    "description": [
+      "Please check if the entered address is correct.",
+      "If needed, go to the home page and try again."
+    ],
+    "back_button": "Go Back",
+    "home_button": "Go to Home"
+  },
+
   "main": {
     "products": [
       {
