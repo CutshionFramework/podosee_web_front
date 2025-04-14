@@ -8,7 +8,9 @@ import styles from "./news.module.scss";
 export default function News() {
   const { t } = useTranslation();
   const [newsData, setNewsData] = useState([]);
-  const sortedNews = [...newsData].sort((a, b) => b.seq - a.seq);
+  const sortedNews = [...newsData]
+    .filter((news) => news.active === 0 || news.active === 1)
+    .sort((a, b) => b.seq - a.seq);
 
   useEffect(() => {
     window.scrollTo(0, 0);
