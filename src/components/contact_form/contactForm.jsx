@@ -30,7 +30,7 @@ const ContactForm = () => {
   const placeholders = t("contact.placeholders", { returnObjects: true });
   const privacyPolicy = t("contact.privacy_policy", { returnObjects: true });
 
-  const [formData, setFormData] = useState({
+  const initialFormData = {
     inquiryType: inquiryOptions[0],
     companyName: "",
     jobTitle: "",
@@ -40,7 +40,9 @@ const ContactForm = () => {
     title: "",
     message: "",
     agree: false,
-  });
+  };
+
+  const [formData, setFormData] = useState(initialFormData);
 
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
@@ -176,6 +178,7 @@ const ContactForm = () => {
 
       if (response.data.result === 0) {
         alertSuccessContent();
+        setFormData(initialFormData);
       } else {
         alertFailContent(alerts.failure);
       }
