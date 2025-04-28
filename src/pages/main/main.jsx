@@ -36,6 +36,9 @@ export default function Main() {
 
   const videoRef = useRef(null);
   const [newsData, setNewsData] = useState([]);
+  const sortedNews = [...newsData]
+    .filter((news) => news.active === 0 || news.active === 1)
+    .sort((a, b) => b.seq - a.seq);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -86,7 +89,7 @@ export default function Main() {
         </section>
       </div>
 
-      <NewsSlider newsData={newsData}></NewsSlider>
+      <NewsSlider newsData={sortedNews}></NewsSlider>
 
       <Footer />
     </div>
