@@ -48,15 +48,26 @@ export default function CompanyInfo() {
 
   const getPartnerData = async () => {
     const response = await getPartner();
-    if (response.result === 0) {
-      setPartnerData(response.data.filter((el) => el.status === 2));
+    if (response.result === 'success') {
+      const rawData = response.data;
+
+      const filteredData = rawData.filter(
+        (item) => Number(item.site_num) === 2
+      );
+      setPartnerData(filteredData);
     }
   };
 
   const getHistoryData = async () => {
     const response = await getHistory();
-    if (response.result === 0) {
-      setHistoryData(response.data);
+    if (response.result === 'success') {
+      const rawData = response.data;
+
+      const filteredData = rawData.filter(
+        (item) => Number(item.site_num) === 2
+      );
+
+      setHistoryData(filteredData);
     }
   };
 
@@ -119,29 +130,36 @@ const CeoGreeting = () => {
 const History = ({ historyData }) => {
   const { i18n } = useTranslation();
 
+  // 1. groupBy year → month
+  const grouped = historyData.reduce((acc, item) => {
+    const { year, month } = item;
+    if (!acc[year]) acc[year] = {};
+    if (!acc[year][month]) acc[year][month] = [];
+    acc[year][month].push(item);
+    return acc;
+  }, {});
+
   return (
     <div className={styles.history_container}>
-      {Object.keys(historyData)
-        .sort((a, b) => b - a)
+      {Object.keys(grouped)
+        .sort((a, b) => b - a) // 최신순 정렬
         .map((year) => (
           <div key={year} className={styles.year}>
             {year}
             <div>
-              {Object.keys(historyData[year])
-                .sort((a, b) => b - a)
+              {Object.keys(grouped[year])
+                .sort((a, b) => Number(a) - Number(b)) // 월은 오름차순
                 .map((month) => (
                   <div key={month} className={styles.month}>
                     <span className={styles.month_name}>
-                      {i18n.language === 'kr' ? `${month}월` : `${month}`}
+                      {i18n.language === 'kr' ? `${month}월` : month}
                     </span>
                     <div className={styles.activity_list}>
-                      {historyData[year][month][i18n.language]?.map(
-                        (activity, index) => (
-                          <div key={index} className={styles.activity_item}>
-                            {activity}
-                          </div>
-                        )
-                      )}
+                      {grouped[year][month].map((item, index) => (
+                        <div key={index} className={styles.activity_item}>
+                          {i18n.language === 'kr' ? item.title : item.title_en}
+                        </div>
+                      ))}
                     </div>
                   </div>
                 ))}
@@ -176,26 +194,33 @@ const Partners = ({ partnerData }) => {
     '해외 기업': { kr: '해외 기업', en: 'Overseas Company' },
   };
 
+  const lang = i18n.language.split('-')[0]; // en-US → en
+
   const groupedPartners = partnerData.reduce((acc, con) => {
-    const translatedType = typeTranslation[con.type] || con.type; // Fetch type translations
-    if (!acc[translatedType[i18n.language]]) {
-      acc[translatedType[i18n.language]] = [];
+    const translation = typeTranslation[con.organization_type];
+    const typeKey = translation ? translation[lang] : con.organization_type;
+
+    if (!acc[typeKey]) {
+      acc[typeKey] = [];
     }
-    acc[translatedType[i18n.language]].push(con);
+    acc[typeKey].push(con);
     return acc;
   }, {});
 
   return (
     <div className={styles.partners_container}>
-      {Object.entries(groupedPartners).map(([type, partners]) => (
-        <div key={type} className={styles.partner_group}>
-          <h2>{type}</h2>
+      {Object.entries(groupedPartners).map(([organization_type, partners]) => (
+        <div key={organization_type} className={styles.partner_group}>
+          <h2>{organization_type}</h2>
           {/* <h2>{t(`company.partners.${type}`)}</h2> */}
           <div className={styles.partner_list}>
             {partners.map((con, i) => (
               <div key={i} className={styles.partner_card}>
-                <a href={con.url[0]} target='_blank' rel='noopener noreferrer'>
-                  <img src={`${images.partners}${con.img}`} alt={con.title} />
+                <a
+                  href={con.main_url[0]}
+                  target='_blank'
+                  rel='noopener noreferrer'>
+                  <img src={`${con.logo_img}`} alt={con.title} />
                 </a>
               </div>
             ))}

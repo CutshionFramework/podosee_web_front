@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios from 'axios';
 
 class AxiosInstance {
   baseUrl;
@@ -12,9 +12,9 @@ class AxiosInstance {
   }
 }
 
-const httpClient = new AxiosInstance(import.meta.env.VITE_BASE_URL || "");
+const httpClient = new AxiosInstance(import.meta.env.VITE_BASE_URL || '');
 // const httpClient = new AxiosInstance("/mock");
 
-export const partnerApi = httpClient.instance("/partner");
-export const historyApi = httpClient.instance("/history");
-export const newsApi = httpClient.instance("/news");
+export const partnerApi = httpClient.instance('/api/partner');
+export const historyApi = httpClient.instance('/api/history');
+export const newsApi = httpClient.instance('/api/news');

@@ -1,15 +1,15 @@
-import { useEffect, useRef, useState } from "react";
-import { Link } from "react-router-dom";
-import { useTranslation } from "react-i18next";
-import { getNews } from "../../apis/apis";
-import NewsSlider from "../../components/news_slider/newsSlider";
-import Header from "../../components/header/header";
-import Footer from "../../components/footer/footer";
+import { useEffect, useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import { getNews } from '../../apis/apis';
+import NewsSlider from '../../components/news_slider/newsSlider';
+import Header from '../../components/header/header';
+import Footer from '../../components/footer/footer';
 // import Popup from "../../components/popup/popup";
 
-import styles from "./main.module.scss";
-import images from "../../constants/imagePath";
-import routes from "../../constants/routes";
+import styles from './main.module.scss';
+import images from '../../constants/imagePath';
+import routes from '../../constants/routes';
 
 const ProductCard = ({ title, description, idx }) => (
   <div className={styles.product_card}>
@@ -32,13 +32,13 @@ const ProductCard = ({ title, description, idx }) => (
 
 export default function Main() {
   const { t } = useTranslation();
-  const products = t("main.products", { returnObjects: true });
+  const products = t('main.products', { returnObjects: true });
 
   const videoRef = useRef(null);
   const [newsData, setNewsData] = useState([]);
   const sortedNews = [...newsData]
-    .filter((news) => news.active === 0 || news.active === 1)
-    .sort((a, b) => b.seq - a.seq);
+    .filter((news) => news.site_num === 0 || news.site_num === 1)
+    .sort((a, b) => b.id - a.id);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -48,14 +48,14 @@ export default function Main() {
     // 비디오 자동 재생 설정
     if (videoRef.current) {
       videoRef.current.play().catch((error) => {
-        console.log("Video autoplay failed:", error);
+        console.log('Video autoplay failed:', error);
       });
     }
   }, []);
 
   const getNewsData = async () => {
     const response = await getNews();
-    setNewsData(response);
+    setNewsData(response.data);
   };
 
   return (
@@ -71,8 +71,7 @@ export default function Main() {
             className={styles.main_video}
             loop
             muted
-            playsInline
-          >
+            playsInline>
             <source src={images.main.main_video} type='video/mp4' />
             Your browser does not support the video tag.
           </video>

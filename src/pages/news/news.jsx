@@ -19,7 +19,7 @@ export default function News() {
 
   const getNewsData = async () => {
     const response = await getNews();
-    setNewsData(response);
+    setNewsData(response.data);
   };
 
   return (
