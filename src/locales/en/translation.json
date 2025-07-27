@@ -6,18 +6,28 @@
         "link": "/jaka",
         "sub": [
           { "title": "Zu Series", "link": "/jaka/zuseries" },
-          { "title": "All-in-one", "link": "/jaka/allinone" },
+          { "title": "S Series", "link": "/jaka/sseries" },
+          {
+            "title": "All-in-one Series",
+            "link": "/jaka/allinoneseries"
+          },
           { "title": "Pro Series", "link": "/jaka/proseries" },
-          { "title": "Mini Cobo", "link": "/jaka/minicobo" }
+          { "title": "Mini Series", "link": "/jaka/miniseries" }
         ]
       },
       {
         "title": "AI KIOSK",
         "link": "/aikiosk",
         "sub": [
-          { "title": "Freephoto Kiosk", "link": "/aikiosk/freephoto" },
+          {
+            "title": "Freephoto Kiosk",
+            "link": "/aikiosk/freephoto"
+          },
           { "title": "Fever Alarm", "link": "/aikiosk/feveralarm" },
-          { "title": "Vending Machine", "link": "/aikiosk/vendingmachine" }
+          {
+            "title": "Vending Machine",
+            "link": "/aikiosk/vendingmachine"
+          }
         ]
       },
       {
@@ -191,6 +201,26 @@
         "ID": "fBJENsNZZmY&t",
         "title": "See JAKA Zu collaborative robots in action",
         "description": "Factory automation is simple with Jaka Zu. Myriad cobot applications are achieved immediately, on a plug-and-play basis."
+      }
+    }
+  },
+
+  "jaka_s": {
+    "page_title": "JAKA S Series",
+    "page_subtitle": "더 복잡한 상황에도 유연하게 대응하며, 안정성이 향상되었습니다.",
+    "major_title": "JAKA S 협동로봇의 주요 특징",
+    "feature_description": [
+      "JAKA S 협동로봇은 IP65 등급을 갖추고 있어 먼지나 물이 많은 환경에서도 안정적으로 작동할 수 있습니다.",
+      "간편한 프로그래밍으로 드래그 티칭 및 직관적인 그래픽 인터페이스를 제공합니다.",
+      "이 시리즈는 최대 1327mm의 작업 반경과 5~12kg의 탑재량을 처리할 수 있는 협동로봇이 포함되어 있습니다. "
+    ],
+    "comparison_title": "JAKA S 제품 비교",
+    "s_series": {
+      "id1": {
+        "description": ["가반하중 5kg | 작업반경 954mm"]
+      },
+      "id2": {
+        "description": ["가반하중 12kg | 작업반경 1327mm"]
       }
     }
   },
