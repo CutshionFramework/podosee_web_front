@@ -114,22 +114,27 @@
     "jaka_main_series": {
       "id1": {
         "description": [
-          "Equiped with torque-feedback technology to provide accuracy and safety."
+          "Equiped with torque-feedback technology to provide accuracy."
         ]
       },
       "id2": {
         "description": [
-          "Integrated with JAKA Lens 2D camera and advanced self-learning algorithm."
+          "Provides high flexibility and perception capabilities for complex tasks."
         ]
       },
       "id3": {
         "description": [
-          "Designed to operate in scenarios with the high protection level requirements."
+          "Integrated with JAKA Lens 2D camera and advanced self-learning algorithm."
         ]
       },
       "id4": {
         "description": [
-          "Ideal for B2C businesses automation. 1kg payload. Light, compact, and elegant."
+          "Designed to operate in scenarios with the high protection level requirements."
+        ]
+      },
+      "id5": {
+        "description": [
+          "Ideal for B2C businesses automation. Light, compact, and elegant."
         ]
       }
     },
@@ -207,20 +212,20 @@
 
   "jaka_s": {
     "page_title": "JAKA S Series",
-    "page_subtitle": "더 복잡한 상황에도 유연하게 대응하며, 안정성이 향상되었습니다.",
-    "major_title": "JAKA S 협동로봇의 주요 특징",
+    "page_subtitle": "It adapts flexibly to even more complex situations, and its stability has been improved.",
+    "major_title": "The features of the JAKA S cobots",
     "feature_description": [
-      "JAKA S 협동로봇은 IP65 등급을 갖추고 있어 먼지나 물이 많은 환경에서도 안정적으로 작동할 수 있습니다.",
-      "간편한 프로그래밍으로 드래그 티칭 및 직관적인 그래픽 인터페이스를 제공합니다.",
-      "이 시리즈는 최대 1327mm의 작업 반경과 5~12kg의 탑재량을 처리할 수 있는 협동로봇이 포함되어 있습니다. "
+      "The JAKA S collaborative robot has an IP65 rating, allowing it to operate reliably even in dusty or wet environments.",
+      "It offers drag-and-teach functionality and an intuitive graphical interface through simple programming.",
+      "This series includes collaborative robots capable of a maximum reach of 1327 mm and payloads ranging from 5 to 12 kg."
     ],
-    "comparison_title": "JAKA S 제품 비교",
+    "comparison_title": "JAKA S Product Comparison",
     "s_series": {
       "id1": {
-        "description": ["가반하중 5kg | 작업반경 954mm"]
+        "description": ["Payload 5kg | Reach 954mm"]
       },
       "id2": {
-        "description": ["가반하중 12kg | 작업반경 1327mm"]
+        "description": ["Payload 12kg | Reach 1327mm"]
       }
     }
   },
@@ -475,6 +480,107 @@
         "Inspection",
         "Pick and Place",
         "Screw Driving"
+      ]
+    }
+  },
+
+  "s_detail_pages": {
+    "products": {
+      "5": {
+        "pageTitle": "JAKA S 5 Collaborative Robots",
+        "imgSrc": "/assets/jaka_s/jaka_s_5.png",
+        "about": [
+          "No installation or setup required. single‑device protection.",
+          "The built‑in force sensor enables multidimensional force detection and, with excellent adaptability, fast response speed, and high precision, is ideal for industrial automation upgrades.",
+          "Equipped with IP65 protection, it operates reliably even in dusty or wet environments."
+        ],
+        "name": "JAKA S 5 Specifications",
+        "basicImg": "/assets/product_comparison/en/jaka_s_5_basic_en.png",
+        "commonImg": "/assets/product_comparison/en/jaka_s_5_common_en.png",
+        "feature_title": "The features of the JAKA S 5",
+        "field_title": "Best applications for JAKA S 5"
+      },
+      "12": {
+        "pageTitle": "JAKA S 12 Collaborative Robots",
+        "imgSrc": "/assets/jaka_s/jaka_s_12.png",
+        "about": [
+          "JAKA S 12 requires no installation or setup and features smart protection to prevent hazardous movements.",
+          "Equipped with a 6-axis configuration, the JAKA Zu 12 delivers reliability and precision, boasting exceptional repeatability of ±0.03 mm.",
+          "Despite its high payload capacity, it remains relatively lightweight and can be mounted at various orientations, including vertical and horizontal.",
+          "Combining flexibility, safety features, and reliability, this product is ideal for industries such as automotive and automotive components, advanced manufacturing, consumer electronics, and food packaging."
+        ],
+        "name": "JAKA S 12 Specifications",
+        "basicImg": "/assets/product_comparison/en/jaka_s_12_basic_en.png",
+        "commonImg": "/assets/product_comparison/en/jaka_s_12_common_en.png",
+        "feature_title": "The features of the JAKA S 12",
+        "field_title": "Best applications for JAKA S 12"
+      }
+    },
+
+    "s5_features": {
+      "id1": {
+        "name": "Graphical Programming",
+        "description": "Intuitive graphical programming soft\n - ware requires no prior programming experience. Anyone can easily set and adjust positions and tasks."
+      },
+      "id2": {
+        "name": "Drag Teaching",
+        "description": "With easy drag teaching and six highly flexible joints, the robot instantly remembers any position it is moved to."
+      },
+      "id3": {
+        "name": " Plug and Play",
+        "description": "The installation of our cobots is fast, easy and flexible. They can be mounted at any angle and will begin working immediately once placed"
+      },
+      "id4": {
+        "name": "Wireless Connection",
+        "description": "JAKA collaborative robots help create a clean and safe workspace without complex wiring."
+      },
+      "id5": {
+        "name": "Remote Monitoring",
+        "description": "Monitor the collaborative robot's work and set notifications with a unique security authentication system."
+      }
+    },
+
+    "s12_features": {
+      "id1": {
+        "name": "Graphical Programming",
+        "description": "Intuitive graphical programming soft\n - ware requires no prior programming experience. Anyone can easily set and adjust positions and tasks."
+      },
+      "id2": {
+        "name": "Drag Teaching",
+        "description": "With easy drag teaching and six highly flexible joints, the robot instantly remembers any position it is moved to."
+      },
+      "id3": {
+        "name": " Plug and Play",
+        "description": "The installation of our cobots is fast, easy and flexible. They can be mounted at any angle and will begin working immediately once placed"
+      },
+      "id4": {
+        "name": "Wireless Connection",
+        "description": "JAKA collaborative robots help create a clean and safe workspace without complex wiring."
+      },
+      "id5": {
+        "name": "No Teaching Pendant",
+        "description": "The JAKA app is available on tablets, smartphones, and PCs. Easily and conveniently program your collaborative robot."
+      },
+      "id6": {
+        "name": "Remote Monitoring",
+        "description": "Monitor the collaborative robot's work and set notifications with a unique security authentication system."
+      }
+    },
+
+    "application_fields": {
+      "default": [
+        "Assembly",
+        "Gluing and Bonding",
+        "Machine Tending",
+        "Inspection",
+        "Pick and Place",
+        "Screw Driving",
+        "Polishing",
+        "Packaging",
+        "Palletizing",
+        "Painting",
+        "Welding",
+        "Vision Picking"
       ]
     }
   },

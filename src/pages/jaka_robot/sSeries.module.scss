@@ -38,9 +38,7 @@
     }
 
     @media (max-width: 768px) {
-      width: calc(
-        50% - 20px
-      ) !important; // 768px 이하에서는 2개씩 정렬
+      width: calc(50% - 20px) !important; // 768px 이하에서는 2개씩 정렬
       max-width: 240px;
     }
 
@@ -67,7 +65,6 @@
     }
   }
 }
-
 .feature {
   display: flex;
   border-top: 1px solid rgb(230, 230, 230);
