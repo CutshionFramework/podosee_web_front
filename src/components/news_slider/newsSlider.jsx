@@ -54,7 +54,7 @@ const NewsSlider = ({ newsData }) => {
                   target='_blank'
                   rel='noopener noreferrer'
                 >
-                  <img src={news.img} alt={news.title} />
+                  <img src={news.title_img} alt={news.title} />
                 </a>
                 <div className={styles.text_content}>
                   <span className={styles.category}>{news.press}</span>
