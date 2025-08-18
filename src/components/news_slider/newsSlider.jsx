@@ -24,20 +24,27 @@ const NewsSlider = ({ newsData }) => {
   }, [currentIndex, newsData]);
 
   const handlePrev = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0
-        ? Math.max(sortedNews.length - itemsPerPage, 0)
-        : prevIndex - itemsPerPage
-    );
+    setCurrentIndex((prevIndex) => {
+      const newIndex = prevIndex - itemsPerPage;
+      if (newIndex < 0) {
+        // 맨 뒤부터 보여주도록
+        return Math.max(sortedNews.length - itemsPerPage, 0);
+      }
+      return newIndex;
+    });
   };
 
   const handleNext = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex + itemsPerPage >= sortedNews.length
-        ? 0
-        : prevIndex + itemsPerPage
-    );
+    setCurrentIndex((prevIndex) => {
+      const newIndex = prevIndex + itemsPerPage;
+      if (newIndex >= sortedNews.length) {
+        // 다시 처음으로
+        return 0;
+      }
+      return newIndex;
+    });
   };
+
 
   return (
     <div className={styles.news_slider}>
@@ -50,7 +57,7 @@ const NewsSlider = ({ newsData }) => {
               <div className={styles.slide_content}>
                 <a
                   className={styles.image_container}
-                  href={news.link}
+                  href={news.news_link}
                   target='_blank'
                   rel='noopener noreferrer'
                 >
@@ -60,7 +67,7 @@ const NewsSlider = ({ newsData }) => {
                   <span className={styles.category}>{news.press}</span>
                   <h2 className={styles.title}>
                     <a
-                      href={news.link}
+                      href={news.news_link}
                       target='_blank'
                       rel='noopener noreferrer'
                     >
