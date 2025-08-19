@@ -36,7 +36,7 @@ export default function News() {
                   href={news.news_link}
                   target='_blank'
                   rel='noopener noreferrer'>
-                  <img src={news.title_img} alt={news.title} />
+                  <img src={news.display_img} alt={news.title} />
                 </a>
                 <div className={styles.text_content}>
                   <span className={styles.category}>{news.press_name}</span>
