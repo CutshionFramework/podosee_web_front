@@ -52,7 +52,7 @@ export default function CompanyInfo() {
       const rawData = response.data;
 
       const filteredData = rawData.filter(
-        (item) => Number(item.site_num) === 2
+        (item) => Number(item.site_num) === 1
       );
       setPartnerData(filteredData);
     }
@@ -64,7 +64,7 @@ export default function CompanyInfo() {
       const rawData = response.data;
 
       const filteredData = rawData.filter(
-        (item) => Number(item.site_num) === 2
+        (item) => Number(item.site_num) === 1
       );
 
       setHistoryData(filteredData);
